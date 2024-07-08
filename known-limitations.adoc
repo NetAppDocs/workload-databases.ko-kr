@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: known-limitations.html 
+keywords: limitations, databases 
+summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오. 
+---
+= 알려진 제한 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
+
+
+
+== AMI 이미지 버전 지원
+
+각 SQL 버전에 대해 AMI 이미지의 최근 버전 또는 수정본을 최대 4개까지 표시할 수 있습니다. 최신 4개 버전보다 오래된 AMI 이미지에서는 설치할 수 없습니다.
+
+
+
+== 사용자 정의 AMI
+
+사용자 지정 AMI를 사용한 배포는 이미지에 설치 미디어가 있는 것으로 가정합니다. 다음과 같은 이유로 FCI 구성에 필요합니다.
+
+* FCI 클러스터를 제거하고 다시 구성하려면 다음을 수행합니다
+* 독립 실행형 배포를 위해 이미지의 데이터 정렬 세트 이외의 데이터 정렬을 선택하는 경우
+
+
+배포의 일부로 Workload Factory는 여러 Microsoft SQL Server 인스턴스에 사용자 지정 AMI를 설치하지 않습니다. 기본 Microsoft SQL Server 인스턴스만 배포의 일부로 선택 및 구성됩니다.
+
+
+
+== 실패한 배포를 롤백하고 다시 시도하십시오
+
+실패한 배포에 대한 롤백 및 재시도는 Workload Factory에서 지원되지 않습니다. AWS의 CloudFormation 콘솔에서 장애가 발생한 스택을 롤백하거나 다시 시도할 수 있습니다.
+
+
+
+== Active Directory 및 DNS 리소스 롤백
+
+AWS의 CloudFormation 콘솔에서 테스트를 롤백하거나 배포에 실패한 경우 다음 DNS 리소스가 Active Directory 및 DNS에서 제거되지 않습니다.
+
+* SQL 배포의 각 노드가 관리 IP 주소로 지정됩니다
+* FCI의 경우 EC2 인스턴스의 예약된 보조 IP 주소에 대한 Windows 클러스터 이름입니다
+* FCI의 두 EC2 인스턴스에서 두 개의 예약된 IP 주소로 SQL FCI 이름을 지정합니다
+
+
+이러한 항목을 수동으로 정리하거나 도메인이 오래된 항목을 제거할 때까지 기다려야 합니다.
+
+
+
+== 상시 가용성 그룹 구성 지원
+
+Workload Factory에서는 Always On 가용성 그룹 구성을 관리할 수 없습니다.
+
+
+
+== 사용자가 관리하는 Active Directory 보안 그룹
+
+Workload Factory에서 Microsoft SQL Server를 배포하는 동안 "사용자 관리 Active Directory"를 선택한 경우 EC2 인스턴스 간의 트래픽을 디렉토리 서비스로 배포하는 보안 그룹을 제공해야 합니다. Workload Factory는 AWS Managed Microsoft AD와 마찬가지로 사용자 관리 Active Directory의 보안 그룹을 자동으로 연결하지 않습니다.
+
+
+
+== 사용자 지정 암호화 키
+
+FSx for ONTAP의 사용자 지정 암호화 키는 서비스 적용 가능성에 따라 나열되지 않습니다. 적절한 키를 선택해야 합니다. AWS 관리 키는 서비스 적용 가능성에 따라 필터링됩니다.
+
+
+
+== Microsoft SQL Server 감지
+
+Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에서 데이터베이스에 액세스할 때마다 Microsoft SQL Server 감지가 다시 실행되어 해당 지역의 SQL 설치를 식별합니다.
+
+
+
+== CloudFormation 템플릿
+
+다운로드하거나 복사한 CodeBox에서 생성된 CloudFormation 템플릿(YAML 파일)의 보존 기간은 7일로 제한됩니다.
+
+
+
+== 샌드박스 지원
+
+* 데이터베이스 서버에서 생성할 수 있는 샌드박스 클론의 최대 수는 50개입니다.
+* 다음과 같은 경우에는 샌드박스 만들기가 지원되지 않습니다.
++
+** 데이터 및 로그 파일은 동일한 디스크에 상주합니다.
+** 원본 데이터베이스에 여러 개의 데이터 파일이 있습니다.
+
+
+
+
+
+
+== Microsoft SQL Server 감지 및 관리
+
+* 외부 연결 없이 개인 네트워크를 사용할 때는 Microsoft SQL 인스턴스 검색 및 관리가 지원되지 않습니다.
+* Microsoft SQL 인스턴스가 Windows 기반 인증을 차단하고 Microsoft SQL 사용자 인증만 허용하는 경우 Microsoft SQL Server 검색이 지원되지만 관리 작업은 지원되지 않습니다.
+
+
+
+
+== 비용 절감 효과를
+
+* 인벤토리 탭에서 각 Microsoft SQL 인스턴스에 대해 표시되는 예상 비용은 SQL 인스턴스를 호스팅하는 볼륨이 아닌 FSx for ONTAP 파일 시스템 수준에서 계산됩니다.
+* Explore 절약 계산은 FSx for Windows File Server에 대해 지원되지 않습니다.
+

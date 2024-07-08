@@ -1,0 +1,28 @@
+---
+indexpage:
+  title: 워크로드용 워크로드 팩토리 설명서
+  lead: BlueXP 워크로드 팩토리의 FSx for ONTAP 파일 시스템 스토리지를 기반으로 Microsoft SQL Server 구성을
+    구축하고 데이터베이스 환경을 관리합니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 릴리스 정보
+      url: "/whats-new.html"
+    - title: 데이터베이스에 대해 알아봅니다
+      url: "/learn-databases.html"
+    - title: 빠른 시작
+      url: "/quick-start-databases.html"
+  - title: 데이터베이스 사용
+    links:
+    - title: 데이터베이스 서버를 만듭니다
+      url: "/create-database-server.html"
+    - title: 데이터베이스를 만듭니다
+      url: "/create-database.html"
+    - title: 데이터베이스 모니터링
+      url: "/monitor-databases.html"
+  - title: 지식 및 지원
+    links:
+    - title: 지원을 위해 등록하십시오
+      url: "/support-registration-databases.html"
+    - title: 도움을 받으십시오
+      url: "/get-help-databases.html"

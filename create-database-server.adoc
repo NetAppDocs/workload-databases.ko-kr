@@ -1,0 +1,390 @@
+---
+sidebar: sidebar 
+permalink: create-database-server.html 
+keywords: create, server, Microsoft SQL, deploy, host, deploy a database host, database host 
+summary: Workload Factory for Databases 내에서 새 Microsoft SQL Server를 생성합니다. 
+---
+= Workload Factory for Databases에서 데이터베이스 서버를 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+데이터베이스에서 새 Microsoft SQL Server 또는 데이터베이스 호스트를 생성하려면 Active Directory용 FSx for ONTAP 파일 시스템 배포 및 리소스가 필요합니다.
+
+.이 작업에 대해
+AWS 계정 자격 증명과 _automate_permissions가 필요합니다.
+
+시작하기 전에 데이터베이스 호스트 구성에 사용할 수 있는 스토리지 배포 유형, Active Directory 배포, Workload Factory 작업 모드 및 이 작업을 완료하기 위한 요구 사항에 대해 알아봅니다.
+
+배포 후에는 <<2단계: Microsoft SQL Server에서 원격 연결을 사용하도록 설정합니다,Microsoft SQL Server에서 원격 연결을 활성화합니다>>수행해야 합니다.
+
+FSx for ONTAP 파일 시스템 배포:: 새 Microsoft SQL Server를 생성하려면 FSx for ONTAP 파일 시스템이 스토리지 백엔드로 필요합니다. 기존 FSx for ONTAP 파일 시스템을 사용하거나 새 파일 시스템을 생성할 수 있습니다. 기존 FSx for ONTAP 파일 시스템을 데이터베이스 서버 스토리지 백엔드로 선택하면 Microsoft SQL 워크로드용 새 스토리지 VM이 생성됩니다.
++
+--
+FSx for ONTAP 파일 시스템에는 두 가지 Microsoft SQL Server 배포 모델(_FCI(Failover Cluster Instance) _ 또는 _Standalone_)이 있습니다. 선택한 FSx for ONTAP 배포 모델에 따라 FSx for ONTAP 파일 시스템에 대해 다양한 리소스가 생성됩니다.
+
+* * 장애 조치 클러스터 인스턴스(FCI) Microsoft SQL 배포 *: FCI 배포를 위해 새 FSx for ONTAP 파일 시스템을 선택하면 다중 가용성 영역 FSx for NetApp ONTAP 파일 시스템이 구축됩니다. FCI 구축 환경에서는 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨과 LUN이 생성됩니다. Windows 클러스터용 쿼럼 또는 감시 디스크에 대해 추가 볼륨 및 LUN이 생성됩니다.
+* * 독립 실행형 Microsoft SQL 배포 *: 새로운 Microsoft SQL Server가 생성될 때 단일 가용성 영역 FSx for ONTAP 파일 시스템이 생성됩니다. 또한 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨과 LUN이 생성됩니다.
+
+
+--
+Active Directory를 클릭합니다:: 배포 중 AD(Active Directory)에 대해 다음과 같은 현상이 발생합니다.
++
+--
+* 기존 SQL 서비스 계정을 제공하지 않으면 도메인에 새 Microsoft SQL 서비스 계정이 만들어집니다.
+* Windows 클러스터, 노드 호스트 이름 및 Microsoft SQL FCI 이름이 관리 컴퓨터로 Microsoft SQL 서비스 계정에 추가됩니다.
+* Windows 클러스터 항목에는 컴퓨터를 도메인에 추가할 수 있는 권한이 할당됩니다.
+
+
+--
+리소스 롤백:: DNS(Domain Name System) 리소스를 롤백하는 경우 AD 및 DNS의 리소스 레코드는 자동으로 제거되지 않습니다. 다음과 같이 DNS 서버 및 AD에서 레코드를 제거할 수 있습니다.
++
+--
+* 사용자가 관리하는 AD의 경우 먼저 link:https://learn.microsoft.com/en-us/powershell/module/activedirectory/remove-adcomputer?view=windowsserver2022-ps["AD 컴퓨터를 분리합니다"^] 그런 다음 DNS 관리자 및 에서 DNS 서버에 link:https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/delete-dns-resource-records["DNS 리소스 레코드를 삭제합니다"^]연결합니다.
+* AWS 관리형 Microsoft AD의 link:https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_install_ad_tools.html["AD 관리 도구를 설치합니다"^]경우, 다음, link:https://learn.microsoft.com/en-us/powershell/module/activedirectory/remove-adcomputer?view=windowsserver2022-ps["AD 컴퓨터를 분리합니다"^] 마지막으로, DNS 관리자와 에서 DNS 서버에 link:https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/delete-dns-resource-records["DNS 리소스 레코드를 삭제합니다"^]연결합니다.
+
+
+--
+워크로드 공장 작동 모드:: Workload Factory는 Workload Factory에서 AWS 리소스를 얼마나 편리하게 관리하는지 여부에 따라 세 가지 운영 모드를 제공합니다.
++
+--
+*_Basic_mode *: 이 작업 모드에서는 Workload Factory에서 AWS 계정 자격 증명을 연결할 필요가 없습니다. Codebox에서 부분적으로 채워진 YAML 템플릿을 복사하거나 다운로드하여 Workload Factory 외부에서 완료할 수 있습니다.
+
+*_읽기_모드 * : 이 작업 모드에서, 귀하는 AWS 계정 자격 증명에 읽기 권한을 부여하여 _빠른 생성_또는_고급 생성_양식을 완성한 다음 복사 또는 다운로드할 수 있습니다. 완료된 양식 세부 정보를 사용하여 Workload Factory에서 CloudFormation으로 리디렉션할 수도 있습니다. 또한 워크로드 팩토리에서는 배포된 데이터베이스 서버를 관리할 수 있습니다.
+
+*_AUTOMATE_MODE *: 이 작업 모드에서 AWS 계정 자격 증명과 자동화 권한을 제공하여 Workload Factory 내에서 AWS 리소스를 생성하고 관리할 수 있습니다.
+
+--
+
+
+.시작하기 전에
+새 데이터베이스 호스트를 생성하기 전에 다음과 같은 사전 요구 사항이 있는지 확인하십시오.
+
+자격 증명 및 권한:: link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 모드 권한 자동화"^]Workload Factory에서 새 데이터베이스 호스트를 생성해야 합니다.
++
+--
+또는 CodeBox를 사용하여 빈 템플릿을 복사하거나 완료된 템플릿을 생성하여 REST API, AWS CLI 또는 AWS CloudFormation을 사용하여 Workload Factory 외부에 데이터베이스를 구축할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
+
+--
+Active Directory를 클릭합니다:: Active Directory에 연결할 때 다음을 수행하려면 권한이 있는 관리자 액세스 권한이 있어야 합니다.
++
+--
+* 도메인에 가입합니다
+* 컴퓨터 개체를 만듭니다
+* 기본 OU(조직 구성 단위)에 개체 만들기
+* 모든 속성을 읽습니다
+* 도메인 사용자를 AD 노드의 로컬 관리자로 만듭니다
+* Microsoft SQL Server 서비스 사용자가 없는 경우 AD에서 해당 사용자를 만듭니다
+
+
+--
+
+
+
+
+== 1단계: 데이터베이스 서버를 만듭니다
+
+_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하여 Workload Factory에서 이 작업을 _AUTOMATE_MODE 권한으로 완료할 수 있습니다.
+
+[role="tabbed-block"]
+====
+.빠른 생성
+--
+
+NOTE: _Quick create_에서 FCI는 기본 배포 모델이고, Windows 2016은 기본 Windows 버전이고, SQL 2019 Standard Edition은 기본 SQL 버전입니다.
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 선택합니다.
+. Quick create * 를 선택합니다.
+. AWS settings * 에서 다음을 제공합니다.
++
+.. * AWS 자격 증명 *: 새 데이터베이스 호스트를 배포하려면 자동화 권한이 있는 AWS 자격 증명을 선택합니다.
++
+AWS 자격 증명을 _AUTOMATE_permissions 로 Workload Factory에서 AWS 계정으로 새 데이터베이스 호스트를 구축 및 관리할 수 있습니다.
+
++
+AWS 자격 증명을 _READ_PERCESSIONS 를 사용하면 Workload Factory 에서 AWS CloudFormation 콘솔에서 사용할 CloudFormation 템플릿을 생성할 수 있습니다.
+
++
+Workload Factory에 연결된 AWS 자격 증명이 없고 Workload Factory에 새 서버를 생성하려면 * 옵션 1 * 을 따라 자격 증명 페이지로 이동합니다. 데이터베이스 워크로드에 대해 _AUTOMATE_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.
+
++
+AWS CloudFormation에서 배포할 전체 YAML 파일 템플릿을 다운로드할 수 있도록 Workload Factory에서 새 서버 만들기 양식을 작성하려면 * 옵션 2 * 를 따라 AWS CloudFormation 내에서 새 서버를 만드는 데 필요한 권한이 있는지 확인하십시오. 데이터베이스 워크로드에 대해 _READ_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.
+
++
+선택적으로 코드박스에서 부분적으로 완성된 YAML 파일 템플릿을 다운로드하여 자격 증명이나 권한 없이 Workload Factory 외부에 스택을 만들 수 있습니다. 코드 상자의 드롭다운에서 * CloudFormation * 을 선택하여 YAML 파일을 다운로드합니다.
+
+.. * 지역 및 VPC *: 지역 및 VPC 네트워크를 선택합니다.
++
+기존 인터페이스 끝점에 대한 보안 그룹이 선택한 서브넷에 대한 HTTPS(443) 프로토콜에 대한 액세스를 허용하는지 확인합니다.
+
++
+AWS 서비스 인터페이스 엔드포인트(SQS, FSx, EC2, CloudWatch, CloudFormation, SSM) 및 S3 게이트웨이 끝점이 없으면 배포 중에 생성됩니다.
+
++
+VPC DNS 속성이 `EnableDnsSupport` `EnableDnsHostnames` 로 설정되어 있지 않은 경우 엔드포인트 주소 확인을 사용하도록 수정됩니다. `true`
+
+.. * 가용 영역 *: 장애 조치 클러스터 인스턴스(FCI) 배포 모델에 따라 가용 영역 및 서브넷을 선택합니다.
++
+
+NOTE: FCI 구축은 MAZ(Multiple Availability Zone) FSx for ONTAP 구성에서만 지원됩니다.
+
++
+서브넷은 고가용성을 위해 동일한 경로 테이블을 공유해서는 안 됩니다.
+
++
+... 클러스터 구성 - 노드 1 * 필드의 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 기본 사용 가능 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 기본 사용 가능 영역의 서브넷을 선택합니다.
+... 클러스터 구성 - 노드 2 * 필드에서 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 보조 가용성 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 보조 가용성 영역의 서브넷을 선택합니다.
+
+
+
+
+. 응용 프로그램 설정 * 에서 * 데이터베이스 자격 증명 * 에 대한 사용자 이름과 암호를 입력합니다.
+. 연결 * 에서 다음을 제공합니다.
++
+.. * 키 쌍 * : 키 쌍을 선택합니다.
+.. * Active Directory *:
++
+... 도메인 이름 * 필드에서 도메인의 이름을 선택하거나 입력합니다.
++
+.... AWS에서 관리하는 Active Directory의 경우 도메인 이름이 드롭다운 메뉴에 나타납니다.
+.... 사용자 관리 Active Directory의 경우 * 검색 및 추가 * 필드에 이름을 입력하고 * 추가 * 를 클릭합니다.
+
+
+... DNS 주소 * 필드에 도메인의 DNS IP 주소를 입력합니다. 최대 3개의 IP 주소를 추가할 수 있습니다.
++
+AWS에서 관리하는 Active Directory의 경우 DNS IP 주소가 드롭다운 메뉴에 나타납니다.
+
+... 사용자 이름 * 필드에 Active Directory 도메인의 사용자 이름을 입력합니다.
+... 암호 * 필드에 Active Directory 도메인의 암호를 입력합니다.
+
+
+
+
+. 인프라 설정 * 에서 다음을 제공합니다.
++
+.. * FSx for ONTAP 시스템 *: 새로운 FSx for ONTAP 파일 시스템을 생성하거나 기존 FSx for ONTAP 파일 시스템을 사용하십시오.
++
+... * 새 FSx for ONTAP 생성 *: 사용자 이름과 암호를 입력합니다.
++
+새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.
+
+... * 기존 FSx for ONTAP 선택 *: 드롭다운 메뉴에서 ONTAP용 FSx 이름을 선택하고 파일 시스템의 사용자 이름과 암호를 입력합니다.
+
+
+.. * 데이터 드라이브 크기 * : 데이터 드라이브 용량을 입력하고 용량 단위를 선택하십시오.
+
+
+. 요약:
++
+.. * 기본 미리보기 *: 빠른 생성으로 설정된 기본 설정을 검토합니다.
+.. *예상 비용*: 표시된 리소스를 배포할 때 발생할 수 있는 예상 비용을 제공합니다.
+
+
+. Create * 를 클릭합니다.
++
+또는 이러한 기본 설정을 지금 변경하려면 고급 만들기를 사용하여 데이터베이스 서버를 만듭니다.
+
++
+나중에 호스트를 배포하려면 * Save configuration * 을 선택할 수도 있습니다.
+
+
+
+--
+.고급 만들기
+--
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 선택합니다.
+. Advanced create * 를 선택합니다.
+. 배포 모델 * 의 경우 * 장애 조치 클러스터 인스턴스 * 또는 * 단일 인스턴스 * 를 선택합니다.
+. AWS settings * 에서 다음을 제공합니다.
++
+.. * AWS 자격 증명 *: 새 데이터베이스 호스트를 배포하려면 자동화 권한이 있는 AWS 자격 증명을 선택합니다.
++
+AWS 자격 증명을 _AUTOMATE_permissions 로 Workload Factory에서 AWS 계정으로 새 데이터베이스 호스트를 구축 및 관리할 수 있습니다.
+
++
+AWS 자격 증명을 _READ_PERCESSIONS 를 사용하면 Workload Factory 에서 AWS CloudFormation 콘솔에서 사용할 CloudFormation 템플릿을 생성할 수 있습니다.
+
++
+Workload Factory에 연결된 AWS 자격 증명이 없고 Workload Factory에 새 서버를 생성하려면 * 옵션 1 * 을 따라 자격 증명 페이지로 이동합니다. 데이터베이스 워크로드에 대해 _AUTOMATE_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.
+
++
+AWS CloudFormation에서 배포할 전체 YAML 파일 템플릿을 다운로드할 수 있도록 Workload Factory에서 새 서버 만들기 양식을 작성하려면 * 옵션 2 * 를 따라 AWS CloudFormation 내에서 새 서버를 만드는 데 필요한 권한이 있는지 확인하십시오. 데이터베이스 워크로드에 대해 _READ_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.
+
++
+선택적으로 코드박스에서 부분적으로 완성된 YAML 파일 템플릿을 다운로드하여 자격 증명이나 권한 없이 Workload Factory 외부에 스택을 만들 수 있습니다. 코드 상자의 드롭다운에서 * CloudFormation * 을 선택하여 YAML 파일을 다운로드합니다.
+
+.. * 지역 및 VPC *: 지역 및 VPC 네트워크를 선택합니다.
++
+기존 인터페이스 끝점에 대한 보안 그룹이 선택한 서브넷에 대한 HTTPS(443) 프로토콜에 대한 액세스를 허용하는지 확인합니다.
+
++
+AWS 서비스 인터페이스 엔드포인트(SQS, FSx, EC2, CloudWatch, Cloud Formation, SSM) 및 S3 게이트웨이 끝점은 배포 중에 찾을 수 없는 경우 생성됩니다.
+
++
+VPC DNS 속성 `EnableDnsSupport` 및 `EnableDnsHostnames` 이(가) 으로 설정되어 있지 않은 경우 엔드포인트 주소 확인을 사용하도록 수정됩니다. `true`
+
+.. * 가용 영역 *: 선택한 배포 모델에 따라 가용 영역 및 서브넷을 선택합니다.
++
+
+NOTE: FCI 구축은 MAZ(Multiple Availability Zone) FSx for ONTAP 구성에서만 지원됩니다.
+
++
+서브넷은 고가용성을 위해 동일한 경로 테이블을 공유해서는 안 됩니다.
+
++
+경우에 따라 다릅니다::
++
+--
+... Cluster configuration - Node 1 * 필드의 드롭다운 메뉴에서 * Availability zone * 의 가용 영역을 선택하고 * Subnet * 드롭다운 메뉴에서 서브넷을 선택합니다.
+
+
+--
+FCI 배포를 위한 것입니다::
++
+--
+... 클러스터 구성 - 노드 1 * 필드의 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 기본 사용 가능 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 기본 사용 가능 영역의 서브넷을 선택합니다.
+... 클러스터 구성 - 노드 2 * 필드에서 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 보조 가용성 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 보조 가용성 영역의 서브넷을 선택합니다.
+
+
+--
+
+
+.. * 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다.
++
+새 서버 배포 중에 세 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.
+
++
+... 노드에서 Microsoft SQL 및 Windows 클러스터 통신에 필요한 포트 및 프로토콜을 지원하기 위한 워크로드 보안 그룹이 생성됩니다.
+... AWS에서 관리하는 Active Directory의 경우 디렉터리 서비스에 연결된 보안 그룹이 Microsoft SQL 노드에 자동으로 추가되어 Active Directory와 통신할 수 있습니다.
+... 기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 SQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다. 새 FSx for ONTAP 시스템이 생성되면 FSx for ONTAP 파일 시스템에 대한 새 보안 그룹이 생성되고 동일한 보안 그룹도 SQL 노드에 연결됩니다.
++
+사용자가 관리하는 Active Directory의 경우 데이터베이스에 연결해야 하는 기존 시스템의 트래픽을 허용하는 보안 그룹을 선택할 수 있습니다. 보안 그룹은 Microsoft SQL용 EC2 인스턴스가 구성된 서브넷에서 Active Directory 도메인 컨트롤러와의 통신을 허용해야 합니다.
+
+
+
+
+
+. 응용 프로그램 설정 * 에서 다음을 제공합니다.
++
+.. SQL Server 설치 유형 * 에서 * 라이센스 포함 AMI * 또는 * 사용자 지정 AMI 사용 * 을 선택합니다.
++
+... 라이센스 포함 AMI * 를 선택한 경우 다음을 제공합니다.
++
+.... * 운영 체제 *: * Windows server 2016 *, * Windows server 2019 * 또는 * Windows server 2022 * 를 선택합니다.
+.... * 데이터베이스 버전 *: * SQL Server Standard Edition * 또는 * SQL Server Enterprise Edition * 을 선택합니다.
+.... * 데이터베이스 버전 *: * SQL Server 2016 *, * SQL Server 2019 * 또는 * SQL Server 2022 * 를 선택합니다.
+.... * SQL Server AMI *: 드롭다운 메뉴에서 SQL Server AMI를 선택합니다.
+
+
+... 사용자 정의 AMI 사용 * 을 선택한 경우 드롭다운 메뉴에서 AMI를 선택합니다.
+
+
+.. * SQL Server 데이터 정렬 *: 서버에 대한 데이터 정렬 세트를 선택합니다.
++
+
+NOTE: 선택한 데이터 정렬 집합이 설치에 호환되지 않는 경우 기본 데이터 정렬 "SQL_Latin1_General_CP1_CI_AS"를 선택하는 것이 좋습니다.
+
+.. * 데이터베이스 이름 *: 데이터베이스 클러스터 이름을 입력합니다.
+.. * 데이터베이스 자격 증명 *: 새 서비스 계정에 대한 사용자 이름과 암호를 입력하거나 Active Directory에서 기존 서비스 계정 자격 증명을 사용합니다.
+
+
+. 연결 * 에서 다음을 제공합니다.
++
+.. * 키 쌍 *: 인스턴스에 안전하게 연결할 키 쌍을 선택하십시오.
+.. * Active Directory *: 다음과 같은 Active Directory 세부 정보를 제공합니다.
++
+... 도메인 이름 * 필드에서 도메인의 이름을 선택하거나 입력합니다.
++
+.... AWS에서 관리하는 Active Directory의 경우 도메인 이름이 드롭다운 메뉴에 나타납니다.
+.... 사용자 관리 Active Directory의 경우 * 검색 및 추가 * 필드에 이름을 입력하고 * 추가 * 를 클릭합니다.
+
+
+... DNS 주소 * 필드에 도메인의 DNS IP 주소를 입력합니다. 최대 3개의 IP 주소를 추가할 수 있습니다.
++
+AWS에서 관리하는 Active Directory의 경우 DNS IP 주소가 드롭다운 메뉴에 나타납니다.
+
+... 사용자 이름 * 필드에 Active Directory 도메인의 사용자 이름을 입력합니다.
+... 암호 * 필드에 Active Directory 도메인의 암호를 입력합니다.
+
+
+
+
+. 인프라 설정 * 에서 다음을 제공합니다.
++
+.. * DB 인스턴스 유형 *: 드롭다운 메뉴에서 데이터베이스 인스턴스 유형을 선택합니다.
+.. * FSx for ONTAP 시스템 *: 새로운 FSx for ONTAP 파일 시스템을 생성하거나 기존 FSx for ONTAP 파일 시스템을 사용하십시오.
++
+... * 새 FSx for ONTAP 생성 *: 사용자 이름과 암호를 입력합니다.
++
+새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.
+
+... * 기존 FSx for ONTAP 선택 *: 드롭다운 메뉴에서 ONTAP용 FSx 이름을 선택하고 파일 시스템의 사용자 이름과 암호를 입력합니다.
+
+
+.. * 스냅샷 정책 *: 기본적으로 활성화됩니다. 스냅샷은 매일 생성되며 보존 기간은 7일입니다.
++
+스냅샷은 SQL 워크로드용으로 생성된 볼륨에 할당됩니다.
+
+.. * 데이터 드라이브 크기 * : 데이터 드라이브 용량을 입력하고 용량 단위를 선택하십시오.
+.. * 프로비저닝된 IOPS *: * 자동 * 또는 * 사용자 프로비저닝 * 을 선택합니다. User-provisioned * 를 선택한 경우 IOPS 값을 입력합니다.
+.. * 처리량 용량 *: 드롭다운 메뉴에서 처리량 용량을 선택합니다.
++
+일부 지역에서는 4Gbps의 처리량 용량을 선택할 수 있습니다. 4Gbps의 처리량 용량을 프로비저닝하려면 FSx for ONTAP 파일 시스템을 최소 5,120GiB의 SSD 스토리지 용량과 160,000 SSD IOPS로 구성해야 합니다.
+
+.. * 암호화 *: 계정에서 키를 선택하거나 다른 계정의 키를 선택합니다. 다른 계정의 암호화 키 ARN을 입력해야 합니다.
++
+FSx for ONTAP 사용자 지정 암호화 키는 서비스 적용 가능성을 기준으로 나열되지 않습니다. 적절한 FSx 암호화 키를 선택합니다. FSx가 아닌 암호화 키로 인해 서버 생성 오류가 발생합니다.
+
++
+AWS 관리 키는 서비스 적용 가능성에 따라 필터링됩니다.
+
+.. * 태그 * : 선택적으로 최대 40개의 태그를 추가할 수 있습니다.
+.. * Simple Notification Service *: 드롭다운 메뉴에서 Microsoft SQL Server에 대한 SNS 항목을 선택하여 이 구성에 대해 SNS(Simple Notification Service)를 활성화할 수 있습니다.
++
+... Simple Notification Service를 활성화합니다.
+... 드롭다운 메뉴에서 ARN을 선택합니다.
+
+
+.. * CloudWatch 모니터링 *: 필요에 따라 CloudWatch 모니터링을 활성화할 수 있습니다.
++
+오류가 발생할 경우 디버깅을 위해 CloudWatch를 사용하도록 설정하는 것이 좋습니다. AWS CloudFormation 콘솔에 나타나는 이벤트는 상위 수준이며 근본 원인을 지정하지 않습니다. 모든 상세 로그는 `C:\cfn\logs` EC2 인스턴스의 폴더에 저장됩니다.
+
++
+CloudWatch에서 스택의 이름으로 로그 그룹이 생성됩니다. 모든 유효성 검사 노드 및 SQL 노드의 로그 스트림이 로그 그룹 아래에 나타납니다. CloudWatch는 스크립트 진행 상황을 보여 주며 배포 실패 여부와 시기를 이해하는 데 도움이 되는 정보를 제공합니다.
+
+.. * 리소스 롤백 *: 이 기능은 현재 지원되지 않습니다.
+
+
+. 요약
++
+.. *예상 비용*: 표시된 리소스를 배포할 때 발생할 수 있는 예상 비용을 제공합니다.
+
+
+. Create * 를 클릭하여 새 데이터베이스 호스트를 배포합니다.
++
+또는 구성을 저장할 수 있습니다.
+
+
+
+--
+====
+
+
+== 2단계: Microsoft SQL Server에서 원격 연결을 사용하도록 설정합니다
+
+서버 배포 후 Workload Factory는 Microsoft SQL Server에서 원격 연결을 활성화하지 않습니다. 원격 연결을 활성화하려면 다음 단계를 완료하십시오.
+
+.단계
+. NTLM에 컴퓨터 ID를 사용하려면 Microsoft 설명서의 을 link:https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm["네트워크 보안: 로컬 시스템에서 NTLM에 컴퓨터 ID를 사용하도록 허용합니다"^] 참조하십시오.
+. Microsoft 설명서의 을 참조하여 동적 포트 구성을 link:https://learn.microsoft.com/en-us/troubleshoot/sql/database-engine/connect/network-related-or-instance-specific-error-occurred-while-establishing-connection["SQL Server에 연결하는 동안 네트워크 관련 오류 또는 인스턴스 관련 오류가 발생했습니다"] 확인합니다.
+. 보안 그룹에 필요한 클라이언트 IP 또는 서브넷을 허용합니다.
+
+
+.다음 단계
+이제 가능합니다 link:create-database.html["Workload Factory에서 데이터베이스를 생성합니다"].

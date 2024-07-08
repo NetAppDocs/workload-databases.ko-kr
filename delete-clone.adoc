@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: delete-clone.html 
+keywords: delete, clone 
+summary: 더 이상 필요하지 않은 경우 샌드박스 클론을 삭제합니다. 
+---
+= 소스 데이터베이스에서 샌드박스 클론을 분할합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+더 이상 필요하지 않고 스토리지 용량을 확보하려는 경우 샌드박스 클론을 삭제합니다.
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 클릭합니다.
+. 데이터베이스에서 * Sandbox * 탭을 선택합니다.
+. 삭제하려는 샌드박스 클론의 세 개의 점 메뉴를 클릭합니다.
+. 삭제 * 를 선택합니다.
+. 삭제 대화 상자에서 * 삭제 * 를 클릭합니다.
+

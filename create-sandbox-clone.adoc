@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: create-sandbox-clone.html 
+keywords: create, clone, sandbox 
+summary: Workload Factory for Databases에서 샌드박스 클론을 생성합니다. 
+---
+= Workload Factory for Databases에서 샌드박스 클론을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory for Databases에서 데이터베이스의 샌드박스 클론을 생성하면 개발, 테스트, 통합, 분석, 교육, QA, 그리고 소스 데이터베이스를 변경하지 않고.
+
+.이 작업에 대해
+샌드박스 클론은 소스 데이터베이스의 최신 스냅샷에서 생성됩니다. 동일한 FSx for ONTAP 파일 시스템을 공유하는 경우 소스 데이터베이스와 동일한 Microsoft SQL Server에 복제하거나 다른 Microsoft SQL Server에 복제할 수 있습니다.
+
+.시작하기 전에
+샌드박스 클론을 생성하기 전에 다음 사전 요구 사항을 완료해야 합니다.
+
+자격 증명 및 권한:: Workload Factory에서 샌드박스 클론을 생성해야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _READ_OR_AUTOMATE_MODE 권한"^] 합니다.
++
+--
+또는 REST API를 사용하여 Workload Factory 외부에서 샌드박스 클론을 생성할 수 있도록 Codebox를 사용하여 부분적으로 완료된 템플릿을 복사하거나 완료된 템플릿을 생성할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
+
+--
+Microsoft SQL Server를 참조하십시오:: 새 샌드박스 클론을 호스팅하려면 Workload Factory for Databases에 관리되는 Microsoft SQL Server가 있어야 합니다.
+AWS 시스템 관리자::  `NT Authority\SYSTEM`AWS Systems Manager를 통해 Microsoft SQL 호스트에서 사용자 권한이 활성화되어 있는지 확인합니다.
+소스 데이터베이스:: 클론에 사용할 수 있는 소스 데이터베이스가 필요합니다.
+
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스에서 * Sandbox * 탭을 선택합니다.
+. 샌드박스 탭에서 * 새 샌드박스 만들기 * 를 선택합니다.
+. 새 샌드박스 만들기 페이지의 데이터베이스 원본에서 다음을 제공합니다.
++
+.. * 소스 데이터베이스 호스트 *: 소스 데이터베이스 호스트를 선택합니다.
+.. * 원본 데이터베이스 인스턴스 *: 원본 데이터베이스 인스턴스를 선택합니다.
+.. * 원본 데이터베이스 *: 복제할 원본 데이터베이스를 선택합니다.
+
+
+. 데이터베이스 대상에서 다음을 제공합니다.
++
+.. * 대상 데이터베이스 호스트 *: 동일한 VPC에 있고 소스 호스트와 동일한 FSx for ONTAP 파일 시스템을 가진 샌드박스 클론의 대상 데이터베이스 호스트를 선택합니다.
+.. * 대상 데이터베이스 인스턴스 *: sandbox 클론의 대상 데이터베이스 인스턴스를 선택합니다.
+.. * 대상 데이터베이스 *: sandbox 클론의 이름을 입력합니다.
+
+
+. * 마운트 *: * 마운트 지점 자동 할당 * 또는 * 마운트 지점 경로 정의 * 를 선택합니다. 마운트 지점 경로 정의 * 를 선택한 경우 마운트 지점 경로를 입력합니다.
+. * 태그 정의 * : 샌드박스 클론을 정의할 태그를 선택하십시오.
+. Create * 를 클릭합니다.
+
+
+작업 진행 상태를 확인하려면 * 작업 모니터링 * 탭으로 이동하십시오.

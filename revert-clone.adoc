@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: revert-clone.html 
+keywords: re-baseline, revert clone, database, Microsoft SQL 
+summary: Workload Factory for Databases에서 샌드박스 클론 되돌리기 
+---
+= Workload Factory for Databases에서 샌드박스 클론 되돌리기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+생성 시 데이터베이스 클론을 원래 버전으로 되돌립니다.
+
+.이 작업에 대해
+데이터베이스의 클론을 생성할 때 생성 시 클론은 _baseline_clone입니다. 복제된 데이터베이스의 데이터는 생성 시점의 소스 데이터베이스와 동일합니다. 샌드박스 데이터베이스 클론의 데이터가 시간이 지남에 따라 변경되므로 클론이 처음 생성될 때 데이터를 기준으로 다시 되돌릴 수 있습니다. 이 작업을 클론 베이스라인 재설정이라고 합니다. 새 클론을 생성하지 않고 클론의 기준을 다시 설정하면 공간이 절약되지만 샌드박스 클론에 대한 변경 사항은 삭제됩니다.
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스에서 * Sandbox * 탭을 선택합니다.
+. 샌드박스 탭에서 되돌리려는 샌드박스 클론의 세 개의 점 메뉴를 클릭합니다.
+. Re-baseline * 을 선택합니다.
+. Re-baseline(기준선 재설정) 대화 상자에서 * Re-baseline(기준선 재설정) * 을 클릭합니다.
+

@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: manage-server.html 
+keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
+summary: Workload Factory for Databases에서 Microsoft SQL Server 인스턴스를 관리합니다. 
+---
+= Microsoft SQL Server 인스턴스를 관리합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoft SQL Server 인스턴스를 관리하여 Workload Factory for Databases에서 인스턴스 및 데이터베이스 상태, 리소스 활용도, 보호 및 스토리지 성능을 모니터링합니다.
+
+데이터베이스는 FSx for ONTAP 파일 시스템 스토리지를 통해서만 Microsoft SQL Server 인스턴스를 관리할 수 있습니다.
+
+
+
+== Microsoft SQL Server 인스턴스 관리
+
+Microsoft SQL Server 인스턴스 관리에는 다음 작업이 포함됩니다.
+
+* 호스트 인스턴스를 관리합니다
+* 관리되는 인스턴스를 봅니다
+* 데이터베이스를 봅니다
+* 호스트 인스턴스의 관리를 취소합니다
+
+
+이러한 작업을 완료하려면 다음을 수행해야 link:detect-host.html["하나 이상의 호스트 인스턴스를 검색합니다"^]합니다.
+
+
+
+== 호스트 인스턴스를 관리합니다
+
+호스트에 대해 감지되거나 관리되지 않는 Microsoft SQL Server 인스턴스를 관리합니다.
+
+.시작하기 전에
+시작하기 전에 다음 사전 요구 사항을 완료하십시오.
+
+* 호스트에 관리 가능한 검색된 인스턴스가 있어야 합니다.
+* PowerShell7은 데이터베이스 인스턴스를 관리하는 데 필요합니다. 를 참조하여 PowerShell7을 수동으로 link:https://learn.microsoft.com/en-us/powershell/scripting/developer/module/installing-a-powershell-module?view=powershell-7.4["Windows용 Microsoft PowerShell 설명서"^]설치합니다.
+* 모든 관리 작업은 AWS System Manager Agent에서 사용자 권한을 사용하여 `NT Authority\SYSTEM` 실행됩니다. 데이터베이스 서버에서 사용자에게 다음 권한을 `NT Authority\SYSTEM` 제공합니다.
++
+** `“ALTER SETTINGS”`
+** `“CONTROL SERVER”`
+** `“ALTER ANY DATABASE”`
+** `“VIEW ANY DEFINITION”`
+** `“CONNECT ANY DATABASE”`
+** `“CREATE ANY DATABASE”`
+
+
+
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스에서 * Inventory * 탭을 선택합니다.
+. 관리할 호스트 행에서 * 관리 * 를 클릭합니다.
+. 관리할 호스트 인스턴스를 하나 이상 선택합니다.
+. 관리 * 를 클릭합니다.
+
+
+Microsoft SQL Server에 특정 PowerShell 모듈 및 관리 스크립트가 없는 경우 작업이 실패합니다. Workload Factory(워크로드 팩토리)는 작업 모니터링 탭에서 볼 수 있는 누락된 모듈 및 스크립트를 설치하기 위한 자원 준비 작업을 트리거합니다. 작업이 완료되면 호스트 인스턴스를 다시 관리해 보십시오.
+
+
+
+== 관리되는 인스턴스를 봅니다
+
+다음 단계에 따라 관리되는 인스턴스를 볼 수 있습니다.
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스에서 * Inventory * 탭을 선택합니다.
+. 드롭다운 화살표를 클릭하여 호스트의 행을 확장하면 관리되는 인스턴스를 볼 수 있습니다.
++
+호스트가 확장되고 호스트 인스턴스가 나타납니다.
+
+. 보려는 인스턴스의 세 개의 점 메뉴를 클릭한 다음 * 인스턴스 보기 * 를 선택합니다.
+
+
+.결과
+인스턴스의 개요가 Inventory(인벤토리) 탭에 표시됩니다.
+
+
+
+== 데이터베이스를 봅니다
+
+다음 단계에 따라 관리되는 인스턴스에서 관리되는 데이터베이스를 볼 수 있습니다.
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스에서 * Inventory * 탭을 선택합니다.
+. 드롭다운 화살표를 클릭하여 호스트의 행을 확장하여 해당 데이터베이스를 봅니다.
++
+호스트가 확장되고 호스트 인스턴스가 나타납니다.
+
+. 보려는 데이터베이스가 포함된 인스턴스의 세 개의 점 메뉴를 클릭합니다.
+. 데이터베이스 보기 * 를 선택합니다.
+
+
+.결과
+인스턴스의 데이터베이스 목록이 Inventory(인벤토리) 탭에 나타납니다.
+
+
+
+== 호스트 인스턴스의 관리를 취소합니다
+
+다음 단계에 따라 호스트 인스턴스의 관리를 취소합니다.
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스에서 * Inventory * 탭을 선택합니다.
+. 드롭다운 화살표를 클릭하여 관리를 취소할 호스트 인스턴스의 행을 확장합니다.
++
+호스트가 확장되고 호스트 인스턴스가 나타납니다.
+
+. 관리를 취소할 인스턴스의 세 개의 점 메뉴를 클릭합니다.
+. Unmanagement * 를 선택합니다.
+
+
+.결과
+이제 호스트 인스턴스가 관리되지 않습니다.

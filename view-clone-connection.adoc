@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: view-clone-connection.html 
+keywords: view clone connection, copy connection information 
+summary: 샌드박스 클론의 연결 정보를 보고 복사합니다. 
+---
+= 샌드박스 클론의 연결 정보를 봅니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+샌드박스 클론의 연결 정보를 보고 복사합니다.
+
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스에서 * Sandbox * 탭을 선택합니다.
+. Sandboxes 탭에서 sandbox 클론의 세 개의 점 메뉴를 클릭하여 연결 정보를 봅니다.
+. 연결 정보 표시 * 를 선택합니다.
+. 필요한 경우 연결 정보 표시 대화 상자에서 연결 정보를 복사합니다.
+. 닫기 * 를 클릭합니다.
+
