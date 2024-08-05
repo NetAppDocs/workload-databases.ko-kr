@@ -108,3 +108,9 @@ Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에
 * 인벤토리 탭에서 각 Microsoft SQL 인스턴스에 대해 표시되는 예상 비용은 SQL 인스턴스를 호스팅하는 볼륨이 아닌 FSx for ONTAP 파일 시스템 수준에서 계산됩니다.
 * Explore 절약 계산은 FSx for Windows File Server에 대해 지원되지 않습니다.
 
+
+
+
+== 여러 FSx for ONTAP 파일 시스템
+
+Workload Factory는 여러 FSx for ONTAP 파일 시스템에서 Microsoft SQL Server에 대한 구성을 생성하거나 저장하는 기능을 지원하지 않습니다. FSx for ONTAP 파일 시스템 구성 배포는 하나만 지원됩니다.

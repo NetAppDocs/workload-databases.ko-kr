@@ -140,7 +140,7 @@ SQL Server 2022
 .단일 가용성 영역
 다음 다이어그램은 단일 영역에 단일 가용성 영역이 있는 독립 실행형 아키텍처를 보여 줍니다.
 
-image:diagram-SAZ-database-architecture.png["단일 지역에서 Amazon FSx for NetApp ONTAP의 단일 가용 영역을 구축한 독립 실행형 아키텍처 다이어그램"]
+image:diagram-SAZ-database-architecture.png["단일 지역에서 Amazon FSx for NetApp ONTAP의 단일 가용성 영역을 구축한 독립 실행형 아키텍처 다이어그램"]
 
 .여러 가용성 영역
 다음 다이어그램은 단일 영역에 FCI(Failover Cluster Instance) 클러스터가 있는 2노드 HA(High-Availability) 아키텍처를 표시합니다.
