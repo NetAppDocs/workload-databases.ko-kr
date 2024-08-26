@@ -30,6 +30,11 @@ FSx for ONTAP 파일 시스템에는 두 가지 Microsoft SQL Server 배포 모�
 
 
 --
+Microsoft 다중 경로 I/O 구성:: Microsoft SQL Server 배포 모델 모두 iSCSI 스토리지 프로토콜을 사용하여 LUN을 생성해야 합니다. Workload Factory는 FSx for ONTAP을 통해 SQL Server용 LUN을 구성하는 과정에서 Microsoft MPIO(다중 경로 I/O)를 구성합니다. MPIO는 AWS 및 NetApp 모범 사례를 기반으로 구성됩니다.
+
+
+자세한 내용은 을 link:https://aws.amazon.com/blogs/modernizing-with-aws/sql-server-high-availability-amazon-fsx-for-netapp-ontap/["Amazon FSx for NetApp ONTAP을 사용하여 SQL Server 고가용성 배포"^]참조하십시오.
+
 Active Directory를 클릭합니다:: 배포 중 AD(Active Directory)에 대해 다음과 같은 현상이 발생합니다.
 +
 --
@@ -173,6 +178,14 @@ AWS에서 관리하는 Active Directory의 경우 DNS IP 주소가 드롭다운 
 새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.
 
 ... * 기존 FSx for ONTAP 선택 *: 드롭다운 메뉴에서 ONTAP용 FSx 이름을 선택하고 파일 시스템의 사용자 이름과 암호를 입력합니다.
++
+기존 FSx for ONTAP 파일 시스템의 경우 다음을 확인하십시오.
+
++
+**** FSx for ONTAP에 연결된 라우팅 그룹을 사용하면 서브넷으로의 경로를 배포에 사용할 수 있습니다.
+**** 보안 그룹은 배포에 사용되는 서브넷, 특히 HTTPS(443) 및 iSCSI(3260) TCP 포트의 트래픽을 허용합니다.
+
+
 
 
 .. * 데이터 드라이브 크기 * : 데이터 드라이브 용량을 입력하고 용량 단위를 선택하십시오.
@@ -264,7 +277,7 @@ FCI 배포를 위한 것입니다::
 ... AWS에서 관리하는 Active Directory의 경우 디렉터리 서비스에 연결된 보안 그룹이 Microsoft SQL 노드에 자동으로 추가되어 Active Directory와 통신할 수 있습니다.
 ... 기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 SQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다. 새 FSx for ONTAP 시스템이 생성되면 FSx for ONTAP 파일 시스템에 대한 새 보안 그룹이 생성되고 동일한 보안 그룹도 SQL 노드에 연결됩니다.
 +
-사용자가 관리하는 Active Directory의 경우 데이터베이스에 연결해야 하는 기존 시스템의 트래픽을 허용하는 보안 그룹을 선택할 수 있습니다. 보안 그룹은 Microsoft SQL용 EC2 인스턴스가 구성된 서브넷에서 Active Directory 도메인 컨트롤러와의 통신을 허용해야 합니다.
+사용자 관리 Active Directory의 경우 AD 인스턴스에 구성된 보안 그룹이 배포에 사용되는 서브넷의 트래픽을 허용하는지 확인합니다. 보안 그룹은 Microsoft SQL용 EC2 인스턴스가 구성된 서브넷에서 Active Directory 도메인 컨트롤러와의 통신을 허용해야 합니다.
 
 
 
@@ -325,6 +338,14 @@ AWS에서 관리하는 Active Directory의 경우 DNS IP 주소가 드롭다운 
 새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.
 
 ... * 기존 FSx for ONTAP 선택 *: 드롭다운 메뉴에서 ONTAP용 FSx 이름을 선택하고 파일 시스템의 사용자 이름과 암호를 입력합니다.
++
+기존 FSx for ONTAP 파일 시스템의 경우 다음을 확인하십시오.
+
++
+**** FSx for ONTAP에 연결된 라우팅 그룹을 사용하면 서브넷으로의 경로를 배포에 사용할 수 있습니다.
+**** 보안 그룹은 배포에 사용되는 서브넷, 특히 HTTPS(443) 및 iSCSI(3260) TCP 포트의 트래픽을 허용합니다.
+
+
 
 
 .. * 스냅샷 정책 *: 기본적으로 활성화됩니다. 스냅샷은 매일 생성되며 보존 기간은 7일입니다.

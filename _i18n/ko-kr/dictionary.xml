@@ -129,7 +129,6 @@
   <block id="ba4f09fe932ad91d759a5dd3636acec6" category="list-text">노드에서 Microsoft SQL 및 Windows 클러스터 통신에 필요한 포트 및 프로토콜을 지원하기 위한 워크로드 보안 그룹이 생성됩니다.</block>
   <block id="1f653bdd2a02e3ebdc4f28328a96b00f" category="list-text">AWS에서 관리하는 Active Directory의 경우 디렉터리 서비스에 연결된 보안 그룹이 Microsoft SQL 노드에 자동으로 추가되어 Active Directory와 통신할 수 있습니다.</block>
   <block id="84c62c2707904a024819612ef450ef1d" category="list-text">기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 SQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다. 새 FSx for ONTAP 시스템이 생성되면 FSx for ONTAP 파일 시스템에 대한 새 보안 그룹이 생성되고 동일한 보안 그룹도 SQL 노드에 연결됩니다.</block>
-  <block id="9379b88943e79d06a7624e886bcd4ea3" category="paragraph">사용자가 관리하는 Active Directory의 경우 데이터베이스에 연결해야 하는 기존 시스템의 트래픽을 허용하는 보안 그룹을 선택할 수 있습니다. 보안 그룹은 Microsoft SQL용 EC2 인스턴스가 구성된 서브넷에서 Active Directory 도메인 컨트롤러와의 통신을 허용해야 합니다.</block>
   <block id="1001245fbd8a96ced15590168ee50912" category="list-text">응용 프로그램 설정 * 에서 다음을 제공합니다.</block>
   <block id="5f90cc9084764f349d384957856b0b40" category="list-text">SQL Server 설치 유형 * 에서 * 라이센스 포함 AMI * 또는 * 사용자 지정 AMI 사용 * 을 선택합니다.</block>
   <block id="51af4699ded2f99936c69e9d355ac856" category="list-text">라이센스 포함 AMI * 를 선택한 경우 다음을 제공합니다.</block>
@@ -765,4 +764,12 @@
   <block id="85f439a5ead422005f331327c6b4d189" category="inline-link-macro">데이터베이스 워크로드에서 FSx for ONTAP으로 비용 절감 에 대해 알아보십시오.</block>
   <block id="ffcdb01d64d534ead82555dabfbdd7da" category="paragraph"><block ref="ffcdb01d64d534ead82555dabfbdd7da" category="inline-link-macro-rx"></block></block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024년 7월 7일</block>
+  <block id="b43b4421683dbb9b1b6736babc3a3104" category="list-text">Microsoft 다중 경로 I/O 구성</block>
+  <block id="bc032bc6a4cd520164072ac886f6e6fe" category="list-text">Microsoft SQL Server 배포 모델 모두 iSCSI 스토리지 프로토콜을 사용하여 LUN을 생성해야 합니다. Workload Factory는 FSx for ONTAP을 통해 SQL Server용 LUN을 구성하는 과정에서 Microsoft MPIO(다중 경로 I/O)를 구성합니다. MPIO는 AWS 및 NetApp 모범 사례를 기반으로 구성됩니다.</block>
+  <block id="79cd591b45c99c7009501060c190216b" category="inline-link-macro">Amazon FSx for NetApp ONTAP을 사용하여 SQL Server 고가용성 배포</block>
+  <block id="1ff667d8710153a8539d76d68aecd4b5" category="paragraph">자세한 내용은 을 <block ref="36ceba25653f76919b1587a7f1d056fa" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="42284190cc0e4af01d69e70bf8966f0e" category="paragraph">기존 FSx for ONTAP 파일 시스템의 경우 다음을 확인하십시오.</block>
+  <block id="996d6e2f42d7b52c1cba72a8225cbb65" category="list-text">FSx for ONTAP에 연결된 라우팅 그룹을 사용하면 서브넷으로의 경로를 배포에 사용할 수 있습니다.</block>
+  <block id="74c33b9e5d949f9ac1669cc2da38be60" category="list-text">보안 그룹은 배포에 사용되는 서브넷, 특히 HTTPS(443) 및 iSCSI(3260) TCP 포트의 트래픽을 허용합니다.</block>
+  <block id="513217cdb8cfdacc4a193bdd0bbbee78" category="paragraph">사용자 관리 Active Directory의 경우 AD 인스턴스에 구성된 보안 그룹이 배포에 사용되는 서브넷의 트래픽을 허용하는지 확인합니다. 보안 그룹은 Microsoft SQL용 EC2 인스턴스가 구성된 서브넷에서 Active Directory 도메인 컨트롤러와의 통신을 허용해야 합니다.</block>
 </blocks>
