@@ -70,12 +70,6 @@ FSx for ONTAP의 사용자 지정 암호화 키는 서비스 적용 가능성에
 
 
 
-== Microsoft SQL Server 감지
-
-Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에서 데이터베이스에 액세스할 때마다 Microsoft SQL Server 감지가 다시 실행되어 해당 지역의 SQL 설치를 식별합니다.
-
-
-
 == CloudFormation 템플릿
 
 다운로드하거나 복사한 CodeBox에서 생성된 CloudFormation 템플릿(YAML 파일)의 보존 기간은 7일로 제한됩니다.
@@ -85,12 +79,7 @@ Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에
 == 샌드박스 지원
 
 * 데이터베이스 서버에서 생성할 수 있는 샌드박스 클론의 최대 수는 50개입니다.
-* 다음과 같은 경우에는 샌드박스 만들기가 지원되지 않습니다.
-+
-** 데이터 및 로그 파일은 동일한 디스크에 상주합니다.
-** 원본 데이터베이스에 여러 개의 데이터 파일이 있습니다.
-
-
+* 소스 데이터베이스에 2개 이상의 디스크에 여러 데이터 파일이 분산되어 있는 경우에는 샌드박스 생성이 지원되지 않습니다.
 
 
 
@@ -98,7 +87,7 @@ Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에
 == Microsoft SQL Server 감지 및 관리
 
 * 외부 연결 없이 개인 네트워크를 사용할 때는 Microsoft SQL 인스턴스 검색 및 관리가 지원되지 않습니다.
-* Microsoft SQL 인스턴스가 Windows 기반 인증을 차단하고 Microsoft SQL 사용자 인증만 허용하는 경우 Microsoft SQL Server 검색이 지원되지만 관리 작업은 지원되지 않습니다.
+* Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에서 데이터베이스에 액세스할 때마다 Microsoft SQL Server 감지가 다시 실행되어 해당 지역의 SQL 설치를 식별합니다.
 
 
 
