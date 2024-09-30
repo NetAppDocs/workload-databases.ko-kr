@@ -23,11 +23,11 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 
 == 계산기 옵션
 
-시스템과 FSx for ONTAP 간의 비용을 비교하는 데 사용할 수 있는 두 가지 계산기 옵션, 즉 Amazon 스토리지 환경을 위한 커스터마이징 및 자동 감지 기능이 있습니다.
+시스템과 FSx for ONTAP(사용자 정의 및 감지)의 비용을 비교할 때 두 가지 계산기 옵션을 사용할 수 있습니다.
 
 사용자 지정을 통한 절감 효과 알아보기: 지역, 배포 모델, SQL Server 에디션, 월별 데이터 변경률, 스냅샷 빈도 등을 포함하는 Amazon EC2 또는 FSx for Windows File Server의 Microsoft SQL Server 구성 설정을 제공합니다.
 
-감지된 스토리지 환경의 비용 절감 알아보기: Workload Factory는 기존 AWS 스토리지 환경에 연결하고 자동 비교를 위해 계산기로 세부 정보를 가져옵니다. 이 계산기 옵션을 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.
+감지된 호스트에 대한 비용 절감 탐색: Workload Factory는 기존 Microsoft SQL 서버에 연결되며 자동 비교를 위해 자세한 정보를 계산기로 가져옵니다. 이 계산기 옵션을 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.
 
 
 
@@ -111,23 +111,31 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 ====
 
 
-== 감지된 EBS 호스트의 절약 효과를 탐색합니다
+== 감지된 호스트에 대한 절약 효과를 탐색합니다
 
-Workload Factory는 감지된 Elastic Block Store 호스트 특성을 입력하여 자동으로 비용 절감을 살펴볼 수 있도록 합니다.
+워크로드 팩토리에는 감지된 Elastic Block Store 및 FSx for Windows File Server 호스트 특성이 입력되므로 자동으로 비용 절감을 살펴볼 수 있습니다.
 
 .시작하기 전에
 시작하기 전에 다음 사전 요구 사항을 완료하십시오.
 
-* link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["grant_automate_permissions 를 참조하십시오"^]데이터베이스 인벤토리에서 EBS(Elastic Block Store) 시스템을 검색하려면 AWS 계정을 사용해야 합니다.
-* 데이터베이스 인벤토리에서 EBS 스토리지의 호스트를 검색합니다. link:detect-host.html["호스트를 감지하는 방법에 대해 알아보십시오"]..
+* link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["grant_automate_permissions 를 참조하십시오"^]AWS 계정에서 EBS(Elastic Block Store) 및 FSx for Windows 시스템을 데이터베이스 인벤토리에서 검색해야 합니다.
+* EBS 및 FSx for Windows 스토리지의 호스트를 데이터베이스 인벤토리에서 감지합니다. link:detect-host.html["호스트를 감지하는 방법에 대해 알아보십시오"]..
 
 
+스토리지 유형에 해당하는 탭 아래의 단계를 따릅니다.
+
+[role="tabbed-block"]
+====
+.Amazon EBS(Elastic Block Store)
+--
 .단계
 . 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
-. 데이터베이스에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
-. Explore Savings * 탭을 선택합니다.
-. EBS 스토리지를 사용하는 데이터베이스 서버에 대해 * Explore Savings * 를 클릭합니다.
-. 선택적으로 EBS 스토리지의 클론 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용을 더욱 정확하게 추정할 수 있습니다.
+. Databases(데이터베이스) 타일에서 드롭다운 메뉴에서 * Explore Savings(절약 탐색) * 를 선택한 다음 * Microsoft SQL Server on FSx for Windows * 를 선택합니다.
++
+Workload Factory에서 EBS 호스트를 감지하면 Explore Savings 탭으로 리디렉션됩니다. Workload Factory가 EBS 호스트를 감지하지 못하면 계산기로 <<맞춤화를 통한 절감 효과를 살펴보십시오,맞춤화를 통한 절감 효과를 살펴보십시오>>이동합니다.
+
+. Explore Savings 탭에서 EBS 스토리지를 사용하는 데이터베이스 서버의 * Explore Savings * 를 클릭합니다.
+. 절약 효과 계산기에서 EBS 스토리지의 클론 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.
 +
 .. * 스냅샷 주파수 *: 드롭다운 메뉴에서 스냅샷 주파수를 선택합니다.
 .. * 복제 새로 고침 빈도 * : 드롭다운 메뉴에서 클론을 새로 고치는 빈도를 선택합니다.
@@ -141,6 +149,35 @@ Workload Factory는 감지된 Elastic Block Store 호스트 특성을 입력하�
 
 
 
+--
+.Amazon FSx for Windows 파일 서버
+--
+.단계
+. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 드롭다운 메뉴에서 * Explore Savings(절약 탐색) * 를 선택한 다음 * Microsoft SQL Server on FSx for Windows * 를 선택합니다.
++
+Workload Factory에서 FSx for Windows 호스트를 감지하면 Explore Savings 탭으로 리디렉션됩니다. Workload Factory가 FSx for Windows 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<<맞춤화를 통한 절감 효과를 살펴보십시오,맞춤화를 통한 절감 효과를 살펴보십시오>>
+
+. 절약 효과 탐색 탭에서 Windows 파일 서버 스토리지용 FSx를 사용하는 데이터베이스 서버의 * 절약 효과 탐색 * 을 클릭합니다.
+. 선택적으로 절감 계산기에서 FSx for Windows 스토리지의 클론(섀도 복사본) 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.
++
+.. * 스냅샷 주파수 *: 드롭다운 메뉴에서 스냅샷 주파수를 선택합니다.
++
+Windows용 FSx 섀도 복사본이 감지되면 기본값은 * Daily * 입니다. 섀도 복사본이 감지되지 않으면 기본값은 * 스냅샷 빈도 없음 * 입니다.
+
+.. * 복제 새로 고침 빈도 * : 드롭다운 메뉴에서 클론을 새로 고치는 빈도를 선택합니다.
+.. * 복제된 복사본 수 *: Windows용 FSx 구성에 복제된 복사본 수를 입력합니다.
+.. * 월별 변경율 *: 클론 및 스냅샷 데이터가 매월 평균 변경되는 비율을 입력합니다.
+
+
+. 페이지에 제공된 계산 및 권장 사항을 검토합니다.
++
+또한 페이지 하단으로 스크롤하여 * Export PDF * 또는 * View Calculations * 로 이동합니다.
+
+
+
+--
+====
 
 
 == FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다

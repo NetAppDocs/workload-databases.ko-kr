@@ -78,25 +78,19 @@ FSx for ONTAP의 사용자 지정 암호화 키는 서비스 적용 가능성에
 
 == 샌드박스 지원
 
-* 데이터베이스 서버에서 생성할 수 있는 샌드박스 클론의 최대 수는 50개입니다.
-* 소스 데이터베이스에 2개 이상의 디스크에 여러 데이터 파일이 분산되어 있는 경우에는 샌드박스 생성이 지원되지 않습니다.
-
+데이터베이스 서버에서 생성할 수 있는 샌드박스 클론의 최대 수는 50개입니다.
 
 
 
 == Microsoft SQL Server 감지 및 관리
 
-* 외부 연결 없이 개인 네트워크를 사용할 때는 Microsoft SQL 인스턴스 검색 및 관리가 지원되지 않습니다.
-* Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에서 데이터베이스에 액세스할 때마다 Microsoft SQL Server 감지가 다시 실행되어 해당 지역의 SQL 설치를 식별합니다.
-
+Microsoft SQL Server 검색이 저장되지 않았습니다. Workload Factory에서 데이터베이스에 액세스할 때마다 Microsoft SQL Server 감지가 다시 실행되어 해당 지역의 SQL 설치를 식별합니다.
 
 
 
 == 비용 절감 효과를
 
-* 인벤토리 탭에서 각 Microsoft SQL 인스턴스에 대해 표시되는 예상 비용은 SQL 인스턴스를 호스팅하는 볼륨이 아닌 FSx for ONTAP 파일 시스템 수준에서 계산됩니다.
-* Explore 절약 계산은 FSx for Windows File Server에 대해 지원되지 않습니다.
-
+인벤토리 탭에서 각 Microsoft SQL 인스턴스에 대해 표시되는 예상 비용은 SQL 인스턴스를 호스팅하는 볼륨이 아닌 FSx for ONTAP 파일 시스템 수준에서 계산됩니다.
 
 
 
