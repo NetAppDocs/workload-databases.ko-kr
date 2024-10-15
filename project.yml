@@ -67,9 +67,9 @@ sidebar:
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
-      url: "/support-registration-databases.html"
+      url: "/support-registration.html"
     - title: 도움을 받으십시오
-      url: "/get-help-databases.html"
+      url: "/get-help.html"
   - title: 법적 고지
     url: "/legal-notices.html"
 product-family:
