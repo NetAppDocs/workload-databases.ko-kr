@@ -11,7 +11,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: 데이터베이스 워크로드 문서
@@ -64,6 +64,12 @@ sidebar:
         url: "/delete-clone.html"
     - title: 데이터베이스 모니터링
       url: "/monitor-databases.html"
+    - title: SQL Server 최적화
+      entries:
+      - title: 지속적인 최적화 개요
+        url: optimize-overview.html
+      - title: 구성 최적화
+        url: optimize-configurations.html
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오

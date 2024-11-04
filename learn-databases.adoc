@@ -63,6 +63,7 @@ Workload Factory for Databases는 다음과 같은 기능을 제공합니다.
 * * Sandbox 생성 *: 프로덕션 데이터에 영향을 주지 않고 테스트, 통합, 진단 및 교육에 사용할 수 있는 온디맨드 격리된 데이터베이스 환경을 만듭니다.
 * * 데이터베이스 생성 *: 데이터베이스 데이터 정렬, 파일 이름 및 크기를 구성하기 위해 _Quick_or_Advanced_create 모드를 사용하여 기존 Microsoft SQL Server용 사용자 데이터베이스를 생성합니다. 스토리지 구성이 포함되어 있습니다.
 * * 작업 모니터링 * : 데이터베이스 작업 실행 진행 상황을 모니터링하고 추적하며 오류가 발생할 경우 문제를 진단하고 해결합니다.
+* *지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.
 
 
 
@@ -83,6 +84,18 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["워�
 세 가지 운영 모드(_basic_,_read_and_automate_)는 Workload Factory 내부 및 외부에서 배포할 수 있는 유연한 옵션을 제공합니다. Workload Factory 외부에서 사용할 코드 조각으로 _basic_mode 에 제로 트러스트 상태에서 즉각적인 가치를 얻을 수 있습니다. _READ_AND_AUTOMATE_MODE에서 증분 신뢰를 사용하여 증분 값을 얻습니다.
 
 에 대해 자세히 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Workload Factory의 운영 모드"^]알아보십시오.
+
+
+
+== Workload Factory 사용 도구
+
+다음 툴과 함께 BlueXP Workload Factory를 사용할 수 있습니다.
+
+* * Workload Factory console *: Workload Factory 콘솔은 애플리케이션 및 프로젝트를 전체적으로 볼 수 있는 시각적 인터페이스를 제공합니다
+* * REST API *: 워크로드 팩토리 REST API를 통해 Microsoft SQL Server 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
+* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 Workload Factory 콘솔에서 정의한 작업을 수행할 수 있습니다.
+* * Terraform BlueXP Workload Factory Provider *: Terraform을 통해 Workload Factory 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.
+
 
 
 

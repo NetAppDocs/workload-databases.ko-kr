@@ -71,7 +71,6 @@
   <block id="8b018b615821339740a7c79a7473918a" category="list-text">도메인 사용자를 AD 노드의 로컬 관리자로 만듭니다</block>
   <block id="045b984ac75a0da892fea6afe6b83555" category="list-text">Microsoft SQL Server 서비스 사용자가 없는 경우 AD에서 해당 사용자를 만듭니다</block>
   <block id="15d1ade99815746ab0088981bd7585d3" category="section-title">1단계: 데이터베이스 서버를 만듭니다</block>
-  <block id="e501215e9258fda8d54793a123ed721f" category="paragraph">_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하여 Workload Factory에서 이 작업을 _AUTOMATE_MODE 권한으로 완료할 수 있습니다.</block>
   <block id="956eaa6186169471a13345860cad0757" category="open-title">빠른 생성</block>
   <block id="542af019e2aa3ef9ca4b187a71c918bb" category="admonition">_Quick create_에서 FCI는 기본 배포 모델이고, Windows 2016은 기본 Windows 버전이고, SQL 2019 Standard Edition은 기본 SQL 버전입니다.</block>
   <block id="b26136a388864ee3f9e813ac8f6109ee" category="list-text">데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 선택합니다.</block>
@@ -798,4 +797,66 @@
   <block id="293758d509326f8da42abf75db2d37e6" category="paragraph"><block ref="293758d509326f8da42abf75db2d37e6" category="inline-link-macro-rx"></block></block>
   <block id="fbcbba8054f71f57fa8e2b950179bb23" category="paragraph">데이터베이스 서버에서 생성할 수 있는 샌드박스 클론의 최대 수는 90개입니다.</block>
   <block id="642917b2f642764c3a6f56b4bd9b6b24" category="paragraph">Workload Factory 또는 Workload Factory 애플리케이션 및 서비스에 대한 일반적인 질문은 을 참조하십시오 <block ref="cdcdf14c020a2cc1f9ea3df8ed40ccf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="0928468cb2283b21e6802a78c6a64e3a" category="doc">데이터베이스를 통해 Microsoft SQL Server 워크로드를 지속적으로 최적화합니다</block>
+  <block id="e73fa899152fb6836032fef4e1c95da4" category="paragraph">BlueXP  워크로드 공장에는 Amazon FSx for NetApp ONTAP에서 Microsoft SQL Server 워크로드의 스토리지 구성 요소에 대한 모범 사례를 지속적으로 최적화하고 준수하기 위해 지속적인 지침과 가드레일이 도입되었습니다. 이 기능은 고객의 Microsoft SQL Server 자산을 지속적으로 검사하여 최고의 성능, 비용 효율성, 규정 준수를 달성하는 데 도움이 되는 인사이트, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.</block>
+  <block id="5d743e351f2bc0b96d19c12d46be8be2" category="inline-link-macro">SQL Server 워크로드를 최적화하십시오</block>
+  <block id="72d1af9ffdd277a1cf7789b588da9b4d" category="paragraph"><block ref="72d1af9ffdd277a1cf7789b588da9b4d" category="inline-link-macro-rx"></block></block>
+  <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 지원</block>
+  <block id="822802a1673e79cb7dbd54947e4dc32c" category="paragraph">이제 코드상자에서 Terraform을 사용하여 Microsoft SQL Server를 배포할 수 있습니다.</block>
+  <block id="d83b54de9b50110195e4bf3c1f3c6a67" category="list-text"><block ref="d83b54de9b50110195e4bf3c1f3c6a67" category="inline-link-macro-rx"></block></block>
+  <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">코드박스에서 Terraform을 사용합니다</block>
+  <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
+  <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
+  <block id="d3d10fb8f4b8181d69ae2092b30c544a" category="paragraph">_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하여 Workload Factory에서 이 작업을 _AUTOMATE_MODE 권한으로 완료할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
+  <block id="5de582d1d412797088979e47e496c2fe" category="admonition">Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다.<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 코드를 실행할 때 암호를 다시 입력해야 합니다. _AUTOMATE_MODE 권한 외에 사용자 계정에 대해 다음 권한을 포함해야 합니다<block ref="7f862a4b8fc22b0af5dda5c9ababa346" prefix=" " category="inline-code"></block><block ref="319bffed0f518819193d82ffe99b1444" prefix=" " category="inline-code"></block>.</block>
+  <block id="b2636246cf1e5e567e3ded4a9d65b1da" category="section-title">Terraform을 사용하여 사설 네트워크에 Microsoft SQL Server를 배포할 수 있는 지역별 가용성</block>
+  <block id="eb4fca182b3b78e9a38aa1f6f59c8857" category="paragraph">Terraform을 사용한 아웃바운드 연결 없이 개인 네트워크에 Microsoft SQL Server를 배포하는 것은 us-east-1(N. Virginia) 지역에서만 지원됩니다.</block>
+  <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">*지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.</block>
+  <block id="0d9b99cb00c934d1cd88332ae901fc26" category="section-title">Workload Factory 사용 도구</block>
+  <block id="76737aecf42a629e0422271332fcc5a3" category="paragraph">다음 툴과 함께 BlueXP Workload Factory를 사용할 수 있습니다.</block>
+  <block id="0fc51b33bbeafc6425a9bd19ec449966" category="list-text">* Workload Factory console *: Workload Factory 콘솔은 애플리케이션 및 프로젝트를 전체적으로 볼 수 있는 시각적 인터페이스를 제공합니다</block>
+  <block id="a0ba060c8b176de6550d97a1fc8b4a2a" category="list-text">* REST API *: 워크로드 팩토리 REST API를 통해 Microsoft SQL Server 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다</block>
+  <block id="fb2bf23fd8d69c944827de16f09d3bb7" category="list-text">* CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 Workload Factory 콘솔에서 정의한 작업을 수행할 수 있습니다.</block>
+  <block id="887582b3338810bdcfbc9b5a8ff6b6d7" category="list-text">* Terraform BlueXP Workload Factory Provider *: Terraform을 통해 Workload Factory 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.</block>
+  <block id="d12f14d8e346018dc03c07aa6b74bf9e" category="summary">데이터베이스는 Microsoft SQL Server의 스토리지 구성을 스캔하여 운영 효율성을 높이는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
+  <block id="13025ba9f92de77af2aeaf1af07a4aa8" category="doc">Microsoft SQL Server 배포를 위한 구성 최적화</block>
+  <block id="a843374a240a6303e99f9130260dec04" category="paragraph">데이터베이스용 BlueXP  워크로드 공장은 Amazon FSx for NetApp ONTAP에서 실행되는 Microsoft SQL 서버 배포 구성을 지속적으로 검사하고 평가합니다. 평가를 통해 통찰력, 권장 사항 및 최적화를 제공하므로 탁월한 운영을 실현할 수 있습니다.</block>
+  <block id="6f2bcb2f8d4f34c036395a199095be9a" category="paragraph">평가는 워크로드 팩토리에서 관리되는 FSx for ONTAP 스토리지를 통해 Microsoft SQL Server 인스턴스에 대해 매일 한 번씩 자동으로 지속적으로 실행됩니다. 평가 보고서는 배포 후 또는 인스턴스 관리 후에 매일 예약된 작업이 실행된 경우에만 최적화 대시보드에서 사용할 수 있습니다.</block>
+  <block id="72e34efcd5e12ef888a19ad8bd33c28b" category="paragraph">워크로드 공장 은 FSx for ONTAP 스토리지에 대한 모범 사례를 기반으로 구성을 최적화하기 위한 세부 권장사항을 제공합니다.</block>
+  <block id="246db1206cb640c61b32f7cea2560b8e" category="list-text">스캔된 항목</block>
+  <block id="af27bafd548aa3e366e582049aeb65f1" category="list-text">워크로드 공장 Microsoft SQL Server 인스턴스에 대한 다음 구성의 최적화 상태를 평가합니다.</block>
+  <block id="04dff47f9a41cfa54b616dd86a4a6043" category="list-text">스토리지 사이징: 스토리지 계층, 파일 시스템 여유 공간, 로그 드라이브 크기 및 TempDB 드라이브 크기가 포함됩니다</block>
+  <block id="b1107628010e55afc5ec740439838f10" category="list-text">스토리지 레이아웃: 사용자 데이터 파일 배치, 로그 파일 배치 및 TempDB 배치가 포함됩니다</block>
+  <block id="8bc38d27c74401312cd5c45bfd8a7d05" category="list-text">스토리지 구성: 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, 다중 경로 I/O 상태, 정책 및 세션 등이 포함됩니다</block>
+  <block id="96ca9ac0bd1d71d3fe0162c29b8a4ff3" category="list-text">컴퓨팅: 적합한 크기 조정이 포함됩니다</block>
+  <block id="1a0e703f0bdb101f4848a5510dd8ec1c" category="list-text">읽기 또는 자동화 권한이 있는 자격 증명이 있어야 합니다.</block>
+  <block id="86bd4600548ee1b734f704338ab13665" category="list-text">Microsoft SQL Server 인스턴스의 스토리지를 평가하려면 워크로드 팩토리에서 인스턴스를 관리해야 하고 스토리지 유형이 FSx for ONTAP여야 합니다.</block>
+  <block id="40213188bf240529a1293728c4187a56" category="list-text">설정이나 구성을 최적화하도록 선택하기 전에 각 권장 사항을 주의 깊게 검토하십시오.</block>
+  <block id="1833c64ed881d7aac5733a15a8116354" category="list-text">스캔할 인스턴스의 세 개의 점 메뉴를 선택한 다음 * Optimize * 를 선택합니다.</block>
+  <block id="3adf495aa133934a4330d99e0ad90fc1" category="list-text">호스트의 인스턴스 최적화 페이지에서 스토리지 평가의 결과를 검토합니다.</block>
+  <block id="a09500dc3402d71be1fe58158c5cdfc9" category="paragraph">필터를 사용하여 범주, 하위 범주, 상태, 심각도 및 태그를 기준으로 정렬할 수 있습니다.</block>
+  <block id="49aaa10529fcf35af76ba4e06450bb15" category="paragraph">필요한 경우 * PDF 내보내기 * 를 선택하여 결과 보고서를 다운로드할 수 있습니다.</block>
+  <block id="5f4f392649432d3064fdf2a04015472b" category="list-text">드롭다운 화살표를 선택하여 모든 구성에 대한 권장 사항을 확인합니다. 권장 사항을 주의 깊게 검토하십시오.</block>
+  <block id="c9e425055996f71ecfc858708d926276" category="paragraph">이 권장 사항에서는 최적화되지 않은 구성의 모범 사례와 잠재적 위험을 설명합니다.</block>
+  <block id="ea3bf0643d3540c97b9b92a3fb2bbf75" category="list-text">최적화되지 않은 구성을 * 최적화 * 하려면 선택합니다.</block>
+  <block id="fa01f4b57079f7ca82b8d852cbf4ed43" category="list-text">최적화 대화 상자에 나타나는 최적화 요약 및 작업 항목을 검토하여 최적화를 선택하면 어떤 일이 발생할지 알아봅니다. 일부 최적화 작업은 인스턴스 다운 시간 또는 서비스 중단을 일으킬 수 있습니다.</block>
+  <block id="78a5af6b8a486797f81f9b0dff06821e" category="list-text">구성을 최적화하려면 * Continue * 를 선택하십시오.</block>
+  <block id="c6ff3995f3c633f2808f96020f887fd9" category="paragraph">최적화 프로세스가 시작됩니다. 작업 상태를 보려면 * 작업 모니터링 * 탭을 선택하십시오.</block>
+  <block id="0c47496112bcf6ed0b29fe1fe1d65d62" category="summary">데이터베이스용 BlueXP  워크로드 팩토리는 Amazon FSx for NetApp ONTAP 스토리지에서 Microsoft SQL Server 구현을 위한 지속적인 최적화를 제공합니다.</block>
+  <block id="9d62eb1e78c18c53c2bc3d807f4d5b04" category="doc">데이터베이스를 위한 BlueXP  워크로드 공장 출하 시 지속적인 최적화</block>
+  <block id="b97ec9fa7955169dbb93f4727a02e87d" category="paragraph">지속적인 최적화는 규모에 따라 데이터베이스 인프라를 자동으로 검사하고 평가하여 최대 성능, 비용 효율성 및 모범 사례 준수를 보장합니다. 이 기능은 최적화를 위한 종합적인 인사이트 및 권고 사항을 제공합니다.</block>
+  <block id="638c7d8777be813a6cc36be0ae2ccf68" category="paragraph">지속적인 최적화를 통해 데이터베이스 인프라에서 문제를 감지하고, 변경해야 할 사항을 이해하고, 조치를 취할 수 있습니다.</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">주요 기능은 다음과 같습니다.</block>
+  <block id="5767d06d754465b4eceaed828d43069f" category="list-text">지속적인 평가</block>
+  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">모범 사례 자동 검증</block>
+  <block id="029d49350caff46ab3e1f31c9c60f494" category="list-text">적합한 사이징 권장 사항</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">사전 예방적인 관찰 가능성</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">통찰력을 행동으로</block>
+  <block id="7a3fc3cf12e9da54628c7311398bee5c" category="list-text">AWS의 잘 설계된 프레임워크 조언자</block>
+  <block id="de29686d1474303323860ff8044fc4ed" category="paragraph">최적화 범위는 평가 중인 구성 요소에 따라 다릅니다. 예를 들어, 스토리지 최적화는 SQL 인스턴스 수준에서 이루어지는 반면, 컴퓨팅 최적화는 호스트 레벨에서 이루어집니다.</block>
+  <block id="ca3feda4f22b6d2a240006fa0a33f99e" category="paragraph"><block ref="ca3feda4f22b6d2a240006fa0a33f99e" category="inline-link-macro-rx"></block></block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
+  <block id="372aea905d324ed9cf6878e3f3ed7abc" category="sidebar">SQL Server 최적화</block>
+  <block id="6ca43380ae924ff967599986889184b3" category="sidebar">지속적인 최적화 개요</block>
+  <block id="d1e68728a28b7936858b1484445ef50f" category="sidebar">구성 최적화</block>
 </blocks>
