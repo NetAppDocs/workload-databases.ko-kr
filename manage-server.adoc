@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: manage-server.html 
 keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
-summary: Workload Factory for Databases에서 Microsoft SQL Server 인스턴스를 관리합니다. 
+summary: 데이터베이스용 BlueXP  워크로드 공장에서 Microsoft SQL Server 인스턴스를 관리합니다. 
 ---
-= Microsoft SQL Server 인스턴스를 관리합니다
+= BlueXP  워크로드 공장에서 Microsoft SQL Server 인스턴스를 관리합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Microsoft SQL Server 인스턴스를 관리하여 Workload Factory for Databases에서 인스턴스 및 데이터베이스 상태, 리소스 활용도, 보호 및 스토리지 성능을 모니터링합니다.
+Microsoft SQL Server 인스턴스를 관리하여 데이터베이스에 대한 BlueXP  워크로드 팩토리에서의 인스턴스 및 데이터베이스 상태, 리소스 활용률, 보호 및 스토리지 성능을 모니터링합니다.
 
 데이터베이스는 FSx for ONTAP 파일 시스템 스토리지를 통해서만 Microsoft SQL Server 인스턴스를 관리할 수 있습니다.
 
@@ -61,7 +61,7 @@ Microsoft SQL Server 인스턴스 관리에는 다음 작업이 포함됩니다.
 
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . 관리할 호스트 행에서 * 관리 * 를 클릭합니다.
@@ -69,7 +69,7 @@ Microsoft SQL Server 인스턴스 관리에는 다음 작업이 포함됩니다.
 . 관리 * 를 클릭합니다.
 
 
-Microsoft SQL Server에 특정 PowerShell 모듈 및 관리 스크립트가 없는 경우 작업이 실패합니다. Workload Factory(워크로드 팩토리)는 작업 모니터링 탭에서 볼 수 있는 누락된 모듈 및 스크립트를 설치하기 위한 자원 준비 작업을 트리거합니다. 작업이 완료되면 호스트 인스턴스를 다시 관리해 보십시오.
+Microsoft SQL Server에 특정 PowerShell 모듈 및 관리 스크립트가 없는 경우 작업이 실패합니다. 작업 부하 공장 출하 시 리소스 준비 작업이 트리거되어 작업 모니터링 탭에서 볼 수 있는 누락된 모듈 및 스크립트를 설치합니다. 작업이 완료되면 호스트 인스턴스를 다시 관리해 보십시오.
 
 
 
@@ -78,7 +78,7 @@ Microsoft SQL Server에 특정 PowerShell 모듈 및 관리 스크립트가 없�
 다음 단계에 따라 관리되는 인스턴스를 볼 수 있습니다.
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . 드롭다운 화살표를 클릭하여 호스트의 행을 확장하면 관리되는 인스턴스를 볼 수 있습니다.
@@ -98,7 +98,7 @@ Microsoft SQL Server에 특정 PowerShell 모듈 및 관리 스크립트가 없�
 다음 단계에 따라 관리되는 인스턴스에서 관리되는 데이터베이스를 볼 수 있습니다.
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . 드롭다운 화살표를 클릭하여 호스트의 행을 확장하여 해당 데이터베이스를 봅니다.
@@ -119,7 +119,7 @@ Microsoft SQL Server에 특정 PowerShell 모듈 및 관리 스크립트가 없�
 다음 단계에 따라 호스트 인스턴스의 관리를 취소합니다.
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . 드롭다운 화살표를 클릭하여 관리를 취소할 호스트 인스턴스의 행을 확장합니다.

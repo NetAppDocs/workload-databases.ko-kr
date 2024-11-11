@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: monitor-databases.html 
 keywords: monitor databases, monitor jobs, track database jobs 
-summary: Database용 Workload Factory 내에서 데이터베이스 작업을 추적하고 데이터베이스를 모니터링합니다. 
+summary: 데이터베이스에 대한 BlueXP  워크로드 공장 내에서 데이터베이스 작업을 추적하고 데이터베이스를 모니터링합니다. 
 ---
-= 데이터베이스 모니터링
+= BlueXP  워크로드 팩토리에서의 데이터베이스 모니터링
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory for Databases를 사용하여 데이터베이스 작업을 추적하고 데이터베이스를 모니터링합니다.
+데이터베이스에 대한 BlueXP  워크로드 공장 내에서 데이터베이스 작업을 추적하고 데이터베이스를 모니터링합니다.
 
 .이 작업에 대해
 데이터베이스는 작업 진행 상황을 추적하고 장애가 발생할 경우 진단 및 문제를 해결할 수 있도록 작업 모니터링을 제공합니다. 또한, 유형 및 상태별 필터, 검색 기능 및 작업 테이블을 다운로드하는 옵션을 통해 데이터베이스 작업 탐색 및 보고를 지원합니다.
@@ -36,7 +36,7 @@ Workload Factory for Databases를 사용하여 데이터베이스 작업을 추�
 == 작업을 모니터링합니다
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * 작업 모니터링 * 탭을 선택합니다.
 . 작업 모니터링 탭에서 필터를 사용하거나 검색을 사용하여 작업 결과를 좁힙니다. 작업 보고서를 다운로드할 수도 있습니다.

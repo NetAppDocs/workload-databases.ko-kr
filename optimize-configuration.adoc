@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: optimize-configurations.html 
 keywords: optimize, configuration, storage, compute, application, resiliency assessment, scan, optimization, Microsoft SQL Server, host, instance, FSx for ONTAP 
-summary: 데이터베이스는 Microsoft SQL Server의 스토리지 구성을 스캔하여 운영 효율성을 높이는 데 도움이 되는 통찰력과 권장 사항을 제공합니다. 
+summary: BlueXP  Workload Factory for Databases는 Microsoft SQL Server의 스토리지 구성을 스캔하여 운영 효율성을 높이는 데 도움이 되는 통찰력과 권장 사항을 제공합니다. 
 ---
 = Microsoft SQL Server 배포를 위한 구성 최적화
 :allow-uri-read: 
@@ -37,7 +37,7 @@ summary: 데이터베이스는 Microsoft SQL Server의 스토리지 구성을 �
 
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . 드롭다운 화살표를 클릭하여 호스트의 행을 확장하면 관리되는 인스턴스를 볼 수 있습니다.

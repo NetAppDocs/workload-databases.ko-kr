@@ -2,30 +2,30 @@
 sidebar: sidebar 
 permalink: learn-databases.html 
 keywords: Databases 
-summary: 데이터베이스는 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능에 대한 모범 사례가 내장된 엔드-투-엔드 데이터베이스 구축 및 유지 관리 서비스입니다. 
+summary: 데이터베이스용 BlueXP  워크로드 팩토리은 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능에 대한 모범 사례가 내장된 엔드 투 엔드 데이터베이스 구축 및 유지 관리 서비스입니다. 
 ---
-= 데이터베이스용 Workload Factory에 대해 알아보십시오
+= 데이터베이스용 BlueXP  워크로드 팩터에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory for Databases는 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능에 대한 기본 모범 사례를 통해 완벽한 데이터베이스 배포 및 유지 관리 서비스입니다.
+데이터베이스용 BlueXP  워크로드 팩토리은 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능에 대한 모범 사례가 내장된 엔드 투 엔드 데이터베이스 구축 및 유지 관리 서비스입니다.
 
 
 
-== 데이터베이스용 워크로드 팩토리란?
+== 데이터베이스에 대해 BlueXP  워크로드 팩토리는 무엇입니까?
 
-Workload Factory for Databases는 업계 모범 사례를 준수하면서 성능 및 비용 기대치를 충족하도록 최적화된 Amazon FSx for NetApp ONTAP(FSx for ONTAP) 배포로 Microsoft SQL Server 데이터를 감지, 평가, 계획, 프로비저닝 및 이동합니다. 수명 주기 동안 Workload Factory는 FSx for ONTAP의 데이터베이스를 지속적으로 최적화 및 관리합니다.
+데이터베이스용 BlueXP  워크로드 팩토리에서는 업계 모범 사례를 준수하면서 성능 및 비용 기대치를 충족하도록 최적화된 Microsoft SQL Server 데이터를 Amazon FSx for NetApp ONTAP(FSx for ONTAP) 배포로 감지, 평가, 계획, 프로비저닝 및 이동합니다. 라이프사이클 전반에서 워크로드 팩토리를 통해 FSx for ONTAP의 데이터베이스를 지속적으로 최적화 및 관리할 수 있습니다.
 
-Workload Factory에 대한 자세한 내용은 을 link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["워크로드 팩토리 개요"^]참조하십시오.
+작업 부하 공장에 대한 자세한 내용은 을 link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["워크로드 공장 개요"^]참조하십시오.
 
 
 
-== 워크로드 팩토리에서는 자체 관리 데이터베이스를 사용할 수 있습니다
+== 자체 관리형 데이터베이스가 제공하는 워크로드 팩토리 이점
 
-Workload Factory는 자가 관리형 데이터베이스를 위한 다음과 같은 유용한 모범 사례 및 자동화를 제공합니다.
+워크로드 팩토리는 자가 관리형 데이터베이스를 위해 다음과 같은 유용한 모범 사례 및 자동화를 제공합니다.
 
 
 
@@ -39,31 +39,44 @@ Workload Factory는 자가 관리형 데이터베이스를 위한 다음과 같�
 
 
 
-=== 워크로드 팩토리 코드박스를 통한 자동화
+=== 워크로드 팩토리 코드 박스를 통한 자동화
 
-워크로드 팩토리에서는 _Codebox_를 통해 내장된 자동화 기능을 도입했습니다. 코드박스는 다음과 같은 자동화 이점을 제공합니다.
+워크로드 공장에서 _Codebox_의 내장된 자동화 기능을 도입했습니다. 코드박스는 다음과 같은 자동화 이점을 제공합니다.
 
 * * 코드 스니펫 생성 *: 리소스 생성 중에 IAC(Infrastructure-as-Code) 스니펫이 생성되므로 기존 오케스트레이션 워크플로우와의 원활한 통합이 가능합니다.
-* * 코드형 인프라 공동 파일럿 *: 코드박스란 개발자와 DevOps가 워크로드 팩토리로부터 지원되는 모든 작업을 실행할 수 있도록 코드를 생성하는 코드형 인프라(IAC) 공동 파일럿입니다.
+* * 코드형 인프라 공동 파일럿 *: 코드상자는 개발자와 DevOps가 워크로드 공장에서 지원하는 모든 작업을 실행할 수 있도록 코드를 생성하는 코드형 인프라(IAC) 공동 파일럿입니다.
 * * 코드 뷰어 및 자동화 카탈로그 *: 코드박스는 자동화를 빠르게 분석할 수 있는 코드 뷰어와 빠른 향후 재사용을 위한 자동화 카탈로그를 제공합니다.
 
 
 
 
-=== 데이터베이스용 워크로드 팩토리 기능
+=== 데이터베이스 기능을 위한 워크로드 팩토리
 
-Workload Factory for Databases는 다음과 같은 기능을 제공합니다.
+Database용 워크로드 팩토리에서는 다음과 같은 기능을 제공합니다.
 
 * * 간단하고 빠른 배포 *: 사양 질문에 대한 답변을 선택하고 AWS에서 Microsoft SQL Server의 프로비저닝 및 구성 방법을 조사하는 데 일반적으로 필요한 시간을 제거하여 프로비저닝 환경을 간소화하고 간소화합니다.
-* * 자동 오케스트레이션 *: Workload Factory 사용자 인터페이스를 통해 _Quick_and_Advanced_create 배포 모드, Workload Factory의 Chatbot 및 AWS CloudFormation이 포함된 API를 사용할 수 있습니다.
+* * 자동 오케스트레이션 *: _Quick_and_Advanced_create 배포 모드, 워크로드 팩토리 채트봇 및 AWS CloudFormation API를 사용한 워크로드 팩토리 사용자 인터페이스를 통해 사용할 수 있습니다.
 * * 기본 제공 기능 *: 구축 구성에 내장된 NetApp, Microsoft 및 Amazon 모범 사례 및 AWS 리소스 선택 항목을 활용합니다.
-* * 비용 산정 *: ONTAP용 Elastic Block Store를 사용한 기존 Microsoft SQL Server 구축의 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷 및 복제 항목화된 비용을 예측하고 이에 대해 자세히 설명하는 Workload Factory의 스토리지 계산기로 잠재적인 비용 절감 효과를 평가합니다.
-* * 재사용 가능한 자동화 템플릿 *: 여러 환경에서 향후 Microsoft SQL Server 배포를 위해 Workload Factory Codebox에서 CloudFormation 템플릿을 생성, 재사용 및 사용자 정의합니다.
+* * 비용 산정 *: Elastic Block Store 및 FSx for Windows File Server를 사용한 기존 Microsoft SQL Server 배포의 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷 및 복제 항목화된 비용을 FSx for ONTAP와 비교하여 추산하는 Savings Calculator로 잠재적인 비용 절감 효과를 평가하십시오.
+* * 재사용 가능한 자동화 템플릿 *: 여러 환경에서 향후 Microsoft SQL Server 배포를 위해 워크로드 팩토리 코드박스에서 CloudFormation 템플릿을 생성, 재사용 및 사용자 정의합니다.
 * * AWS 리소스 검색 및 프로비저닝 *: AWS 계정에서 배포된 FSx for ONTAP, FSx for Windows 파일 서버 및 Elastic Block Store에서 Microsoft SQL 서버를 자동으로 감지합니다. 데이터베이스 인벤토리는 다른 AWS 스토리지 시스템의 서버에 대한 비용 절감 기회를 탐색하거나 FSx for ONTAP 기반 서버 및 인스턴스용 관리 툴을 탐색하기 위한 시작 지점으로 사용됩니다.
 * * Sandbox 생성 *: 프로덕션 데이터에 영향을 주지 않고 테스트, 통합, 진단 및 교육에 사용할 수 있는 온디맨드 격리된 데이터베이스 환경을 만듭니다.
 * * 데이터베이스 생성 *: 데이터베이스 데이터 정렬, 파일 이름 및 크기를 구성하기 위해 _Quick_or_Advanced_create 모드를 사용하여 기존 Microsoft SQL Server용 사용자 데이터베이스를 생성합니다. 스토리지 구성이 포함되어 있습니다.
 * * 작업 모니터링 * : 데이터베이스 작업 실행 진행 상황을 모니터링하고 추적하며 오류가 발생할 경우 문제를 진단하고 해결합니다.
 * *지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.
+
+
+
+
+== 워크로드 팩토리 사용을 위한 툴
+
+다음 툴과 함께 워크로드 팩토리를 사용할 수 있습니다.
+
+* * 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션 및 프로젝트에 대한 전체적인 보기를 제공하는 시각적 인터페이스를 제공합니다
+* * BlueXP  콘솔 *: BlueXP  콘솔은 하이브리드 인터페이스 환경을 제공하므로 다른 BlueXP  서비스와 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다
+* * REST API *: 워크로드 팩토리 REST API를 통해 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
+* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에서 정의한 작업을 수행할 수 있습니다.
+* * Terraform BlueXP  Workload Factory Provider *: Terraform을 사용하면 워크로드 공장 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.
 
 
 
@@ -75,26 +88,26 @@ Workload Factory for Databases는 다음과 같은 기능을 제공합니다.
 * * 데이터 관리 및 효율성 *: FSx for ONTAP은 공간 효율적인 씬 클론, 씬 프로비저닝, 압축 및 중복제거, 자주 액세스하지 않는 데이터를 용량 풀에 계층화하는 등 데이터 관리 및 효율성을 개선하는 다양한 기능을 제공합니다.
 
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["워크로드 팩토리용 FSx for ONTAP에 대해 알아보십시오"^]..
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["워크로드 팩토리를 위한 FSx for ONTAP에 대해 알아보십시오"^]..
 
 
 
-=== Workload Factory의 운영 모드
+=== 워크로드 공장 내 운영 모드
 
-세 가지 운영 모드(_basic_,_read_and_automate_)는 Workload Factory 내부 및 외부에서 배포할 수 있는 유연한 옵션을 제공합니다. Workload Factory 외부에서 사용할 코드 조각으로 _basic_mode 에 제로 트러스트 상태에서 즉각적인 가치를 얻을 수 있습니다. _READ_AND_AUTOMATE_MODE에서 증분 신뢰를 사용하여 증분 값을 얻습니다.
+세 가지 운영 모드(_basic_,_read_and_automate_)는 워크로드 공장 내부 및 외부에서 배포할 수 있는 유연한 옵션을 제공합니다. 워크로드 공장 외부에서 사용할 코드 조각으로 _BASIC_MODE에 대해 제로 트러스트 상태에서 즉각적인 가치를 얻을 수 있습니다. _READ_AND_AUTOMATE_MODE에서 증분 신뢰를 사용하여 증분 값을 얻습니다.
 
-에 대해 자세히 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Workload Factory의 운영 모드"^]알아보십시오.
+에 대해 자세히 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["워크로드 공장 내 운영 모드"^]알아보십시오.
 
 
 
-== Workload Factory 사용 도구
+== 워크로드 팩토리 사용을 위한 툴
 
-다음 툴과 함께 BlueXP Workload Factory를 사용할 수 있습니다.
+다음 툴과 함께 BlueXP  워크로드 팩토리를 사용할 수 있습니다.
 
-* * Workload Factory console *: Workload Factory 콘솔은 애플리케이션 및 프로젝트를 전체적으로 볼 수 있는 시각적 인터페이스를 제공합니다
-* * REST API *: 워크로드 팩토리 REST API를 통해 Microsoft SQL Server 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
-* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 Workload Factory 콘솔에서 정의한 작업을 수행할 수 있습니다.
-* * Terraform BlueXP Workload Factory Provider *: Terraform을 통해 Workload Factory 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.
+* * 워크로드 팩토리 콘솔 * : 워크로드 팩토리 콘솔은 애플리케이션 및 프로젝트에 대한 전체적인 보기를 제공하는 시각적 인터페이스를 제공합니다
+* * REST API *: 워크로드 공장 REST API를 통해 Microsoft SQL Server 및 기타 AWS 리소스를 배포하고 관리할 수 있습니다
+* * CloudFormation *: AWS CloudFormation 코드를 사용하면 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에서 정의한 작업을 수행할 수 있습니다.
+* * Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하면 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리할 수 있습니다.
 
 
 
@@ -105,7 +118,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["워�
 
 === 지원되는 구성
 
-Microsoft SQL Server용 Workload Factory는 AWS, NetApp ONTAP 및 SQL Server 모범 사례에 따라 고가용성(상시 장애 조치 클러스터 인스턴스)과 단일 인스턴스 구축을 모두 지원합니다.
+Microsoft SQL Server용 워크로드 팩토리에서는 AWS, NetApp ONTAP 및 SQL Server 모범 사례에 따라 고가용성(상시 장애 조치 클러스터 인스턴스)과 단일 인스턴스 구축을 모두 지원합니다.
 
 [cols="2a,2a,2a,2a"]
 |===
@@ -193,4 +206,4 @@ image:diagram-MAZ-database-architecture.png["단일 지역에서 장애 조치 �
 
 NetApp ONTAP용 Amazon FSx는 AWS 퍼스트 파티 솔루션입니다. 이 서비스를 사용하는 FSx for ONTAP 파일 시스템, 인프라 또는 솔루션과 관련하여 궁금한 사항이나 기술 지원 문제가 있는 경우 AWS 관리 콘솔의 지원 센터를 사용하여 AWS에 지원 케이스를 여십시오. “FSx for ONTAP” 서비스와 적절한 범주를 선택합니다. AWS 지원 케이스를 생성하는 데 필요한 나머지 정보를 제공합니다.
 
-Workload Factory 또는 Workload Factory 애플리케이션 및 서비스에 대한 일반적인 질문은 을 참조하십시오 link:get-help.html["Workload Factory용 데이터베이스에 대한 도움말 보기"].
+작업 부하 공장 또는 작업 부하 공장 애플리케이션 및 서비스에 대한 일반적인 질문은 을 참조하십시오link:get-help.html["데이터베이스용 BlueXP  워크로드 팩토리에 대한 지원을 받으십시오"].

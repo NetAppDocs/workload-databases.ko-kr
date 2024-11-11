@@ -2,23 +2,23 @@
 sidebar: sidebar 
 permalink: create-database.html 
 keywords: create, database, creation, Microsoft SQL 
-summary: Workload Factory Databases를 사용하여 Microsoft SQL 데이터베이스를 생성합니다. 
+summary: 데이터베이스용 BlueXP  워크로드 팩토리로 Microsoft SQL 데이터베이스를 생성합니다. 
 ---
-= Workload Factory for Databases에서 Microsoft SQL 데이터베이스를 생성합니다
+= 데이터베이스를 위한 BlueXP  워크로드 팩토리에 Microsoft SQL 데이터베이스를 생성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory 콘솔에서 새 Microsoft SQL 데이터베이스를 생성하면 Workload Factory 내에서 리소스를 관리할 수 있습니다.
+새 Microsoft SQL 데이터베이스를 만들면 데이터베이스에 대한 BlueXP  워크로드 팩토리 내에서 리소스를 관리할 수 있습니다.
 
 .이 작업에 대해
 데이터베이스가 생성되면 데이터를 호스트하는 독립 LUN과 데이터베이스의 로그 파일을 구성하는 두 개의 새 볼륨이 FSx for ONTAP 파일 시스템에 생성됩니다. 새 데이터베이스의 데이터베이스 파일은 씬 프로비저닝되며 새 데이터베이스에 할당된 총 크기의 몇 MB만 사용합니다.
 
 데이터베이스의 스토리지를 분리하려는 경우 _virtual 마운트 지점 _ 을(를) 사용하여 분리할 수 있습니다. 가상 마운트 지점을 사용하여 데이터베이스를 호스트의 몇 가지 공통 드라이브에 통합할 수 있습니다.
 
-Workload Factory에서 데이터베이스를 생성하려면 자동화 모드 권한이 필요합니다. 또는 기본 모드에서 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 Workload Factory 외부에서 작업을 완료할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Workload Factory의 운영 모드에 대해 알아보십시오"^] 를 눌러 사용할 모드를 결정합니다.
+워크로드 팩토리에서 데이터베이스를 생성하려면 자동화 모드 권한이 필요합니다. 또는 기본 모드에서 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 워크로드 공장 외부에서 작업을 완료할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["워크로드 팩토리 작동 모드에 대해 알아보십시오"^] 를 눌러 사용할 모드를 결정합니다.
 
 
 NOTE: SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이스 생성을 지원하지 않습니다.
@@ -26,14 +26,14 @@ NOTE: SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이�
 .시작하기 전에
 새 데이터베이스를 만들기 전에 다음 필수 구성 요소를 완료해야 합니다.
 
-자격 증명 및 권한:: link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _READ_OR_AUTOMATE_MODE 권한"^]Workload Factory에서 새 데이터베이스를 생성해야 합니다.
+자격 증명 및 권한:: link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _READ_OR_AUTOMATE_MODE 권한"^]작업 부하 공장에서 새 데이터베이스를 만들어야 합니다.
 +
 --
-또는 REST API를 사용하여 Workload Factory 외부에 데이터베이스를 배포할 수 있도록 Codebox를 사용하여 템플릿을 복사할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
+또는 REST API를 사용하여 워크로드 팩토리 외부에 데이터베이스를 배포할 수 있도록 Codebox를 사용하여 템플릿을 복사할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
 
 --
 Windows 호스트:: _QUICK CREATE_MODE를 사용하는 경우 Microsoft SQL Server에서 새 데이터베이스에 사용할 새 드라이브를 만들 수 있는 충분한 드라이브 문자가 있어야 합니다.
-Microsoft SQL Server를 참조하십시오:: 새 데이터베이스를 호스팅하려면 Workload Factory에 관리되는 Microsoft SQL Server가 있어야 합니다.
+Microsoft SQL Server를 참조하십시오:: 데이터베이스가 새 데이터베이스를 호스팅하려면 작업 부하 공장에서 관리되는 Microsoft SQL Server가 있어야 합니다.
 AWS 시스템 관리자:: AWS System Manager를 통해 Microsoft SQL 호스트에서 권한이 활성화되었는지 확인합니다 `NT Authority\SYSTEM user` .
 
 
@@ -41,14 +41,14 @@ AWS 시스템 관리자:: AWS System Manager를 통해 Microsoft SQL 호스트�
 
 == 데이터베이스를 만듭니다
 
-_Quick create_or_Advanced create_deployment 모드를 사용하여 Workload Factory에서 이 작업을 _READ_OR_AUTOMATE_MODE 권한으로 완료할 수 있습니다.
+_Quick create_or_Advanced create_deployment 모드를 사용하여 _READ_OR_AUTOMATE_MODE 권한으로 워크로드 공장에서 이 작업을 완료할 수 있습니다.
 
 [role="tabbed-block"]
 ====
 .빠른 생성
 --
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . 인벤토리 탭에서 데이터베이스를 만들 관리되는 SQL Server 인스턴스가 있는 데이터베이스 서버를 선택합니다.
@@ -81,7 +81,7 @@ _Quick create_or_Advanced create_deployment 모드를 사용하여 Workload Fact
 .고급 만들기
 --
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . 인벤토리 탭에서 데이터베이스를 만들 관리되는 SQL Server 인스턴스가 있는 데이터베이스 서버를 선택합니다.

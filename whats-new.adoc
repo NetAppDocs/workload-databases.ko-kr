@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, workload factory, databases, workload factory' 
-summary: 데이터베이스용 Workload Factory의 새로운 기능에 대해 알아보십시오. 
+summary: 데이터베이스용 BlueXP  워크로드 공장의 새로운 기능에 대해 알아보십시오. 
 ---
-= 새로운 기능
+= 데이터베이스용 BlueXP  워크로드 공장의 새로운 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -65,7 +65,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["데�
 
 이제 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]홈 페이지에서 절약 계산기로 이동할 수 있습니다. Elastic Block Store 및 FSx for Windows File Server에서 선택하여 시작합니다.
 
-image:screenshot-explore-savings-home-small.png["Workload Factory 콘솔 홈 페이지의 스크린샷 새 절약 탐색 단추가 있는 데이터베이스 타일을 보여 주는 이미지입니다. 버튼을 클릭하여 드롭다운 메뉴를 엽니다. 드롭다운 메뉴에는 EBS의 Microsoft SQL Server와 Windows용 FSx 파일 서버의 Microsoft SQL Server의 두 가지 옵션이 있습니다."]
+image:screenshot-explore-savings-home-small.png["워크로드 팩토리 콘솔 홈 페이지의 스크린샷 새 절약 탐색 단추가 있는 데이터베이스 타일을 보여 주는 이미지입니다. 버튼을 클릭하여 드롭다운 메뉴를 엽니다. 드롭다운 메뉴에는 EBS의 Microsoft SQL Server와 Windows용 FSx 파일 서버의 Microsoft SQL Server의 두 가지 옵션이 있습니다."]
 
 
 
@@ -105,8 +105,8 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["데�
 
 
 
-=== 데이터베이스용 Workload Factory 초기 릴리즈
+=== 데이터베이스용 BlueXP  워크로드 공장 초기 릴리즈
 
-초기 릴리즈에는 데이터베이스 워크로드를 위한 스토리지 환경으로 Amazon FSx for NetApp ONTAP을 사용하여 비용 절감을 탐색하고, Microsoft SQL Server를 감지, 관리 및 배포하고, 데이터베이스를 배포 및 복제하고, Workload Factory 내에서 이러한 작업을 모니터링하는 기능이 포함되어 있습니다.
+초기 릴리즈에는 데이터베이스 워크로드를 위한 스토리지 환경으로 Amazon FSx for NetApp ONTAP을 사용하여 비용 절감을 탐색하고, Microsoft SQL Server를 감지, 관리 및 배포하고, 데이터베이스를 배포 및 복제하고, 워크로드 공장 내에서 이러한 작업을 모니터링하는 기능이 포함되어 있습니다.
 
 link:https://docs.netapp.com/us-en/workload-databases/learn-databases.html["데이터베이스에 대해 알아봅니다"^]

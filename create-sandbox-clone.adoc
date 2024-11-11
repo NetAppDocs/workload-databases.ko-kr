@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: create-sandbox-clone.html 
 keywords: create, clone, sandbox 
-summary: Workload Factory for Databases에서 샌드박스 클론을 생성합니다. 
+summary: 데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 생성합니다. 
 ---
-= Workload Factory for Databases에서 샌드박스 클론을 생성합니다
+= 데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 생성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory for Databases에서 데이터베이스의 샌드박스 클론을 생성하면 개발, 테스트, 통합, 분석, 교육, QA, 그리고 소스 데이터베이스를 변경하지 않고.
+BlueXP  워크로드 팩토리 for Databases에서 데이터베이스의 샌드박스 클론을 생성하면 소스 데이터베이스를 변경하지 않고도 개발, 테스트, 통합, 분석, 교육, QA 등에 이 클론을 사용할 수 있습니다.
 
 .이 작업에 대해
 샌드박스 클론은 소스 데이터베이스의 최신 스냅샷에서 생성됩니다. 동일한 FSx for ONTAP 파일 시스템을 공유하는 경우 소스 데이터베이스와 동일한 Microsoft SQL Server에 복제하거나 다른 Microsoft SQL Server에 복제할 수 있습니다.
@@ -19,19 +19,19 @@ Workload Factory for Databases에서 데이터베이스의 샌드박스 클론�
 .시작하기 전에
 샌드박스 클론을 생성하기 전에 다음 사전 요구 사항을 완료해야 합니다.
 
-자격 증명 및 권한:: Workload Factory에서 샌드박스 클론을 생성해야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _READ_OR_AUTOMATE_MODE 권한"^] 합니다.
+자격 증명 및 권한:: 워크로드 공장에서 샌드박스 클론을 생성해야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _READ_OR_AUTOMATE_MODE 권한"^]합니다.
 +
 --
-또는 REST API를 사용하여 Workload Factory 외부에서 샌드박스 클론을 생성할 수 있도록 Codebox를 사용하여 부분적으로 완료된 템플릿을 복사하거나 완료된 템플릿을 생성할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
+또는 REST API를 사용하여 워크로드 공장 외부에서 샌드박스 클론을 생성할 수 있도록 Codebox를 사용하여 부분적으로 완료된 템플릿을 복사하거나 완료된 템플릿을 생성할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
 
 --
-Microsoft SQL Server를 참조하십시오:: 새 샌드박스 클론을 호스팅하려면 Workload Factory for Databases에 관리되는 Microsoft SQL Server가 있어야 합니다.
+Microsoft SQL Server를 참조하십시오:: 데이터베이스가 새 샌드박스 클론을 호스팅하려면 관리되는 Microsoft SQL Server가 워크로드 팩터리에 있어야 합니다.
 AWS 시스템 관리자::  `NT Authority\SYSTEM`AWS Systems Manager를 통해 Microsoft SQL 호스트에서 사용자 권한이 활성화되어 있는지 확인합니다.
 소스 데이터베이스:: 클론에 사용할 수 있는 소스 데이터베이스가 필요합니다.
 
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Sandbox * 탭을 선택합니다.
 . 샌드박스 탭에서 * 새 샌드박스 만들기 * 를 선택합니다.
@@ -49,7 +49,7 @@ AWS 시스템 관리자::  `NT Authority\SYSTEM`AWS Systems Manager를 통해 Mi
 .. * 대상 데이터베이스 *: sandbox 클론의 이름을 입력합니다.
 
 
-. * Mount *: 여러 데이터 및/또는 로그 파일이 있는 SQL 데이터베이스를 복제할 때 Workload Factory는 자동으로 할당되거나 정의된 드라이브 문자로 모든 파일을 복제합니다.
+. * 마운트 *: 여러 데이터 및/또는 로그 파일이 있는 SQL 데이터베이스를 복제할 때 워크로드 공장 출하 시 자동으로 할당되거나 정의된 드라이브 문자로 모든 파일을 복제합니다.
 +
 다음 옵션 중 하나를 선택합니다.
 

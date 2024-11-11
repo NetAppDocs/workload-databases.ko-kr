@@ -4,20 +4,20 @@ permalink: explore-savings.html
 keywords: cost, savings, compare costs, EBS, FSx for ONTAP 
 summary: 'Amazon EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지를 FSx for ONTAP 스토리지와 비교하여 데이터베이스 워크로드의 절감 효과를 살펴보십시오.' 
 ---
-= 데이터베이스용 Workload Factory의 절감 효과에 대해 알아보십시오
+= 데이터베이스를 위한 BlueXP  워크로드 팩토리의 비용 절감에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Amazon EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지를 FSx for ONTAP 스토리지와 비교하여 데이터베이스 워크로드의 절감 효과를 살펴보십시오.
+Amazon EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지와 FSx for ONTAP 스토리지를 사용한 비용을 비교하여 데이터베이스 워크로드용 BlueXP  워크로드 팩토리에서의 절감 효과를 살펴보십시오.
 
 워크로드 팩토리에서는 절감 계산기를 제공하므로 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다. 이 계산기에는 이러한 Microsoft SQL Server의 데이터베이스 워크로드용 스토리지가 FSx for ONTAP 파일 시스템을 사용할 경우 비용이 덜 드는지 여부가 표시됩니다.
 
 image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스크린샷은 스냅샷 및 클론 값을 사용자 지정할 수 있는 옵션과 함께 왼쪽에 선택한 Microsoft SQL Server on Amazon Elastic Block Store 구성을 보여 줍니다. FSx for ONTAP 및 Elastic Block Store 스토리지에서 Microsoft SQL Server를 사용할 때의 총 월별 비용은 왼쪽에 표시됩니다."]
 
-워크로드 팩토리로부터 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 판단하면, 워크로드 팩토리에서의 계산기에서 FSx for ONTAP를 통해 Microsoft SQL을 직접 구축할 수 있습니다. Elastic Block Store 또는 FSx for Windows File Server 스토리지에 Microsoft SQL Server 인스턴스가 여러 개 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.
+워크로드 팩토리에서 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 판단하면 워크로드 공장의 계산기에서 FSx for ONTAP를 통해 Microsoft SQL을 직접 구축할 수 있습니다. Elastic Block Store 또는 FSx for Windows File Server 스토리지에 Microsoft SQL Server 인스턴스가 여러 개 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.
 
 
 
@@ -27,7 +27,7 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 
 사용자 지정을 통한 절감 효과 알아보기: 지역, 배포 모델, SQL Server 에디션, 월별 데이터 변경률, 스냅샷 빈도 등을 포함하는 Amazon EC2 또는 FSx for Windows File Server의 Microsoft SQL Server 구성 설정을 제공합니다.
 
-감지된 호스트에 대한 비용 절감 탐색: Workload Factory는 기존 Microsoft SQL 서버에 연결되며 자동 비교를 위해 자세한 정보를 계산기로 가져옵니다. 이 계산기 옵션을 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.
+감지된 호스트에 대한 비용 절감 효과 탐색: 워크로드 팩토리얼이 기존 Microsoft SQL 서버에 연결되고 자동 비교를 위해 계산기로 세부 정보를 가져옵니다. 이 계산기 옵션을 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.
 
 
 
@@ -40,7 +40,7 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 .Amazon EBS(Elastic Block Store)
 --
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases에서 * Explore Savings * 를 선택한 다음 * Microsoft SQL Server on EBS * 를 선택합니다.
 . Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
@@ -78,7 +78,7 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 .Amazon FSx for Windows 파일 서버
 --
 .단계
-. 에 로그인합니다 link:https://console.workloads.netapp.com/["워크로드 팩토리 콘솔"^]
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 데이터베이스에서 * 절감 효과 탐색 * 을 선택한 다음 * Windows용 FSx 기반 Microsoft SQL Server * 를 선택합니다.
 . Savings Calculator에서 다음 세부 정보를 제공합니다.
 +
@@ -113,7 +113,7 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 
 == 감지된 호스트에 대한 절약 효과를 탐색합니다
 
-워크로드 팩토리에는 감지된 Elastic Block Store 및 FSx for Windows File Server 호스트 특성이 입력되므로 자동으로 비용 절감을 살펴볼 수 있습니다.
+워크로드 팩토리가 감지된 Elastic Block Store 및 FSx for Windows File Server 호스트 특성을 입력하므로 자동으로 절감 효과를 살펴볼 수 있습니다.
 
 .시작하기 전에
 시작하기 전에 다음 사전 요구 사항을 완료하십시오.
@@ -129,10 +129,10 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 .Amazon EBS(Elastic Block Store)
 --
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 드롭다운 메뉴에서 * Explore Savings(절약 탐색) * 를 선택한 다음 * Microsoft SQL Server on FSx for Windows * 를 선택합니다.
 +
-Workload Factory에서 EBS 호스트를 감지하면 Explore Savings 탭으로 리디렉션됩니다. Workload Factory가 EBS 호스트를 감지하지 못하면 계산기로 <<맞춤화를 통한 절감 효과를 살펴보십시오,맞춤화를 통한 절감 효과를 살펴보십시오>>이동합니다.
+워크로드 팩토리얼에서 EBS 호스트를 감지하면 절약 효과 탐색 탭으로 리디렉션됩니다. 워크로드 팩토리얼에서 EBS 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<<맞춤화를 통한 절감 효과를 살펴보십시오,맞춤화를 통한 절감 효과를 살펴보십시오>>
 
 . Explore Savings 탭에서 EBS 스토리지를 사용하는 데이터베이스 서버의 * Explore Savings * 를 클릭합니다.
 . 절약 효과 계산기에서 EBS 스토리지의 클론 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.
@@ -153,10 +153,10 @@ Workload Factory에서 EBS 호스트를 감지하면 Explore Savings 탭으로 �
 .Amazon FSx for Windows 파일 서버
 --
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 드롭다운 메뉴에서 * Explore Savings(절약 탐색) * 를 선택한 다음 * Microsoft SQL Server on FSx for Windows * 를 선택합니다.
 +
-Workload Factory에서 FSx for Windows 호스트를 감지하면 Explore Savings 탭으로 리디렉션됩니다. Workload Factory가 FSx for Windows 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<<맞춤화를 통한 절감 효과를 살펴보십시오,맞춤화를 통한 절감 효과를 살펴보십시오>>
+워크로드 팩토리가 FSx for Windows 호스트를 감지하면 절약 효과 탐색 탭으로 리디렉션됩니다. 워크로드 팩토리에서 FSx for Windows 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<<맞춤화를 통한 절감 효과를 살펴보십시오,맞춤화를 통한 절감 효과를 살펴보십시오>>
 
 . 절약 효과 탐색 탭에서 Windows 파일 서버 스토리지용 FSx를 사용하는 데이터베이스 서버의 * 절약 효과 탐색 * 을 클릭합니다.
 . 선택적으로 절감 계산기에서 FSx for Windows 스토리지의 클론(섀도 복사본) 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.
@@ -185,9 +185,9 @@ Windows용 FSx 섀도 복사본이 감지되면 기본값은 * Daily * 입니다
 비용 절감을 위해 FSx for ONTAP로 전환하려면 * 생성 * 을 클릭하여 새 Microsoft SQL 서버 생성 마법사에서 직접 권장 구성을 생성하거나 * 저장 * 을 클릭하여 나중에 권장되는 구성을 저장합니다.
 
 
-NOTE: 워크로드 팩토리에서는 여러 FSx for ONTAP 파일 시스템을 저장하거나 생성하는 기능을 지원하지 않습니다.
+NOTE: 워크로드 팩토리는 여러 FSx for ONTAP 파일 시스템의 저장 또는 생성을 지원하지 않습니다.
 
-배포 방법:: automate_mode에서는 워크로드 팩토리로부터 FSx for ONTAP를 사용하여 AWS EC2에 새로운 Microsoft SQL 서버를 직접 구축할 수 있습니다. 또한 Codebox 창에서 내용을 복사하고 Codebox 메서드 중 하나를 사용하여 권장 구성을 배포할 수도 있습니다.
+배포 방법:: _AUTOMATE_MODE에서 FSx for ONTAP를 사용하여 워크로드 팩토리에서 직접 AWS EC2에 새로운 Microsoft SQL 서버를 구축할 수 있습니다. 또한 Codebox 창에서 내용을 복사하고 Codebox 메서드 중 하나를 사용하여 권장 구성을 배포할 수도 있습니다.
 +
 --
 _basic_mode에서는 Codebox 창의 내용을 복사하고 Codebox 메서드 중 하나를 사용하여 권장 구성을 배포할 수 있습니다.

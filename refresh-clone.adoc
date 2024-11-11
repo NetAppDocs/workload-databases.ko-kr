@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: refresh-clone.html 
 keywords: refresh clone, sync, update, database, Microsoft SQL 
-summary: Workload Factory for Databases에서 샌드박스 클론을 새로 고칩니다. 
+summary: 데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 새로 고칩니다. 
 ---
-= Workload Factory for Databases에서 샌드박스 클론을 새로 고칩니다
+= 데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 새로 고칩니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-현재 시점 또는 이전 시점의 소스 데이터베이스와 같도록 데이터베이스 클론을 새로 고칩니다.
+현재 시점 또는 이전 시점의 소스 데이터베이스와 같도록 BlueXP  워크로드 팩토리얼에서 데이터베이스 복제본을 새로 고칩니다.
 
 .이 작업에 대해
 클론을 새로 고치면 클론이 현재 시점에 소스 데이터베이스로 업데이트되거나 이전 시점에 생성된 소스 데이터베이스의 스냅샷으로 업데이트됩니다. sandbox 클론에 대한 모든 변경 내용이 삭제됩니다.
@@ -22,7 +22,7 @@ summary: Workload Factory for Databases에서 샌드박스 클론을 새로 고�
 스냅샷에서 데이터베이스 클론을 새로 고치려면 소스 데이터베이스에 작업을 위한 스냅샷이 하나 이상 있어야 합니다.
 
 .단계
-. 에 link:https://console.workloads.netapp.com["워크로드 팩토리 콘솔"^]로그인합니다.
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
 . 데이터베이스에서 * Sandbox * 탭을 선택합니다.
 . Sandbox 탭에서 새로 고칠 샌드박스 클론의 세 개의 점 메뉴를 클릭합니다.

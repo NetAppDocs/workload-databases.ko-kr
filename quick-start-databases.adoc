@@ -4,32 +4,32 @@ permalink: quick-start-databases.html
 keywords: requirements, basic mode, read mode, automate mode 
 summary: 데이터베이스에는 세 가지 다른 모드가 있으며 이 모드는 요구사항이 다릅니다. 
 ---
-= 데이터베이스 빠른 시작
+= 데이터베이스용 BlueXP  워크로드 공장의 빠른 시작
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-데이터베이스를 사용하면 _basic_mode에서 즉시 시작할 수 있습니다. Workload Factory를 사용하여 호스트 검색, 리소스 관리 등을 원하는 경우 몇 단계로 시작할 수 있습니다.
+데이터베이스용 BlueXP  워크로드 팩토리에서는 _BASIC_MODE에서 즉시 시작할 수 있습니다. 워크로드 팩토리를 사용하여 호스트 검색, 리소스 관리 등을 수행하려는 경우 몇 단계로 시작할 수 있습니다.
 
-시작하려면 AWS 계정이 있어야 합니다.
+데이터베이스를 사용하려면 AWS 계정이 있어야 합니다.
 
-Workload Factory Database를 시작하려면 다음 단계를 따르십시오.
+시작하려면 다음 단계를 따르십시오.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] Workload Factory에 로그인합니다
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1개"] BlueXP  워크로드 팩토리에 로그인합니다
 [role="quick-margin-para"]
-link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Workload Factory 계정을 설정합니다"^]그리고 가 필요합니다 link:https://console.workloads.netapp.com["로그인합니다"^]
+를 사용하여 로그인해야 link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["워크로드 팩토리에 계정을 설정합니다"^]link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 자격 증명 및 사용 권한을 추가합니다
 [role="quick-margin-para"]
 다음 중에서 선택합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["_basic_, _read_ 및 _automate_ 작동 모드"^]
 
 [role="quick-margin-para"]
-_basic_mode에서 작업하는 경우 더 이상 진행할 필요가 없습니다. Workload Factory Databases를 사용하여 부분적으로 완료된 코드 샘플을 복사할 수 있습니다. 데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 클릭합니다. link:create-database-server.html["데이터베이스 서버를 배포하는 방법에 대해 알아봅니다"]..
+_basic_mode에서 작업하는 경우 더 이상 진행할 필요가 없습니다. 데이터베이스를 사용하여 부분적으로 완료된 코드 샘플을 복사할 수 있습니다. 데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 클릭합니다. link:create-database-server.html["데이터베이스 서버를 배포하는 방법에 대해 알아봅니다"]..
 
 [role="quick-margin-para"]
-_READ_OR_AUTOMATE_MODE에서 작업하는 경우 데이터베이스 및 AI와 같은 작업 부하 기능을 선택하고 _READ_OR_AUTOMATE_MODE에서 작업할 수 있는 올바른 권한을 갖도록 IAM 정책을 만들어야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["계정에 자격 증명을 수동으로 추가합니다"^] 합니다.
+_READ_OR_AUTOMATE_MODE에서 작업하는 경우 데이터베이스 및 GenAI와 같은 작업 부하 기능을 선택하고 IAM 정책을 생성하여 _READ_OR_AUTOMATE_MODE에서 작업할 수 있는 올바른 권한을 갖도록 해야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["계정에 자격 증명을 수동으로 추가합니다"^]합니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"] 데이터베이스 서버를 배포합니다
 [role="quick-margin-para"]
