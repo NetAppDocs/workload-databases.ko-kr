@@ -57,7 +57,6 @@
   <block id="15d1ade99815746ab0088981bd7585d3" category="section-title">1단계: 데이터베이스 서버를 만듭니다</block>
   <block id="956eaa6186169471a13345860cad0757" category="open-title">빠른 생성</block>
   <block id="542af019e2aa3ef9ca4b187a71c918bb" category="admonition">_Quick create_에서 FCI는 기본 배포 모델이고, Windows 2016은 기본 Windows 버전이고, SQL 2019 Standard Edition은 기본 SQL 버전입니다.</block>
-  <block id="b26136a388864ee3f9e813ac8f6109ee" category="list-text">데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 선택합니다.</block>
   <block id="6139861719bbe0b1fa9017ee94fd4e8e" category="list-text">Quick create * 를 선택합니다.</block>
   <block id="cc3305aa1264f3bb3f5edf4bbf7f1ab1" category="list-text">AWS settings * 에서 다음을 제공합니다.</block>
   <block id="0ddee9622b04a20edcfe59424067f924" category="list-text">* AWS 자격 증명 *: 새 데이터베이스 호스트를 배포하려면 자동화 권한이 있는 AWS 자격 증명을 선택합니다.</block>
@@ -398,14 +397,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
-  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">워크로드 팩토리</block>
-  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
-  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">데이터베이스용 워크로드 팩토리</block>
-  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
-  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI를 위한 워크로드 팩토리</block>
-  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
-  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMware용 워크로드 팩토리</block>
-  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
   <block id="6130b5542240619621b88baf10547d84" category="paragraph">데이터베이스는 FSx for ONTAP 파일 시스템 스토리지를 통해서만 Microsoft SQL Server 인스턴스를 관리할 수 있습니다.</block>
   <block id="b43307219a7b65a8301c057d6f6b5478" category="section-title">Microsoft SQL Server 인스턴스 관리</block>
   <block id="7c6c9edd9611134efa9dc1ed2f630486" category="paragraph">Microsoft SQL Server 인스턴스 관리에는 다음 작업이 포함됩니다.</block>
@@ -866,4 +857,38 @@
   <block id="9d57e52330b97c81921959c45b7d8a7c" category="sidebar">BlueXP  워크로드 공장 내 FSx for ONTAP 파일 시스템 스토리지를 기반으로 Microsoft SQL Server 구성을 구축하고 데이터베이스 환경을 관리합니다.</block>
   <block id="e214e71355e2ee8687f09c83bfbdaabc" category="sidebar">데이터베이스용 BlueXP  워크로드 공장 설명서</block>
   <block id="f3ffe4a909ed7f4cc0f396f199ae3471" category="sidebar">데이터베이스용 워크로드 팩터에 대해 알아보십시오</block>
+  <block id="18caf85143cff2e29943f7fa50a9d531" category="doc">지속적인 최적화로 컴퓨팅 문제 해결 및 평가를 추가합니다</block>
+  <block id="275b08f4e33388b6598899e256fe46b3" category="paragraph">이제 데이터베이스는 Microsoft SQL Server 인스턴스의 컴퓨팅 리소스를 최적화하는 데 도움이 되는 통찰력과 권장 사항을 제공합니다. CPU 활용률을 측정하고 AWS Compute Optimizer 서비스를 활용하여 최적의 적정 크기의 인스턴스 유형을 추천하고 사용 가능한 운영 체제 패치를 알립니다. 컴퓨팅 리소스를 최적화하면 인스턴스 유형에 대한 정확한 결정을 내릴 수 있어 비용을 절감하고 리소스 활용률을 향상할 수 있습니다.</block>
+  <block id="9aa94e25ba754a44d094b78775213e48" category="inline-link-macro">컴퓨팅 리소스 구성을 최적화합니다</block>
+  <block id="25a5dc6deeba5d476ff665ad9c968a2b" category="paragraph"><block ref="25a5dc6deeba5d476ff665ad9c968a2b" category="inline-link-macro-rx"></block></block>
+  <block id="f3cfd7c95d3ff2b556d90beb191fa77a" category="section-title">PostgreSQL 지원</block>
+  <block id="49db1f79602c9ba8e5704a68010c4023" category="paragraph">이제 데이터베이스의 독립 실행형 PostgreSQL 서버 배포를 배포 및 관리할 수 있습니다.</block>
+  <block id="3627a14d7dc2feba3834d63a37ebb394" category="inline-link-macro">PostgreSQL 서버를 생성합니다</block>
+  <block id="02b7dd87f2a54e2b540ac84598c20252" category="paragraph"><block ref="02b7dd87f2a54e2b540ac84598c20252" category="inline-link-macro-rx"></block></block>
+  <block id="a08c0d26c5f5640f1f5e9c497b9e6819" category="paragraph">또는 CodeBox를 사용하여 빈 템플릿을 복사하거나 완료된 템플릿을 생성하여 REST API, AWS CLI, AWS CloudFormation을 사용하여 워크로드 공장 외부에 데이터베이스를 구축할 수 있습니다. <block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>..</block>
+  <block id="6a5525182ed1f6bca47fea4ee51a3e58" category="list-text">데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 선택한 다음 드롭다운 메뉴에서 * Microsoft SQL Server * 를 선택합니다.</block>
+  <block id="16982b5e2c79b1d8f052bfa663a64d77" category="summary">데이터베이스에 대한 BlueXP  워크로드 팩토리 내에서 새 PostgreSQL SQL Server를 생성합니다.</block>
+  <block id="c4f70f11159098cce8873623bffb07aa" category="doc">BlueXP  워크로드 팩터리에서 PostgreSQL 서버를 생성합니다</block>
+  <block id="5f8d928d8901c8b01302b1c3be720b44" category="paragraph">BlueXP  워크로드 공장에서 데이터베이스용 새 PostgreSQL 서버 또는 데이터베이스 호스트를 생성하려면 Active Directory를 위한 FSx for ONTAP 파일 시스템 구축 및 리소스가 필요합니다.</block>
+  <block id="7a65409a338637d9c410720ad6eb8500" category="list-text">새 PostgreSQL 서버를 생성하려면 스토리지 백엔드로 FSx for ONTAP 파일 시스템이 필요합니다. 기존 FSx for ONTAP 파일 시스템을 사용하거나 새 파일 시스템을 생성할 수 있습니다. 기존 FSx for ONTAP 파일 시스템을 데이터베이스 서버 스토리지 백엔드로 선택하면 PostgreSQL 워크로드에 대한 새 스토리지 VM이 생성됩니다.</block>
+  <block id="0f691a321e4cb91f0a8529931ba7bd47" category="paragraph">FSx for ONTAP 파일 시스템은 PostgreSQL에 대해 _standalone_deploys를 지원합니다. 워크로드 팩토리에서는 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨 및 LUN과 더불어 단일 가용 영역 FSx for ONTAP 파일 시스템을 생성합니다.</block>
+  <block id="2fd4d401e5c831dec7c9d6e1b557896e" category="paragraph">_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 코드상자에서 사용할 수 있는 REST API 및 CloudFormation 도구를 사용할 수도 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">를 누릅니다</block>
+  <block id="dc1a4c3a44cba39fe1ecdcc15fe01cc7" category="list-text">Databases(데이터베이스) 타일에서 * Deploy database host * 를 선택한 다음 드롭다운 메뉴에서 * PostgreSQL * 을 선택합니다.</block>
+  <block id="26bef182e4e84557ce657df6398df5a0" category="list-text">배포 모델 * 의 경우 * 독립 실행형 인스턴스 * 가 기본값입니다.</block>
+  <block id="75b39c0795d7295af69b1d13bbf82285" category="list-text">* 가용 영역 *: 가용 영역 및 서브넷을 선택합니다.</block>
+  <block id="d576650f664651e9b2569ccb346b6649" category="list-text">Cluster configuration - Node 1 * 필드에서 * Availability zone * 드롭다운 메뉴에서 가용 영역을 선택하고 * Subnet * 드롭다운 메뉴에서 서브넷을 선택합니다.</block>
+  <block id="720301aea3fac96d94759700c949e15f" category="paragraph">새 서버 배포 중에 두 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.</block>
+  <block id="f8473adfeac8aca2a2eaa799d6cde778" category="list-text">PostgreSQL에 필요한 포트 및 프로토콜을 허용하는 워크로드 보안 그룹이 생성됩니다.</block>
+  <block id="a405e08f97e410f1eb5924541a4cb30c" category="list-text">기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 PostgreSQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다. 새 FSx for ONTAP 시스템이 생성되면 FSx for ONTAP 파일 시스템에 대한 새 보안 그룹이 생성되고 동일한 보안 그룹도 SQL 노드에 연결됩니다.</block>
+  <block id="5d48b45f2ad58c8e1145b474d95593f9" category="list-text">드롭다운 메뉴에서 * 운영 체제 * 를 선택합니다.</block>
+  <block id="6dd53f240f48678994cf9b0109fa0ec2" category="list-text">드롭다운 메뉴에서 * PostgreSQL 버전 * 을 선택합니다.</block>
+  <block id="d456e032669379ad4e2388045a89301d" category="list-text">* 데이터베이스 서버 이름 *: 데이터베이스 클러스터 이름을 입력합니다.</block>
+  <block id="b4d85afb201cbf3edb4623ef0d8da5e6" category="list-text">연결 * 에서 인스턴스에 안전하게 연결할 키 쌍을 선택합니다.</block>
+  <block id="54d16066caaf498f7f6443098c30a2be" category="paragraph">스냅샷은 PostgreSQL 워크로드를 위해 생성된 볼륨에 할당됩니다.</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  워크로드 공장</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024년 12월 1일</block>
+  <block id="d35a0f72475ce4ac5dbb2e790338586d" category="sidebar">Microsoft SQL Server를 만듭니다</block>
+  <block id="b7414b1741661cf43c6fb35227e98183" category="sidebar">PostgreSQL 서버를 생성합니다</block>
 </blocks>
