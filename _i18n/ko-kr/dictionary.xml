@@ -734,8 +734,6 @@
   <block id="a538aa1311e84c0f42a362aece349223" category="paragraph">*_읽기_모드 * : 이 작업 모드에서, 귀하는 AWS 계정 자격 증명에 읽기 권한을 부여하여 _빠른 생성_또는_고급 생성_양식을 완성한 다음 복사 또는 다운로드할 수 있습니다. 또한 완료된 양식 세부 정보가 포함된 워크로드 팩토리로부터 CloudFormation으로 리디렉션할 수 있습니다. 또한 워크로드 공장에서 배포된 데이터베이스 서버를 관리할 수 있습니다.</block>
   <block id="02b7989729e7d5233996b9d03d093fc1" category="paragraph">*_AUTOMATE_MODE *: 이 작업 모드에서 AWS 계정 자격 증명에 자동화 권한을 제공하여 워크로드 공장 내에서 AWS 리소스를 생성하고 관리할 수 있습니다.</block>
   <block id="6e604948d399e1365a2d5a11ee7838d8" category="list-text">작업 부하 공장에서 새 데이터베이스 호스트를 생성해야 <block ref="6d0e9cd8cac3e1654b2b4423d6d0dc45" category="inline-link-macro-rx"></block>합니다.</block>
-  <block id="8f10f2087cc578fb58ebdc9c43f20b29" category="paragraph">또는 CodeBox를 사용하여 빈 템플릿을 복사하거나 완료된 템플릿을 생성하여 REST API, AWS CLI 또는 AWS CloudFormation을 사용하여 워크로드 공장 외부에 데이터베이스를 구축할 수 있습니다. <block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>..</block>
-  <block id="7e7ea1d0ebe76ee78c10b35c9a89d522" category="paragraph">_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 코드상자에서 사용할 수 있는 REST API, CloudFormation 및 Terraform 도구를 사용할 수도 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
   <block id="cef4156e4fa9e5869d4dee02c1b39d6e" category="paragraph">AWS 자격 증명을 _automate_permissions 로 설정하면 워크로드 공장 내에서 AWS 계정에서 새 데이터베이스 호스트를 구축하고 관리할 수 있습니다.</block>
   <block id="cc04c98a943715d655ef7f99796aae2a" category="paragraph">read_permissions를 포함한 AWS 자격 증명을 통해 워크로드 공장에서 AWS CloudFormation 콘솔에서 사용할 CloudFormation 템플릿을 생성할 수 있습니다.</block>
   <block id="b4db11619512665a02befd7699ec1538" category="paragraph">작업 부하 공장에서 연결된 AWS 자격 증명이 없고 작업 부하 공장에서 새 서버를 생성하려면 * 옵션 1 * 을 따라 자격 증명 페이지로 이동합니다. 데이터베이스 워크로드에 대해 _AUTOMATE_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.</block>
@@ -865,15 +863,12 @@
   <block id="49db1f79602c9ba8e5704a68010c4023" category="paragraph">이제 데이터베이스의 독립 실행형 PostgreSQL 서버 배포를 배포 및 관리할 수 있습니다.</block>
   <block id="3627a14d7dc2feba3834d63a37ebb394" category="inline-link-macro">PostgreSQL 서버를 생성합니다</block>
   <block id="02b7dd87f2a54e2b540ac84598c20252" category="paragraph"><block ref="02b7dd87f2a54e2b540ac84598c20252" category="inline-link-macro-rx"></block></block>
-  <block id="a08c0d26c5f5640f1f5e9c497b9e6819" category="paragraph">또는 CodeBox를 사용하여 빈 템플릿을 복사하거나 완료된 템플릿을 생성하여 REST API, AWS CLI, AWS CloudFormation을 사용하여 워크로드 공장 외부에 데이터베이스를 구축할 수 있습니다. <block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>..</block>
   <block id="6a5525182ed1f6bca47fea4ee51a3e58" category="list-text">데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 선택한 다음 드롭다운 메뉴에서 * Microsoft SQL Server * 를 선택합니다.</block>
   <block id="16982b5e2c79b1d8f052bfa663a64d77" category="summary">데이터베이스에 대한 BlueXP  워크로드 팩토리 내에서 새 PostgreSQL SQL Server를 생성합니다.</block>
   <block id="c4f70f11159098cce8873623bffb07aa" category="doc">BlueXP  워크로드 팩터리에서 PostgreSQL 서버를 생성합니다</block>
   <block id="5f8d928d8901c8b01302b1c3be720b44" category="paragraph">BlueXP  워크로드 공장에서 데이터베이스용 새 PostgreSQL 서버 또는 데이터베이스 호스트를 생성하려면 Active Directory를 위한 FSx for ONTAP 파일 시스템 구축 및 리소스가 필요합니다.</block>
   <block id="7a65409a338637d9c410720ad6eb8500" category="list-text">새 PostgreSQL 서버를 생성하려면 스토리지 백엔드로 FSx for ONTAP 파일 시스템이 필요합니다. 기존 FSx for ONTAP 파일 시스템을 사용하거나 새 파일 시스템을 생성할 수 있습니다. 기존 FSx for ONTAP 파일 시스템을 데이터베이스 서버 스토리지 백엔드로 선택하면 PostgreSQL 워크로드에 대한 새 스토리지 VM이 생성됩니다.</block>
   <block id="0f691a321e4cb91f0a8529931ba7bd47" category="paragraph">FSx for ONTAP 파일 시스템은 PostgreSQL에 대해 _standalone_deploys를 지원합니다. 워크로드 팩토리에서는 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨 및 LUN과 더불어 단일 가용 영역 FSx for ONTAP 파일 시스템을 생성합니다.</block>
-  <block id="2fd4d401e5c831dec7c9d6e1b557896e" category="paragraph">_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 코드상자에서 사용할 수 있는 REST API 및 CloudFormation 도구를 사용할 수도 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">를 누릅니다</block>
   <block id="dc1a4c3a44cba39fe1ecdcc15fe01cc7" category="list-text">Databases(데이터베이스) 타일에서 * Deploy database host * 를 선택한 다음 드롭다운 메뉴에서 * PostgreSQL * 을 선택합니다.</block>
   <block id="26bef182e4e84557ce657df6398df5a0" category="list-text">배포 모델 * 의 경우 * 독립 실행형 인스턴스 * 가 기본값입니다.</block>
   <block id="75b39c0795d7295af69b1d13bbf82285" category="list-text">* 가용 영역 *: 가용 영역 및 서브넷을 선택합니다.</block>
@@ -891,4 +886,6 @@
   <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024년 12월 1일</block>
   <block id="d35a0f72475ce4ac5dbb2e790338586d" category="sidebar">Microsoft SQL Server를 만듭니다</block>
   <block id="b7414b1741661cf43c6fb35227e98183" category="sidebar">PostgreSQL 서버를 생성합니다</block>
+  <block id="723e2c2f1ab301b9588bd4fda85b4eae" category="paragraph">_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
+  <block id="21e80f3d16a915bc267e2251c057686f" category="paragraph">Advanced create_deployment 모드를 사용하면 _automate_mode 권한을 사용하여 워크로드 팩토리얼에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 등의 툴을 사용할 수 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
 </blocks>
