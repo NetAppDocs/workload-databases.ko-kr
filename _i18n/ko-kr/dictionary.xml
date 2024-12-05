@@ -667,7 +667,6 @@
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">코드박스에서 Terraform을 사용합니다</block>
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
-  <block id="5de582d1d412797088979e47e496c2fe" category="admonition">Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다.<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 코드를 실행할 때 암호를 다시 입력해야 합니다. _AUTOMATE_MODE 권한 외에 사용자 계정에 대해 다음 권한을 포함해야 합니다<block ref="7f862a4b8fc22b0af5dda5c9ababa346" prefix=" " category="inline-code"></block><block ref="319bffed0f518819193d82ffe99b1444" prefix=" " category="inline-code"></block>.</block>
   <block id="b2636246cf1e5e567e3ded4a9d65b1da" category="section-title">Terraform을 사용하여 사설 네트워크에 Microsoft SQL Server를 배포할 수 있는 지역별 가용성</block>
   <block id="eb4fca182b3b78e9a38aa1f6f59c8857" category="paragraph">Terraform을 사용한 아웃바운드 연결 없이 개인 네트워크에 Microsoft SQL Server를 배포하는 것은 us-east-1(N. Virginia) 지역에서만 지원됩니다.</block>
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">*지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.</block>
@@ -888,4 +887,8 @@
   <block id="b7414b1741661cf43c6fb35227e98183" category="sidebar">PostgreSQL 서버를 생성합니다</block>
   <block id="723e2c2f1ab301b9588bd4fda85b4eae" category="paragraph">_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
   <block id="21e80f3d16a915bc267e2251c057686f" category="paragraph">Advanced create_deployment 모드를 사용하면 _automate_mode 권한을 사용하여 워크로드 팩토리얼에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 등의 툴을 사용할 수 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
+  <block id="81a9b579c806be28ed6e048084a47b52" category="inline-link-macro">Codebox에서 Terraform을 사용하는 방법에 대해 알아봅니다</block>
+  <block id="0ec2c706568900a3077d2c43bb52bde7" category="admonition">Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다.<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 코드를 실행할 때 암호를 다시 입력해야 합니다. _AUTOMATE_MODE 권한 외에 사용자 계정에 대해 다음 권한을 포함해야 합니다<block ref="7f862a4b8fc22b0af5dda5c9ababa346" prefix=" " category="inline-code"></block><block ref="319bffed0f518819193d82ffe99b1444" prefix=" " category="inline-code"></block>. <block ref="916d5d5f037ba2ec9358c38001da7d8f" category="inline-link-macro-rx"></block>..</block>
+  <block id="037f00cd2eafb994bfbd866e78bb7bc3" category="paragraph">배포된 PostgreSQL 서버에서 사용자, 원격 액세스 및 데이터베이스를 수동으로 구성할 수 있습니다.</block>
+  <block id="3b801b5b7ccdf00990044d1e2711d31e" category="paragraph">PostgreSQL은 Amazon CloudWatch 또는 사설 네트워크에서의 배포를 지원하지 않습니다.</block>
 </blocks>
