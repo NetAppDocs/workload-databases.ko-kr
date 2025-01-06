@@ -18,9 +18,9 @@ summary: 데이터베이스를 위해 BlueXP  워크로드 공장에서 샌드�
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
 . 데이터베이스에서 * Sandbox * 탭을 선택합니다.
-. 샌드박스 탭에서 되돌리려는 샌드박스 클론의 세 개의 점 메뉴를 클릭합니다.
+. 샌드박스 탭에서 되돌리려는 샌드박스 클론의 3점 메뉴를 클릭합니다.
 . Re-baseline * 을 선택합니다.
 . Re-baseline(기준선 재설정) 대화 상자에서 * Re-baseline(기준선 재설정) * 을 클릭합니다.
 

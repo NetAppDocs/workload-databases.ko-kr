@@ -32,7 +32,7 @@ AWS 시스템 관리자::  `NT Authority\SYSTEM`AWS Systems Manager를 통해 Mi
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Databases(데이터베이스) 타일에서 * Go to Databases Inventory(데이터베이스 목록으로 이동) * 를 선택합니다.
+. 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
 . 데이터베이스에서 * Sandbox * 탭을 선택합니다.
 . 샌드박스 탭에서 * 새 샌드박스 만들기 * 를 선택합니다.
 . 새 샌드박스 만들기 페이지의 데이터베이스 원본에서 다음을 제공합니다.

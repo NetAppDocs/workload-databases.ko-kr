@@ -71,9 +71,9 @@ sidebar:
     - title: SQL Server 최적화
       entries:
       - title: 지속적인 최적화 개요
-        url: optimize-overview.html
+        url: "/optimize-overview.html"
       - title: 구성 최적화
-        url: optimize-configurations.html
+        url: "/optimize-configurations.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
@@ -83,5 +83,5 @@ sidebar:
   - title: 법적 고지
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory for AWS
+  name: BlueXP workload factory
   repo: workload-family

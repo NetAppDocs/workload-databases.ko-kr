@@ -102,10 +102,4 @@ Workload Factory는 여러 FSx for ONTAP 파일 시스템에서 Microsoft SQL Se
 
 == Terraform을 사용하여 사설 네트워크에 Microsoft SQL Server를 배포할 수 있는 지역별 가용성
 
-Terraform을 사용한 아웃바운드 연결 없이 개인 네트워크에 Microsoft SQL Server를 배포하는 것은 us-east-1(N. Virginia) 지역에서만 지원됩니다.
-
-
-
-== PostgreSQL 지원
-
-PostgreSQL은 Amazon CloudWatch 또는 사설 네트워크에서의 배포를 지원하지 않습니다.
+Terraform을 사용한 아웃바운드 연결 없이 개인 네트워크에 Microsoft SQL Server를 배포하는 것은 us-east-1(N. Virginia) 지역에서만 지원됩니다. PostgreSQL은 Amazon CloudWatch 또는 사설 네트워크에서의 배포를 지원하지 않습니다.

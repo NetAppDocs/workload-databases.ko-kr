@@ -38,4 +38,4 @@ _READ_OR_AUTOMATE_MODE에서 작업하는 경우 데이터베이스 및 GenAI와
 .다음 단계
 데이터베이스 인벤토리에 FSx for ONTAP 관리 호스트가 있는 경우 또는 을 수행할 수 있습니다 link:create-database.html["사용자 데이터베이스를 만듭니다"] link:create-sandbox-clone.html["호스트를 클론하여 샌드박스를 생성합니다"].
 
-데이터베이스 인벤토리에 Elastic Block Store 호스트가 있으면 link:explore-savings.html["스토리지 비용 절감 계산기로 비용 절감을 알아보십시오"]가능합니다.
+데이터베이스 인벤토리에 Elastic Block Store 또는 FSx for Windows File Server 호스트가 있는 경우 link:explore-savings.html["비용 절감 계산기로 비용 절감을 알아보십시오"]가능합니다.

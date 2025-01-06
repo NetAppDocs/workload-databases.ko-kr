@@ -13,11 +13,48 @@ summary: 'Amazon EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스�
 [role="lead"]
 Amazon EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지와 FSx for ONTAP 스토리지를 사용한 비용을 비교하여 데이터베이스 워크로드용 BlueXP  워크로드 팩토리에서의 절감 효과를 살펴보십시오.
 
-워크로드 팩토리에서는 절감 계산기를 제공하므로 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다. 이 계산기에는 이러한 Microsoft SQL Server의 데이터베이스 워크로드용 스토리지가 FSx for ONTAP 파일 시스템을 사용할 경우 비용이 덜 드는지 여부가 표시됩니다.
+
+
+== 이 작업에 대해
+
+워크로드 팩토리에서는 절감 계산기를 제공하므로 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다.
+
+이 계산기에는 이러한 Microsoft SQL Server의 데이터베이스 워크로드용 스토리지가 FSx for ONTAP 파일 시스템을 사용할 경우 비용이 덜 드는지 여부가 표시됩니다.
 
 image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스크린샷은 스냅샷 및 클론 값을 사용자 지정할 수 있는 옵션과 함께 왼쪽에 선택한 Microsoft SQL Server on Amazon Elastic Block Store 구성을 보여 줍니다. FSx for ONTAP 및 Elastic Block Store 스토리지에서 Microsoft SQL Server를 사용할 때의 총 월별 비용은 왼쪽에 표시됩니다."]
 
 워크로드 팩토리에서 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 판단하면 워크로드 공장의 계산기에서 FSx for ONTAP를 통해 Microsoft SQL을 직접 구축할 수 있습니다. Elastic Block Store 또는 FSx for Windows File Server 스토리지에 Microsoft SQL Server 인스턴스가 여러 개 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.
+
+
+
+== SQL Server 배포 분석
+
+이 계산기는 SQL Server 배포에 대한 포괄적인 분석을 수행하여 활용되는 리소스 및 기능이 SQL Server 버전과 적절하게 일치하는지 확인합니다. Standard Edition으로 다운그레이드를 권장하기 전에 계산기가 확인하는 주요 요소와 조건은 다음과 같습니다.
+
+구축 모델:: 이 계산기는 배포 모델과 Enterprise Edition이 필요한지 여부를 평가합니다.
+할당된 자원:: 계산기는 다음 라이선스에 따라 할당된 리소스의 상태를 평가합니다.
++
+--
+* 타겟 인스턴스 vCPU: 이 인스턴스의 가상 CPU 수는 48개 이하입니다.
+* 메모리 할당: 인스턴스의 메모리는 128GB 이하입니다.
+
+
+--
+엔터프라이즈 기능 사용:: 계산기는 다음과 같은 Enterprise 기능이 사용 중인지 확인합니다.
++
+--
+* 데이터베이스 수준 엔터프라이즈 기능
+* 온라인 인덱스 작업
+* 리소스 관리자
+* 피어 투 피어 또는 Oracle 복제
+* R/Python 확장
+* 메모리 최적화 TempDB
+
+
+--
+
+
+평가된 SQL Server 인스턴스가 위의 Enterprise 기능을 사용하지 않고 리소스 제한을 충족하는 경우 계산기는 라이선스를 Standard Edition으로 다운그레이드하는 것이 좋습니다. 이 권장 사항은 성능 또는 기능을 저하시키지 않고 SQL Server 라이센싱 비용을 최적화하는 데 도움이 됩니다.
 
 
 
@@ -31,7 +68,7 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 
 
 
-== 맞춤화를 통한 절감 효과를 살펴보십시오
+=== 맞춤화를 통한 절감 효과를 살펴보십시오
 
 스토리지 유형에 해당하는 탭 아래의 단계를 따릅니다.
 
@@ -111,7 +148,7 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 ====
 
 
-== 감지된 호스트에 대한 절약 효과를 탐색합니다
+=== 감지된 호스트에 대한 절약 효과를 탐색합니다
 
 워크로드 팩토리가 감지된 Elastic Block Store 및 FSx for Windows File Server 호스트 특성을 입력하므로 자동으로 절감 효과를 살펴볼 수 있습니다.
 
