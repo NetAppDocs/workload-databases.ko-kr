@@ -639,7 +639,6 @@
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">코드박스에서 Terraform을 사용합니다</block>
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
-  <block id="b2636246cf1e5e567e3ded4a9d65b1da" category="section-title">Terraform을 사용하여 사설 네트워크에 Microsoft SQL Server를 배포할 수 있는 지역별 가용성</block>
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">*지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.</block>
   <block id="13025ba9f92de77af2aeaf1af07a4aa8" category="doc">Microsoft SQL Server 배포를 위한 구성 최적화</block>
   <block id="6f2bcb2f8d4f34c036395a199095be9a" category="paragraph">평가는 워크로드 팩토리에서 관리되는 FSx for ONTAP 스토리지를 통해 Microsoft SQL Server 인스턴스에 대해 매일 한 번씩 자동으로 지속적으로 실행됩니다. 평가 보고서는 배포 후 또는 인스턴스 관리 후에 매일 예약된 작업이 실행된 경우에만 최적화 대시보드에서 사용할 수 있습니다.</block>
@@ -901,7 +900,6 @@
   <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">워크로드 공장 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새 토론을 만드십시오.</block>
   <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 공장 로그인에 연결하십시오. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>..</block>
   <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">워크로드 팩토리 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
-  <block id="eb3607016e0d79a6f82dfbbdd3422282" category="paragraph">Terraform을 사용한 아웃바운드 연결 없이 개인 네트워크에 Microsoft SQL Server를 배포하는 것은 us-east-1(N. Virginia) 지역에서만 지원됩니다. PostgreSQL은 Amazon CloudWatch 또는 사설 네트워크에서의 배포를 지원하지 않습니다.</block>
   <block id="e75c7b17297b3cf3a7564e3033ef939f" category="list-text">보려는 인스턴스의 세 점 메뉴를 클릭한 다음 * 인스턴스 보기 * 를 선택합니다.</block>
   <block id="6b30d701929b5a35aad77b847528d165" category="list-text">보려는 데이터베이스가 포함된 인스턴스의 세 점 메뉴를 클릭합니다.</block>
   <block id="77b932b7ecf2d2b3689c445fe72bb66a" category="list-text">관리를 취소할 인스턴스의 3개 점이 있는 메뉴를 클릭합니다.</block>
@@ -926,4 +924,11 @@
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">지원을 등록한다고 해서 클라우드 공급자 파일 서비스에 대한 NetApp 지원이 활성화되지 않습니다. 클라우드 공급자 파일 서비스, 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원은 해당 제품에 대한 워크로드 공장 설명서의 "도움말 얻기"를 참조하십시오.</block>
   <block id="195066d54d760bc240b0879aa7a483bf" category="list-text">Sandboxes 탭에서 sandbox 클론의 3점 메뉴를 클릭하여 연결 정보를 봅니다.</block>
   <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025년 1월 6일</block>
+  <block id="f2398fe4ddb880ba6c52b376ef9b960c" category="list-text"><block ref="f2398fe4ddb880ba6c52b376ef9b960c" category="inline-link-macro-rx"></block></block>
+  <block id="f7626e6c4414254923965c059c538355" category="section-title">최적화를 위한 운영 체제 패치 평가</block>
+  <block id="caf2103b4a30210f2be52ce13c522aad" category="inline-link-macro">AWS Cloud Operations 블로그 "AWS Systems Manager를 사용하여 프라이빗 서브넷에서 Windows EC2 인스턴스를 패치하는 방법"</block>
+  <block id="51d9963cd25d44afd5ce890896443f71" category="paragraph">최적화 목적으로 만들어진 운영 체제 패치 평가는 사설 네트워크에서는 작동하지 않을 수 있습니다. 이 평가는 AWS Patch Manager에 의존합니다. 전용 네트워크에서 Windows EC2 인스턴스를 패치하는 방법에 대한 자세한 내용은 을 <block ref="8e97bc3ab59f50cb9b025f85a2445baf" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="a61ebf6aa74399e268808d3801b03702" category="section-title">컴퓨팅 적정 사이징 최적화</block>
+  <block id="f72f493648b25528319887c50a65f0ce" category="inline-link-macro">Amazon Elastic Compute Cloud 설명서</block>
+  <block id="bd5d7b32e4164faa655582f169744a05" category="paragraph">특정 인스턴스 유형으로 변경할 때 네트워크 구성이 재설정될 수 있으며, 이로 인해 최적화 중에 노드 연결이 실패하고 작업이 실패할 수 있습니다. DNS 설정 및 iSCSI 세션을 확인하고 업데이트하려면 수동 개입이 필요할 수 있습니다. EC2 크기 조정 제한에 대한 자세한 내용은 을 <block ref="b8406a09c509d5c1d937367114bd51b3" category="inline-link-macro-rx"></block>참조하십시오.</block>
 </blocks>
