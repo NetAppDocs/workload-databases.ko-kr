@@ -577,7 +577,6 @@
   <block id="f565eb47bc8c215541fe00205d9b37d3" category="doc">맞춤화를 통한 절감 효과를 살펴보십시오</block>
   <block id="bfbd25ddeba7cedc974f1a5a1d0a295c" category="paragraph">이제 절감 계산기에서 Amazon EC2의 Microsoft SQL Server에 대한 구성 설정을 FSx for Windows File Server 및 Elastic Block Store 스토리지와 함께 사용자 지정할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 스토리지가 데이터베이스 워크로드에 가장 비용 효율적이라는 사실을 발견할 수 있습니다.</block>
   <block id="f94c119bb7d164adbb1a390a249741e0" category="section-title">홈 페이지에서 절약 계산기로 이동합니다</block>
-  <block id="ed63f509875218d0378b5ddba1aecb80" category="summary">Amazon EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지를 FSx for ONTAP 스토리지와 비교하여 데이터베이스 워크로드의 절감 효과를 살펴보십시오.</block>
   <block id="9c34331abb32017c0949af1d664fefb5" category="section-title">계산기 옵션</block>
   <block id="58e73141ee65f1324f33ca6b0e47a481" category="paragraph">사용자 지정을 통한 절감 효과 알아보기: 지역, 배포 모델, SQL Server 에디션, 월별 데이터 변경률, 스냅샷 빈도 등을 포함하는 Amazon EC2 또는 FSx for Windows File Server의 Microsoft SQL Server 구성 설정을 제공합니다.</block>
   <block id="c4765968842ae076126d5ea6e55cb9cb" category="paragraph">스토리지 유형에 해당하는 탭 아래의 단계를 따릅니다.</block>
@@ -642,7 +641,6 @@
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">*지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.</block>
   <block id="13025ba9f92de77af2aeaf1af07a4aa8" category="doc">Microsoft SQL Server 배포를 위한 구성 최적화</block>
   <block id="6f2bcb2f8d4f34c036395a199095be9a" category="paragraph">평가는 워크로드 팩토리에서 관리되는 FSx for ONTAP 스토리지를 통해 Microsoft SQL Server 인스턴스에 대해 매일 한 번씩 자동으로 지속적으로 실행됩니다. 평가 보고서는 배포 후 또는 인스턴스 관리 후에 매일 예약된 작업이 실행된 경우에만 최적화 대시보드에서 사용할 수 있습니다.</block>
-  <block id="72e34efcd5e12ef888a19ad8bd33c28b" category="paragraph">워크로드 공장 은 FSx for ONTAP 스토리지에 대한 모범 사례를 기반으로 구성을 최적화하기 위한 세부 권장사항을 제공합니다.</block>
   <block id="246db1206cb640c61b32f7cea2560b8e" category="list-text">스캔된 항목</block>
   <block id="af27bafd548aa3e366e582049aeb65f1" category="list-text">워크로드 공장 Microsoft SQL Server 인스턴스에 대한 다음 구성의 최적화 상태를 평가합니다.</block>
   <block id="04dff47f9a41cfa54b616dd86a4a6043" category="list-text">스토리지 사이징: 스토리지 계층, 파일 시스템 여유 공간, 로그 드라이브 크기 및 TempDB 드라이브 크기가 포함됩니다</block>
@@ -650,7 +648,6 @@
   <block id="8bc38d27c74401312cd5c45bfd8a7d05" category="list-text">스토리지 구성: 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, 다중 경로 I/O 상태, 정책 및 세션 등이 포함됩니다</block>
   <block id="1a0e703f0bdb101f4848a5510dd8ec1c" category="list-text">읽기 또는 자동화 권한이 있는 자격 증명이 있어야 합니다.</block>
   <block id="86bd4600548ee1b734f704338ab13665" category="list-text">Microsoft SQL Server 인스턴스의 스토리지를 평가하려면 워크로드 팩토리에서 인스턴스를 관리해야 하고 스토리지 유형이 FSx for ONTAP여야 합니다.</block>
-  <block id="40213188bf240529a1293728c4187a56" category="list-text">설정이나 구성을 최적화하도록 선택하기 전에 각 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="5f4f392649432d3064fdf2a04015472b" category="list-text">드롭다운 화살표를 선택하여 모든 구성에 대한 권장 사항을 확인합니다. 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="c9e425055996f71ecfc858708d926276" category="paragraph">이 권장 사항에서는 최적화되지 않은 구성의 모범 사례와 잠재적 위험을 설명합니다.</block>
   <block id="ea3bf0643d3540c97b9b92a3fb2bbf75" category="list-text">최적화되지 않은 구성을 * 최적화 * 하려면 선택합니다.</block>
@@ -736,9 +733,6 @@
   <block id="ee7e8786e2029f74d5565c2e6e78c36b" category="inline-link-macro">워크로드 팩토리를 통해 인스턴스 관리</block>
   <block id="64fc7ef1abfec5624461bb34e030bb56" category="paragraph">호스트 인스턴스의 스토리지 유형이 FSx for ONTAP인 경우 다음을 수행할 수 있습니다 <block ref="ff12e6f62a651f5b7e33780a9c5be656" category="inline-link-macro-rx"></block>.</block>
   <block id="51bdfc0a469b2ea10ef9ab2e5263224e" category="doc">데이터베이스를 위한 BlueXP  워크로드 팩토리의 비용 절감에 대해 알아보십시오</block>
-  <block id="4237b026a2f2298ebdf4286d1e4746ed" category="paragraph">Amazon EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지와 FSx for ONTAP 스토리지를 사용한 비용을 비교하여 데이터베이스 워크로드용 BlueXP  워크로드 팩토리에서의 절감 효과를 살펴보십시오.</block>
-  <block id="900c2260545f89be7eb6271a29d450e1" category="paragraph">워크로드 팩토리에서 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 판단하면 워크로드 공장의 계산기에서 FSx for ONTAP를 통해 Microsoft SQL을 직접 구축할 수 있습니다. Elastic Block Store 또는 FSx for Windows File Server 스토리지에 Microsoft SQL Server 인스턴스가 여러 개 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.</block>
-  <block id="c0265d0f691fe5773c4ffeb0c523daf8" category="paragraph">감지된 호스트에 대한 비용 절감 효과 탐색: 워크로드 팩토리얼이 기존 Microsoft SQL 서버에 연결되고 자동 비교를 위해 계산기로 세부 정보를 가져옵니다. 이 계산기 옵션을 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.</block>
   <block id="5817c5b26a2a7f4c1334dc3c03403f64" category="paragraph">워크로드 팩토리가 감지된 Elastic Block Store 및 FSx for Windows File Server 호스트 특성을 입력하므로 자동으로 절감 효과를 살펴볼 수 있습니다.</block>
   <block id="02cb01a24a3bd2f230f64c9dacb47b9b" category="paragraph">워크로드 팩토리얼에서 EBS 호스트를 감지하면 절약 효과 탐색 탭으로 리디렉션됩니다. 워크로드 팩토리얼에서 EBS 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block></block>
   <block id="410e51fe916df293f504b839d0f57635" category="paragraph">워크로드 팩토리가 FSx for Windows 호스트를 감지하면 절약 효과 탐색 탭으로 리디렉션됩니다. 워크로드 팩토리에서 FSx for Windows 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block></block>
@@ -874,7 +868,6 @@
   <block id="934fed95fff79f45510cc744c25ff3f4" category="list-text">데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 클릭합니다.</block>
   <block id="6e07e3cf1d291785f594756e71522cfe" category="list-text">삭제할 샌드박스 클론의 3점 메뉴를 클릭합니다.</block>
   <block id="ff3a68054c116e7f9e9ea8cf123e0963" category="list-text">검색할 인스턴스의 세 점 메뉴를 클릭합니다.</block>
-  <block id="5656d5e94b1fd6f866e48df7c3bf45b3" category="paragraph">워크로드 팩토리에서는 절감 계산기를 제공하므로 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store) 및 FSx for Windows 파일 서버 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다.</block>
   <block id="2c84d2f326a80650e1f5b43257e48421" category="paragraph">이 계산기에는 이러한 Microsoft SQL Server의 데이터베이스 워크로드용 스토리지가 FSx for ONTAP 파일 시스템을 사용할 경우 비용이 덜 드는지 여부가 표시됩니다.</block>
   <block id="770dee3f954306dca2e369d2ef823c94" category="section-title">SQL Server 배포 분석</block>
   <block id="1d93f11e5331c46990f076ad4257106e" category="paragraph">이 계산기는 SQL Server 배포에 대한 포괄적인 분석을 수행하여 활용되는 리소스 및 기능이 SQL Server 버전과 적절하게 일치하는지 확인합니다. Standard Edition으로 다운그레이드를 권장하기 전에 계산기가 확인하는 주요 요소와 조건은 다음과 같습니다.</block>
@@ -908,8 +901,6 @@
   <block id="10f9689e79d67ec4a1651805229939e6" category="list-text">작업의 세 점 메뉴를 클릭하고 * Go to CloudFormation * 을 클릭하여 AWS CloudFormation 콘솔에서 작업 로그를 확인하십시오.</block>
   <block id="820e39a5de0a231b1bdee7ce11de7c77" category="summary">BlueXP  Workload Factory for Databases는 Microsoft SQL Server 구성을 스캔하여 운영 효율성을 높이는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
   <block id="d156d1de362b4c66bc3effc1835aafe1" category="paragraph">데이터베이스용 BlueXP  워크로드 공장은 Amazon FSx for NetApp ONTAP에서 실행되는 Microsoft SQL 서버 배포 구성을 지속적으로 검사하고 평가합니다. 이 기능은 최적화되지 않은 구성을 자동으로 최적화하여 데이터베이스 워크로드가 탁월한 운영을 달성할 수 있도록 통찰력과 권장 사항을 제공합니다.</block>
-  <block id="31930d30084ccfe65cbf1bef8898f9a1" category="list-text">컴퓨팅: 적합한 크기 조정 및 운영 체제 패치가 포함됩니다</block>
-  <block id="2a998f4a900b2db1c9b1028e9f7ff6f4" category="list-text">응용 프로그램: Microsoft SQL Server 라이선스를 포함합니다</block>
   <block id="53c8dd8acbb0f2913fab098279485e71" category="list-text">Inventory * 탭에서 드롭다운 화살표를 선택하여 호스트의 행을 확장하여 관리되는 인스턴스를 봅니다.</block>
   <block id="14237fbd8e1fcf850f132ae839f0337b" category="list-text">인스턴스의 세 점 메뉴를 선택한 다음 * 최적화 * 를 선택합니다.</block>
   <block id="162d1fe2bfd40fdaf4d1507dff7ac010" category="list-text">SQL Server 인스턴스의 인스턴스 최적화 페이지에서 평가 결과를 검토합니다.</block>
@@ -931,4 +922,40 @@
   <block id="a61ebf6aa74399e268808d3801b03702" category="section-title">컴퓨팅 적정 사이징 최적화</block>
   <block id="f72f493648b25528319887c50a65f0ce" category="inline-link-macro">Amazon Elastic Compute Cloud 설명서</block>
   <block id="bd5d7b32e4164faa655582f169744a05" category="paragraph">특정 인스턴스 유형으로 변경할 때 네트워크 구성이 재설정될 수 있으며, 이로 인해 최적화 중에 노드 연결이 실패하고 작업이 실패할 수 있습니다. DNS 설정 및 iSCSI 세션을 확인하고 업데이트하려면 수동 개입이 필요할 수 있습니다. EC2 크기 조정 제한에 대한 자세한 내용은 을 <block ref="b8406a09c509d5c1d937367114bd51b3" category="inline-link-macro-rx"></block>참조하십시오.</block>
+  <block id="efc2466e55cc45101064c2ade9e1ac96" category="doc">온프레미스 데이터베이스 환경 비용 분석 및 마이그레이션 계획</block>
+  <block id="b070dbce75db746d44b4965253ae3c9f" category="paragraph">이제 데이터베이스를 위한 BlueXP  워크로드 팩토리에서는 Amazon FSx for NetApp ONTAP으로 온프레미스 데이터베이스 마이그레이션을 계획하고 분석합니다. 절감 계산기를 사용하여 클라우드에서 온프레미스 데이터베이스 환경을 실행하는 비용을 예측하고 온프레미스 데이터베이스 환경을 클라우드로 마이그레이션하기 위한 권장사항을 검토할 수 있습니다.</block>
+  <block id="ae5954c9b41b0bfb09043a4117743d2d" category="inline-link-macro">온프레미스 데이터베이스 환경의 비용 절감 효과를 살펴보십시오</block>
+  <block id="9621b726ce4b31f0b7bc139a85ef6f38" category="paragraph"><block ref="9621b726ce4b31f0b7bc139a85ef6f38" category="inline-link-macro-rx"></block></block>
+  <block id="6003a521aa2fb4eca1577921d2f2d6ec" category="section-title">데이터베이스에 대한 새로운 최적화 평가</block>
+  <block id="a66d8cac65b4a62026dda75c54de5093" category="paragraph">이제 데이터베이스용 BlueXP  워크로드 공장에서 다음 평가를 사용할 수 있습니다. 이러한 평가는 잠재적인 보안 취약점을 탐지 및 방어하고 성능 병목 현상을 감지 및 완화하는 데 중점을 둡니다.</block>
+  <block id="41e5288ef108e483da5a07bf4a8c654d" category="list-text">*RSS(Receive Side Scaling) 구성*: RSS 구성이 활성화되어 있는지, 대기열 수가 권장 값으로 설정되어 있는지 확인합니다. 이 평가에서는 RSS 구성을 최적화하기 위한 권장 사항도 제공합니다.</block>
+  <block id="20c22843405fd91269ed56974f603ebf" category="list-text">* 최대 병렬 처리 수준(MAXDOP) 서버 구성 *: 이 평가에서는 MAXDOP가 올바르게 구성되었는지 확인하고 성능 최적화를 위한 권장 사항을 제공합니다.</block>
+  <block id="288748eac82542205cccb2a59e324600" category="list-text">* Microsoft SQL Server 패치 *: 이 평가에서는 최신 패치가 SQL Server 인스턴스에 설치되어 있는지 확인하고 최신 패치를 설치하는 권장 사항을 제공합니다.</block>
+  <block id="7c2632b8df180cfa1528450b19070928" category="paragraph"><block ref="7c2632b8df180cfa1528450b19070928" category="inline-link-macro-rx"></block></block>
+  <block id="5e73d91731c9445e9a0cc34e1969976a" category="summary">Amazon EBS(Elastic Block Store), FSx for Windows File Server 및 SQL Server 온프레미스 데이터베이스 스토리지를 FSx for ONTAP 스토리지와 비교하십시오.</block>
+  <block id="6bcb23607586342322d4d9d515a81317" category="paragraph">Amazon EBS(Elastic Block Store)에서 Microsoft SQL Server, FSx for Windows File Server 및 온프레미스 스토리지를 FSx for ONTAP 스토리지와 비교하여 데이터베이스 워크로드를 위한 BlueXP  워크로드 팩토리에서의 절감 효과에 대해 알아보십시오.</block>
+  <block id="9ea5b9d2d032e12bdcaba22b5a8eef05" category="paragraph">워크로드 팩토리가 제공하는 절감 계산기를 사용하면 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store), FSx for Windows File Server 및 온프레미스 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다.</block>
+  <block id="37e5334cea4e204a8d5b735d1e9c43e7" category="paragraph">워크로드 팩토리에서 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 판단하면 워크로드 공장의 계산기에서 FSx for ONTAP를 통해 Microsoft SQL을 직접 구축할 수 있습니다. Elastic Block Store, FSx for Windows File Server 또는 온프레미스 스토리지에 Microsoft SQL Server 인스턴스가 여러 개 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.</block>
+  <block id="a4b85dcfebf932701807e8b3c00ca94e" category="paragraph">감지된 호스트의 비용 절감 탐색: 워크로드 팩토리얼이 기존 Microsoft SQL 서버에 연결되며 자동 비교를 위해 계산기로 세부 정보를 가져옵니다. 이 계산기 옵션을 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.</block>
+  <block id="7cf65e2ff3a983e2d864a8b1c64765f1" category="open-title">Microsoft SQL Server 온프레미스</block>
+  <block id="a2985bc0847d7596067c038e830be18b" category="list-text">Databases(데이터베이스) 타일에서 드롭다운 메뉴에서 * Explore Savings(절약 탐색) * 를 선택한 다음 * Microsoft SQL Server On-Premise * 를 선택합니다.</block>
+  <block id="979b029ad875506edc5721a6a441e313" category="list-text">SQL Server 온-프레미스 탭에서 스크립트를 다운로드하여 온-프레미스 SQL Server 환경을 평가합니다.</block>
+  <block id="db99a3f687ce317a37116a375a2f8e0a" category="list-text">평가 스크립트를 다운로드합니다. 스크립트는 PowerShell을 기반으로 하는 데이터 수집 도구입니다. SQL Server 구성 및 성능 데이터를 수집한 후 BlueXP  워크로드 팩토리얼로 업로드합니다. 마이그레이션 어드바이저는 데이터를 평가하고 SQL Server 환경에 대한 FSx for ONTAP 배포를 계획합니다.</block>
+  <block id="2840f80705232625a2e7a961c5ae7c57" category="inline-image-macro">SQL Server 온-프레미스 탭의 스크린샷은 평가 스크립트를 다운로드하는 옵션을 보여 줍니다.</block>
+  <block id="43b057dd7af35e065506e3e9c40e69b5" category="paragraph"><block ref="43b057dd7af35e065506e3e9c40e69b5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11bfb2872e63a5ed545dd1a42c50ca27" category="list-text">SQL Server 호스트에서 스크립트를 실행합니다.</block>
+  <block id="93fc841273934516b5d0c3c8c898594c" category="list-text">워크로드 팩토리의 SQL Server 온-프레미스 탭에 스크립트 출력을 업로드합니다.</block>
+  <block id="e4784aa5341ea2989d2193e58d7d7f6d" category="inline-image-macro">SQL Server 온-프레미스 탭의 스크린샷은 평가 스크립트를 업로드하는 옵션을 보여 줍니다.</block>
+  <block id="2b894f40697fe51db0b06a9bf9f9a2a1" category="paragraph"><block ref="2b894f40697fe51db0b06a9bf9f9a2a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c034eca1def3a7b989b774cd862bad8c" category="list-text">SQL Server 온-프레미스 탭에서 * 절감 효과 탐색 * 을 선택하여 FSx for ONTAP를 기준으로 SQL Server 온프레미스 호스트의 비용 분석을 실행합니다.</block>
+  <block id="48d937e7fd66ff674c2cb93c60660383" category="list-text">Savings Calculator에서 온-프레미스 호스트의 지역을 선택합니다.</block>
+  <block id="222ef17ae6eab247553156232cd650e1" category="list-text">보다 정확한 결과를 얻으려면 컴퓨팅 정보 및 스토리지 및 성능 세부 정보를 업데이트하십시오.</block>
+  <block id="b0398f49dbe9d04be8ddd17378899545" category="list-text">필요에 따라 온프레미스 데이터베이스 환경의 클론(섀도 복사본) 및 스냅샷에 대한 다음과 같은 세부 정보를 제공하여 비용 절감 효과를 보다 정확하게 추정할 수 있습니다.</block>
+  <block id="7240997fa0d75a11f0b991615772d5d3" category="list-text">* 복제된 복사본 수 *: 온-프레미스 구성에서 복제된 복사본의 수를 입력합니다.</block>
+  <block id="2eb9a2599d85acb350f462d9f474f6c6" category="paragraph">워크로드 공장 은 FSx for ONTAP 스토리지에 대한 모범 사례를 기반으로 구성을 최적화하기 위한 세부 권장사항을 제공합니다. 권장 사항을 검토하고 최적화되지 않은 구성을 최적화하도록 선택할 수 있습니다.</block>
+  <block id="4597adc0f9f3096964b3b3efbe708588" category="list-text">컴퓨팅: 적절한 크기 조정, 운영 체제 패치 및 RSS(Receive Side Scaling) 및 TCP 오프로딩과 같은 네트워크 어댑터 설정이 포함됩니다</block>
+  <block id="af022f8b2257d68b04e48e672c457177" category="list-text">응용 프로그램: Microsoft SQL Server 라이선스, Microsoft SQL Server 패치 및 MAXDOP 설정이 포함됩니다</block>
+  <block id="7a4fa85db3c457278cffd34e817477ab" category="list-text">설정이나 구성을 최적화하도록 선택하기 전에 각 권장 사항을 주의 깊게 검토하십시오. RSS 및 MAXDOP 설정의 경우 프로덕션 환경을 변경하기 전에 권장 설정을 테스트하여 성능 개선을 확인하는 것이 좋습니다.</block>
+  <block id="926cb4c482170392f69cc268b20f8346" category="admonition">최적화 프로세스로 인해 인스턴스 가동 중지 또는 서비스 중단이 발생할 수 있습니다. 구성을 최적화하도록 선택하기 전에 최적화 요약 및 작업 항목을 검토하십시오.</block>
+  <block id="1c8d307950dbef59ce61b6bc729fdb52" category="section-title">2025년 2월 3일</block>
 </blocks>
