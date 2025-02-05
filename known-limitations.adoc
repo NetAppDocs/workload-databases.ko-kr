@@ -100,12 +100,28 @@ Workload Factory는 여러 FSx for ONTAP 파일 시스템에서 Microsoft SQL Se
 
 
 
-== 최적화를 위한 운영 체제 패치 평가
+== 최적화 제한 사항
+
+
+
+=== 컴퓨팅 적정 사이징 최적화
+
+특정 인스턴스 유형으로 변경할 때 네트워크 구성이 재설정될 수 있으며, 이로 인해 최적화 중에 노드 연결이 실패하고 작업이 실패할 수 있습니다. DNS 설정 및 iSCSI 세션을 확인하고 업데이트하려면 수동 개입이 필요할 수 있습니다. EC2 크기 조정 제한에 대한 자세한 내용은 을 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resize-limitations.html["Amazon Elastic Compute Cloud 설명서"^]참조하십시오.
+
+
+
+=== ONTAP 및 OS 구성 최적화
+
+둘 이상의 SQL Server 인스턴스에 대한 대량 최적화는 ONTAP 구성 및 OS 구성에 지원되지 않습니다.
+
+
+
+=== 최적화를 위한 운영 체제 패치 평가
 
 최적화 목적으로 만들어진 운영 체제 패치 평가는 사설 네트워크에서는 작동하지 않을 수 있습니다. 이 평가는 AWS Patch Manager에 의존합니다. 전용 네트워크에서 Windows EC2 인스턴스를 패치하는 방법에 대한 자세한 내용은 을 link:https://aws.amazon.com/blogs/mt/how-to-patch-windows-ec2-instances-in-private-subnets-using-aws-systems-manager/["AWS Cloud Operations 블로그 "AWS Systems Manager를 사용하여 프라이빗 서브넷에서 Windows EC2 인스턴스를 패치하는 방법""^]참조하십시오.
 
 
 
-== 컴퓨팅 적정 사이징 최적화
+== 온프레미스 비용 절감 계산
 
-특정 인스턴스 유형으로 변경할 때 네트워크 구성이 재설정될 수 있으며, 이로 인해 최적화 중에 노드 연결이 실패하고 작업이 실패할 수 있습니다. DNS 설정 및 iSCSI 세션을 확인하고 업데이트하려면 수동 개입이 필요할 수 있습니다. EC2 크기 조정 제한에 대한 자세한 내용은 을 link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resize-limitations.html["Amazon Elastic Compute Cloud 설명서"^]참조하십시오.
+Microsoft SQL Server 온-프레미스 스토리지에 대한 볼륨 크기의 비용 및 비율 절감 계산은 고려하지 않습니다.

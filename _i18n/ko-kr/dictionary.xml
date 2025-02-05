@@ -958,4 +958,9 @@
   <block id="7a4fa85db3c457278cffd34e817477ab" category="list-text">설정이나 구성을 최적화하도록 선택하기 전에 각 권장 사항을 주의 깊게 검토하십시오. RSS 및 MAXDOP 설정의 경우 프로덕션 환경을 변경하기 전에 권장 설정을 테스트하여 성능 개선을 확인하는 것이 좋습니다.</block>
   <block id="926cb4c482170392f69cc268b20f8346" category="admonition">최적화 프로세스로 인해 인스턴스 가동 중지 또는 서비스 중단이 발생할 수 있습니다. 구성을 최적화하도록 선택하기 전에 최적화 요약 및 작업 항목을 검토하십시오.</block>
   <block id="1c8d307950dbef59ce61b6bc729fdb52" category="section-title">2025년 2월 3일</block>
+  <block id="382e51924c0a806fea2a0017322199a5" category="section-title">최적화 제한 사항</block>
+  <block id="d65e48d2f6a810cde4c31e5a88aecedb" category="section-title">ONTAP 및 OS 구성 최적화</block>
+  <block id="8e29c0a71b0719e3f6ed28d4a7c0b30d" category="paragraph">둘 이상의 SQL Server 인스턴스에 대한 대량 최적화는 ONTAP 구성 및 OS 구성에 지원되지 않습니다.</block>
+  <block id="7dd6090f4d4627220763b41db74bb898" category="section-title">온프레미스 비용 절감 계산</block>
+  <block id="9fb10d1d0413bc062aa3f807aa200e53" category="paragraph">Microsoft SQL Server 온-프레미스 스토리지에 대한 볼륨 크기의 비용 및 비율 절감 계산은 고려하지 않습니다.</block>
 </blocks>
