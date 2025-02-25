@@ -43,6 +43,14 @@ Microsoft SQL Server 인스턴스 관리에는 다음 작업이 포함됩니다.
 * `fsx`
 
 
+EC2 인스턴스의 모든 아웃바운드 연결에 프록시 서버를 사용하는 경우 관리 작업이 작동하도록 다음 도메인에 대한 액세스를 허용해야 합니다.
+
+* ``.microsoft.com``
+* ``.powershellgallery.com``
+* ``.aws.amazon.com``
+* ``.amazonaws.com``
+
+
 .시작하기 전에
 시작하기 전에 다음 사전 요구 사항을 완료하십시오.
 
