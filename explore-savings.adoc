@@ -17,13 +17,21 @@ Amazon EBS(Elastic Block Store)에서 Microsoft SQL Server, FSx for Windows File
 
 == 이 작업에 대해
 
-워크로드 팩토리가 제공하는 절감 계산기를 사용하면 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store), FSx for Windows File Server 및 온프레미스 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다.
+워크로드 팩토리에는 Amazon EBS(Elastic Block Store), FSx for Windows File Server 및 온프레미스 스토리지에서 실행되는 데이터베이스 워크로드의 비용 절감을 확인할 수 있는 다양한 방법이 있습니다. 대시보드, 인벤토리 탭, 절감 탐색 탭에서 확인할 수 있습니다. 모든 경우에 이 절감 계산기를 사용하여 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store), FSx for Windows 파일 서버 및 온프레미스 스토리지와 비교할 수 있습니다.
 
-이 계산기에는 이러한 Microsoft SQL Server의 데이터베이스 워크로드용 스토리지가 FSx for ONTAP 파일 시스템을 사용할 경우 비용이 덜 드는지 여부가 표시됩니다.
+워크로드 팩토리에서 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 결정하면 워크로드 공장의 절감 계산기에서 FSx for ONTAP를 통해 Microsoft SQL을 직접 구축할 수 있습니다. Elastic Block Store, FSx for Windows File Server 또는 온프레미스 스토리지에 Microsoft SQL Server 인스턴스가 여러 개 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.
 
-image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스크린샷은 스냅샷 및 클론 값을 사용자 지정할 수 있는 옵션과 함께 왼쪽에 선택한 Microsoft SQL Server on Amazon Elastic Block Store 구성을 보여 줍니다. FSx for ONTAP 및 Elastic Block Store 스토리지에서 Microsoft SQL Server를 사용할 때의 총 월별 비용은 왼쪽에 표시됩니다."]
+.모든 데이터베이스 작업 부하에 대한 잠재적 절감 효과
+워크로드 공장 콘솔에서 데이터베이스 * 대시보드 * 로 이동하여 FSx for ONTAP에서 모든 데이터베이스 워크로드를 실행할 때 발생할 수 있는 잠재적 비용 절감의 개요를 확인하십시오. potential savings * 타일에서 Elastic Block Store 및 FSx for Windows File Server에 있는 모든 데이터베이스 워크로드의 수, 잠재적 비용 절감, 절약 비율, 막대 그래프에 시각적 표시를 볼 수 있습니다.
 
-워크로드 팩토리에서 이러한 워크로드를 FSx for ONTAP 파일 시스템에서 실행하여 비용을 절감할 수 있다고 판단하면 워크로드 공장의 계산기에서 FSx for ONTAP를 통해 Microsoft SQL을 직접 구축할 수 있습니다. Elastic Block Store, FSx for Windows File Server 또는 온프레미스 스토리지에 Microsoft SQL Server 인스턴스가 여러 개 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.
+image:screenshot-dashboard-potential-savings-tile.png["워크로드 공장 콘솔의 데이터베이스 대시보드의 잠재적 절약 타일 스크린샷 잠재적 절약 타일에는 Elastic Block Store 및 FSx for Windows File Server에 있는 모든 데이터베이스 워크로드의 수, 잠재적 비용 절감, 절약 비율, 막대 그래프의 시각적 표현이 표시됩니다."]
+
+.비용 절감 계산기
+절감 계산기를 활용하여 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store), FSx for Windows File Server, 온프레미스 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다.
+
+이 계산기에는 이러한 Microsoft SQL Server의 데이터베이스 워크로드용 스토리지가 FSx for ONTAP 파일 시스템을 사용할 경우 비용이 덜 드는지 여부가 표시됩니다. <<계산기 옵션,계산기 사용 방법에 대해 알아보십시오.>>
+
+image:screenshot-ebs-savings-calculator-update.png["저축 계산기 페이지의 스크린샷은 스냅샷 및 클론 값을 사용자 지정할 수 있는 옵션과 함께 왼쪽에 선택한 Microsoft SQL Server on Amazon Elastic Block Store 구성을 보여 줍니다. FSx for ONTAP 및 Elastic Block Store 스토리지에서 Microsoft SQL Server를 사용할 때의 총 월별 비용은 왼쪽에 표시됩니다."]
 
 
 
@@ -66,6 +74,8 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 
 감지된 호스트의 비용 절감 탐색: 워크로드 팩토리얼이 기존 Microsoft SQL 서버에 연결되며 자동 비교를 위해 계산기로 세부 정보를 가져옵니다. 이 계산기 옵션을 사용하려면 자동 사용 권한을 부여해야 합니다. 사용 사례를 변경할 수 있지만 다른 모든 세부 정보는 계산에서 자동으로 결정됩니다.
 
+또한 계산기 분석의 정확도를 개선할 수 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 자격 증명을 추가합니다"^]있습니다. 기존 리소스를 기준으로 절약 비율 계산 * 을 선택합니다. 자격 증명 추가 페이지로 리디렉션됩니다. 자격 증명을 추가한 후 FSx for ONTAP와 비교할 기존 리소스를 선택하고 * 절감 효과 탐색 * 을 선택합니다.
+
 
 
 === 맞춤화를 통한 절감 효과를 살펴보십시오
@@ -105,10 +115,6 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 .. 상시 가용성 배포 모델을 선택한 경우 * 보조 EC2 사양 * 및 * 볼륨 유형 * 에 대한 세부 정보를 제공하십시오.
 
 
-. 페이지에 제공된 계산 및 권장 사항을 검토합니다.
-+
-또한 페이지 하단으로 스크롤하여 * Export PDF * 또는 * View Calculations * 로 이동합니다.
-
 
 
 --
@@ -138,14 +144,21 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 .. EC2 규격 아래의 드롭다운 메뉴에서 * 인스턴스 유형 * 을 선택합니다.
 
 
-. 페이지에 제공된 계산 및 권장 사항을 검토합니다.
-+
-또한 페이지 하단으로 스크롤하여 * Export PDF * 또는 * View Calculations * 로 이동합니다.
-
 
 
 --
 ====
+데이터베이스 호스트 구성에 대한 세부 정보를 제공한 후 페이지에 제공된 계산 및 권장 사항을 검토합니다.
+
+또한 페이지 하단으로 스크롤하여 다음 중 하나를 선택하여 보고서를 봅니다.
+
+* * PDF 내보내기 *
+* * 이메일로 보내기 *
+* * 계산 보기 *
+
+
+FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
+
 
 
 === 감지된 호스트에 대한 절약 효과를 탐색합니다
@@ -180,10 +193,6 @@ image:screenshot-ebs-savings-calculator.png["저축 계산기 페이지의 스�
 .. * 월별 변경율 *: 클론 및 스냅샷 데이터가 매월 평균 변경되는 비율을 입력합니다.
 
 
-. 페이지에 제공된 계산 및 권장 사항을 검토합니다.
-+
-또한 페이지 하단으로 스크롤하여 * Export PDF * 또는 * View Calculations * 로 이동합니다.
-
 
 
 --
@@ -206,10 +215,6 @@ Windows용 FSx 섀도 복사본이 감지되면 기본값은 * Daily * 입니다
 .. * 복제된 복사본 수 *: Windows용 FSx 구성에 복제된 복사본 수를 입력합니다.
 .. * 월별 변경율 *: 클론 및 스냅샷 데이터가 매월 평균 변경되는 비율을 입력합니다.
 
-
-. 페이지에 제공된 계산 및 권장 사항을 검토합니다.
-+
-또한 페이지 하단으로 스크롤하여 * Export PDF * 또는 * View Calculations * 로 이동합니다.
 
 
 
@@ -246,14 +251,21 @@ Windows용 FSx 섀도 복사본이 감지되면 기본값은 * Daily * 입니다
 .. * 월별 변경율 *: 클론 및 스냅샷 데이터가 매월 평균 변경되는 비율을 입력합니다.
 
 
-. 페이지에 제공된 계산 및 권장 사항을 검토합니다.
-+
-또한 페이지 하단으로 스크롤하여 * Export PDF * 또는 * View Calculations * 로 이동합니다.
-
 
 
 --
 ====
+데이터베이스 호스트 구성에 대한 세부 정보를 제공한 후 페이지에 제공된 계산 및 권장 사항을 검토합니다.
+
+또한 페이지 하단으로 스크롤하여 다음 중 하나를 선택하여 보고서를 봅니다.
+
+* * PDF 내보내기 *
+* * 이메일로 보내기 *
+* * 계산 보기 *
+
+
+FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
+
 
 
 == FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다

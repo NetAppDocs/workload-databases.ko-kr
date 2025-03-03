@@ -26,6 +26,7 @@ summary: BlueXP  Workload Factory for Databases는 Microsoft SQL Server 구성�
 * 스토리지 구성: 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, 다중 경로 I/O 상태, 정책 및 세션 등이 포함됩니다
 * 컴퓨팅: 적절한 크기 조정, 운영 체제 패치 및 RSS(Receive Side Scaling) 및 TCP 오프로딩과 같은 네트워크 어댑터 설정이 포함됩니다
 * 응용 프로그램: Microsoft SQL Server 라이선스, Microsoft SQL Server 패치 및 MAXDOP 설정이 포함됩니다
+* 복구: 로컬 스냅샷이 포함됩니다
 
 
 --

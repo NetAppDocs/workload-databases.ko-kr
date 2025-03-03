@@ -14,9 +14,7 @@ summary: BlueXP  워크로드 팩토리 내에서 데이터베이스용 새 Mic
 BlueXP  워크로드 팩터에서 데이터베이스를 위한 새로운 Microsoft SQL Server 또는 데이터베이스 호스트를 생성하려면 Active Directory를 위한 FSx for ONTAP 파일 시스템 구축 및 리소스가 필요합니다.
 
 .이 작업에 대해
-AWS 계정 자격 증명과 _automate_permissions가 필요합니다.
-
-시작하기 전에 데이터베이스 호스트 구성에 사용할 수 있는 스토리지 배포 유형, Active Directory 배포, 작업 부하 출고 시 작업 모드 및 이 작업을 완료하기 위한 요구 사항에 대해 알아봅니다.
+워크로드 팩토리로부터 Microsoft SQL Server를 생성하기 전에 데이터베이스 호스트 구성, Active Directory 배포, 워크로드 팩토리 작동 모드 및 이 작업을 완료하기 위한 요구 사항에 대해 알아보십시오.
 
 배포 후에는 <<2단계: Microsoft SQL Server에서 원격 연결을 사용하도록 설정합니다,Microsoft SQL Server에서 원격 연결을 활성화합니다>>수행해야 합니다.
 
