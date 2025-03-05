@@ -619,9 +619,7 @@
   <block id="cfa54b7dd19dd91bb87ede68126951eb" category="list-text"><block ref="25f6388206f436c2d1de63216302b13d" prefix="" category="inline-code"></block></block>
   <block id="8d461d34b0f2c02565383f3301044282" category="list-text"><block ref="fea0543b0b4b9d4c240c6219de0db41c" prefix="" category="inline-code"></block></block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024년 9월 29일</block>
-  <block id="9a178ca3815f6aeb284a65e10447f086" category="paragraph"><block ref="9a178ca3815f6aeb284a65e10447f086" category="inline-link-macro-rx"></block></block>
   <block id="7d6d6d8a97f883d860bff04c0be1019c" category="inline-link-macro">데이터베이스 워크로드에서 FSx for ONTAP으로 비용 절감 에 대해 알아보십시오</block>
-  <block id="293758d509326f8da42abf75db2d37e6" category="paragraph"><block ref="293758d509326f8da42abf75db2d37e6" category="inline-link-macro-rx"></block></block>
   <block id="fbcbba8054f71f57fa8e2b950179bb23" category="paragraph">데이터베이스 서버에서 생성할 수 있는 샌드박스 클론의 최대 수는 90개입니다.</block>
   <block id="0928468cb2283b21e6802a78c6a64e3a" category="doc">데이터베이스를 통해 Microsoft SQL Server 워크로드를 지속적으로 최적화합니다</block>
   <block id="e73fa899152fb6836032fef4e1c95da4" category="paragraph">BlueXP  워크로드 공장에는 Amazon FSx for NetApp ONTAP에서 Microsoft SQL Server 워크로드의 스토리지 구성 요소에 대한 모범 사례를 지속적으로 최적화하고 준수하기 위해 지속적인 지침과 가드레일이 도입되었습니다. 이 기능은 고객의 Microsoft SQL Server 자산을 지속적으로 검사하여 최고의 성능, 비용 효율성, 규정 준수를 달성하는 데 도움이 되는 인사이트, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.</block>
@@ -629,9 +627,7 @@
   <block id="72d1af9ffdd277a1cf7789b588da9b4d" category="paragraph"><block ref="72d1af9ffdd277a1cf7789b588da9b4d" category="inline-link-macro-rx"></block></block>
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 지원</block>
   <block id="822802a1673e79cb7dbd54947e4dc32c" category="paragraph">이제 코드상자에서 Terraform을 사용하여 Microsoft SQL Server를 배포할 수 있습니다.</block>
-  <block id="d83b54de9b50110195e4bf3c1f3c6a67" category="list-text"><block ref="d83b54de9b50110195e4bf3c1f3c6a67" category="inline-link-macro-rx"></block></block>
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">코드박스에서 Terraform을 사용합니다</block>
-  <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">*지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.</block>
   <block id="13025ba9f92de77af2aeaf1af07a4aa8" category="doc">Microsoft SQL Server 배포를 위한 구성 최적화</block>
@@ -669,7 +665,6 @@
   <block id="35c4b7b7975b86786b96de60f8d9159c" category="doc">데이터베이스용 BlueXP  워크로드 공장 초기 릴리즈</block>
   <block id="fe582581097e432c4b1b3f3135f39b72" category="paragraph">초기 릴리즈에는 데이터베이스 워크로드를 위한 스토리지 환경으로 Amazon FSx for NetApp ONTAP을 사용하여 비용 절감을 탐색하고, Microsoft SQL Server를 감지, 관리 및 배포하고, 데이터베이스를 배포 및 복제하고, 워크로드 공장 내에서 이러한 작업을 모니터링하는 기능이 포함되어 있습니다.</block>
   <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">워크로드 팩토리 콘솔</block>
-  <block id="e93e8519fa9c34d76ec0735119a46866" category="paragraph">이제 <block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block>홈 페이지에서 절약 계산기로 이동할 수 있습니다. Elastic Block Store 및 FSx for Windows File Server에서 선택하여 시작합니다.</block>
   <block id="ab1e050e49bbc49befbca952f74f0443" category="inline-image-macro">워크로드 팩토리 콘솔 홈 페이지의 스크린샷 새 절약 탐색 단추가 있는 데이터베이스 타일을 보여 주는 이미지입니다. 버튼을 클릭하여 드롭다운 메뉴를 엽니다. 드롭다운 메뉴에는 EBS의 Microsoft SQL Server와 Windows용 FSx 파일 서버의 Microsoft SQL Server의 두 가지 옵션이 있습니다.</block>
   <block id="923f11c15ceba3bc0e4d37309ab27ed2" category="paragraph"><block ref="923f11c15ceba3bc0e4d37309ab27ed2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e73a65c2de8a6be7664465f03b5fb30" category="doc">데이터베이스를 위한 BlueXP  워크로드 공장에서 Codebox로 자동화</block>
@@ -963,7 +958,6 @@
   <block id="1414de2121340ce91492c56f7800fcc7" category="section-title">PostgreSQL 서버 생성을 위한 Terraform 지원</block>
   <block id="9156ac6cc60e32ed114af1a49af0ffed" category="paragraph">이제 Codebox에서 Terraform을 사용하여 PostgreSQL을 배포할 수 있습니다.</block>
   <block id="7a5745faeabd31c33609adf25373d8a1" category="inline-link-macro">PostgreSQL 데이터베이스 서버를 생성합니다</block>
-  <block id="61b5b69de9c821f5e486ec9c30a821a4" category="list-text"><block ref="61b5b69de9c821f5e486ec9c30a821a4" category="inline-link-macro-rx"></block></block>
   <block id="6a7893eb24462b3da7dd0a66586c5738" category="section-title">로컬 스냅샷 일정에 대한 복원력 평가</block>
   <block id="677bceea5ebbea10cf85a91ebf42050e" category="paragraph">데이터베이스 워크로드에 새로운 복원력 평가를 사용할 수 있습니다. Microsoft SQL Server 인스턴스의 볼륨에 유효한 예약된 스냅샷 정책이 있는지 평가합니다. 스냅샷은 데이터의 특정 시점 복사본이며 데이터 손실 시 데이터베이스 환경의 복원력을 유지하는 데 도움이 됩니다.</block>
   <block id="90814442b7f0694d712f43efffe9c178" category="section-title">데이터베이스 워크로드에 대한 MAXDOP 해결</block>
@@ -1005,4 +999,9 @@
   <block id="593a4cc0b797fa5f4354bae99e3fa42d" category="list-text">복구: 로컬 스냅샷이 포함됩니다</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025년 3월 3일</block>
   <block id="5b9ce98e8b3125f8d921be7829ab8a26" category="sidebar">Microsoft SQL Server를 만듭니다</block>
+  <block id="25b3aca23d0668827e396e11779fd3e8" category="paragraph"><block ref="25b3aca23d0668827e396e11779fd3e8" category="inline-link-macro-rx"></block></block>
+  <block id="0cff8121f4037cd80252c2bfd1bbc480" category="paragraph">이제 <block ref="9086d555f1d70469f26e2dfccd9f366f" category="inline-link-macro-rx"></block>홈 페이지에서 절약 계산기로 이동할 수 있습니다. Elastic Block Store 및 FSx for Windows File Server에서 선택하여 시작합니다.</block>
+  <block id="05e1e00bdb39e9c766a6a0f69a222a3b" category="list-text"><block ref="05e1e00bdb39e9c766a6a0f69a222a3b" category="inline-link-macro-rx"></block></block>
+  <block id="7115d78353263dbb2dbe063624f9f601" category="list-text"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
+  <block id="4666cc74583e6d5c1f202a52bee57a9b" category="list-text"><block ref="4666cc74583e6d5c1f202a52bee57a9b" category="inline-link-macro-rx"></block></block>
 </blocks>
