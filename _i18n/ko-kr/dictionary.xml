@@ -98,7 +98,6 @@
   <block id="8738f299dd52a2650f23bf1ae30694fa" category="list-text">Cluster configuration - Node 1 * 필드의 드롭다운 메뉴에서 * Availability zone * 의 가용 영역을 선택하고 * Subnet * 드롭다운 메뉴에서 서브넷을 선택합니다.</block>
   <block id="9c622025b2f6aaf628ede7de56df481b" category="list-text">FCI 배포를 위한 것입니다</block>
   <block id="5ac7c1b392927ce429f17a8855e854b5" category="list-text">* 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다.</block>
-  <block id="a2c08d4b7f2bbde30396036629003448" category="paragraph">새 서버 배포 중에 세 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.</block>
   <block id="ba4f09fe932ad91d759a5dd3636acec6" category="list-text">노드에서 Microsoft SQL 및 Windows 클러스터 통신에 필요한 포트 및 프로토콜을 지원하기 위한 워크로드 보안 그룹이 생성됩니다.</block>
   <block id="1f653bdd2a02e3ebdc4f28328a96b00f" category="list-text">AWS에서 관리하는 Active Directory의 경우 디렉터리 서비스에 연결된 보안 그룹이 Microsoft SQL 노드에 자동으로 추가되어 Active Directory와 통신할 수 있습니다.</block>
   <block id="84c62c2707904a024819612ef450ef1d" category="list-text">기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 SQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다. 새 FSx for ONTAP 시스템이 생성되면 FSx for ONTAP 파일 시스템에 대한 새 보안 그룹이 생성되고 동일한 보안 그룹도 SQL 노드에 연결됩니다.</block>
@@ -1004,4 +1003,5 @@
   <block id="05e1e00bdb39e9c766a6a0f69a222a3b" category="list-text"><block ref="05e1e00bdb39e9c766a6a0f69a222a3b" category="inline-link-macro-rx"></block></block>
   <block id="7115d78353263dbb2dbe063624f9f601" category="list-text"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
   <block id="4666cc74583e6d5c1f202a52bee57a9b" category="list-text"><block ref="4666cc74583e6d5c1f202a52bee57a9b" category="inline-link-macro-rx"></block></block>
+  <block id="b344730cd36668c36266c1d50c447eea" category="list-text">* 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다. 새 서버 배포 중에 세 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.</block>
 </blocks>
