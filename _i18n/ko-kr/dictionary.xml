@@ -968,10 +968,8 @@
   <block id="a54a2d2457f861c5ced69c71edee65c9" category="paragraph">FSx for ONTAP 파일 시스템에는 두 가지 PostgreSQL 서버 배포 모델(_HA(고가용성)_ 또는 _single instance_)이 있습니다. 선택한 FSx for ONTAP 배포 모델에 따라 FSx for ONTAP 파일 시스템에 대해 다양한 리소스가 생성됩니다.</block>
   <block id="7081d1beb2d41751a0211b5a5c5f3b56" category="list-text">* 고가용성(HA) 배포 *: HA 배포를 위해 새로운 FSx for ONTAP 파일 시스템을 선택하면 다중 가용성 영역 FSx for NetApp ONTAP 파일 시스템이 구축됩니다. HA 구축 환경에서는 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨과 LUN이 생성됩니다. Windows 클러스터용 쿼럼 또는 감시 디스크에 대해 추가 볼륨 및 LUN이 생성됩니다. HA 배포는 기본 및 보조 PostgreSQL 서버 간의 스트리밍 복제를 구성합니다.</block>
   <block id="30e232f58ccaf796b9d3c66a4c7f3eae" category="list-text">* 단일 인스턴스 배포 *: 새 PostgreSQL 서버가 생성될 때 단일 가용성 영역 FSx for ONTAP 파일 시스템이 생성됩니다. 또한 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨과 LUN이 생성됩니다.</block>
-  <block id="958f5530e9f1db947c4f18b3cc30b2e9" category="admonition">_Quick create_에서 HA는 기본 배포 모델이고, Windows 2016은 기본 Windows 버전이고, SQL 2019 Standard Edition은 기본 SQL 버전입니다.</block>
   <block id="8afd299f4346ad5e3b322116411294bc" category="list-text">Databases(데이터베이스) 타일에서 * Deploy database host * 를 선택한 다음 드롭다운 메뉴에서 * PostgreSQL Server * 를 선택합니다.</block>
   <block id="5ac68d725f8eef71a0523eb1c6cca14f" category="list-text">Landing zone * 아래에 다음을 제공합니다.</block>
-  <block id="a18df64f6d327d9f4d8ffd9736b846f6" category="admonition">HA 구축은 MAZ(Multiple Availability Zone) FSx for ONTAP 구성에서만 지원됩니다.</block>
   <block id="9a7005e13653f915b8e1367cbdc68e4e" category="list-text">배포 모델 * 에서 * 독립 실행형 인스턴스 * 또는 * 고가용성(HA) * 을 선택합니다.</block>
   <block id="c4ccde85ea5b8e0593caaf8004ff8930" category="list-text">HA 배포를 위한 것입니다</block>
   <block id="d2eadd2943100e3e5ea25460fadf93c2" category="list-text">새로운 FSx for ONTAP 파일 시스템의 경우 새 보안 그룹이 생성되어 SQL 노드에 연결됩니다. 기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 PostgreSQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다.</block>
@@ -1004,4 +1002,5 @@
   <block id="7115d78353263dbb2dbe063624f9f601" category="list-text"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
   <block id="4666cc74583e6d5c1f202a52bee57a9b" category="list-text"><block ref="4666cc74583e6d5c1f202a52bee57a9b" category="inline-link-macro-rx"></block></block>
   <block id="b344730cd36668c36266c1d50c447eea" category="list-text">* 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다. 새 서버 배포 중에 세 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.</block>
+  <block id="372b286436aa00cac0e53fa1f2a9c659" category="paragraph">Advanced create_deployment 모드를 사용하면 _automate_mode 권한을 사용하여 워크로드 팩토리얼에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
 </blocks>
