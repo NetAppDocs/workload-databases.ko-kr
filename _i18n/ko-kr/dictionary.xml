@@ -989,7 +989,6 @@
   <block id="3902a76bb589f831b404ce1ec9865654" category="list-text">* 계산 보기 *</block>
   <block id="68bfcbb9e0f73d04499c64e0bc23d369" category="inline-xref">FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다</block>
   <block id="a8aa5970e795fc6acbc94959e79d385e" category="paragraph">FSx for ONTAP으로 전환하려면 의 지침을 <block ref="111c1b12d181a36b3809e884a469d22f" category="inline-xref-macro-rx"></block>따릅니다.</block>
-  <block id="593a4cc0b797fa5f4354bae99e3fa42d" category="list-text">복구: 로컬 스냅샷이 포함됩니다</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025년 3월 3일</block>
   <block id="5b9ce98e8b3125f8d921be7829ab8a26" category="sidebar">Microsoft SQL Server를 만듭니다</block>
   <block id="25b3aca23d0668827e396e11779fd3e8" category="paragraph"><block ref="25b3aca23d0668827e396e11779fd3e8" category="inline-link-macro-rx"></block></block>
@@ -998,7 +997,37 @@
   <block id="7115d78353263dbb2dbe063624f9f601" category="list-text"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
   <block id="4666cc74583e6d5c1f202a52bee57a9b" category="list-text"><block ref="4666cc74583e6d5c1f202a52bee57a9b" category="inline-link-macro-rx"></block></block>
   <block id="b344730cd36668c36266c1d50c447eea" category="list-text">* 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다. 새 서버 배포 중에 세 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.</block>
-  <block id="372b286436aa00cac0e53fa1f2a9c659" category="paragraph">Advanced create_deployment 모드를 사용하면 _automate_mode 권한을 사용하여 워크로드 팩토리얼에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. <block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>..</block>
   <block id="292e876f4d1d5af73b815913bd3d9b26" category="doc">PostgreSQL 고가용성 구성입니다</block>
   <block id="047e8f86b83bb2e8d4c34b1dc560257b" category="paragraph">이제 PostgreSQL Server에 대한 고가용성(HA) 구성을 배포할 수 있습니다.</block>
+  <block id="8bb788607f31f673e25d0ba34b09a14d" category="doc">최적화 개선 사항</block>
+  <block id="7e9a755c644cbdbaab2927671606cf89" category="paragraph">데이터베이스 환경을 최적화할 때 새로운 최적화 평가, 해결 및 여러 리소스 표시를 사용할 수 있습니다.</block>
+  <block id="3cde2cfbcdbdd79a3c1d3d6b547ab80d" category="section-title">복구 성능 평가</block>
+  <block id="218733e992141498b68631094f232446" category="paragraph">향상된 기능으로는 데이터 이중화 및 재해 복구 기능이 데이터베이스 환경에 맞게 구성되었는지 확인하기 위한 새로운 복구 성능 평가가 포함됩니다.</block>
+  <block id="a8b36cbcd13facdcd526df9ca0c4aba5" category="list-text">FSx for ONTAP 백업: SQL Server 인스턴스의 볼륨을 지원하는 FSx for ONTAP 파일 시스템이 예약된 FSx for ONTAP 백업을 사용하여 구성되었는지 여부를 분석합니다.</block>
+  <block id="3ddd695d01877806196cb9bc8be009da" category="list-text">지역 간 복제: Microsoft SQL Server 인스턴스를 지원하는 FSx for ONTAP 파일 시스템이 지역 간 복제로 구성되는지 평가합니다.</block>
+  <block id="233f3c54635152d78b375495cd0b5580" category="section-title">컴퓨팅 조정</block>
+  <block id="c4b982d56748631e5cf80fe05312f901" category="paragraph">RSS(Receive Side Scaling) 조정은 RSS를 구성하여 여러 프로세서에 걸쳐 네트워크 처리를 분산시키고 효율적인 로드 분산을 보장합니다.</block>
+  <block id="9ed609dc6760dae060dbad52b3aa2d42" category="section-title">로컬 스냅샷 수정</block>
+  <block id="229b55b063b8208ec58911841f6bad18" category="paragraph">로컬 스냅샷 해결을 통해 Microsoft SQL Server 인스턴스 볼륨에 대한 스냅샷 정책을 설정하여 데이터 손실 시 데이터베이스 환경의 복원력을 유지합니다.</block>
+  <block id="14684cd0a52a7f7301e2400ff9ce8c16" category="section-title">여러 리소스 선택 지원</block>
+  <block id="909e5b19987da9dd66e288802ac9729e" category="paragraph">이제 데이터베이스 구성을 최적화할 때 모든 리소스 대신 특정 리소스를 선택할 수 있습니다.</block>
+  <block id="d36362545a72cd1eef4186ca8a99dca1" category="section-title">인벤토리 보기가 개선되었습니다</block>
+  <block id="9f3b67d6f0d3de869a895be1df755a3b" category="paragraph">워크로드 팩토리 콘솔의 인벤토리 탭은 Amazon FSx for NetApp ONTAP에서 실행되는 SQL 서버만 포함되도록 간소화되었습니다. 이제 온프레미스에서 Amazon Elastic Block Store 및 Amazon FSx for Windows File Server에서 실행되는 SQL 서버를 탐색 절약 탭에 찾을 수 있습니다.</block>
+  <block id="b66e93ffc0672f74db831d8f9d81fdba" category="section-title">PostgreSQL 서버 배포에 빠른 생성을 사용할 수 있습니다</block>
+  <block id="f7d019f8da84eee0771921896cbb0cd5" category="paragraph">이 빠른 배포 옵션을 사용하여 HA 구성 및 내장된 모범 사례를 사용하여 PostgreSQL 서버를 생성할 수 있습니다.</block>
+  <block id="5963667f9fe01282fae9030cccbd24a3" category="paragraph"><block ref="5963667f9fe01282fae9030cccbd24a3" category="inline-link-macro-rx"></block></block>
+  <block id="958f5530e9f1db947c4f18b3cc30b2e9" category="admonition">_Quick create_에서 HA는 기본 배포 모델이고, Windows 2016은 기본 Windows 버전이고, SQL 2019 Standard Edition은 기본 SQL 버전입니다.</block>
+  <block id="a18df64f6d327d9f4d8ffd9736b846f6" category="admonition">HA 구축은 MAZ(Multiple Availability Zone) FSx for ONTAP 구성에서만 지원됩니다.</block>
+  <block id="b06b1cc67628f13db38ca890693627fb" category="section-title">교차 지역 복제 평가</block>
+  <block id="425a11288e6c089ecf9966b89b9be4eb" category="list-text">대상 FSx for ONTAP 파일 시스템이 다른 AWS 계정에 있는 경우 최적화 평가를 통해 지역 간 복제(CRR)가 사용되고 있는지 확인할 수 없습니다.</block>
+  <block id="a73971e47314d5a9302d6e0e452948e6" category="list-text">워크로드 공장에서 소스 FSx for ONTAP 파일 시스템의 CRR 구성만 평가합니다.</block>
+  <block id="af64c2575cf7c41d9a388382dfd2aef2" category="section-title">SQL Server 인스턴스 내의 데이터베이스 수입니다</block>
+  <block id="b4f10df58cb8c1f0e0b30bd6fc637ddd" category="paragraph">Inventory(인벤토리) 탭과 Dashboard(대시보드)에서 워크로드 출하 시 SQL Server 인스턴스 내에서 최대 850개의 데이터베이스를 지원합니다.</block>
+  <block id="fb090b715eaceea73761a137a2eb45c0" category="list-text">복원력: 로컬 스냅샷, FSx for ONTAP 백업 및 지역 간 복제(CRR) 포함</block>
+  <block id="765282496f8377d23a4dec7887b9cea8" category="paragraph">* 모두 선택 * 이 기본값이지만 최적화할 특정 리소스를 선택할 수 있습니다.</block>
+  <block id="c69c68bea63a58faad0233887cb8a9aa" category="section-title">2025년 4월 4일</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP 블로그</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
 </blocks>

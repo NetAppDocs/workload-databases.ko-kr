@@ -48,11 +48,107 @@ FSx for ONTAP 파일 시스템에는 두 가지 PostgreSQL 서버 배포 모델(
 
 == 데이터베이스 서버를 만듭니다
 
-Advanced create_deployment 모드를 사용하면 _automate_mode 권한을 사용하여 워크로드 팩토리얼에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^]..
+_QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^]..
 
 
 NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다. `fsxadmin` `vsadmin` 코드를 실행할 때 암호를 다시 입력해야 합니다. _AUTOMATE_MODE 권한 외에 사용자 계정에 대해 다음 권한을 포함해야 합니다 `iam:TagRole` `iam:TagInstanceProfile`. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#use-terraform-from-codebox["Codebox에서 Terraform을 사용하는 방법에 대해 알아봅니다"^]..
 
+[role="tabbed-block"]
+====
+.빠른 생성
+--
+
+NOTE: _Quick create_에서 HA는 기본 배포 모델이고, Windows 2016은 기본 Windows 버전이고, SQL 2019 Standard Edition은 기본 SQL 버전입니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. Databases(데이터베이스) 타일에서 * Deploy database host * 를 선택한 다음 드롭다운 메뉴에서 * PostgreSQL Server * 를 선택합니다.
+. Quick create * 를 선택합니다.
+. Landing zone * 아래에 다음을 제공합니다.
++
+.. * AWS 자격 증명 *: 새 데이터베이스 호스트를 배포하려면 자동화 권한이 있는 AWS 자격 증명을 선택합니다.
++
+AWS 자격 증명을 _automate_permissions 로 설정하면 워크로드 공장 내에서 AWS 계정에서 새 데이터베이스 호스트를 구축하고 관리할 수 있습니다.
+
++
+read_permissions를 포함한 AWS 자격 증명을 통해 워크로드 공장에서 AWS CloudFormation 콘솔에서 사용할 CloudFormation 템플릿을 생성할 수 있습니다.
+
++
+작업 부하 공장에서 연결된 AWS 자격 증명이 없고 작업 부하 공장에서 새 서버를 생성하려면 * 옵션 1 * 을 따라 자격 증명 페이지로 이동합니다. 데이터베이스 워크로드에 대해 _AUTOMATE_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.
+
++
+AWS CloudFormation에서 배포할 전체 YAML 파일 템플릿을 다운로드할 수 있도록 워크로드 팩토리에서의 새 서버 만들기 양식을 작성하려면 * 옵션 2 * 를 따라 AWS CloudFormation 내에서 새 서버를 만드는 데 필요한 권한이 있는지 확인하십시오. 데이터베이스 워크로드에 대해 _READ_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.
+
++
+필요한 경우 코드박스에서 부분적으로 완성된 YAML 파일 템플릿을 다운로드하여 자격 증명이나 권한 없이 워크로드 팩토리 외부에 스택을 만들 수 있습니다. 코드 상자의 드롭다운에서 * CloudFormation * 을 선택하여 YAML 파일을 다운로드합니다.
+
+.. * 지역 및 VPC *: 지역 및 VPC 네트워크를 선택합니다.
++
+기존 인터페이스 끝점에 대한 보안 그룹이 선택한 서브넷에 대한 HTTPS(443) 프로토콜에 대한 액세스를 허용하는지 확인합니다.
+
++
+AWS 서비스 인터페이스 엔드포인트(SQS, FSx, EC2, CloudWatch, CloudFormation, SSM) 및 S3 게이트웨이 끝점이 없으면 배포 중에 생성됩니다.
+
++
+VPC DNS 속성이 `EnableDnsSupport` `EnableDnsHostnames` 로 설정되어 있지 않은 경우 엔드포인트 주소 확인을 사용하도록 수정됩니다. `true`
+
+.. * 가용 영역 *: 가용 영역 및 서브넷을 선택합니다.
++
+
+NOTE: HA 구축은 MAZ(Multiple Availability Zone) FSx for ONTAP 구성에서만 지원됩니다.
+
++
+서브넷은 고가용성을 위해 동일한 경로 테이블을 공유해서는 안 됩니다.
+
++
+... 클러스터 구성 - 노드 1 * 필드의 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 기본 사용 가능 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 기본 사용 가능 영역의 서브넷을 선택합니다.
+... 클러스터 구성 - 노드 2 * 필드에서 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 보조 가용성 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 보조 가용성 영역의 서브넷을 선택합니다.
+
+
+
+
+. 응용 프로그램 설정 * 에서 * 데이터베이스 자격 증명 * 에 대한 사용자 이름과 암호를 입력합니다.
+. 연결 * 에서 인스턴스에 안전하게 연결할 키 쌍을 선택합니다.
+. 인프라 설정 * 에서 다음을 제공합니다.
++
+.. * FSx for ONTAP 시스템 *: 새로운 FSx for ONTAP 파일 시스템을 생성하거나 기존 FSx for ONTAP 파일 시스템을 사용하십시오.
++
+... * 새 FSx for ONTAP 생성 *: 사용자 이름과 암호를 입력합니다.
++
+새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.
+
+... * 기존 FSx for ONTAP 선택 *: 드롭다운 메뉴에서 ONTAP용 FSx 이름을 선택하고 파일 시스템의 사용자 이름과 암호를 입력합니다.
++
+기존 FSx for ONTAP 파일 시스템의 경우 다음을 확인하십시오.
+
++
+**** FSx for ONTAP에 연결된 라우팅 그룹을 사용하면 서브넷으로의 경로를 배포에 사용할 수 있습니다.
+**** 보안 그룹은 배포에 사용되는 서브넷, 특히 HTTPS(443) 및 iSCSI(3260) TCP 포트의 트래픽을 허용합니다.
+
+
+
+
+.. * 데이터 드라이브 크기 * : 데이터 드라이브 용량을 입력하고 용량 단위를 선택하십시오.
+
+
+. 요약:
++
+.. * 기본 미리보기 *: 빠른 생성으로 설정된 기본 설정을 검토합니다.
+.. *예상 비용*: 표시된 리소스를 배포할 때 발생할 수 있는 예상 비용을 제공합니다.
+
+
+. Create * 를 클릭합니다.
++
+또는 이러한 기본 설정을 지금 변경하려면 고급 만들기를 사용하여 데이터베이스 서버를 만듭니다.
+
++
+나중에 호스트를 배포하려면 * Save configuration * 을 선택할 수도 있습니다.
+
+
+
+--
+.고급 만들기
+--
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . Databases(데이터베이스) 타일에서 * Deploy database host * 를 선택한 다음 드롭다운 메뉴에서 * PostgreSQL Server * 를 선택합니다.
@@ -189,5 +285,7 @@ CloudWatch에서 스택의 이름으로 로그 그룹이 생성됩니다. 모든
 
 
 
+--
+====
 .다음 단계
 배포된 PostgreSQL 서버에서 사용자, 원격 액세스 및 데이터베이스를 수동으로 구성할 수 있습니다.
