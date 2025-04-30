@@ -58,14 +58,45 @@ EC2 인스턴스의 모든 아웃바운드 연결에 프록시 서버를 사용�
 * PowerShell7은 데이터베이스 인스턴스를 관리하는 데 필요합니다. 를 참조하여 PowerShell7을 수동으로 link:https://learn.microsoft.com/en-us/powershell/scripting/developer/module/installing-a-powershell-module?view=powershell-7.4["Windows용 Microsoft PowerShell 설명서"^]설치합니다.
 * 모든 관리 작업은 AWS System Manager Agent에서 사용자 권한을 사용하여 `NT Authority\SYSTEM` 실행됩니다. 데이터베이스 서버에서 사용자에게 다음 권한을 `NT Authority\SYSTEM` 제공합니다.
 +
-** `“ALTER SETTINGS”`
-** `“CONTROL SERVER”`
-** `“ALTER ANY DATABASE”`
-** `“VIEW ANY DEFINITION”`
-** `“CONNECT ANY DATABASE”`
-** `“CREATE ANY DATABASE”`
+[cols="2,2a"]
+|===
+| 로그인 보안 | 필요한 장소 
 
 
+| `VIEW ANY DEFINITION`  a| 
+인벤토리, 평가, 수정, 데이터베이스 생성, 샌드박스 클론 생성, 비용 절감 둘러보기
+
+
+
+| `CONNECT ANY DATABASE`  a| 
+인벤토리, 평가, 수정, 데이터베이스 생성, 샌드박스 클론 생성
+
+
+
+| `VIEW SERVER STATE`  a| 
+인벤토리, 평가, 수정, 데이터베이스 생성, 샌드박스 클론 생성
+
+
+
+| `CREATE ANY DATABASE`  a| 
+데이터베이스를 생성하고 샌드박스 클론을 생성합니다
+
+
+
+| `CONTROL SERVER`  a| 
+샌드박스 클론 생성
+
+
+
+| `ALTER ANY DATABASE`  a| 
+샌드박스 클론 생성
+
+
+
+| `ALTER SETTINGS`  a| 
+MAXDOP를 위한 샌드박스 클론, 교정 생성
+
+|===
 
 
 .단계
