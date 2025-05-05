@@ -74,6 +74,8 @@ sidebar:
         url: "/optimize-overview.html"
       - title: 구성 최적화
         url: "/optimize-configurations.html"
+      - title: 구성 분석을 연기합니다
+        url: "/postpone-analysis.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오

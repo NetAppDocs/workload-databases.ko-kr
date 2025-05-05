@@ -266,6 +266,9 @@ Windows용 FSx 섀도 복사본이 감지되면 기본값은 * Daily * 입니다
 
 FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
 
+온프레미스 호스트 제거:: Microsoft SQL Server 온-프레미스 호스트의 절감 효과를 살펴본 후 BlueXP  워크로드 공장에서 온-프레미스 호스트 레코드를 제거할 수 있습니다. Microsoft SQL Server 온-프레미스 호스트의 세 점 메뉴를 선택한 다음 * 삭제 * 를 선택합니다.
+
+
 
 
 == FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다
