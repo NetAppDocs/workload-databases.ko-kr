@@ -132,4 +132,4 @@ Microsoft SQL Server 온-프레미스 스토리지에 대한 볼륨 크기의 �
 
 == SQL Server 인스턴스 내의 데이터베이스 수입니다
 
-Inventory(인벤토리) 탭과 Dashboard(대시보드)에서 워크로드 출하 시 SQL Server 인스턴스 내에서 최대 850개의 데이터베이스를 지원합니다.
+Inventory(인벤토리) 탭과 Dashboard(대시보드)에서 워크로드 출하 시 SQL Server 인스턴스 내에서 최대 1,500개의 데이터베이스를 지원합니다.
