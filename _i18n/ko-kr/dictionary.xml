@@ -212,7 +212,6 @@
   <block id="1fed0bc2c72e36c6e777e5a1e7def8f8" category="list-text">Yes, Manage instance via Workload Factory * 또는 * No * 를 선택합니다.</block>
   <block id="e13a15252a4dbf9779c44afe477e3343" category="list-text">완료 * 를 클릭합니다.</block>
   <block id="bfe3baeb9acd99f2f2bce618befc4139" category="paragraph">시작하기 전에 다음 사전 요구 사항을 완료하십시오.</block>
-  <block id="def9511b261c88922ac5674a45135773" category="inline-link-macro">호스트를 감지하는 방법에 대해 알아보십시오</block>
   <block id="201c4d58b6fa62f021a1865e894234ef" category="list-text">* 월별 변경율 *: 클론 및 스냅샷 데이터가 매월 평균 변경되는 비율을 입력합니다.</block>
   <block id="f31ed490fd3768dff2a1121a0a06095c" category="list-text">배포 방법</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">도움을 받으십시오</block>
@@ -595,7 +594,6 @@
   <block id="0df73578de7c34ef150c1f37953113f5" category="paragraph">이제 FSx for Windows File Server 스토리지가 포함된 Amazon EC2에서 감지된 Microsoft SQL 서버의 비용 절감 효과를 이 절약 계산기에서 살펴볼 수 있습니다. SQL 서버 및 스토리지 요구사항에 따라 FSx for ONTAP 스토리지가 데이터베이스 워크로드에 가장 비용 효율적이라는 사실을 발견할 수 있습니다.</block>
   <block id="b68e42fa600661a13849ea15c997cea3" category="paragraph">시스템과 FSx for ONTAP(사용자 정의 및 감지)의 비용을 비교할 때 두 가지 계산기 옵션을 사용할 수 있습니다.</block>
   <block id="0e98c2470a9fecd3035980d6c9bd5dfe" category="section-title">감지된 호스트에 대한 절약 효과를 탐색합니다</block>
-  <block id="70cd361d4d146e35701d6144f1c0ab2b" category="list-text">EBS 및 FSx for Windows 스토리지의 호스트를 데이터베이스 인벤토리에서 감지합니다. <block ref="c3d02703f332265b4bfd19fd03e6dd21" category="inline-link-macro-rx"></block>..</block>
   <block id="8f334cc9204ebef849d5d29b3d23b485" category="list-text">Databases(데이터베이스) 타일에서 드롭다운 메뉴에서 * Explore Savings(절약 탐색) * 를 선택한 다음 * Microsoft SQL Server on FSx for Windows * 를 선택합니다.</block>
   <block id="bd0005565e08b9807da651535d09e628" category="inline-xref">맞춤화를 통한 절감 효과를 살펴보십시오</block>
   <block id="b2b254b73e406acc574452e9f29f5d9a" category="list-text">Explore Savings 탭에서 EBS 스토리지를 사용하는 데이터베이스 서버의 * Explore Savings * 를 클릭합니다.</block>
@@ -1079,6 +1077,11 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CLI *: 워크로드 팩토리에는 단일 브라우저 기반 CLI를 통해 모든 계정에서 AWS 및 NetApp 환경을 관리하고 운영할 수 있는 CloudShell CLI가 포함되어 있습니다. 워크로드 팩토리 콘솔의 상단 표시줄에서 CloudShell에 액세스합니다.</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API *: 워크로드 팩토리 REST API를 사용하여 FSx for ONTAP 파일 시스템 및 기타 AWS 리소스를 배포하고 관리합니다.</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudFormation *: AWS CloudFormation 코드를 사용하여 AWS 계정의 CloudFormation 스택에서 AWS 및 타사 리소스를 모델링, 프로비저닝 및 관리하기 위해 워크로드 팩토리 콘솔에 정의한 작업을 수행합니다.</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
   <block id="5614519834733a69bfb8911eae5d33b8" category="paragraph">Inventory(인벤토리) 탭과 Dashboard(대시보드)에서 워크로드 출하 시 SQL Server 인스턴스 내에서 최대 1,500개의 데이터베이스를 지원합니다.</block>
+  <block id="905bc3578e603008d83976307778ddcc" category="list-text">인스턴스 유형 권장 사항을 받고 비용 정확도를 높이려면 다음을 수행하세요.</block>
+  <block id="10d9194778791c152af2c0be1806e0b1" category="list-text">Amazon CloudWatch 및 AWS Compute Optimizer 권한을 부여합니다.</block>
+  <block id="1dffe1578c264cd074d1fbf2823deeca" category="list-text">AWS Management Console에 로그인하고 IAM 서비스를 엽니다.</block>
+  <block id="429fc992484e56fc5119b7b343df8bab" category="list-text">IAM 역할에 대한 정책을 편집합니다. 다음 Amazon CloudWatch 및 AWS Compute Optimizer 권한을 복사하여 추가합니다.</block>
+  <block id="948ce9adc60f5781dbfbd99d2c9d74d5" category="list-text">청구 가능한 AWS 계정을 AWS Compute Optimizer에 등록합니다.</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  워크로드 팩토리 공급자 *: Terraform을 사용하여 워크로드 팩토리 콘솔에서 생성된 인프라 워크플로우를 구축하고 관리하십시오.</block>
 </blocks>

@@ -169,7 +169,56 @@ FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하�
 시작하기 전에 다음 사전 요구 사항을 완료하십시오.
 
 * link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["grant_read-only_or_read/write_permissions 를 참조하십시오"^] AWS 계정에서 * Explore Savings * 탭에서 EBS(Elastic Block Store) 및 FSx for Windows 시스템을 감지하고 절감 계산액을 절약 계산기에 표시합니다.
-* EBS 및 FSx for Windows 스토리지의 호스트를 데이터베이스 인벤토리에서 감지합니다. link:detect-host.html["호스트를 감지하는 방법에 대해 알아보십시오"]..
+* 인스턴스 유형 권장 사항을 받고 비용 정확도를 높이려면 다음을 수행하세요.
++
+.. Amazon CloudWatch 및 AWS Compute Optimizer 권한을 부여합니다.
++
+... AWS Management Console에 로그인하고 IAM 서비스를 엽니다.
+... IAM 역할에 대한 정책을 편집합니다. 다음 Amazon CloudWatch 및 AWS Compute Optimizer 권한을 복사하여 추가합니다.
++
+[source, json]
+----
+{
+"Version": "2012-10-17",
+"Statement": [
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:GetEnrollmentStatus",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:PutRecommendationPreferences",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:GetEffectiveRecommendationPreferences",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:GetEC2InstanceRecommendations",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "autoscaling:DescribeAutoScalingGroups",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "autoscaling:DescribeAutoScalingInstances",
+   "Resource": "*"
+  }
+]
+}
+----
+
+
+.. 청구 가능한 AWS 계정을 AWS Compute Optimizer에 등록합니다.
+
+
 
 
 스토리지 유형에 해당하는 탭 아래의 단계를 따릅니다.
