@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: learn-databases.html 
 keywords: Databases 
-summary: 데이터베이스용 BlueXP  워크로드 팩토리은 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능에 대한 모범 사례가 내장된 엔드 투 엔드 데이터베이스 구축 및 유지 관리 서비스입니다. 
+summary: 데이터베이스용 워크로드 팩토리는 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능을 위한 모범 사례가 내장된 종단 간 데이터베이스 배포 및 유지 관리 서비스입니다. 
 ---
-= 데이터베이스용 BlueXP  워크로드 팩터에 대해 알아보십시오
+= 데이터베이스용 워크로드 팩터에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-데이터베이스용 BlueXP  워크로드 팩토리은 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능에 대한 모범 사례가 내장된 엔드 투 엔드 데이터베이스 구축 및 유지 관리 서비스입니다.
+데이터베이스용 워크로드 팩토리는 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능을 위한 모범 사례가 내장된 종단 간 데이터베이스 배포 및 유지 관리 서비스입니다.
 
 
 
-== 데이터베이스에 대해 BlueXP  워크로드 팩토리는 무엇입니까?
+== 데이터베이스의 워크로드 팩토리란 무엇입니까?
 
-데이터베이스용 BlueXP  워크로드 팩토리에서는 업계 모범 사례를 준수하면서 성능 및 비용 기대치를 충족하도록 최적화된 Microsoft SQL Server 데이터를 Amazon FSx for NetApp ONTAP(FSx for ONTAP) 배포로 감지, 평가, 계획, 프로비저닝 및 이동합니다. 라이프사이클 전반에서 워크로드 팩토리를 통해 FSx for ONTAP의 데이터베이스를 지속적으로 최적화 및 관리할 수 있습니다.
+데이터베이스용 워크로드 팩토리는 업계 모범 사례를 준수하는 동시에 성능 및 비용 기대치를 충족하도록 최적화된 Amazon FSx for NetApp ONTAP(FSx for ONTAP) 배포로 Microsoft SQL Server 데이터를 감지, 평가, 계획, 프로비저닝하고 이동합니다. 라이프사이클 전반에서 워크로드 팩토리를 통해 FSx for ONTAP의 데이터베이스를 지속적으로 최적화 및 관리할 수 있습니다.
 
 작업 부하 공장에 대한 자세한 내용은 을 link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["워크로드 공장 개요"^]참조하십시오.
 
@@ -81,7 +81,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["워�
 
 === 워크로드 공장 내 운영 모드
 
-세 가지 운영 모드(_basic_,_read_and_automate_)는 워크로드 공장 내부 및 외부에서 배포할 수 있는 유연한 옵션을 제공합니다. 워크로드 공장 외부에서 사용할 코드 조각으로 _BASIC_MODE에 대해 제로 트러스트 상태에서 즉각적인 가치를 얻을 수 있습니다. _READ_AND_AUTOMATE_MODE에서 증분 신뢰를 사용하여 증분 값을 얻습니다.
+_기본_, _읽기 전용_, _읽기/쓰기_의 세 가지 운영 모드는 워크로드 팩토리 내부 및 외부에 배포할 수 있는 유연한 옵션을 제공합니다. 워크로드 공장 외부에서 사용할 코드 조각으로 _BASIC_MODE에 대해 제로 트러스트 상태에서 즉각적인 가치를 얻을 수 있습니다. _읽기 전용_ 및 _읽기/쓰기_ 모드에서 점진적인 신뢰를 통해 점진적인 가치를 확보하세요.
 
 에 대해 자세히 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["워크로드 공장 내 운영 모드"^]알아보십시오.
 

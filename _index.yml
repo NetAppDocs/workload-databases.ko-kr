@@ -16,14 +16,12 @@ indexpage:
     links:
     - title: 비용 절감 효과를
       url: "/explore-savings.html"
+    - title: 인스턴스 등록
+      url: "/register-instance.html"
     - title: Microsoft SQL Server를 만듭니다
       url: "/create-database-server.html"
     - title: PostgreSQL 서버를 생성합니다
       url: "/create-postgresql-server.html"
-    - title: 데이터베이스를 만듭니다
-      url: "/create-database.html"
-    - title: 구성 최적화
-      url: "/optimize-configurations.html"
   - title: 지식 및 지원
     links:
     - title: 지원을 위해 등록하십시오

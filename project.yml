@@ -38,20 +38,36 @@ sidebar:
         url: "/create-database-server.html"
       - title: PostgreSQL 서버를 생성합니다
         url: "/create-postgresql-server.html"
-    - title: 데이터베이스 서버를 검색합니다
-      url: "/detect-host.html"
-    - title: 데이터베이스를 만듭니다
-      url: "/create-database.html"
+    - title: 인스턴스 관리
+      entries:
+      - title: 인스턴스 관리
+        url: manage-instance.html
+      - title: 인스턴스 등록
+        url: "/register-instance.html"
+      - title: 데이터베이스를 봅니다
+        url: "/view-databases.html"
+      - title: 데이터베이스를 만듭니다
+        url: "/create-database.html"
+      - title: 샌드박스 클론을 생성합니다
+        url: "/create-sandbox-clone.html"
     - title: Codebox로 자동화
       url: "/automate-codebox.html"
   - title: 관리 및 모니터링
     entries:
+    - title: 데이터베이스 모니터링
+      url: "/monitor-databases.html"
+    - title: 구성 모범 사례 구현
+      entries:
+      - title: 데이터베이스에 대한 구성 분석
+        url: "/optimize-overview.html"
+      - title: 잘 설계된 데이터베이스 구성을 구현합니다.
+        url: "/optimize-configurations.html"
+      - title: 구성 분석을 연기합니다
+        url: "/postpone-analysis.html"
     - title: Microsoft SQL Server 관리
       url: "/manage-server.html"
     - title: 클론 관리
       entries:
-      - title: 샌드박스 클론을 생성합니다
-        url: "/create-sandbox-clone.html"
       - title: 샌드박스 클론의 무결성을 확인합니다
         url: "/check-clone-integrity.html"
       - title: 샌드박스 클론을 되돌립니다
@@ -66,16 +82,6 @@ sidebar:
         url: "/split-clone.html"
       - title: 샌드박스 클론을 삭제합니다
         url: "/delete-clone.html"
-    - title: 데이터베이스 모니터링
-      url: "/monitor-databases.html"
-    - title: SQL Server 최적화
-      entries:
-      - title: 지속적인 최적화 개요
-        url: "/optimize-overview.html"
-      - title: 구성 최적화
-        url: "/optimize-configurations.html"
-      - title: 구성 분석을 연기합니다
-        url: "/postpone-analysis.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
