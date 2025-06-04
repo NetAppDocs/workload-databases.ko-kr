@@ -26,7 +26,7 @@ NOTE: SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이�
 .시작하기 전에
 새 데이터베이스를 만들기 전에 다음 필수 구성 요소를 완료해야 합니다.
 
-자격 증명 및 권한:: link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _READ_OR_AUTOMATE_MODE 권한"^]작업 부하 공장에서 새 데이터베이스를 만들어야 합니다.
+자격 증명 및 권한:: link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한"^]작업 부하 공장에서 새 데이터베이스를 만들어야 합니다.
 +
 --
 또는 REST API를 사용하여 워크로드 팩토리 외부에 데이터베이스를 배포할 수 있도록 Codebox를 사용하여 템플릿을 복사할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
@@ -41,7 +41,7 @@ AWS 시스템 관리자:: AWS System Manager를 통해 Microsoft SQL 호스트�
 
 == 데이터베이스를 만듭니다
 
-_Quick create_or_Advanced create_deployment 모드를 사용하여 _READ_OR_AUTOMATE_MODE 권한으로 워크로드 공장에서 이 작업을 완료할 수 있습니다.
+_빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한으로 워크로드 팩토리에서 이 작업을 완료할 수 있습니다.
 
 [role="tabbed-block"]
 ====

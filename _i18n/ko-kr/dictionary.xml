@@ -145,7 +145,6 @@
   <block id="6d7b2a50e46356cb2ecf2805e3b5bb59" category="paragraph">데이터베이스의 스토리지를 분리하려는 경우 _virtual 마운트 지점 _ 을(를) 사용하여 분리할 수 있습니다. 가상 마운트 지점을 사용하여 데이터베이스를 호스트의 몇 가지 공통 드라이브에 통합할 수 있습니다.</block>
   <block id="92e04fe5d2a269f38993f394f5b1eb9b" category="admonition">SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이스 생성을 지원하지 않습니다.</block>
   <block id="7dd1095f5b5a654fc784015352d1066d" category="paragraph">새 데이터베이스를 만들기 전에 다음 필수 구성 요소를 완료해야 합니다.</block>
-  <block id="5c42fb317128e01d6e1476bcde042be1" category="inline-link-macro">AWS 계정 자격 증명 및 _READ_OR_AUTOMATE_MODE 권한</block>
   <block id="0b059e758179ae9106a6228fd71a42cb" category="list-text">Windows 호스트</block>
   <block id="db205765ba81a6c0d96687e971328059" category="list-text">_QUICK CREATE_MODE를 사용하는 경우 Microsoft SQL Server에서 새 데이터베이스에 사용할 새 드라이브를 만들 수 있는 충분한 드라이브 문자가 있어야 합니다.</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server를 참조하십시오</block>
@@ -590,8 +589,6 @@
   <block id="920d5db87e34d780e98c3efabde9041b" category="summary">BlueXP  워크로드 팩토리 내에서 데이터베이스용 새 Microsoft SQL Server를 생성합니다.</block>
   <block id="e688adbe92be47aae67ff0624dc5033a" category="list-text">Microsoft SQL Server 배포 모델 모두 iSCSI 스토리지 프로토콜을 사용하여 LUN을 생성해야 합니다. 워크로드 팩토리에서는 FSx for ONTAP을 통해 SQL Server용 LUN을 구성할 때 Microsoft 다중 경로 I/O(MPIO)를 구성합니다. MPIO는 AWS 및 NetApp 모범 사례를 기반으로 구성됩니다.</block>
   <block id="cef4156e4fa9e5869d4dee02c1b39d6e" category="paragraph">AWS 자격 증명을 _automate_permissions 로 설정하면 워크로드 공장 내에서 AWS 계정에서 새 데이터베이스 호스트를 구축하고 관리할 수 있습니다.</block>
-  <block id="cc04c98a943715d655ef7f99796aae2a" category="paragraph">read_permissions를 포함한 AWS 자격 증명을 통해 워크로드 공장에서 AWS CloudFormation 콘솔에서 사용할 CloudFormation 템플릿을 생성할 수 있습니다.</block>
-  <block id="b4db11619512665a02befd7699ec1538" category="paragraph">작업 부하 공장에서 연결된 AWS 자격 증명이 없고 작업 부하 공장에서 새 서버를 생성하려면 * 옵션 1 * 을 따라 자격 증명 페이지로 이동합니다. 데이터베이스 워크로드에 대해 _AUTOMATE_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.</block>
   <block id="fea8f5f977933d9473ff7671b078a975" category="paragraph">AWS CloudFormation에서 배포할 전체 YAML 파일 템플릿을 다운로드할 수 있도록 워크로드 팩토리에서의 새 서버 만들기 양식을 작성하려면 * 옵션 2 * 를 따라 AWS CloudFormation 내에서 새 서버를 만드는 데 필요한 권한이 있는지 확인하십시오. 데이터베이스 워크로드에 대해 _READ_MODE에 필요한 자격 증명 및 권한을 수동으로 추가합니다.</block>
   <block id="d6631cc039c798bd233c70bae3023936" category="paragraph">필요한 경우 코드박스에서 부분적으로 완성된 YAML 파일 템플릿을 다운로드하여 자격 증명이나 권한 없이 워크로드 팩토리 외부에 스택을 만들 수 있습니다. 코드 상자의 드롭다운에서 * CloudFormation * 을 선택하여 YAML 파일을 다운로드합니다.</block>
   <block id="6705f898558de9ace7f76d4dba3f6b46" category="paragraph">서버 배포 후 워크로드 팩토리얼은 Microsoft SQL Server에서 원격 연결을 활성화하지 않습니다. 원격 연결을 활성화하려면 다음 단계를 완료하십시오.</block>
@@ -602,14 +599,11 @@
   <block id="d824723631e1f8de1b8bcee4a1de9c1e" category="paragraph">새 Microsoft SQL 데이터베이스를 만들면 데이터베이스에 대한 BlueXP  워크로드 팩토리 내에서 리소스를 관리할 수 있습니다.</block>
   <block id="86b0140bb79dd7663425ee50a4e68361" category="inline-link-macro">워크로드 팩토리 작동 모드에 대해 알아보십시오</block>
   <block id="3a0419549547987e965186c31b3610eb" category="paragraph">워크로드 팩토리에서 데이터베이스를 생성하려면 자동화 모드 권한이 필요합니다. 또는 기본 모드에서 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 워크로드 공장 외부에서 작업을 완료할 수 있습니다. <block ref="5968ff3deed2bc48d2bc3a731c0f115b" category="inline-link-macro-rx"></block> 를 눌러 사용할 모드를 결정합니다.</block>
-  <block id="ee1084f844db356e13c4fc5d627f91d0" category="list-text"><block ref="2d1718ee7160678739db1128b08d1c1f" category="inline-link-macro-rx"></block>작업 부하 공장에서 새 데이터베이스를 만들어야 합니다.</block>
   <block id="3bfb7d9388422f644c389daf1ad5c953" category="paragraph">또는 REST API를 사용하여 워크로드 팩토리 외부에 데이터베이스를 배포할 수 있도록 Codebox를 사용하여 템플릿을 복사할 수 있습니다. <block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>..</block>
   <block id="4df748154a165347722755bf184e6bf0" category="list-text">데이터베이스가 새 데이터베이스를 호스팅하려면 작업 부하 공장에서 관리되는 Microsoft SQL Server가 있어야 합니다.</block>
-  <block id="abbd61357a5610bb8f50c7948c4b04df" category="paragraph">_Quick create_or_Advanced create_deployment 모드를 사용하여 _READ_OR_AUTOMATE_MODE 권한으로 워크로드 공장에서 이 작업을 완료할 수 있습니다.</block>
   <block id="c6416602b6423e2ef924b15ae4981503" category="summary">데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 생성합니다.</block>
   <block id="8227770ecb65ecb8937d56c6f259900e" category="doc">데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 생성합니다</block>
   <block id="86fe540236465ca4e3d667ed76acb230" category="paragraph">BlueXP  워크로드 팩토리 for Databases에서 데이터베이스의 샌드박스 클론을 생성하면 소스 데이터베이스를 변경하지 않고도 개발, 테스트, 통합, 분석, 교육, QA 등에 이 클론을 사용할 수 있습니다.</block>
-  <block id="799cecdb1e7c1ee1725fa70f3b9556e5" category="list-text">워크로드 공장에서 샌드박스 클론을 생성해야 <block ref="2d1718ee7160678739db1128b08d1c1f" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="977ef254da68f1a51ae8a6edf3a4791f" category="paragraph">또는 REST API를 사용하여 워크로드 공장 외부에서 샌드박스 클론을 생성할 수 있도록 Codebox를 사용하여 부분적으로 완료된 템플릿을 복사하거나 완료된 템플릿을 생성할 수 있습니다. <block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>..</block>
   <block id="36acb14683eb2b002c873c33647cbdba" category="list-text">데이터베이스가 새 샌드박스 클론을 호스팅하려면 관리되는 Microsoft SQL Server가 워크로드 팩터리에 있어야 합니다.</block>
   <block id="23fb636062a19e5367fc7e960e315c4c" category="list-text">* 마운트 *: 여러 데이터 및/또는 로그 파일이 있는 SQL 데이터베이스를 복제할 때 워크로드 공장 출하 시 자동으로 할당되거나 정의된 드라이브 문자로 모든 파일을 복제합니다.</block>
@@ -905,7 +899,6 @@
   <block id="6da89f0beda0fbec41b06125b0b7ad32" category="section-title">구성 분석을 연기하고 해제합니다</block>
   <block id="4a9a50cea48d9e2ded3becc284af4e41" category="paragraph">일부 구성은 데이터베이스 환경에 적용되지 않을 수 있습니다. 이제 특정 구성 분석을 30일 연기하거나 해석을 취소할 수 있습니다.</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">사용 권한 용어가 업데이트되었습니다</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">워크로드 팩토리 사용자 인터페이스 및 설명서에서는 이제 "읽기 전용"을 사용하여 읽기 권한을 참조하고 "읽기-쓰기"를 사용하여 사용 권한을 자동화합니다.</block>
   <block id="2d07fc9146d02690dffeffa52fbd2ec4" category="list-text">온프레미스 호스트 제거</block>
   <block id="1c28fa92b25f4914c091b667402466d3" category="list-text">Microsoft SQL Server 온-프레미스 호스트의 절감 효과를 살펴본 후 BlueXP  워크로드 공장에서 온-프레미스 호스트 레코드를 제거할 수 있습니다. Microsoft SQL Server 온-프레미스 호스트의 세 점 메뉴를 선택한 다음 * 삭제 * 를 선택합니다.</block>
   <block id="04467e563313dfe5a1da17bd70a4de75" category="list-text">인벤토리 * 탭에서 * 인스턴스 * 탭을 선택합니다.</block>
@@ -1058,8 +1051,6 @@
   <block id="2a627091d8c05a05162dae18a0e3dc31" category="admonition">Workload Factory는 Microsoft SQL Server 호스트 인스턴스 등록 및 관리만 지원합니다. Workload Factory에서 선택한 AWS 계정 자격 증명에 따라 PostgreSQL 및 Oracle 호스트가 인벤토리에 나타날 수 있습니다. 현재 Workload Factory는 Amazon Linux 운영 체제에서 실행되는 등록되지 않은 PostgreSQL 인스턴스와 Red Hat Enterprise Linux에서 실행되는 Oracle 인스턴스만 지원합니다.</block>
   <block id="5e6ee18c02f118771f0e10235d44bd14" category="section-title">개인 네트워크에 호스트 인스턴스 등록</block>
   <block id="0af95213cc557c61a7ba3ca92d68f09e" category="paragraph">외부 연결 없이 개인 네트워크에 호스트 인스턴스를 등록하려면 다음 엔드포인트가 SQL 서버가 있는 서브넷과 연결되어 있는 VPC에서 사용 가능해야 합니다. 인터페이스 끝점이 연결된 보안 그룹의 포트 443을 허용하는지 확인합니다.</block>
-  <block id="d38541ea862d6762d01f5f9d42fbd683" category="inline-link-macro">AWS 계정 자격 증명과 _read_ 또는 _automate_ 모드 권한을 추가해야 합니다.</block>
-  <block id="36bfb43c49e597b3bb45a5bb2997033b" category="paragraph">인스턴스의 호스트가 인벤토리 탭에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 <block ref="dd302a73ba9dc99cb46da731db0bf41c" category="inline-link-macro-rx"></block> .</block>
   <block id="6a408aaa659cc5010ab5ed464d20688c" category="section-title">호스트 인스턴스 등록</block>
   <block id="75cd4168051c5052e88a17b464261a1b" category="paragraph">호스트 인스턴스 등록에는 인스턴스 인증 및 준비가 포함됩니다.</block>
   <block id="573898775af774ec571967393eb2000b" category="list-text">인벤토리 탭에서 *인스턴스* 탭을 선택합니다.</block>
@@ -1091,4 +1082,15 @@
   <block id="c38254582571637e4bded341a22ff035" category="sidebar">인스턴스 관리</block>
   <block id="414fc89f66239e288860442b939928c9" category="sidebar">구성 모범 사례 구현</block>
   <block id="a78c9036bfa9cb64272150072bb64123" category="sidebar">데이터베이스에 대한 구성 분석</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">워크로드 팩토리 사용자 인터페이스와 문서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"을 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"를 사용합니다.</block>
+  <block id="e38fc2fc30201bd6a5c959baea91e5cf" category="paragraph">_읽기/쓰기_ 권한이 있는 AWS 자격 증명을 통해 Workload Factory는 Workload Factory 내의 AWS 계정에서 새 데이터베이스 호스트를 배포하고 관리할 수 있습니다.</block>
+  <block id="9d3d55473abbb7eec4a1df3a6fd8ac50" category="paragraph">_읽기 전용_ 권한이 있는 AWS 자격 증명을 통해 Workload Factory는 AWS CloudFormation 콘솔에서 사용할 수 있는 CloudFormation 템플릿을 생성할 수 있습니다.</block>
+  <block id="1a6183e6bc3067f41e368cb8ae65eee0" category="paragraph">작업 부하 공장에서 연결된 AWS 자격 증명이 없고 작업 부하 공장에서 새 서버를 생성하려면 * 옵션 1 * 을 따라 자격 증명 페이지로 이동합니다. 데이터베이스 워크로드에 대한 _읽기/쓰기_ 모드에 필요한 자격 증명과 권한을 수동으로 추가합니다.</block>
+  <block id="b686945750b38d40d97b18356ad0a4c6" category="paragraph">AWS CloudFormation에서 배포할 전체 YAML 파일 템플릿을 다운로드할 수 있도록 워크로드 팩토리에서의 새 서버 만들기 양식을 작성하려면 * 옵션 2 * 를 따라 AWS CloudFormation 내에서 새 서버를 만드는 데 필요한 권한이 있는지 확인하십시오. 데이터베이스 워크로드에 대한 _읽기 전용_ 모드에 필요한 자격 증명과 권한을 수동으로 추가합니다.</block>
+  <block id="a8ff9ed21e668d7299478bf75b16abd9" category="inline-link-macro">AWS 계정 자격 증명 및 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한</block>
+  <block id="f62c0d8d53ecd7695a50c95462ff39bc" category="list-text"><block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>작업 부하 공장에서 새 데이터베이스를 만들어야 합니다.</block>
+  <block id="970fa5fe1f85bede58eadf785f5bb30d" category="paragraph">_빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한으로 워크로드 팩토리에서 이 작업을 완료할 수 있습니다.</block>
+  <block id="1ecac8592ecd595bc4f53507e476fc53" category="list-text">워크로드 공장에서 샌드박스 클론을 생성해야 <block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>합니다.</block>
+  <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">AWS 계정 자격 증명과 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한을 추가해야 합니다.</block>
+  <block id="b6693184dc0e8cc975fb8e936b04d129" category="paragraph">인스턴스의 호스트가 인벤토리 탭에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 <block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> .</block>
 </blocks>

@@ -50,7 +50,7 @@ EC2 인스턴스의 모든 아웃바운드 연결에 프록시 서버를 사용�
 
 == 시작하기 전에
 
-인스턴스의 호스트가 인벤토리 탭에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명과 _read_ 또는 _automate_ 모드 권한을 추가해야 합니다."^] .
+인스턴스의 호스트가 인벤토리 탭에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명과 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한을 추가해야 합니다."^] .
 
 
 
