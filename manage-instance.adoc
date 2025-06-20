@@ -20,6 +20,5 @@ summary: 데이터베이스의 워크로드 팩토리에서 인스턴스 관리�
 * link:create-database.html["데이터베이스 생성"]
 * link:create-sandbox-clone.html["데이터베이스 복제본 생성(샌드박스)"]
 * link:view-databases.html["데이터베이스 보기"]
-* link:monitor-databases.html["데이터베이스 작업 모니터링"]
 * link:optimize-configurations.html["잘 설계된 데이터베이스 구성 구현"]
 

@@ -361,7 +361,6 @@
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
   <block id="ca6b20c311193d70fa95150e9aadfeff" category="list-text">드롭다운 화살표를 클릭하여 호스트의 행을 확장하여 해당 데이터베이스를 봅니다.</block>
   <block id="bab47e98a40b74089a0df1373390d048" category="list-text">데이터베이스 보기 * 를 선택합니다.</block>
-  <block id="252215232d636a7c096b2327e9a20b42" category="doc">데이터베이스 모니터링</block>
   <block id="67b0a66954400448325457f930e0f82b" category="paragraph">작업 모니터링은 작업에 따라 최대 3가지 수준의 모니터링을 지원합니다. 예를 들어 새 데이터베이스 및 샌드박스 클론 생성을 위해 작업 모니터링은 상위 작업과 하위 작업을 추적합니다.</block>
   <block id="b830a8f027299af6d1d8ffbb130bcc58" category="list-text">작업 모니터링 수준</block>
   <block id="f52bf93027629736a089ef7f590091e0" category="list-text">레벨 1(상위 작업): 호스트 배포 작업을 추적합니다.</block>
@@ -453,7 +452,6 @@
   <block id="991fc877b6135bcda7435016745ae066" category="sidebar">데이터베이스 워크로드를 사용하십시오</block>
   <block id="fbe27670bf06b7e38d268c77e7f002f0" category="sidebar">새 데이터베이스 서버를 만듭니다</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">관리 및 모니터링</block>
-  <block id="077bbf8da979e97e9f7ec7239eb76073" category="sidebar">Microsoft SQL Server 관리</block>
   <block id="6ea5d3d06add60328b6497a58edc5878" category="sidebar">클론 관리</block>
   <block id="7375873088079584bbffaf102f0fdae4" category="sidebar">샌드박스 클론을 생성합니다</block>
   <block id="566d7361c862d8d2bd63be4cb3f852cd" category="sidebar">샌드박스 클론의 무결성을 확인합니다</block>
@@ -645,8 +643,6 @@
   <block id="37c0391f707d07b4c1d64a02e6944c56" category="paragraph">Microsoft SQL Server용 워크로드 팩토리에서는 AWS, NetApp ONTAP 및 SQL Server 모범 사례에 따라 고가용성(상시 장애 조치 클러스터 인스턴스)과 단일 인스턴스 구축을 모두 지원합니다.</block>
   <block id="b9aff8d3c5ff2dd2a4ce0963f381f957" category="paragraph">작업 부하 공장 또는 작업 부하 공장 애플리케이션 및 서비스에 대한 일반적인 질문은 을 참조하십시오<block ref="b9da93c3ce08d7fb81177157f233c056" category="inline-link-macro-rx"></block>.</block>
   <block id="71e2f5eacc9fc09317bbe70e053aeb1e" category="summary">데이터베이스용 BlueXP  워크로드 공장에서 Microsoft SQL Server 인스턴스를 관리합니다.</block>
-  <block id="72f7ef1037108c5eeefad1bcee23a0a8" category="summary">데이터베이스에 대한 BlueXP  워크로드 공장 내에서 데이터베이스 작업을 추적하고 데이터베이스를 모니터링합니다.</block>
-  <block id="671ef5b67f2b7cbf660faa04c3d4622a" category="doc">BlueXP  워크로드 팩토리에서의 데이터베이스 모니터링</block>
   <block id="eb7ed5d3b1a2ff72006245ad37f9817b" category="paragraph">데이터베이스를 사용하려면 AWS 계정이 있어야 합니다.</block>
   <block id="c37e590e9c50960a15f3292676cc0c18" category="paragraph">시작하려면 다음 단계를 따르십시오.</block>
   <block id="3e7340039619cc08d8c1c5a3cd4bfb43" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> BlueXP  워크로드 팩토리에 로그인합니다</block>
@@ -986,8 +982,6 @@
   <block id="fd8a54c517020c653ae1776e8e00d343" category="list-text"><block ref="fd8a54c517020c653ae1776e8e00d343" category="inline-link-macro-rx"></block></block>
   <block id="050cc3957bb212dc2758e7dd27f7faf8" category="inline-link-macro">데이터베이스 보기</block>
   <block id="7a403e4f1f2e0af187fa5a95116054cc" category="list-text"><block ref="7a403e4f1f2e0af187fa5a95116054cc" category="inline-link-macro-rx"></block></block>
-  <block id="f4a7fa0c2cfabd3c771238fbdb6c7ae5" category="inline-link-macro">데이터베이스 작업 모니터링</block>
-  <block id="b92726505ce75a5aa80c8086ae979c25" category="list-text"><block ref="b92726505ce75a5aa80c8086ae979c25" category="inline-link-macro-rx"></block></block>
   <block id="2f2280ee27b03fc450cd69afae071e39" category="inline-link-macro">잘 설계된 데이터베이스 구성 구현</block>
   <block id="d3379f7eb15b947ec99d4daad00317b3" category="list-text"><block ref="d3379f7eb15b947ec99d4daad00317b3" category="inline-link-macro-rx"></block></block>
   <block id="c4363ade7c2d208d79dee9b60bc51922" category="doc">워크로드 팩토리에서 잘 설계된 데이터베이스 구성을 구현합니다.</block>
@@ -1093,4 +1087,7 @@
   <block id="1ecac8592ecd595bc4f53507e476fc53" category="list-text">워크로드 공장에서 샌드박스 클론을 생성해야 <block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">AWS 계정 자격 증명과 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한을 추가해야 합니다.</block>
   <block id="b6693184dc0e8cc975fb8e936b04d129" category="paragraph">인스턴스의 호스트가 인벤토리 탭에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 <block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> .</block>
+  <block id="a38d5cfb962091710b5c8c4cae183d64" category="summary">데이터베이스의 워크로드 팩토리 내에서 데이터베이스 작업을 추적하고 데이터베이스를 모니터링합니다.</block>
+  <block id="bcdf66d04230e723b2fc5152ae10a7ef" category="doc">워크로드 팩토리에서 데이터베이스 작업 모니터링</block>
+  <block id="9ae4e4b9fdc398feb3be344b26cbf99f" category="sidebar">데이터베이스 작업 모니터링</block>
 </blocks>

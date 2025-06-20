@@ -54,7 +54,7 @@ sidebar:
       url: "/automate-codebox.html"
   - title: 관리 및 모니터링
     entries:
-    - title: 데이터베이스 모니터링
+    - title: 데이터베이스 작업 모니터링
       url: "/monitor-databases.html"
     - title: 구성 모범 사례 구현
       entries:
@@ -64,8 +64,6 @@ sidebar:
         url: "/optimize-configurations.html"
       - title: 구성 분석을 연기합니다
         url: "/postpone-analysis.html"
-    - title: Microsoft SQL Server 관리
-      url: "/manage-server.html"
     - title: 클론 관리
       entries:
       - title: 샌드박스 클론의 무결성을 확인합니다
