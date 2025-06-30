@@ -87,6 +87,8 @@ _QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MO
 
 NOTE: Codebox에서 Terraform을 사용할 때 복사하거나 다운로드하는 코드는 숨겨지고 암호가 숨겨집니다. `fsxadmin` `vsadmin` 코드를 실행할 때 암호를 다시 입력해야 합니다. _AUTOMATE_MODE 권한 외에 사용자 계정에 대해 다음 권한을 포함해야 합니다 `iam:TagRole` `iam:TagInstanceProfile`. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#use-terraform-from-codebox["Codebox에서 Terraform을 사용하는 방법에 대해 알아봅니다"^]..
 
+배포 중에 워크로드 팩토리는 SQL 프로비저닝 스크립트에 대한 자격 증명 위임을 위해 CredSSP를 활성화합니다. 그룹 정책이 적용된 모든 도메인 컴퓨터에서 CredSSP 위임이 차단되면 배포가 실패합니다. 배포 후 워크로드 팩토리는 CredSSP를 비활성화합니다.
+
 [role="tabbed-block"]
 ====
 .빠른 생성

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: manage-instance.html 
-keywords: host instance, instance management, FSx for ONTAP, instance, manage host, view host, database host, database instance, manage 
+keywords: instance, instance management, FSx for ONTAP, instance, manage host, view host, database host, database instance, manage 
 summary: 데이터베이스의 워크로드 팩토리에서 인스턴스 관리에 대해 알아보세요. 
 ---
 = 데이터베이스용 워크로드 팩토리의 인스턴스 관리
@@ -11,9 +11,9 @@ summary: 데이터베이스의 워크로드 팩토리에서 인스턴스 관리�
 
 
 [role="lead"]
-워크로드 팩토리에서 등록된 호스트 인스턴스를 관리하는 작업에는 데이터베이스 및 데이터베이스 복제본 생성과 같은 인스턴스 리소스 배포, 인스턴스 및 데이터베이스 상태, 리소스 사용률, 보호 및 스토리지 성능 모니터링이 포함됩니다. 또한, 데이터베이스 구성의 잘 설계된 상태를 분석하고 구성 모범 사례를 구현하여 성능을 향상시키고 운영 비용을 절감할 수 있습니다. 인스턴스 관리는 FSx for ONTAP 파일 시스템 스토리지가 있는 인스턴스에만 적용됩니다.
+워크로드 팩토리에 등록된 인스턴스를 관리하는 작업에는 데이터베이스 및 데이터베이스 복제본 생성과 같은 인스턴스에 대한 리소스 배포, 인스턴스 및 데이터베이스 상태, 리소스 활용도, 보호 및 스토리지 성능 모니터링이 포함됩니다. 또한, 데이터베이스 구성의 잘 설계된 상태를 분석하고 구성 모범 사례를 구현하여 성능을 향상시키고 운영 비용을 절감할 수 있습니다. 인스턴스 관리는 FSx for ONTAP 파일 시스템 스토리지가 있는 인스턴스에만 적용됩니다.
 
-당신은해야합니다 link:register-instance.html["호스트 인스턴스 등록"] 다음 관리 업무를 수행합니다.
+당신은해야합니다 link:register-instance.html["인스턴스를 등록하다"] 다음 관리 업무를 수행합니다.
 
 관리 업무에는 다음이 포함됩니다.
 
