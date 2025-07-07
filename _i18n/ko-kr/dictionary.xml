@@ -357,7 +357,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="948d113c0ab3cb85650dda6912a734c5" category="list-text">데이터베이스를 봅니다</block>
-  <block id="7a85061671bf8d085efe2cb8dfd1c79e" category="paragraph">호스트가 확장되고 호스트 인스턴스가 나타납니다.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
   <block id="ca6b20c311193d70fa95150e9aadfeff" category="list-text">드롭다운 화살표를 클릭하여 호스트의 행을 확장하여 해당 데이터베이스를 봅니다.</block>
   <block id="bab47e98a40b74089a0df1373390d048" category="list-text">데이터베이스 보기 * 를 선택합니다.</block>
@@ -955,7 +954,6 @@
   <block id="db8588c095bdb42680df1d8ae6e6c242" category="paragraph">나중에 인스턴스를 다시 등록할 수 있습니다.</block>
   <block id="6e58f833a8c88963786858e4cd0820f1" category="list-text">인스턴스의 세 개 점 메뉴를 클릭하여 등록을 취소합니다.</block>
   <block id="a20e9b47d2ae2e8dcad4b38296aada53" category="list-text">*등록 취소*를 선택하세요.</block>
-  <block id="57b8b12d92efb891c61703846230423a" category="section-title">호스트 인스턴스 감지 지원</block>
   <block id="7d02c7321e50b7c2fa346dd9edc083f2" category="paragraph">Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 PostgreSQL 인스턴스와 Red Hat Enterprise Linux에서만 실행되는 Oracle 인스턴스를 감지하는 기능을 지원합니다.</block>
   <block id="6923ba19fe8a091f76827ff8c86785de" category="summary">데이터베이스용 워크로드 팩토리는 최적화, 자동 씬 클로닝, 모니터링 및 해결 기능을 위한 모범 사례가 내장된 종단 간 데이터베이스 배포 및 유지 관리 서비스입니다.</block>
   <block id="bb3a81d6ea3e61933815d8c7984727a3" category="section-title">데이터베이스의 워크로드 팩토리란 무엇입니까?</block>
@@ -981,12 +979,9 @@
   <block id="eb39e8dfd54bf78043b2372b30f7b2b6" category="list-text">복제본: 워크로드 팩토리 내부 또는 외부에서 생성되어 60일 이상 지난 복제본(샌드박스)을 새로 고치고 삭제하는 옵션이 포함됩니다.</block>
   <block id="05733d6679707441838e3ca92fcb1e85" category="inline-link-macro">AWS 계정 자격 증명 및 읽기/쓰기 권한</block>
   <block id="e6ff59cff1eb616f7a9d6b770313807a" category="list-text">당신은 있어야합니다 <block ref="6428f71963510d960d64cd03bb6513ae" category="inline-link-macro-rx"></block> 데이터베이스 구성을 분석합니다.</block>
-  <block id="bb4dc454356e65051d8e22516b60a260" category="inline-link-macro">호스트 인스턴스를 등록하는 방법을 알아보세요.</block>
-  <block id="606bc152b33b9976e88d57b374a1d46f" category="list-text">Microsoft SQL Server 인스턴스의 저장소를 평가하려면 해당 인스턴스를 워크로드 팩토리에 등록해야 하며 저장소 유형은 FSx for ONTAP이어야 합니다. <block ref="f22f9817b1d52aa896a88fe9442f70ef" category="inline-link-macro-rx"></block></block>
   <block id="663c686f4608ad8e700ed1cd99a57fcc" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 주의 깊게 검토하십시오. RSS 및 MAXDOP 설정의 경우 프로덕션 환경을 변경하기 전에 권장 설정을 테스트하여 성능 개선을 확인하는 것이 좋습니다.</block>
   <block id="55900adb296775523b32b30486b0de17" category="admonition">해결 프로세스로 인해 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성을 수정하기로 결정하기 전에 권장 사항을 주의 깊게 검토하세요.</block>
   <block id="da0f3dbe0b914fb78e47ff54702db3df" category="list-text">인스턴스의 구성 문제를 보려면 *문제 해결*을 선택하세요.</block>
-  <block id="a85bf70a610b181df621eea76d0068e4" category="list-text">호스트 인스턴스의 Well-architected 상태 페이지에서 분석 결과를 검토합니다.</block>
   <block id="8cdf23f9dd4f98a6b709a0a9d53ecd88" category="paragraph">구성 문제를 범주, 하위 범주, 상태, 심각도 및 태그별로 필터링할 수 있습니다.</block>
   <block id="dd78deb6ef5fa791112d358b2eccdf97" category="paragraph">*PDF 내보내기*를 선택하면 조사 결과 보고서를 다운로드할 수도 있습니다.</block>
   <block id="f73028254f9c4297e3f60654068105e0" category="list-text">드롭다운 화살표를 선택하여 모든 구성에 대한 권장 사항을 확인합니다. 권장 사항에는 모범 사례, 최적화되지 않은 구성의 잠재적 함정, 중요 고려 사항 등이 포함됩니다. 권장 사항을 주의 깊게 검토하십시오.</block>
@@ -1008,8 +1003,6 @@
   <block id="49c47aadfeff1e01313108c157d381b4" category="list-text">_성능 효율성_: 리소스를 효율적으로 사용하여 시스템 요구 사항을 충족하고 요구 사항이 변경될 때 최적의 성능을 유지하는 데 초점을 맞춥니다.</block>
   <block id="8b75b787538a5ee0eb97dc541694c82a" category="list-text">분석 범위</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
-  <block id="389751c9d4b8ea76783de1b291cac92f" category="paragraph">완전한 데이터베이스 환경 분석을 위해서는 호스트 인스턴스를 등록하고 온라인 상태로 만들어야 합니다.</block>
-  <block id="f22f9817b1d52aa896a88fe9442f70ef" category="paragraph"><block ref="f22f9817b1d52aa896a88fe9442f70ef" category="inline-link-macro-rx"></block></block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">잘 설계된 데이터베이스 구성을 구현합니다.</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
   <block id="27cb094655bbfaa4d3b2c3b34d1c1557" category="summary">데이터베이스용 워크로드 팩토리를 시작하여 Infrastructure-as-Code 스니펫을 사용하고, 호스트를 검색하고, 리소스를 관리하는 등의 작업을 수행하세요.</block>
@@ -1021,7 +1014,6 @@
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">호스트 서버 배포</block>
   <block id="d53bce2cf4a36ab74378d06b70255899" category="inline-link-macro">인스턴스를 등록하다</block>
   <block id="d4e3cc6f64d77dfb90b8f3a54369d97f" category="paragraph">마지막으로, _읽기/쓰기_ 모드에서 작동하도록 선택한 경우 다음을 수행해야 합니다. <block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block> 또는 <block ref="70dc6f6bba18b4f574a867d694f53a80" category="inline-link-macro-rx"></block> 호스트 리소스를 관리하고 사용자 데이터베이스를 추가하기 전에.</block>
-  <block id="db04547f806a50b5e3c5bbceb867c6c9" category="paragraph">데이터베이스 인벤토리에서 FSx for ONTAP 파일 시스템 스토리지를 사용하여 호스트 인스턴스를 등록한 경우 다음을 수행할 수 있습니다. <block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block> 또는 <block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> .</block>
   <block id="8373481dd509f9b495f59748db1aa76d" category="doc">데이터베이스의 워크로드 팩토리에 인스턴스 등록</block>
   <block id="42c8e35152475231ef5a183766c9bebc" category="paragraph">데이터베이스는 FSx for ONTAP 파일 시스템 스토리지에만 인스턴스를 등록할 수 있습니다.</block>
   <block id="91a3069301b0dd7ee29890c4b610ba27" category="section-title">작업에 관하여</block>
@@ -1040,9 +1032,6 @@
   <block id="a037e794bf828053866493b8452ab9c7" category="paragraph">인스턴스 등록 요청이 시작됩니다. 진행 상황을 추적하려면 *작업 모니터링* 탭을 선택하세요.</block>
   <block id="5dfcf5a53e6a3c94eb359647b453a807" category="summary">워크로드 팩토리의 데이터베이스 리소스 요약을 보려면 데이터베이스 인벤토리에 있는 모든 데이터베이스를 확인하세요. 등록된 단일 인스턴스별로 데이터베이스를 볼 수도 있습니다.</block>
   <block id="34f8798aab35970d27e00ecdf2a9f526" category="doc">데이터베이스용 워크로드 팩토리에서 데이터베이스 보기</block>
-  <block id="0ab190804913b1145bf64c21befa3286" category="list-text">데이터베이스 리소스가 포함된 호스트 인스턴스에는 FSx for ONTAP 파일 시스템 저장소가 있어야 합니다.</block>
-  <block id="682d1e77482e7088c166b62c34287660" category="inline-link-macro">호스트 인스턴스 등록</block>
-  <block id="13e6dec9f19066e3153eb07ec978ea2b" category="list-text">호스트 인스턴스는 워크로드 팩토리에 등록되어야 합니다. 의 방법을 <block ref="2dbc08dda5209ee806e4433f973c765a" category="inline-link-macro-rx"></block>알아보십시오.</block>
   <block id="87301bee2c9587d1e63d873a81c4e6fa" category="open-title">단일 인스턴스에 대한 데이터베이스 보기</block>
   <block id="25734f9761801ac27c5c548d5c1829ca" category="open-title">모든 인스턴스에 대한 데이터베이스 보기</block>
   <block id="91063ca7fb76f05148ae179b2f84b160" category="paragraph">워크로드 팩토리 내의 데이터베이스 리소스를 살펴보았습니다.</block>
@@ -1074,19 +1063,10 @@
   <block id="c836d737c77c0dbce2c99a2b01c719fd" category="paragraph">Workload Factory는 데이터베이스에 대해 다음과 같은 알림을 제공합니다.</block>
   <block id="33e3371223dba19c723617802e06af8d" category="list-text">잘 구성된 보고서</block>
   <block id="d415d128365eca1587931ed756de7819" category="list-text">호스트 배포</block>
-  <block id="83f1d9ca1a0c4c2fc51a371c0d773f76" category="list-text">보호</block>
   <block id="8306ce5f84163ec6839ec7518f30183a" category="section-title">인스턴스 등록을 위한 온보딩 향상</block>
-  <block id="0a969bb4f7ed7e29d7225c0409a1750b" category="paragraph">데이터베이스용 워크로드 팩토리는 Amazon FSx for NetApp ONTAP 스토리지에서 실행되는 인스턴스를 등록하는 온보딩 프로세스를 개선했습니다. 이제 등록할 인스턴스를 대량으로 선택할 수 있습니다. 인스턴스가 등록되면 워크로드 팩토리 콘솔에서 데이터베이스 호스트 리소스를 생성하고 관리할 수 있습니다.</block>
   <block id="2e91c32877a8bf4a56c1853f92a414ba" category="section-title">Microsoft Multipath I/O 시간 초과 설정에 대한 분석 및 수정</block>
-  <block id="221618cb9e519d5c3dd0fcbb1e4f1205" category="paragraph">데이터베이스 호스트 인스턴스의 잘 설계된 상태에는 이제 Microsoft 다중 경로 I/O(MPIO) 시간 제한 설정에 대한 분석 및 수정 사항이 포함됩니다. MPIO 시간 제한을 60초로 설정하면 FSx for ONTAP 스토리지 연결 및 장애 조치(failover) 중 안정성이 보장됩니다. MPIO 설정이 제대로 설정되지 않은 경우, Workload Factory에서 MPIO 시간 제한 값을 60초로 설정하는 수정 사항을 제공합니다.</block>
   <block id="a05724b342c36062e480732f660ae9d4" category="paragraph"><block ref="a05724b342c36062e480732f660ae9d4" category="inline-link-macro-rx"></block></block>
-  <block id="2bf19cd7fefccda37a9e51c8d6ae9ef1" category="section-title">호스트 인벤토리의 그래픽 향상</block>
-  <block id="29a6225f1f6846093fcfd562090e8654" category="paragraph">호스트 인벤토리 화면에서 처리량 및 IOPS와 같은 다양한 리소스 사용률 그래프가 7일 동안의 데이터를 표시하여 워크로드 팩토리 콘솔에서 SQL 노드의 성능을 더욱 효율적으로 모니터링할 수 있습니다. SQL 노드에서 수집된 성능 지표는 Amazon CloudWatch에 저장되어 Logs Insights에 활용하거나 환경의 다른 분석 서비스와 통합할 수 있습니다.</block>
-  <block id="02212e54266ecdf641215b97bf4ab24e" category="paragraph">호스트 인벤토리 내의 인스턴스 및 데이터베이스 탭에서 호스트 보호에 대한 설명과 시각화를 개선했습니다.</block>
   <block id="4698c78219bd6bc2a4fb47e8f4149213" category="section-title">워크로드 팩토리에서 Windows 인증 지원</block>
-  <block id="b3a0e7d1a5170a15143af7a7f86f02b8" category="paragraph">이제 워크로드 팩토리는 Windows 인증 사용자를 사용하여 호스트 인스턴스를 등록하고 호스트 관리 기능의 이점을 활용하는 SQL Server 인증을 지원합니다.</block>
-  <block id="47668721b89b4afabeb23e27f6ac9b38" category="inline-link-macro">데이터베이스의 워크로드 팩토리에 호스트 인스턴스 등록</block>
-  <block id="4f178ea0296d3da0481606b8e3df7542" category="paragraph"><block ref="4f178ea0296d3da0481606b8e3df7542" category="inline-link-macro-rx"></block></block>
   <block id="f7b79998a8d6049aa7838e93bde48d38" category="paragraph">배포 중에 워크로드 팩토리는 SQL 프로비저닝 스크립트에 대한 자격 증명 위임을 위해 CredSSP를 활성화합니다. 그룹 정책이 적용된 모든 도메인 컴퓨터에서 CredSSP 위임이 차단되면 배포가 실패합니다. 배포 후 워크로드 팩토리는 CredSSP를 비활성화합니다.</block>
   <block id="b6705e62a5d2c7330d2d39782b5e5ea5" category="summary">더 이상 인스턴스 리소스를 배포하거나 모니터링하지 않으려면 인스턴스 등록을 취소합니다.</block>
   <block id="aa76a1c51b277c90780c0553dba1e6a6" category="doc">워크로드 팩토리에서 인스턴스 등록 해제</block>
@@ -1121,4 +1101,20 @@
   <block id="1e72ee2b188273bc05d5a58836ef28ea" category="list-text">*Windows 인증*: Windows 사용자 이름과 비밀번호, FSx for ONTAP 파일 시스템 사용자 이름과 비밀번호를 입력합니다.</block>
   <block id="3325d27939065e1573633813a5123834" category="list-text">3단계에서는 인스턴스가 필수 전제 조건을 충족하는지 확인하여 인스턴스를 준비합니다. 모든 필수 모듈이 설치되고 전제 조건이 충족되면 *다음*을 선택하여 인스턴스를 등록합니다. 필요한 경우 다음 단계를 따르세요.</block>
   <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">2025년 6월 30일</block>
+  <block id="d2240cc857b28c2cc0c761811ebb0e4d" category="paragraph">데이터베이스용 워크로드 팩토리는 Amazon FSx for NetApp ONTAP 스토리지에서 실행되는 인스턴스를 등록하는 온보딩 프로세스를 개선했습니다. 이제 등록할 인스턴스를 대량으로 선택할 수 있습니다. 인스턴스가 등록되면 워크로드 팩토리 콘솔에서 데이터베이스 리소스를 만들고 관리할 수 있습니다.</block>
+  <block id="55dedf6eed5a2ce8c260a3944723e099" category="paragraph">이제 데이터베이스 인스턴스의 잘 설계된 상태에는 Microsoft Multipath I/O(MPIO) 시간 초과 설정에 대한 분석 및 수정 사항이 포함됩니다. MPIO 시간 제한을 60초로 설정하면 FSx for ONTAP 스토리지 연결 및 장애 조치(failover) 중 안정성이 보장됩니다. MPIO 설정이 제대로 설정되지 않은 경우, Workload Factory에서 MPIO 시간 제한 값을 60초로 설정하는 수정 사항을 제공합니다.</block>
+  <block id="0f6f8a7d2c62793903fd07b4a68f2192" category="section-title">인스턴스 인벤토리의 그래픽 향상</block>
+  <block id="6bb06f6a313d1245a77bdcc02f151dcd" category="paragraph">인스턴스 인벤토리 화면에서 처리량, IOPS 등 다양한 리소스 활용도 그래프가 이제 7일치 데이터를 표시하므로 워크로드 팩토리 콘솔에서 SQL 노드의 성능을 보다 효율적으로 모니터링할 수 있습니다. SQL 노드에서 수집된 성능 지표는 Amazon CloudWatch에 저장되어 Logs Insights에 활용하거나 환경의 다른 분석 서비스와 통합할 수 있습니다.</block>
+  <block id="8984f42ceef01f063ea7a1078e620318" category="paragraph">인벤토리 내의 인스턴스 및 데이터베이스 탭에서 보호에 대한 설명과 시각화를 개선했습니다.</block>
+  <block id="e6884d3b77d68ac903da5836a6c33345" category="paragraph">이제 워크로드 팩토리는 Windows 인증 사용자를 사용하여 인스턴스를 등록하고 관리 기능의 이점을 활용하는 SQL Server 인증을 지원합니다.</block>
+  <block id="b8419cf58039d1a67d2046abd157e28b" category="paragraph"><block ref="b8419cf58039d1a67d2046abd157e28b" category="inline-link-macro-rx"></block></block>
+  <block id="2e1bd7e9b2f7897e3fbd2f64db19746c" category="section-title">인스턴스 감지 지원</block>
+  <block id="e5872a50d5d45d5b9d394ddc65dfee1f" category="inline-link-macro">인스턴스를 등록하는 방법을 알아보세요.</block>
+  <block id="09ea6435a2780f6e0f876796133da036" category="list-text">Microsoft SQL Server 인스턴스의 저장소를 평가하려면 해당 인스턴스를 워크로드 팩토리에 등록해야 하며 저장소 유형은 FSx for ONTAP이어야 합니다. <block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
+  <block id="e6b1ed7d667d6b75280f0be1619fde20" category="list-text">인스턴스의 Well-Architected 상태 페이지에서 분석 결과를 검토합니다.</block>
+  <block id="a26f09029b7e444a21db17eb62e9d2d5" category="paragraph">완전한 데이터베이스 환경 분석을 위해서는 인스턴스를 등록하고 온라인 상태로 만들어야 합니다.</block>
+  <block id="4dede94da0834ecd430bec6189bab6cc" category="paragraph"><block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
+  <block id="897c69f19b2f39fbf3080a555a679d8e" category="paragraph">데이터베이스 인벤토리에서 FSx for ONTAP 파일 시스템 스토리지를 사용하여 인스턴스를 등록한 경우 다음을 수행할 수 있습니다. <block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block> 또는 <block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> .</block>
+  <block id="621bb50103e94b947974d2656fb451ec" category="list-text">데이터베이스 리소스가 포함된 인스턴스에는 FSx for ONTAP 파일 시스템 저장소가 있어야 합니다.</block>
+  <block id="dd36ed4d606eb4686fae0a7232af1eac" category="list-text">인스턴스는 워크로드 팩토리에 등록되어야 합니다. 의 방법을 <block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block>알아보십시오.</block>
 </blocks>

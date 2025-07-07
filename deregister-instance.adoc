@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: deregister-instance.html 
-keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle host instance, deregister instance, unregister instance, remove instance 
+keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle instance, deregister instance, unregister instance, remove instance 
 summary: 더 이상 인스턴스 리소스를 배포하거나 모니터링하지 않으려면 인스턴스 등록을 취소합니다. 
 ---
 = 워크로드 팩토리에서 인스턴스 등록 해제

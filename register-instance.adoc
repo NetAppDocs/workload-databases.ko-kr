@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: register-instance.html 
-keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle host instance, manage host, view host, database host, database instance, manage, unregister 
+keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle instance, manage host, view host, database host, database instance, manage, unregister 
 summary: 데이터베이스용 BlueXP  워크로드 공장에서 Microsoft SQL Server 인스턴스를 관리합니다. 
 ---
 = 데이터베이스의 워크로드 팩토리에 인스턴스 등록

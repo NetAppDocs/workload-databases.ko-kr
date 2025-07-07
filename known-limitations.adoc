@@ -15,7 +15,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 
 
 
-== 호스트 인스턴스 감지 지원
+== 인스턴스 감지 지원
 
 Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 PostgreSQL 인스턴스와 Red Hat Enterprise Linux에서만 실행되는 Oracle 인스턴스를 감지하는 기능을 지원합니다.
 
