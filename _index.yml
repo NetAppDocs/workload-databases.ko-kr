@@ -18,6 +18,8 @@ indexpage:
       url: "/explore-savings.html"
     - title: 인스턴스 등록
       url: "/register-instance.html"
+    - title: 인스턴스의 잘 설계된 상태를 확인하세요
+      url: "/optimize-configurations.html"
     - title: Microsoft SQL Server를 만듭니다
       url: "/create-database-server.html"
     - title: PostgreSQL 서버를 생성합니다
