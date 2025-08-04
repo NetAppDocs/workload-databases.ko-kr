@@ -28,7 +28,7 @@ Workload Factory는 매일 데이터베이스 구성을 분석합니다. 일일 
 * 스토리지 구성: 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, Microsoft Multipath I/O(MPIO) 상태 및 MPIO 시간 초과 설정이 포함됩니다.
 * 컴퓨팅: 적절한 크기 조정, 운영 체제 패치 및 RSS(Receive Side Scaling) 및 TCP 오프로딩과 같은 네트워크 어댑터 설정이 포함됩니다
 * 응용 프로그램: Microsoft SQL Server 라이선스, Microsoft SQL Server 패치 및 MAXDOP 설정이 포함됩니다
-* 복원력: 로컬 스냅샷, FSx for ONTAP 백업 및 지역 간 복제(CRR) 포함
+* 복원력: 로컬 스냅샷, FSx for ONTAP 백업, 지역 간 복제(CRR), Microsoft SQL 고가용성이 포함됩니다.
 * 복제본: 워크로드 팩토리 내부 또는 외부에서 생성되어 60일 이상 지난 복제본(샌드박스)을 새로 고치고 삭제하는 옵션이 포함됩니다.
 
 

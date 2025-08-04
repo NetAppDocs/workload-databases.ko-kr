@@ -358,8 +358,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="948d113c0ab3cb85650dda6912a734c5" category="list-text">데이터베이스를 봅니다</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
-  <block id="ca6b20c311193d70fa95150e9aadfeff" category="list-text">드롭다운 화살표를 클릭하여 호스트의 행을 확장하여 해당 데이터베이스를 봅니다.</block>
-  <block id="bab47e98a40b74089a0df1373390d048" category="list-text">데이터베이스 보기 * 를 선택합니다.</block>
   <block id="67b0a66954400448325457f930e0f82b" category="paragraph">작업 모니터링은 작업에 따라 최대 3가지 수준의 모니터링을 지원합니다. 예를 들어 새 데이터베이스 및 샌드박스 클론 생성을 위해 작업 모니터링은 상위 작업과 하위 작업을 추적합니다.</block>
   <block id="b830a8f027299af6d1d8ffbb130bcc58" category="list-text">작업 모니터링 수준</block>
   <block id="f52bf93027629736a089ef7f590091e0" category="list-text">레벨 1(상위 작업): 호스트 배포 작업을 추적합니다.</block>
@@ -374,10 +372,8 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1개</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2개</block>
   <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 자격 증명 및 사용 권한을 추가합니다</block>
-  <block id="f13bb46705b371ce5ebc0ccc10f09bb0" category="inline-link-macro">데이터베이스 서버를 배포하는 방법에 대해 알아봅니다</block>
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link-macro">계정에 자격 증명을 수동으로 추가합니다</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">세 가지</block>
-  <block id="6f6390592b833a81a0bda8c296a3c5b6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 데이터베이스 서버를 배포합니다</block>
   <block id="76e0353f7732c65129a16b1dee5f98f2" category="inline-link-macro">사용자 데이터베이스를 만듭니다</block>
   <block id="9099614931eafcd02d62211a634872c7" category="inline-link-macro">호스트를 클론하여 샌드박스를 생성합니다</block>
   <block id="24ba9febbdf4f0bdec223ad9cf7f746f" category="paragraph">클론을 새로 고치면 클론이 현재 시점에 소스 데이터베이스로 업데이트되거나 이전 시점에 생성된 소스 데이터베이스의 스냅샷으로 업데이트됩니다. sandbox 클론에 대한 모든 변경 내용이 삭제됩니다.</block>
@@ -462,7 +458,6 @@
   <block id="651b8da486ba685aa80d9dd4866d0171" category="sidebar">샌드박스 클론을 삭제합니다</block>
   <block id="e7310dc180b25aba87aadafb96fb45f4" category="inline-image-macro">저축 계산기 페이지의 스크린샷은 스냅샷 및 클론 값을 사용자 지정할 수 있는 옵션과 함께 왼쪽에 선택한 Microsoft SQL Server on Amazon Elastic Block Store 구성을 보여 줍니다. FSx for ONTAP 및 Elastic Block Store 스토리지에서 Microsoft SQL Server를 사용할 때의 총 월별 비용은 왼쪽에 표시됩니다.</block>
   <block id="dfa401fd4fd8841a340bd9f87c0910f8" category="list-text">* 스냅샷 주파수 *: 드롭다운 메뉴에서 스냅샷 주파수를 선택합니다.</block>
-  <block id="b92d49f94f8fe0dff03b4a997452d375" category="list-text">* 복제 새로 고침 빈도 * : 드롭다운 메뉴에서 클론을 새로 고치는 빈도를 선택합니다.</block>
   <block id="3a886ba0c11f46f4a69567f2c732a39e" category="list-text">* 복제 사본 수 *: EBS 구성에 복제된 사본 수를 입력합니다.</block>
   <block id="6c8bc6142fe7d27949e96c7c1eb44a70" category="list-text">* 지역 * : 드롭다운 메뉴에서 지역을 선택합니다.</block>
   <block id="4b671e090adbd727a425c2dc7c229735" category="list-text">* 배포 모델 *: 드롭다운 메뉴에서 배포 모델을 선택합니다.</block>
@@ -540,7 +535,6 @@
   <block id="bd0005565e08b9807da651535d09e628" category="inline-xref">맞춤화를 통한 절감 효과를 살펴보십시오</block>
   <block id="b2b254b73e406acc574452e9f29f5d9a" category="list-text">Explore Savings 탭에서 EBS 스토리지를 사용하는 데이터베이스 서버의 * Explore Savings * 를 클릭합니다.</block>
   <block id="3f1c1b5d06b7f8c588cd928fa1ac5e90" category="list-text">절약 효과 계산기에서 EBS 스토리지의 클론 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.</block>
-  <block id="8918771901c5636214df46e39006b50c" category="list-text">절약 효과 탐색 탭에서 Windows 파일 서버 스토리지용 FSx를 사용하는 데이터베이스 서버의 * 절약 효과 탐색 * 을 클릭합니다.</block>
   <block id="60d184cc6fb4054879723de86764a020" category="list-text">선택적으로 절감 계산기에서 FSx for Windows 스토리지의 클론(섀도 복사본) 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.</block>
   <block id="c552646e3717f4144059bd229d9b3c96" category="paragraph">Windows용 FSx 섀도 복사본이 감지되면 기본값은 * Daily * 입니다. 섀도 복사본이 감지되지 않으면 기본값은 * 스냅샷 빈도 없음 * 입니다.</block>
   <block id="724d4c3a0255dd97a61657dd67fdf48f" category="list-text">* 복제된 복사본 수 *: Windows용 FSx 구성에 복제된 복사본 수를 입력합니다.</block>
@@ -647,7 +641,6 @@
   <block id="3e7340039619cc08d8c1c5a3cd4bfb43" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> BlueXP  워크로드 팩토리에 로그인합니다</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link-macro">워크로드 팩토리에 계정을 설정합니다</block>
   <block id="f6c71053fa21be1c35ee95758a3d1050" category="paragraph">를 사용하여 로그인해야 <block ref="782deaad814daa4f2ae09237c9394f09" category="inline-link-macro-rx"></block><block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>합니다.</block>
-  <block id="a4470118de925b41004832644492fcab" category="paragraph">_basic_mode에서 작업하는 경우 더 이상 진행할 필요가 없습니다. 데이터베이스를 사용하여 부분적으로 완료된 코드 샘플을 복사할 수 있습니다. 데이터베이스 타일에서 * 데이터베이스 호스트 배포 * 를 클릭합니다. <block ref="cf724fcba48c8dc4cbe06a87f2c5df99" category="inline-link-macro-rx"></block>..</block>
   <block id="c1b68fc67f0e2b970d81dd29c91edb3c" category="summary">데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 새로 고칩니다.</block>
   <block id="6aa117cc6340cd2479e82444cbbadea9" category="doc">데이터베이스용 BlueXP  워크로드 공장에서 샌드박스 클론을 새로 고칩니다</block>
   <block id="99ce2cd9a13526e0582af2c9fa2a4382" category="paragraph">현재 시점 또는 이전 시점의 소스 데이터베이스와 같도록 BlueXP  워크로드 팩토리얼에서 데이터베이스 복제본을 새로 고칩니다.</block>
@@ -739,12 +732,9 @@
   <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">워크로드 공장 커뮤니티에 참여하여 진행 중인 토론을 따르거나 새 토론을 만드십시오.</block>
   <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">케이스 생성 * 기능을 사용하려면 먼저 지원을 등록해야 합니다. NetApp 지원 사이트 자격 증명을 워크로드 공장 로그인에 연결하십시오. <block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>..</block>
   <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">워크로드 팩토리 콘솔의 오른쪽 위에서 * Help &gt; Support * 를 선택합니다.</block>
-  <block id="6b30d701929b5a35aad77b847528d165" category="list-text">보려는 데이터베이스가 포함된 인스턴스의 세 점 메뉴를 클릭합니다.</block>
   <block id="5f08a8bbfa89b18958e70a8c6cbc44c3" category="paragraph">데이터베이스는 작업 진행 상황을 추적하고 장애가 발생할 경우 진단 및 문제를 해결할 수 있도록 작업 모니터링을 제공합니다. 유형 및 상태별로 작업을 필터링하고, 검색 기능을 사용하여 작업을 찾고, 작업 테이블을 다운로드할 수 있습니다.</block>
   <block id="5ade2a57e46cf328c900013574754aa9" category="list-text">작업 모니터링 기능은 _in progress_,_completed_,_completed with issions_, _failed_jobs 일별, 주별, 격주 및 월별로 추적합니다.</block>
   <block id="10f9689e79d67ec4a1651805229939e6" category="list-text">작업의 세 점 메뉴를 클릭하고 * Go to CloudFormation * 을 클릭하여 AWS CloudFormation 콘솔에서 작업 로그를 확인하십시오.</block>
-  <block id="7bbfa484f6d4f2fd489e0f9cbab2b174" category="inline-link-macro">비용 절감 계산기로 비용 절감을 알아보십시오</block>
-  <block id="7634b96d2de45d4657e04dff8ecded5f" category="paragraph">데이터베이스 인벤토리에 Elastic Block Store 또는 FSx for Windows File Server 호스트가 있는 경우 <block ref="481992ff67d8db3be48d151b768f7ce5" category="inline-link-macro-rx"></block>가능합니다.</block>
   <block id="1f14f9d15a2087e9bbf3c4dd4b699191" category="list-text">Sandbox 탭에서 새로 고칠 샌드박스 클론의 3점 메뉴를 클릭합니다.</block>
   <block id="e464b3f9b68caf988cec7cd7b5263281" category="list-text">샌드박스 탭에서 되돌리려는 샌드박스 클론의 3점 메뉴를 클릭합니다.</block>
   <block id="07755964277c2a6aa1a5c2e771d7dbe0" category="list-text">샌드박스 탭에서 분할할 샌드박스 클론의 3점 메뉴를 클릭합니다.</block>
@@ -772,7 +762,6 @@
   <block id="5e73d91731c9445e9a0cc34e1969976a" category="summary">Amazon EBS(Elastic Block Store), FSx for Windows File Server 및 SQL Server 온프레미스 데이터베이스 스토리지를 FSx for ONTAP 스토리지와 비교하십시오.</block>
   <block id="6bcb23607586342322d4d9d515a81317" category="paragraph">Amazon EBS(Elastic Block Store)에서 Microsoft SQL Server, FSx for Windows File Server 및 온프레미스 스토리지를 FSx for ONTAP 스토리지와 비교하여 데이터베이스 워크로드를 위한 BlueXP  워크로드 팩토리에서의 절감 효과에 대해 알아보십시오.</block>
   <block id="7cf65e2ff3a983e2d864a8b1c64765f1" category="open-title">Microsoft SQL Server 온프레미스</block>
-  <block id="a2985bc0847d7596067c038e830be18b" category="list-text">Databases(데이터베이스) 타일에서 드롭다운 메뉴에서 * Explore Savings(절약 탐색) * 를 선택한 다음 * Microsoft SQL Server On-Premise * 를 선택합니다.</block>
   <block id="979b029ad875506edc5721a6a441e313" category="list-text">SQL Server 온-프레미스 탭에서 스크립트를 다운로드하여 온-프레미스 SQL Server 환경을 평가합니다.</block>
   <block id="db99a3f687ce317a37116a375a2f8e0a" category="list-text">평가 스크립트를 다운로드합니다. 스크립트는 PowerShell을 기반으로 하는 데이터 수집 도구입니다. SQL Server 구성 및 성능 데이터를 수집한 후 BlueXP  워크로드 팩토리얼로 업로드합니다. 마이그레이션 어드바이저는 데이터를 평가하고 SQL Server 환경에 대한 FSx for ONTAP 배포를 계획합니다.</block>
   <block id="2840f80705232625a2e7a961c5ae7c57" category="inline-image-macro">SQL Server 온-프레미스 탭의 스크린샷은 평가 스크립트를 다운로드하는 옵션을 보여 줍니다.</block>
@@ -1008,10 +997,7 @@
   <block id="0bf39c9f8183add14af5a19ad4c80ff7" category="paragraph">데이터베이스용 워크로드 팩토리를 사용하면 _기본_ 모드로 바로 시작할 수 있습니다. 워크로드 팩토리를 사용하여 호스트 검색, 리소스 관리 등을 수행하려는 경우 몇 단계로 시작할 수 있습니다.</block>
   <block id="742b9524a4ab93b49eb1614d2aa4287b" category="inline-link-macro">_기본_, _읽기 전용_ 및 _읽기/쓰기_ 작동 모드</block>
   <block id="e19be16b30ba3a27ed29174edef4c120" category="paragraph">다음 중에서 선택합니다. <block ref="5653101a5bec855c555e8762c96ccdfc" category="inline-link-macro-rx"></block></block>
-  <block id="b60b67e70947e6a46c89e0d1c15f532f" category="paragraph">_읽기 전용_ 또는 _읽기/쓰기_ 모드에서 작동하는 경우 다음이 필요합니다. <block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 여기에는 데이터베이스 및 GenAI와 같은 워크로드 기능을 선택하고, _읽기 전용_ 또는 _읽기/쓰기_ 모드에서 작업하는 데 필요한 올바른 권한이 있는지 확인하기 위한 IAM 정책을 만드는 작업이 포함됩니다.</block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">호스트 서버 배포</block>
-  <block id="d53bce2cf4a36ab74378d06b70255899" category="inline-link-macro">인스턴스를 등록하다</block>
-  <block id="d4e3cc6f64d77dfb90b8f3a54369d97f" category="paragraph">마지막으로, _읽기/쓰기_ 모드에서 작동하도록 선택한 경우 다음을 수행해야 합니다. <block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block> 또는 <block ref="70dc6f6bba18b4f574a867d694f53a80" category="inline-link-macro-rx"></block> 호스트 리소스를 관리하고 사용자 데이터베이스를 추가하기 전에.</block>
   <block id="8373481dd509f9b495f59748db1aa76d" category="doc">데이터베이스의 워크로드 팩토리에 인스턴스 등록</block>
   <block id="42c8e35152475231ef5a183766c9bebc" category="paragraph">데이터베이스는 FSx for ONTAP 파일 시스템 스토리지에만 인스턴스를 등록할 수 있습니다.</block>
   <block id="91a3069301b0dd7ee29890c4b610ba27" category="section-title">작업에 관하여</block>
@@ -1032,7 +1018,6 @@
   <block id="34f8798aab35970d27e00ecdf2a9f526" category="doc">데이터베이스용 워크로드 팩토리에서 데이터베이스 보기</block>
   <block id="87301bee2c9587d1e63d873a81c4e6fa" category="open-title">단일 인스턴스에 대한 데이터베이스 보기</block>
   <block id="25734f9761801ac27c5c548d5c1829ca" category="open-title">모든 인스턴스에 대한 데이터베이스 보기</block>
-  <block id="91063ca7fb76f05148ae179b2f84b160" category="paragraph">워크로드 팩토리 내의 데이터베이스 리소스를 살펴보았습니다.</block>
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025년 6월 3일</block>
   <block id="ebb5d0c39395173ae9cea85bcf7d498e" category="sidebar">인스턴스 등록</block>
   <block id="c38254582571637e4bded341a22ff035" category="sidebar">인스턴스 관리</block>
@@ -1114,10 +1099,48 @@
   <block id="4dede94da0834ecd430bec6189bab6cc" category="paragraph"><block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
   <block id="897c69f19b2f39fbf3080a555a679d8e" category="paragraph">데이터베이스 인벤토리에서 FSx for ONTAP 파일 시스템 스토리지를 사용하여 인스턴스를 등록한 경우 다음을 수행할 수 있습니다. <block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block> 또는 <block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> .</block>
   <block id="621bb50103e94b947974d2656fb451ec" category="list-text">데이터베이스 리소스가 포함된 인스턴스에는 FSx for ONTAP 파일 시스템 저장소가 있어야 합니다.</block>
-  <block id="dd36ed4d606eb4686fae0a7232af1eac" category="list-text">인스턴스는 워크로드 팩토리에 등록되어야 합니다. 의 방법을 <block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block>알아보십시오.</block>
   <block id="2eb8fe4398b92e5c2222314cd13b7749" category="paragraph">구성 분석 통찰력과 권장 사항을 활용하여 워크로드 팩토리를 활용하여 데이터베이스 구성에 대한 모범 사례를 구현하세요. 잘 설계된 상태를 쉽게 검토하고, 데이터베이스 구성의 문제점을 알아보고, 안정성, 보안, 효율성, 성능 및 비용 측면에서 최적화되지 않은 구성을 개선하기 위한 조치를 취할 수 있습니다.</block>
   <block id="2bab4675fc931e32d65c62820186d2e3" category="inline-link-macro">워크로드 팩토리의 구성 분석과 잘 설계된 상태에 대해 알아보세요.</block>
   <block id="00d1bba61e4e880f08c0a9d89d53205b" category="paragraph"><block ref="00d1bba61e4e880f08c0a9d89d53205b" category="inline-link-macro-rx"></block></block>
   <block id="8b2297ce6c1f7ab63874a40b0ca4a48f" category="paragraph">Workload Factory는 매일 데이터베이스 구성을 분석합니다. 일일 분석은 잘 설계된 상태, 통찰력 및 권장 사항을 제공하며 구성 문제를 자동으로 해결하는 옵션을 통해 구성이 모범 사례를 충족하도록 합니다.</block>
   <block id="08957eb86dbd3276e4875a3910d67420" category="sidebar">인스턴스의 잘 설계된 상태를 확인하세요</block>
+  <block id="65bff5c812b0782e85c3554a907e01d2" category="doc">잘 설계된 분석에는 고가용성 클러스터 검증이 포함됩니다.</block>
+  <block id="bdd55244a112c438dfe30c6c85a4fcb1" category="paragraph">잘 설계된 분석에는 이제 고가용성 클러스터에 대한 검증이 포함됩니다.  이 검증에서는 디스크 가용성 및 두 노드의 구성, Windows 클러스터 구성, 장애 조치 준비 상태를 포함하여 서버 측의 모든 클러스터 관련 구성을 확인합니다.  이렇게 하면 Windows 클러스터가 올바르게 설정되고 필요할 때 성공적으로 장애 조치를 수행할 수 있습니다.</block>
+  <block id="ad229ca0142680e057d4328835a9c1ef" category="section-title">인스턴스에 대해 다단계 메뉴 사용 가능</block>
+  <block id="de0915fdab5af6d02111d53dcfd6ccb3" category="paragraph">워크로드 팩토리 콘솔에 이제 인스턴스에 대한 다단계 메뉴가 포함되었습니다.  이러한 변경으로 인스턴스 관리를 위한 보다 체계적이고 직관적인 탐색 구조가 제공됩니다.  인스턴스 관리를 위한 메뉴 옵션에는 인스턴스 대시보드 보기, 데이터베이스 보기, 데이터베이스 생성, 샌드박스 복제본 생성이 포함됩니다.</block>
+  <block id="8d79c3f1283ecc54b044e383580c41e0" category="inline-image-macro">다중 레벨 메뉴 구조를 갖춘 인스턴스 테이블 메뉴의 스크린샷입니다.  인스턴스 테이블 메뉴를 선택한 다음 인스턴스 관리를 선택하면 데이터베이스를 보고, 데이터베이스를 만들고, 샌드박스 복제본을 만들 수 있습니다.</block>
+  <block id="6f3cad43f8bb61ac11ebd8e87e6d6240" category="paragraph"><block ref="6f3cad43f8bb61ac11ebd8e87e6d6240" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5892d833ba074396906362cfc3ad6370" category="section-title">저축을 탐색하기 위한 새로운 인증 옵션</block>
+  <block id="3035f336d9539562dbf5355f26c10a4f" category="paragraph">때<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block> 사용자에게 Microsoft SQL Server에 대한 충분한 권한이 없는 경우 SQL Server 자격 증명으로 인증하거나 누락된 SQL Server 권한을 추가할 수 있습니다.<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block> .</block>
+  <block id="79717347a64fe25d0ea054d1670b04c6" category="inline-link-macro">Amazon FSx for NetApp ONTAP 통해 데이터베이스 환경의 잠재적 비용 절감을 살펴보세요.</block>
+  <block id="0c99e0e3525f8446afe1107c5294bead" category="paragraph"><block ref="0c99e0e3525f8446afe1107c5294bead" category="inline-link-macro-rx"></block></block>
+  <block id="0d1fd436d021926cae2510df23023f8f" category="list-text">필요한 경우 SQL Server 자격 증명, Windows 자격 증명을 사용하거나 누락된 SQL Server 권한을 추가하여 데이터베이스 호스트를 인증합니다.</block>
+  <block id="057a8460985f241177200f51e8c70447" category="paragraph">인증에 성공한 후에도 저축 탐색 페이지에서 데이터가 로드되지 않으면, *인벤토리* 탭을 선택하여 데이터를 다시 로드한 다음, *저축 탐색* 탭을 다시 선택하세요.</block>
+  <block id="23a7f7680ea3dd0d8e35715312180e42" category="list-text">*스냅샷 빈도*: 메뉴에서 스냅샷 빈도를 선택하세요.</block>
+  <block id="0f2833865dd9bd39be8189333dae1c4f" category="list-text">*복제본 새로 고침 빈도*: 메뉴에서 복제본이 새로 고침되는 빈도를 선택합니다.</block>
+  <block id="d0e7e25b5d4913c7506b7abe691c9fa9" category="list-text">데이터베이스 타일에서 *저축 탐색*을 선택한 다음 메뉴에서 *Windows용 FSx의 Microsoft SQL Server*를 선택합니다.</block>
+  <block id="ca1bcaaac2fa2065767d6cb9b43a5bf7" category="list-text">절약 탐색 탭에서 FSx for Windows File Server 저장소를 사용하여 데이터베이스 호스트의 *절약 탐색*을 선택합니다.</block>
+  <block id="e4b085b007f80e7f8236f3693c0d0198" category="list-text">데이터베이스 타일에서 *절약 사항 살펴보기*를 선택한 다음 메뉴에서 *온-프레미스 Microsoft SQL Server*를 선택합니다.</block>
+  <block id="808d573e3971d8d03b14bfaef043f475" category="section-title">Explore savings에서 데이터베이스 호스트 인증</block>
+  <block id="546dcae8b2a33c531e585b76d51af0dd" category="paragraph">일부 권한이 제한된 경우, 인증에 성공한 후에도 탐색 저축 페이지가 데이터를 로드하지 않습니다.</block>
+  <block id="012a999834d8188ec17b6ec67f4db97d" category="list-text">복원력: 로컬 스냅샷, FSx for ONTAP 백업, 지역 간 복제(CRR), Microsoft SQL 고가용성이 포함됩니다.</block>
+  <block id="884d3679394cea72f73ae724c1666492" category="paragraph">_읽기 전용_ 또는 _읽기/쓰기_ 모드에서 작동하는 경우 다음이 필요합니다.<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 데이터베이스 및 GenAI와 같은 워크로드 기능을 선택하고 필요한 권한에 대한 IAM 정책을 만듭니다.</block>
+  <block id="1caf2514b723d82877e2b000e3ba5e3f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>리소스 검색 또는 배포</block>
+  <block id="714bf7245115e9e60e5f4ba3dc04e4f5" category="paragraph">자격 증명 및 IAM 정책을 사용하면 인벤토리에서 기존 데이터베이스 리소스를 검색할 수 있습니다.<block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block> .  인벤토리는 리소스를 관리하기 위한 통합된 인터페이스를 제공합니다.</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
+  <block id="51632000dec3a4768004497c0cb1dc7a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>비용 절감 기회 탐색</block>
+  <block id="27a00979342c6038e57c451a97056eba" category="inline-link-macro">Explore 절약 계산기를 사용하세요</block>
+  <block id="dfc5bbea65d061d8ef65858dceb395dd" category="paragraph">Amazon Elastic Block Store(EBS) 또는 FSx for Windows File Server에 저장소가 있는 온프레미스 또는 AWS에서 데이터베이스를 실행하는 경우 다음을 수행할 수 있습니다.<block ref="34af0e835becefaa17178e7fc48e3086" category="inline-link-macro-rx"></block> 비용을 분석하고 효과적으로 마이그레이션을 계획합니다.</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">다섯</block>
+  <block id="b898d5d576224cd9ff29f84561766760" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block>잘 설계된 데이터베이스 구성을 구현합니다.</block>
+  <block id="b06c1406344aa854d261bcc0a6e0f592" category="inline-link-macro">인스턴스 등록</block>
+  <block id="e57096f2d1ce720a79c02a8e8f46d8de" category="paragraph">Workload Factory for Databases는 Well-architected 대시보드에서 Amazon FSx for NetApp ONTAP 에 배포된 Microsoft SQL Server를 정기적으로 분석합니다.  데이터베이스 리소스에 대한 잘 설계된 대시보드에서 문제를 해결하려면 먼저 다음이 필요합니다.<block ref="001cc0ec03a1e5527fa917b277b2c766" category="inline-link-macro-rx"></block> .</block>
+  <block id="e8663036e4d283a237c51601bdcfc5cd" category="inline-link-macro">잘 설계된 데이터베이스 구성을 구현합니다</block>
+  <block id="fc5052ca3918c28b8e418893a6b982f9" category="paragraph">인스턴스를 등록한 후 잘 구성된 상태를 확인하고 조치를 취할 수 있습니다.<block ref="1c0f7e78a2011839a2cb972a47f46536" category="inline-link-macro-rx"></block> 작업 부하 공장에서.</block>
+  <block id="38d8d5207d4ef99316428985c300feb1" category="list-text">데이터베이스를 보려면 워크로드 팩토리에 인스턴스를 등록해야 합니다. 자세한 내용은 <block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block> .</block>
+  <block id="19ceb4c9dbec8f50da133f5989360510" category="list-text">인스턴스의 세 점 메뉴를 클릭한 다음 *데이터베이스 보기*를 선택합니다.</block>
+  <block id="d1a11c072934a6070961082a4f0ccfac" category="paragraph">데이터베이스는 데이터베이스 탭에 단일 인스턴스에 대해 표시됩니다.</block>
+  <block id="ad6ac298077f67c060156edbddf13a36" category="list-text">*데이터베이스* 탭을 선택합니다.</block>
+  <block id="d0c6ba62b6c3694f7b736785522100f6" category="paragraph">등록된 모든 인스턴스에 대한 데이터베이스가 표시됩니다.</block>
+  <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">2025년 8월 4일</block>
 </blocks>
