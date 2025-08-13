@@ -51,6 +51,8 @@ sidebar:
         url: "/create-sandbox-clone.html"
     - title: Codebox로 자동화
       url: "/automate-codebox.html"
+    - title: Microsoft SQL Server 워크로드 보호
+      url: "/protect-sql-server.html"
   - title: 관리 및 모니터링
     entries:
     - title: 데이터베이스 작업 모니터링

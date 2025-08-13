@@ -15,6 +15,20 @@ summary: 데이터베이스용 BlueXP  워크로드 공장의 새로운 기능�
 
 
 
+== 2025년 8월 12일
+
+
+
+=== BlueXP backup and recovery 이제 Microsoft SQL Server 워크로드를 지원합니다.
+
+BlueXP backup and recovery 사용하면 Microsoft SQL Server 데이터베이스와 가용성 그룹을 백업, 복원, 확인 및 복제할 수 있습니다.  워크로드 팩토리 콘솔에서 BlueXP backup and recovery 에 액세스하여 사용하여 Microsoft SQL Server 워크로드를 보호할 수 있습니다.
+
+link:protect-sql-server.html["워크로드 팩토리 콘솔을 통해 Microsoft SQL Server 워크로드를 보호하는 방법을 알아보세요."^] .
+
+BlueXP backup and recovery 에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-mssql-protect-overview.html["BlueXP backup and recovery 통한 Microsoft SQL 워크로드 보호 개요"^] .
+
+
+
 == 2025년 8월 4일
 
 

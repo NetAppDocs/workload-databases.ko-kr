@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: protect-sql-server.html 
+keywords: protect, server, Microsoft SQL Server, SQL Server, protect instance, protect database 
+summary: Microsoft SQL Server 인스턴스와 데이터베이스를 보호합니다. 
+---
+= Microsoft SQL Server 워크로드 보호
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+워크로드 팩토리 콘솔에서 BlueXP backup and recovery 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요.  백업은 사용자가 만든 정책에 따라 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.
+
+
+
+== 이 작업에 대해
+
+BlueXP backup and recovery NetApp SnapMirror 데이터 복제 기술을 활용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.
+
+BlueXP backup and recovery 통한 보호에 대한 자세한 내용은 다음을 참조하십시오.link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-mssql-protect-overview.html["BlueXP backup and recovery 통한 Microsoft SQL 워크로드 보호 개요"^] .
+
+
+
+== 시작하기 전에
+
+BlueXP backup and recovery 사용하여 Microsoft SQL Server 워크로드를 보호하기 위한 요구 사항은 다음과 같습니다.
+
+* BlueXP 커넥터
++
+참조하다link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["BlueXP 커넥터를 구성하는 방법을 알아보세요"^] 그리고link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["표준 BlueXP 요구 사항"^] .
+
++
+커넥터에는 Ubuntu 22.04 LTS 운영 체제가 필요합니다.
+
+* BlueXP backup and recovery 라이선스
++
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["BlueXP backup and recovery 에 대한 라이선싱 설정"^]
+
+* 커넥터에서 호스트 해상도 설정
++
+데이터베이스를 검색하려면 커넥터에서 호스트 확인을 설정해야 합니다.  호스팅된 장치에서 IP 주소 매핑을 호스트 이름에 추가합니다. `/etc/hosts` 파일.
+
+
+
+
+
+== Microsoft SQL Server 인스턴스 및 데이터베이스 보호
+
+Microsoft SQL Server 인스턴스와 데이터베이스를 보호하려면 리소스 검색, 필수 구성 요소 검증, Microsoft SQL Server용 플러그인 구성 및 설치가 필요합니다.  이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
+. 데이터베이스에서 * Inventory * 탭을 선택합니다.
+. *엔진 유형*을 *Microsoft SQL Server*로 필터링합니다.
+. 보호할 인스턴스의 메뉴에서 *보호*를 선택합니다.
+. 워크로드를 등록하고 보호할 *커넥터*를 선택하세요.
+. 데이터 보호를 준비하기 위해 Workload Factory는 BlueXP backup and recovery 에 SQL Server 리소스를 자동으로 등록하고, Microsoft SQL Server용 플러그인을 구성 및 설치하고, SQL Server 인스턴스를 보호하기 위한 필수 구성 요소를 충족하는 리소스를 검색합니다.  *시작*을 선택하여 프로세스를 시작하세요.
+. 필수 조건을 충족한 후 *리디렉션*을 선택하면 BlueXP backup and recovery 로 리디렉션됩니다.
+
+
+.다음 단계
+BlueXP backup and recovery 통해 Microsoft SQL Server 인스턴스와 데이터베이스를 보호하는 정책을 만듭니다.
+
+link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["Microsoft SQL Server 인스턴스와 데이터베이스를 보호하는 정책을 만드는 방법을 알아보세요."^] .
+
+관련 정보는 다음을 참조하세요.link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-mssql-protect-overview.html["BlueXP backup and recovery 문서"^] Microsoft SQL Server 작업 부하를 관리합니다.
