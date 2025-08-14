@@ -11,11 +11,13 @@ summary: Microsoft SQL Server 인스턴스와 데이터베이스를 보호합니
 
 
 [role="lead"]
-워크로드 팩토리 콘솔에서 BlueXP backup and recovery 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요.  백업은 사용자가 만든 정책에 따라 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.
+워크로드 팩토리 콘솔에서 BlueXP backup and recovery 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요. 이 통합을 통해 다음과 같은 보호 목표를 달성할 수 있습니다. 로컬 기본 Amazon FSx for NetApp ONTAP (FSx for ONTAP) 스토리지의 로컬 스냅샷으로 워크로드를 백업하고, 워크로드를 보조 FSx for ONTAP 스토리지로 복제합니다.
 
 
 
 == 이 작업에 대해
+
+워크로드 팩토리는 인스턴스 및 데이터베이스 리소스 검색, 필수 구성 요소 검증, Microsoft SQL Server용 플러그인 구성 및 설치 프로세스를 자동화하는 데 도움이 됩니다. 이 모든 작업은 BlueXP backup and recovery 통해 Microsoft SQL Server 워크로드를 보호하기 위한 준비 프로세스의 일부입니다. 이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.
 
 BlueXP backup and recovery NetApp SnapMirror 데이터 복제 기술을 활용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.
 
@@ -46,9 +48,9 @@ link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.htm
 
 
 
-== Microsoft SQL Server 인스턴스 및 데이터베이스 보호
+== BlueXP backup and recovery 로 보호 준비
 
-Microsoft SQL Server 인스턴스와 데이터베이스를 보호하려면 리소스 검색, 필수 구성 요소 검증, Microsoft SQL Server용 플러그인 구성 및 설치가 필요합니다.  이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.
+BlueXP backup and recovery 사용하여 Microsoft SQL Server 리소스를 보호하기 위한 준비 프로세스를 완료하세요.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.

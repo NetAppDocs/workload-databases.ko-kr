@@ -1143,7 +1143,6 @@
   <block id="ad6ac298077f67c060156edbddf13a36" category="list-text">*데이터베이스* 탭을 선택합니다.</block>
   <block id="d0c6ba62b6c3694f7b736785522100f6" category="paragraph">등록된 모든 인스턴스에 대한 데이터베이스가 표시됩니다.</block>
   <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">2025년 8월 4일</block>
-  <block id="22218c6d37412d25750364bd0d4047b5" category="doc">BlueXP backup and recovery 이제 Microsoft SQL Server 워크로드를 지원합니다.</block>
   <block id="412038dfc7c530b95fd4f54ca173992c" category="paragraph">BlueXP backup and recovery 사용하면 Microsoft SQL Server 데이터베이스와 가용성 그룹을 백업, 복원, 확인 및 복제할 수 있습니다.  워크로드 팩토리 콘솔에서 BlueXP backup and recovery 에 액세스하여 사용하여 Microsoft SQL Server 워크로드를 보호할 수 있습니다.</block>
   <block id="0eabf86e93873fc39b5a49903ec1c780" category="inline-link-macro">워크로드 팩토리 콘솔을 통해 Microsoft SQL Server 워크로드를 보호하는 방법을 알아보세요.</block>
   <block id="7b26957c70db2d24aefeef252ab7b883" category="inline-link-macro">BlueXP backup and recovery 통한 Microsoft SQL 워크로드 보호 개요</block>
@@ -1152,7 +1151,6 @@
   <block id="51292e2d8212f9b8bc9828cc387d8722" category="paragraph">보호를 위해 BlueXP 백업 및 복구에 호스트를 추가한 후, 데이터베이스 검색이 실패하는 경우가 있습니다.</block>
   <block id="6928b7abf5d9fe2390db1739e7eb6d4b" category="summary">Microsoft SQL Server 인스턴스와 데이터베이스를 보호합니다.</block>
   <block id="3d5a9cd83b30ec6ec9f0802593907f05" category="doc">Microsoft SQL Server 워크로드 보호</block>
-  <block id="a11c14bfa7fba0cd35f6227250aa1033" category="paragraph">워크로드 팩토리 콘솔에서 BlueXP backup and recovery 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요.  백업은 사용자가 만든 정책에 따라 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.</block>
   <block id="b488e89ecf7de1a4b1b2b7c08eaf5ec7" category="paragraph">BlueXP backup and recovery NetApp SnapMirror 데이터 복제 기술을 활용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.</block>
   <block id="84e16205176c2d47e586e6b70d30c355" category="paragraph">BlueXP backup and recovery 통한 보호에 대한 자세한 내용은 다음을 참조하십시오.<block ref="b3db6ed8425306b30d05a9028a6a4afe" category="inline-link-macro-rx"></block> .</block>
   <block id="e82861995008f0e567492658d395dd98" category="paragraph">BlueXP backup and recovery 사용하여 Microsoft SQL Server 워크로드를 보호하기 위한 요구 사항은 다음과 같습니다.</block>
@@ -1166,8 +1164,6 @@
   <block id="3c075e9819b05a2e34af9858d549a406" category="paragraph"><block ref="3c075e9819b05a2e34af9858d549a406" category="inline-link-macro-rx"></block></block>
   <block id="0c5a60b84e9bed78e59d37200b950d45" category="list-text">커넥터에서 호스트 해상도 설정</block>
   <block id="2a664f2dff1a4229f6bce49f7fdfe6f2" category="paragraph">데이터베이스를 검색하려면 커넥터에서 호스트 확인을 설정해야 합니다.  호스팅된 장치에서 IP 주소 매핑을 호스트 이름에 추가합니다.<block ref="ad942c725cd0cae65ca4c63717ec464c" prefix=" " category="inline-code"></block> 파일.</block>
-  <block id="8d32d9492a4c78269564d2850dc5cec6" category="section-title">Microsoft SQL Server 인스턴스 및 데이터베이스 보호</block>
-  <block id="bee9961feeb03d02dc91c056e88e4752" category="paragraph">Microsoft SQL Server 인스턴스와 데이터베이스를 보호하려면 리소스 검색, 필수 구성 요소 검증, Microsoft SQL Server용 플러그인 구성 및 설치가 필요합니다.  이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.</block>
   <block id="c8e8c4da5256c1c745e327697c0ab942" category="list-text">*엔진 유형*을 *Microsoft SQL Server*로 필터링합니다.</block>
   <block id="60cf19833f9c8f41398952fc003ec02d" category="list-text">보호할 인스턴스의 메뉴에서 *보호*를 선택합니다.</block>
   <block id="f44b851c9ab8fcb80a6dd8db43a90f89" category="list-text">워크로드를 등록하고 보호할 *커넥터*를 선택하세요.</block>
@@ -1180,4 +1176,9 @@
   <block id="2b26ff19745211be5d0a237c9563b2e9" category="paragraph">관련 정보는 다음을 참조하세요.<block ref="1fc5869f304c5b888d6ddfbf36e6f479" category="inline-link-macro-rx"></block> Microsoft SQL Server 작업 부하를 관리합니다.</block>
   <block id="d341f0c47f4b7ad5cc1b4c9bb210cfda" category="section-title">2025년 8월 12일</block>
   <block id="82776afd94423c79dbb6478467a55ee1" category="paragraph"><block ref="01ada1ee9ae7e42f0ced5cd933931e08" category="inline-link-macro-rx"></block> .</block>
+  <block id="1d7888e9a7739b1a3282310704484ae5" category="doc">BlueXP backup and recovery 이제 Microsoft SQL Server 워크로드를 지원합니다.</block>
+  <block id="89f47c3c1994a3db38e0daf9dd673194" category="paragraph">워크로드 팩토리 콘솔에서 BlueXP backup and recovery 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요. 이 통합을 통해 다음과 같은 보호 목표를 달성할 수 있습니다. 로컬 기본 Amazon FSx for NetApp ONTAP (FSx for ONTAP) 스토리지의 로컬 스냅샷으로 워크로드를 백업하고, 워크로드를 보조 FSx for ONTAP 스토리지로 복제합니다.</block>
+  <block id="e6de5e622a1f84159a72b6b36d0457bd" category="paragraph">워크로드 팩토리는 인스턴스 및 데이터베이스 리소스 검색, 필수 구성 요소 검증, Microsoft SQL Server용 플러그인 구성 및 설치 프로세스를 자동화하는 데 도움이 됩니다. 이 모든 작업은 BlueXP backup and recovery 통해 Microsoft SQL Server 워크로드를 보호하기 위한 준비 프로세스의 일부입니다. 이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.</block>
+  <block id="151fbaa196a40c93d8a7ab6cdfe564fe" category="section-title">BlueXP backup and recovery 로 보호 준비</block>
+  <block id="0560cb07d58d813bf36ae0c3bcdcec57" category="paragraph">BlueXP backup and recovery 사용하여 Microsoft SQL Server 리소스를 보호하기 위한 준비 프로세스를 완료하세요.</block>
 </blocks>
