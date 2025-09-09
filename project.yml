@@ -39,12 +39,10 @@ sidebar:
         url: "/create-postgresql-server.html"
     - title: 인스턴스 관리
       entries:
-      - title: 인스턴스 관리
+      - title: 자원 관리
         url: manage-instance.html
-      - title: 인스턴스 등록
+      - title: 리소스 등록
         url: "/register-instance.html"
-      - title: 데이터베이스를 봅니다
-        url: "/view-databases.html"
       - title: 데이터베이스를 만듭니다
         url: "/create-database.html"
       - title: 샌드박스 클론을 생성합니다
@@ -65,6 +63,8 @@ sidebar:
         url: "/optimize-configurations.html"
       - title: 구성 분석을 연기합니다
         url: "/postpone-analysis.html"
+    - title: 오류 로그 분석
+      url: "/analyze-error-logs.html"
     - title: 클론 관리
       entries:
       - title: 샌드박스 클론의 무결성을 확인합니다
@@ -81,6 +81,8 @@ sidebar:
         url: "/split-clone.html"
       - title: 샌드박스 클론을 삭제합니다
         url: "/delete-clone.html"
+    - title: 리소스 등록 취소
+      url: "/deregister-instance.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오

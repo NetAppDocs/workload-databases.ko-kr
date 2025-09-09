@@ -42,7 +42,6 @@ BlueXP 계정에 대한 조직 관리자 액세스 권한이 있는 경우 `back
 
 
 * link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["BlueXP backup and recovery 에 대한 라이선싱 설정"^]
-* 데이터베이스의 워크로드 팩토리에서 Windows 자격 증명을 사용하여 인스턴스를 등록해야 합니다.  Windows 자격 증명을 제공하려면 인벤토리의 인스턴스 탭으로 이동하세요.  인스턴스를 식별하고 *인스턴스 관리*를 선택한 다음 *인스턴스 대시보드*를 선택합니다.  인스턴스 대시보드에서 세 개의 점 메뉴를 선택한 다음 *Microsoft SQL Server 비밀번호 업데이트*를 선택합니다.  Windows 인증을 사용하여 비밀번호를 업데이트합니다.
 
 
 
@@ -57,7 +56,11 @@ BlueXP backup and recovery 사용하여 Microsoft SQL Server 리소스를 보호
 . 데이터베이스에서 * Inventory * 탭을 선택합니다.
 . *엔진 유형*을 *Microsoft SQL Server*로 필터링합니다.
 . 보호할 인스턴스의 메뉴에서 *보호*를 선택합니다.
-. 워크로드를 등록하고 보호할 *커넥터*를 선택하세요.
+. 메시지가 표시되면 관리자 권한이 있는 Windows 자격 증명을 제공합니다.
++
+BlueXP backup and recovery 사용하여 보호하려면 SQL Server 인스턴스를 Windows 자격 증명으로 워크로드 팩토리에 등록해야 합니다.
+
+. 여러 개의 커넥터가 활성화되어 사용 가능한 경우, 워크로드를 등록하고 보호할 *커넥터*를 선택합니다.
 . 데이터 보호를 준비하기 위해 Workload Factory는 BlueXP backup and recovery 에 SQL Server 리소스를 자동으로 등록하고, Microsoft SQL Server용 플러그인을 구성 및 설치하고, SQL Server 인스턴스를 보호하기 위한 필수 구성 요소를 충족하는 리소스를 검색합니다.  *시작*을 선택하여 프로세스를 시작하세요.
 . 필수 조건을 충족한 후 *리디렉션*을 선택하여 BlueXP backup and recovery 에 액세스하세요.
 
