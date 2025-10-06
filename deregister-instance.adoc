@@ -2,23 +2,23 @@
 sidebar: sidebar 
 permalink: deregister-instance.html 
 keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle database, deregister instance, unregister instance, remove instance 
-summary: 더 이상 워크로드 팩토리 콘솔에서 리소스를 배포하거나 모니터링하지 않으려면 리소스 등록을 취소합니다. 
+summary: Workload Factory 콘솔에서 더 이상 리소스를 배포하거나 모니터링하지 않으려면 리소스 등록을 취소합니다. 
 ---
-= 워크로드 팩토리에서 리소스 등록 해제
+= NetApp Workload Factory에서 리소스 등록 해제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-워크로드 팩토리 콘솔에서 리소스를 더 이상 배포하거나 모니터링하지 않으려면 Microsoft SQL Server 인스턴스나 Oracle 데이터베이스와 같은 리소스의 등록을 취소합니다.  리소스 등록을 취소하면 인스턴스에서 사용되는 FSx for ONTAP 스토리지 용량도 제거됩니다.
+NetApp Workload Factory 콘솔에서 리소스를 더 이상 배포하거나 모니터링하지 않으려면 Microsoft SQL Server 인스턴스나 Oracle 데이터베이스와 같은 리소스의 등록을 취소합니다. 리소스 등록을 취소하면 인스턴스에서 사용되는 FSx for ONTAP 스토리지 용량도 제거됩니다.
 
 리소스를 다시 등록할 수 있습니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
-. 데이터베이스에서 * Inventory * 탭을 선택합니다.
-. 인벤토리에서 엔진 유형을 선택합니다: Microsoft SQL Server, Oracle 또는 PostgreSQL.
-. 등록을 취소하려는 리소스를 찾은 다음, 세 개의 점 메뉴를 선택하고 *등록 취소*를 선택합니다.
+. 데이터베이스 메뉴에서 *인벤토리*를 선택합니다.
+. 인벤토리에서 엔진 유형을 선택합니다: *Microsoft SQL Server*, *Oracle* 또는 *PostgreSQL*.
+. 등록을 취소하려는 리소스를 찾은 다음 작업 메뉴를 선택하고 *등록 취소*를 선택합니다.
 

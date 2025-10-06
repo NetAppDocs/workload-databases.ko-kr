@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: delete-clone.html 
 keywords: delete, clone 
-summary: 더 이상 필요하지 않은 경우 BlueXP  워크로드 공장에서 샌드박스 클론을 삭제합니다. 
+summary: 더 이상 필요하지 않고 스토리지 용량을 확보하려는 경우 NetApp Workload Factory for Databases에서 샌드박스 복제본을 삭제하세요. 
 ---
-= 소스 데이터베이스에서 샌드박스 클론을 분할합니다
+= NetApp Workload Factory for Databases에서 데이터 복제본 삭제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-더 이상 필요하지 않고 스토리지 용량을 확보하려는 경우 데이터베이스용 BlueXP  워크로드 팩토리에서는 샌드박스 클론을 삭제합니다.
+더 이상 필요하지 않고 스토리지 용량을 확보하려는 경우 NetApp Workload Factory for Databases에서 샌드박스 복제본을 삭제하세요.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 클릭합니다.
-. 데이터베이스에서 * Sandbox * 탭을 선택합니다.
-. 삭제할 샌드박스 클론의 3점 메뉴를 클릭합니다.
+. 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
+. 데이터베이스 메뉴에서 *샌드박스*를 선택합니다.
+. 샌드박스에서 삭제하려는 샌드박스 복제본의 작업 메뉴를 선택합니다.
 . 삭제 * 를 선택합니다.
-. 삭제 대화 상자에서 * 삭제 * 를 클릭합니다.
+. 삭제 대화 상자에서 *삭제*를 선택하여 삭제를 확인합니다.
 

@@ -4,14 +4,14 @@ permalink: known-limitations.html
 keywords: limitations, databases 
 summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오. 
 ---
-= 데이터베이스에 대한 BlueXP  워크로드 팩터리에 대한 알려진 제한 사항
+= 데이터베이스용 NetApp Workload Factory의 알려진 제한 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 식별합니다. 이러한 제한 사항을 주의 깊게 검토하십시오.
+알려진 제한 사항은 NetApp Workload Factory for Databases에서 지원되지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요.
 
 
 
@@ -35,13 +35,13 @@ Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 PostgreSQL 
 * 독립 실행형 배포를 위해 이미지의 데이터 정렬 세트 이외의 데이터 정렬을 선택하는 경우
 
 
-배포의 일부로 워크로드 팩토리에서는 여러 Microsoft SQL Server 인스턴스에 사용자 지정 AMI를 설치하지 않습니다. 기본 Microsoft SQL Server 인스턴스만 배포의 일부로 선택 및 구성됩니다.
+배포의 일부로 Workload Factory는 여러 Microsoft SQL Server 인스턴스가 포함된 사용자 지정 AMI를 설치하지 않습니다.  배포의 일부로 기본 Microsoft SQL Server 인스턴스만 선택되고 구성됩니다.
 
 
 
 == 실패한 배포를 롤백하고 다시 시도하십시오
 
-실패한 배포에 대한 롤백 및 재시도는 작업 부하 공장에서 지원되지 않습니다. AWS의 CloudFormation 콘솔에서 장애가 발생한 스택을 롤백하거나 다시 시도할 수 있습니다.
+Workload Factory에서는 실패한 배포에 대한 롤백 및 재시도가 지원되지 않습니다.  AWS의 CloudFormation 콘솔에서 실패한 스택을 롤백하거나 다시 시도할 수 있습니다.
 
 
 
@@ -60,7 +60,7 @@ AWS의 CloudFormation 콘솔에서 테스트를 롤백하거나 배포에 실패
 
 == 상시 가용성 그룹 구성 지원
 
-Always On 가용성 그룹 구성은 워크로드 팩토리에서 지원되지 않습니다.
+Workload Factory에서는 Always On 가용성 그룹 구성을 관리할 수 없습니다.
 
 
 
@@ -84,7 +84,7 @@ FSx for ONTAP의 사용자 지정 암호화 키는 서비스 적용 가능성에
 
 == Microsoft SQL Server 감지 및 관리
 
-Microsoft SQL Server 검색이 저장되지 않았습니다. 작업 부하 공장에서 데이터베이스에 액세스할 때마다 Microsoft SQL Server 감지가 다시 실행되어 해당 지역의 SQL 설치를 식별합니다.
+Microsoft SQL Server 감지 정보가 저장되지 않았습니다.  Workload Factory에서 데이터베이스에 액세스할 때마다 Microsoft SQL Server 감지 기능이 다시 실행되어 해당 지역의 SQL 설치를 식별합니다.
 
 
 
@@ -118,7 +118,7 @@ Workload Factory는 여러 FSx for ONTAP 파일 시스템에서 Microsoft SQL Se
 
 === 최적화를 위한 운영 체제 패치 평가
 
-최적화 목적으로 만들어진 운영 체제 패치 평가는 사설 네트워크에서는 작동하지 않을 수 있습니다. 이 평가는 AWS Patch Manager에 의존합니다. 전용 네트워크에서 Windows EC2 인스턴스를 패치하는 방법에 대한 자세한 내용은 을 link:https://aws.amazon.com/blogs/mt/how-to-patch-windows-ec2-instances-in-private-subnets-using-aws-systems-manager/["AWS Cloud Operations 블로그 "AWS Systems Manager를 사용하여 프라이빗 서브넷에서 Windows EC2 인스턴스를 패치하는 방법""^]참조하십시오.
+최적화 목적으로 수행된 운영 체제 패치 평가는 개인 네트워크에서는 작동하지 않을 수 있습니다.  평가는 AWS Patch Manager를 사용합니다.  개인 네트워크에서 Windows EC2 인스턴스에 패치를 적용하는 방법을 알아보려면 AWS 클라우드 운영 블로그를 참조하세요.link:https://aws.amazon.com/blogs/mt/how-to-patch-windows-ec2-instances-in-private-subnets-using-aws-systems-manager/["AWS Systems Manager를 사용하여 프라이빗 서브넷의 Windows EC2 인스턴스에 패치를 적용하는 방법"^] .
 
 
 
@@ -131,17 +131,35 @@ Microsoft SQL Server 온-프레미스 스토리지에 대한 볼륨 크기의 �
 == 교차 지역 복제 평가
 
 * 대상 FSx for ONTAP 파일 시스템이 다른 AWS 계정에 있는 경우 최적화 평가를 통해 지역 간 복제(CRR)가 사용되고 있는지 확인할 수 없습니다.
-* 워크로드 공장에서 소스 FSx for ONTAP 파일 시스템의 CRR 구성만 평가합니다.
+* Workload Factory는 소스 FSx for ONTAP 파일 시스템의 CRR 구성만 평가합니다.
 
 
 
 
-== Explore savings에서 데이터베이스 호스트 인증
+== 저축 탐색 시 데이터베이스 호스트 인증
 
 일부 권한이 제한된 경우, 인증에 성공한 후에도 탐색 저축 페이지가 데이터를 로드하지 않습니다.
 
 
 
-== BlueXP backup and recovery 와의 통합
+== NetApp 백업 및 복구와의 통합
 
-보호를 위해 BlueXP 백업 및 복구에 호스트를 추가한 후, 데이터베이스 검색이 실패하는 경우가 있습니다.
+보호를 위해 NetApp Backup and Recovery에 호스트를 추가한 후, 데이터베이스 검색이 실패하는 경우가 있습니다.
+
+
+
+== 지역 지원
+
+다음 AWS 지역은 지원되지 않습니다.
+
+* 중국 지역
+* GovCloud(미국) 지역
+* 비밀 클라우드
+* 기밀
+
+
+
+
+== SUSE Linux Enterprise Server 12에 Oracle 등록
+
+SUSE Linux Enterprise Server 12에 Oracle Database를 등록할 때 Workload Factory는 Python 종속성을 설치하지 않습니다.  필요한 Python 버전을 수동으로 구성해야 합니다.  Workload Factory는 최소 3.6 버전이 필요하지만 3.11 버전을 권장합니다.

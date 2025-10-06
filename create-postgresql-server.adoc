@@ -2,41 +2,41 @@
 sidebar: sidebar 
 permalink: create-postgresql-server.html 
 keywords: create, server, PostgreSQL, deploy, host, deploy a database host, database host 
-summary: 데이터베이스에 대한 BlueXP  워크로드 팩토리 내에서 새 PostgreSQL SQL Server를 생성합니다. 
+summary: NetApp Workload Factory for Databases 내에서 새로운 PostgreSQL SQL 서버를 만듭니다. 
 ---
-= BlueXP  워크로드 팩터리에서 PostgreSQL 서버를 생성합니다
+= NetApp Workload Factory에서 PostgreSQL 서버 만들기
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-BlueXP  워크로드 공장에서 데이터베이스용 새 PostgreSQL 서버 또는 데이터베이스 호스트를 생성하려면 Active Directory를 위한 FSx for ONTAP 파일 시스템 구축 및 리소스가 필요합니다.
+NetApp Workload Factory for Databases에서 새로운 PostgreSQL 서버 또는 데이터베이스 호스트를 생성하려면 FSx for ONTAP 파일 시스템 배포와 Active Directory 리소스가 필요합니다.
 
-.이 작업에 대해
-BlueXP  워크로드 팩토리로부터 PostgreSQL 서버를 생성하기 전에 데이터베이스 호스트 구성에 사용할 수 있는 스토리지 구축 유형, 워크로드 팩토리 작동 모드 및 이 작업을 완료하기 위한 요구 사항에 대해 알아보십시오.
 
-FSx for ONTAP 파일 시스템 배포:: 새 PostgreSQL 서버를 생성하려면 스토리지 백엔드로 FSx for ONTAP 파일 시스템이 필요합니다. 기존 FSx for ONTAP 파일 시스템을 사용하거나 새 파일 시스템을 생성할 수 있습니다. 기존 FSx for ONTAP 파일 시스템을 데이터베이스 서버 스토리지 백엔드로 선택하면 PostgreSQL 워크로드에 대한 새 스토리지 VM이 생성됩니다.
-+
---
-FSx for ONTAP 파일 시스템에는 두 가지 PostgreSQL 서버 배포 모델(_HA(고가용성)_ 또는 _single instance_)이 있습니다. 선택한 FSx for ONTAP 배포 모델에 따라 FSx for ONTAP 파일 시스템에 대해 다양한 리소스가 생성됩니다.
+
+== 이 작업에 대해
+
+Workload Factory에서 PostgreSQL 서버를 생성하기 전에 데이터베이스 호스트 구성에 사용 가능한 스토리지 배포 유형, Workload Factory 운영 모드 및 이 작업을 완료하는 데 필요한 요구 사항에 대해 알아보세요.
+
+.FSx for ONTAP 파일 시스템 배포
+새 PostgreSQL 서버를 생성하려면 스토리지 백엔드로 FSx for ONTAP 파일 시스템이 필요합니다. 기존 FSx for ONTAP 파일 시스템을 사용하거나 새 파일 시스템을 생성할 수 있습니다. 기존 FSx for ONTAP 파일 시스템을 데이터베이스 서버 스토리지 백엔드로 선택하면 PostgreSQL 워크로드에 대한 새 스토리지 VM이 생성됩니다.
+
++ FSx for ONTAP 파일 시스템에는 _고가용성(HA)_ 또는 _단일 인스턴스_라는 두 가지 PostgreSQL 서버 배포 모델이 있습니다.  선택한 FSx for ONTAP 배포 모델에 따라 FSx for ONTAP 파일 시스템에 대해 다양한 리소스가 생성됩니다.
 
 * * 고가용성(HA) 배포 *: HA 배포를 위해 새로운 FSx for ONTAP 파일 시스템을 선택하면 다중 가용성 영역 FSx for NetApp ONTAP 파일 시스템이 구축됩니다. HA 구축 환경에서는 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨과 LUN이 생성됩니다. Windows 클러스터용 쿼럼 또는 감시 디스크에 대해 추가 볼륨 및 LUN이 생성됩니다. HA 배포는 기본 및 보조 PostgreSQL 서버 간의 스트리밍 복제를 구성합니다.
 * * 단일 인스턴스 배포 *: 새 PostgreSQL 서버가 생성될 때 단일 가용성 영역 FSx for ONTAP 파일 시스템이 생성됩니다. 또한 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨과 LUN이 생성됩니다.
 
 
---
 
 
-.시작하기 전에
-새 데이터베이스 호스트를 생성하기 전에 다음과 같은 사전 요구 사항이 있는지 확인하십시오.
+== 시작하기 전에
 
-자격 증명 및 권한:: 작업 부하 공장에서 새 데이터베이스 호스트를 생성해야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기/쓰기_ 모드 권한"^]합니다.
-
+작업 부하 공장에서 새 데이터베이스 호스트를 생성해야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기/쓰기_ 모드 권한"^]합니다.
 
 
 
-== 데이터베이스 서버를 만듭니다
+== PostgreSQL 서버를 생성합니다
 
 _QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^]..
 
@@ -52,7 +52,7 @@ NOTE: _Quick create_에서 HA는 기본 배포 모델이고, Windows 2016은 기
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Databases(데이터베이스) 타일에서 * Deploy database host * 를 선택한 다음 드롭다운 메뉴에서 * PostgreSQL Server * 를 선택합니다.
+. 데이터베이스 타일에서 *호스트 배포*를 선택한 다음 메뉴에서 *PostgreSQL 서버*를 선택합니다.
 . Quick create * 를 선택합니다.
 . Landing zone * 아래에 다음을 제공합니다.
 +
@@ -141,7 +141,7 @@ NOTE: HA 구축은 MAZ(Multiple Availability Zone) FSx for ONTAP 구성에서만
 --
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
-. Databases(데이터베이스) 타일에서 * Deploy database host * 를 선택한 다음 드롭다운 메뉴에서 * PostgreSQL Server * 를 선택합니다.
+. 데이터베이스 타일에서 *호스트 배포*를 선택한 다음 메뉴에서 *PostgreSQL 서버*를 선택합니다.
 . Advanced create * 를 선택합니다.
 . 배포 모델 * 에서 * 독립 실행형 인스턴스 * 또는 * 고가용성(HA) * 을 선택합니다.
 . Landing zone * 아래에 다음을 제공합니다.
@@ -174,20 +174,17 @@ VPC DNS 속성 `EnableDnsSupport` 및 `EnableDnsHostnames` 이(가) 으로 설�
 
 .. * 가용 영역 *: 가용 영역 및 서브넷을 선택합니다.
 +
-경우에 따라 다릅니다::
+*단일 인스턴스 배포의 경우*
+
 +
---
 Cluster configuration - Node 1 * 필드에서 * Availability zone * 드롭다운 메뉴에서 가용 영역을 선택하고 * Subnet * 드롭다운 메뉴에서 서브넷을 선택합니다.
 
---
-HA 배포를 위한 것입니다::
 +
---
+*HA 배포의 경우*
+
++
 ... 클러스터 구성 - 노드 1 * 필드의 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 기본 사용 가능 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 기본 사용 가능 영역의 서브넷을 선택합니다.
 ... 클러스터 구성 - 노드 2 * 필드에서 * 가용성 영역 * 드롭다운 메뉴에서 MAZ FSx for ONTAP 구성에 대한 보조 가용성 영역을 선택하고 * 서브넷 * 드롭다운 메뉴에서 보조 가용성 영역의 서브넷을 선택합니다.
-
-
---
 
 
 .. * 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다.

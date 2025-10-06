@@ -2,19 +2,22 @@
 sidebar: sidebar 
 permalink: analyze-error-logs.html 
 keywords: analyze error logs, errors, error severity, Microsoft SQL Server error logs, smart analysis, Agentic AI 
-summary: 데이터베이스의 워크로드 팩토리 내에서 오류 로그를 분석합니다. 
+summary: Workload Factory for Databases 내에서 오류 로그를 분석합니다. 
 ---
-= 워크로드 팩토리에서 오류 로그 분석
+= Workload Factory에서 오류 로그 분석
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-스마트 오류 로그 분석기를 사용하면 Microsoft SQL Server 오류 로그를 자동으로 해석하여 문제를 빠르게 식별하고 해결할 수 있습니다.  Agentic AI 기반 분석에는 Amazon Bedrock 통합이 필요합니다.
+스마트 오류 로그 분석기를 사용하면 Microsoft SQL Server 오류 로그를 자동으로 해석하여 문제를 빠르게 식별하고 해결할 수 있습니다. Agentic AI 기반 분석에는 Amazon Bedrock 통합이 필요합니다.
 
-.이 작업에 대해
-오류 로그 분석 및 수정은 SQL Server 인스턴스의 상태와 성능을 유지하는 데 도움이 됩니다.  SQL Server 오류 로그를 효과적으로 해석하려면 신중한 분석과 전문 지식이 필요합니다.  수동 모니터링, 오류 감지, 근본 원인 분석은 시간이 많이 걸리고 오류가 발생하기 쉽습니다.  이러한 과제로 인해 문제 해결이 지연되고, 가동 중지 시간이 늘어나고, 운영상의 비효율성이 발생할 수 있습니다.  스마트 오류 로그 분석기는 다음과 같은 주요 이점을 통해 이러한 과제를 해결합니다.
+
+
+== 이 작업에 대해
+
+오류 로그 분석 및 수정은 SQL Server 인스턴스의 상태와 성능을 유지하는 데 도움이 됩니다. SQL Server 오류 로그를 효과적으로 해석하려면 신중한 분석과 전문 지식이 필요합니다. 수동 모니터링, 오류 감지, 근본 원인 분석은 시간이 많이 걸리고 오류가 발생하기 쉽습니다. 이러한 과제로 인해 문제 해결이 지연되고, 가동 중지 시간이 늘어나고, 운영상의 비효율성이 발생할 수 있습니다. 스마트 오류 로그 분석기는 다음과 같은 주요 이점을 통해 이러한 과제를 해결합니다.
 
 * 스마트 그룹화: 오류를 고유성, 심각도, 범주별로 지능적으로 통합하고 문제 해결 프로세스를 간소화하여 더 빠르고 효과적인 해결책을 제공합니다.
 * AI 기반 조사: AI를 활용하여 오류를 사전에 분석하고, 심층적인 전문 지식 없이도 문제를 더 빨리 식별할 수 있는 명확하고 실행 가능한 통찰력을 제공합니다.
@@ -22,24 +25,72 @@ summary: 데이터베이스의 워크로드 팩토리 내에서 오류 로그를
 * 모범 사례 수정: FSx for ONTAP 에서 실행되는 SQL Server 워크로드에 맞춤형 수정 권장 사항을 제공하여 모든 기술 수준의 사용자가 자신 있게 문제를 해결할 수 있도록 지원합니다.
 
 
-스마트 오류 로그 분석기를 사용하면 고급 AI 분석의 이점을 누리는 동시에 환경을 완벽하게 제어할 수 있습니다.
+오류 로그 분석기를 사용하면 고급 AI 분석의 이점을 누리는 동시에 환경을 완벽하게 제어할 수 있습니다.
 
-스마트 오류 로그 분석기를 사용하려면 Amazon Bedrock을 활성화하고, 워크로드 팩토리에서 사용하는 모델을 선택하고, Amazon Bedrock에 연결할 개인 엔드포인트를 만들고, 권한을 추가하고, 엔터프라이즈 라이선스를 만들어야 합니다.
+오류 로그 분석기를 사용하려면 Amazon Bedrock을 활성화하고, Workload Factory에서 사용하는 모델을 선택하고, Amazon Bedrock에 연결할 개인 엔드포인트를 만들고, 권한을 추가하고, 엔터프라이즈 라이선스를 만들어야 합니다.
 
 link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 가격"^]
 
-.시작하기 전에
-Smart Error Log Analyzer를 사용하려면 다음 전제 조건을 충족해야 합니다.
 
-* 작업 부하 공장에서 새 데이터베이스 호스트를 생성해야 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기/쓰기_ 모드 권한"^]합니다.
-* link:https://docs.netapp.com/us-en/workload-databases/register-instance.html["SQL Server 인스턴스 등록"^]작업 부하 공장에서. *
 
+=== 데이터 개인정보 보호 및 보안
+
+이 기능은 다음과 같은 조치를 통해 데이터 개인 정보 보호 및 보안을 보장합니다.
+
+.데이터 주권
+로그 데이터와 집계는 AWS 계정 내에 유지되며, 프라이빗 VPC 엔드포인트(Amazon Bedrock)를 통해 통신되므로 공개 인터넷 노출이 발생하지 않습니다.
+
+.AI 훈련 없음
+고객 데이터는 모델을 훈련하거나 개선하는 데 사용되지 않습니다.  Amazon Bedrock은 실시간으로 로그를 처리하지만 데이터를 학습하지는 않습니다.  결과는 참조용으로만 사용자 환경에 저장됩니다.  자세한 내용은 다음을 참조하세요.link:https://docs.aws.amazon.com/bedrock/latest/userguide/data-protection.html["Amazon Bedrock 데이터 보호 문서"^] .
+
+
+
+== 시작하기 전에
+
+오류 로그 분석기를 사용하려면 다음 전제 조건을 충족해야 합니다.
+
+* 당신은 가지고 있어야 합니다link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기/쓰기_ 모드 권한"^] Workload Factory에서 새로운 데이터베이스 호스트를 생성합니다.
+* link:https://docs.netapp.com/us-en/workload-databases/register-instance.html["SQL Server 인스턴스 등록"^]워크로드 팩토리에서.
+* 다음 전제 조건도 충족해야 합니다.  로그 오류를 분석하는 단계의 일부로 이러한 전제 조건을 완료하라는 메시지가 표시됩니다.
++
+** *아마존 베드록 활성화*
++
+Workload Factory의 SQL 노드에서 실행되는 AI 에이전트가 Bedrock에 원활하게 연결하고 식별된 오류 로그에 대한 AI 기반 통찰력을 가져오려면 Amazon Bedrock이 필요합니다.
+
+** *네트워킹*
++
+Amazon Bedrock VPC 엔드포인트는 Amazon Bedrock API를 통해 SQL 노드의 비공개 통신을 보장하고 공개 인터넷 노출을 제거합니다.  Amazon Bedrock VPC 엔드포인트가 SQL Server 노드의 서브넷과 연결되어 있는지 확인합니다(예: vpce-050cb2f33a1380ffd).
+
+** *AWS IAM 권한*
++
+SQL 노드와 연결된 EC2 인스턴스 프로필 역할과 Workload Factory와 연결된 AWS 자격 증명에는 다음 권한이 필요합니다.
+
++
+*** "bedrock:InvokeModel" 권한이 있는 EC2 인스턴스 프로필 역할
++
+이 권한을 통해 해당 SQL 노드의 EC2 인스턴스는 Bedrock 모델을 호출하여 사전 예방적 오류 조사 및 수정 지침을 제공할 수 있습니다.  이 프로필은 맞춤형 통찰력에 대한 안전한 AI 액세스를 보장합니다.
+
+*** Workload Factory와 연결된 AWS 자격 증명: "bedrock:GetFoundationModelAvailability" 및 "bedrock:ListInferenceProfiles" 권한
++
+이러한 권한은 SQL 노드 지역에서 모델의 가용성과 구성을 확인하고, 안정적이고 지역별 성능을 보장합니다.
+
+
+
+
+
+
+
+
+
+== 오류 로그 분석
+
+Workload Factory 콘솔을 사용하여 SQL Server 오류 로그를 분석합니다.
 
 .단계
 . 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
 . 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
-. 데이터베이스에서 * Inventory * 탭을 선택합니다.
-. 데이터베이스 엔진으로 *SQL Server*를 선택합니다.
+. 데이터베이스 메뉴에서 *인벤토리*를 선택합니다.
+. 인벤토리에서 데이터베이스 엔진 유형으로 *Microsoft SQL Server*를 선택합니다.
 . 인스턴스 탭에서 분석하려는 특정 SQL Server 인스턴스를 찾은 다음 메뉴에서 *오류 조사*를 선택합니다.
 . *오류 조사* 탭에서 콘솔에 설명된 대로 다음 필수 조건을 완료하세요.
 +
@@ -49,7 +100,7 @@ Smart Error Log Analyzer를 사용하려면 다음 전제 조건을 충족해야
 ** 워크로드 데이터베이스 관리(wlmdb)와 관련된 자격 증명
 
 
-. 필수 조건을 충족하면 *지금 조사*를 선택하여 스마트 오류 로그 분석기를 사용하여 SQL Server 오류 로그에 대한 통찰력을 얻으세요.
+. 필수 조건을 충족하면 *지금 조사*를 선택하여 오류 로그 분석기를 사용하여 SQL Server 오류 로그에 대한 통찰력을 얻으세요.
 +
 검사 후에는 콘솔에 오류가 표시되어 Smart error log analysis에서 감지된 문제에 대한 포괄적인 보기를 제공합니다.
 

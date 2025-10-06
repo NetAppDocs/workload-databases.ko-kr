@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: optimize-overview.html 
 keywords: database configuration issues, issues, analyze, scan, optimize, improve, database configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations, storage, compute, application, resiliency, scan, optimization, SQL Server, host, instance 
-summary: 데이터베이스용 워크로드 팩토리는 Microsoft SQL Server 및 Oracle 구성을 정기적으로 분석하여 문제가 있는지 확인합니다. 
+summary: Workload Factory for Databases는 Microsoft SQL Server 및 Oracle 구성을 정기적으로 분석하여 문제가 있는지 확인합니다. 
 ---
-= 워크로드 팩토리의 데이터베이스 환경에 대한 구성 분석
+= Workload Factory의 데이터베이스 환경에 대한 구성 분석
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-데이터베이스용 워크로드 팩토리는 Amazon FSx for NetApp ONTAP 스토리지에 Microsoft SQL Server 및 Oracle을 배포하는 데 문제가 있는지 확인하기 위해 정기적으로 데이터베이스 구성을 분석합니다.  문제가 발견되면 워크로드 팩토리는 문제가 무엇인지 보여주고 데이터베이스 구성에서 최고의 성능, 비용 효율성, 모범 사례 준수를 보장하기 위해 무엇을 변경해야 하는지 설명합니다.
+Workload Factory for Databases는 Amazon FSx for NetApp ONTAP 스토리지에 Microsoft SQL Server 및 Oracle을 배포하는 데 문제가 있는지 확인하기 위해 정기적으로 데이터베이스 구성을 분석합니다.  문제가 발견되면 Workload Factory는 문제가 무엇인지 보여주고 데이터베이스 구성에서 최고의 성능, 비용 효율성, 모범 사례 준수를 보장하기 위해 무엇을 변경해야 하는지 설명합니다.
 
 주요 기능은 다음과 같습니다.
 
@@ -27,7 +27,7 @@ summary: 데이터베이스용 워크로드 팩토리는 Microsoft SQL Server �
 
 == 잘 구성된 상태
 
-파일 시스템 레벨의 워크로드 팩토리 콘솔에서 모든 FSx for ONTAP 파일 시스템에 대해 잘 설계된 상태가 나열됩니다. 잘 구성된 상태는 "문제", "분석되지 않음" 또는 "잘 구성된 상태"로 분류됩니다. 제대로 설계된 상태를 선택하면 파일 시스템 내의 잘 설계된 상태 탭으로 리디렉션되고, 여기서 잘 구성된 점수, 구성 범주, 파일 시스템의 모든 구성을 찾을 수 있습니다.
+파일 시스템 수준의 Workload Factory 콘솔에서 모든 FSx for ONTAP 파일 시스템에 대한 잘 설계된 상태가 나열됩니다. 잘 설계된 상태는 "문제", "분석되지 않음", "잘 설계된"으로 분류됩니다. 잘 설계된 상태를 선택하면 파일 시스템 내의 잘 설계된 상태 탭으로 이동하게 되며, 여기서 잘 설계된 점수, 구성 범주, 파일 시스템의 모든 구성을 찾을 수 있습니다.
 
 
 
