@@ -749,14 +749,7 @@
   <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">일일 구성 분석</block>
   <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">잘 구성된 상태</block>
   <block id="a64cfe5c8ae4b3445ff288e9acf4b12e" category="list-text">잘 짜여진 점수</block>
-  <block id="3ae4c18410c2fa4fdf19fa3a943ef362" category="list-text">점수에는 현재 분석된 모든 구성이 포함되며 백분율로 표시됩니다. 25% 점수는 파일 시스템 구성의 25%가 잘 설계되었음을 의미합니다.</block>
   <block id="a4394e01049a42d14bd6258585de98b7" category="list-text">구성 범주</block>
-  <block id="d24dfe9869a3af3c94d86b476bc18a3d" category="list-text">파일 시스템 구성은 잘 설계된 AWS 프레임워크의 다음 5가지 핵심 요소에 맞춰 여러 범주로 분류됩니다.</block>
-  <block id="b88f659b2eb7813471f331b19c9d7f02" category="list-text">_안정성_: 작업 부하가 중단되더라도 의도한 기능을 정확하고 일관되게 수행하도록 보장합니다. 구성의 예는 FSx for ONTAP 백업입니다.</block>
-  <block id="6a940b53f011e22baccafe058e7df66e" category="list-text">_보안_: 위험 평가 및 완화 전략을 통해 데이터, 시스템 및 자산을 보호합니다.</block>
-  <block id="d5f464c28ed994054fe98db4934a7da1" category="list-text">_운영의 탁월성_: 최적의 아키텍처와 비즈니스 가치를 제공하는 데 중점을 둡니다.</block>
-  <block id="03be89b5f488a61c9b35832aa58745c1" category="list-text">_비용 최적화_: 비용을 최소화하면서 비즈니스 가치를 제공하는 것을 목표로 합니다.</block>
-  <block id="49c47aadfeff1e01313108c157d381b4" category="list-text">_성능 효율성_: 리소스를 효율적으로 사용하여 시스템 요구 사항을 충족하고 요구 사항이 변경될 때 최적의 성능을 유지하는 데 초점을 맞춥니다.</block>
   <block id="8b75b787538a5ee0eb97dc541694c82a" category="list-text">분석 범위</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">잘 설계된 데이터베이스 구성을 구현합니다.</block>
@@ -896,7 +889,6 @@
   <block id="e13a1019f98bb51abab8e23f9bf0c5c2" category="list-text">EC2 인스턴스 프로필 역할에 대한 권한</block>
   <block id="51338cb33c95537fe95c754fca16bf96" category="list-text">워크로드 데이터베이스 관리(wlmdb)와 관련된 자격 증명</block>
   <block id="88c29fe90401d537c3fb507300ab6c20" category="paragraph">검사 후에는 콘솔에 오류가 표시되어 Smart error log analysis에서 감지된 문제에 대한 포괄적인 보기를 제공합니다.</block>
-  <block id="1bdd4c6f4051ac693645d05ee75e84ec" category="list-text">심각도, 기간, 오류 코드 등의 기준에 따라 표시되는 오류를 필터링하여 구체화합니다.</block>
   <block id="d57a30f2af1e68603bcbf4d88ae44c7f" category="list-text">원래 오류 메시지, AI 기반 설명, 오류를 해결하기 위한 제안된 수정 단계를 포함한 자세한 오류 정보를 검토하세요.</block>
   <block id="ada60b484b7d2e3edafc98754146c7c3" category="paragraph">리소스를 다시 등록할 수 있습니다.</block>
   <block id="605deef06e1372beea22ad9cd2be1a6a" category="inline-link-macro">리소스 등록</block>
@@ -969,7 +961,6 @@
   <block id="24373c35884bc6090ef23efe0b026c1e" category="paragraph"><block ref="24373c35884bc6090ef23efe0b026c1e" category="inline-link-macro-rx"></block></block>
   <block id="d90600b832876e9302411cfab905b9bc" category="section-title">데이터베이스 인벤토리 향상</block>
   <block id="3772c3dfbcdf91deef3f77333da3ced1" category="paragraph">데이터베이스 인벤토리의 인스턴스 화면에서는 Microsoft SQL Server의 단일 또는 여러 인스턴스나 Oracle의 단일 또는 여러 데이터베이스에 대한 구성 문제를 수정, 연기 및 해제하는 옵션을 사용할 수 있습니다.</block>
-  <block id="945d9800b1b25a8b224232b57dabb8a6" category="section-title">Amazon Elastic Block Store(EBS)의 스토리지 계산기에서 비용 절감을 최적화하세요.</block>
   <block id="b051b129322b1fa228bb46d5704f8ad2" category="paragraph">Workload Factory는 EBS 성능 사용량을 분석한 후 가장 적합하고 비용 효율적인 FSx for ONTAP 구성을 제안해 FSx for ONTAP 으로 전환하면 더 많은 비용을 절감할 수 있습니다.</block>
   <block id="75851f48043c7a3877391f5330fb19c1" category="inline-link-macro">Workload Factory 콘솔에서 감지된 스토리지 환경에 대한 절감 효과를 살펴보세요.</block>
   <block id="a0766b901d28d8d972d369d556ae3e10" category="paragraph"><block ref="a0766b901d28d8d972d369d556ae3e10" category="inline-link-macro-rx"></block></block>
@@ -1197,7 +1188,6 @@
   <block id="15ff0edfa22106f59b2d6897f5c93ff7" category="paragraph">Workload Factory 콘솔 내의 데이터베이스 인벤토리에서 구성 문제에 대한 권장 사항을 검토하고 해당 문제를 해결할 수 있는 옵션이 있습니다.</block>
   <block id="61ee1dd5e668df870f53e81aa15e3813" category="paragraph">Workload Factory는 다음 구성의 잘 설계된 상태를 분석합니다.</block>
   <block id="b8995cc72a69581d30a1bda023cdd963" category="list-text">복제본: Workload Factory 내부 또는 외부에서 생성되어 60일 이상 된 복제본(샌드박스)을 새로 고치고 삭제하는 옵션이 포함되어 있습니다.</block>
-  <block id="aaab95005352513769753dbb1a879086" category="list-text">스토리지 구성: iSCSI를 사용하거나 사용하지 않고 Microsoft MPIO(Multipath I/O) 상태 및 설정을 포함한 ASM(자동 스토리지 관리)을 사용하여 배포할 때 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, 스토리지 효율성 및 운영 체제 구성이 포함됩니다.</block>
   <block id="7ad2228e24b645ace87b19a4d0e1ea84" category="list-text">저장소 레이아웃: 리두 로그 배치, 임시 테이블스페이스 배치, 데이터 파일 배치, 아카이브 로그 배치, 제어 파일 배치 및 바이너리 배치, ASM 디스크 그룹 LUN 수 포함</block>
   <block id="d8e924feff88175a3a6e329d7a242ef9" category="list-text">Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 저장소를 평가하려면 리소스를 Workload Factory에 등록해야 하며 저장소 유형은 FSx for ONTAP 이어야 합니다.<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="bf2b2769ceeef90639022670d2ded3af" category="list-text">*인벤토리*에서 엔진 유형을 선택합니다: Microsoft SQL Server 또는 Oracle.</block>
@@ -1219,7 +1209,6 @@
   <block id="7c6a7786a083c7d074bada76f0bcd33b" category="summary">Workload Factory for Databases는 Microsoft SQL Server 및 Oracle 구성을 정기적으로 분석하여 문제가 있는지 확인합니다.</block>
   <block id="8317ffd1a53e5d269aaac07d321b8dd0" category="doc">Workload Factory의 데이터베이스 환경에 대한 구성 분석</block>
   <block id="1725276922bab9d023ef938d5fce0d7c" category="paragraph">Workload Factory for Databases는 Amazon FSx for NetApp ONTAP 스토리지에 Microsoft SQL Server 및 Oracle을 배포하는 데 문제가 있는지 확인하기 위해 정기적으로 데이터베이스 구성을 분석합니다.  문제가 발견되면 Workload Factory는 문제가 무엇인지 보여주고 데이터베이스 구성에서 최고의 성능, 비용 효율성, 모범 사례 준수를 보장하기 위해 무엇을 변경해야 하는지 설명합니다.</block>
-  <block id="b0a0826c5a9c2b2e6c919de33e89dbfe" category="paragraph">파일 시스템 수준의 Workload Factory 콘솔에서 모든 FSx for ONTAP 파일 시스템에 대한 잘 설계된 상태가 나열됩니다. 잘 설계된 상태는 "문제", "분석되지 않음", "잘 설계된"으로 분류됩니다. 잘 설계된 상태를 선택하면 파일 시스템 내의 잘 설계된 상태 탭으로 이동하게 되며, 여기서 잘 설계된 점수, 구성 범주, 파일 시스템의 모든 구성을 찾을 수 있습니다.</block>
   <block id="84ee3cc4e2a4f169585c115121112580" category="paragraph">Workload Factory 콘솔의 NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요. 이 통합을 통해 다음과 같은 보호 목표를 달성할 수 있습니다. 로컬 기본 Amazon FSx for NetApp ONTAP (FSx for ONTAP) 스토리지의 로컬 스냅샷으로 워크로드를 백업하고, 워크로드를 보조 FSx for ONTAP 스토리지로 복제합니다.</block>
   <block id="bb1b704677e0a9ac00a2bda88f85fe27" category="paragraph">Workload Factory는 NetApp Backup and Recovery를 사용하여 워크로드를 보호할 준비를 하기 위해 Microsoft SQL Server용 플러그인의 리소스 검색, 필수 구성 요소 검증, 구성 및 설치를 자동화합니다. 이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.</block>
   <block id="e9575ae90b7ec054c43a9797544d0103" category="paragraph">NetApp Backup and Recovery는 NetApp SnapMirror 데이터 복제 기술을 활용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.</block>
@@ -1299,4 +1288,37 @@
   <block id="1cad8c414706b5bcb0b45db25ebf8cb8" category="list-text"><block ref="1cad8c414706b5bcb0b45db25ebf8cb8" category="inline-link-macro-rx"></block></block>
   <block id="8cddfd1e7d348910ccb9f33f1875227b" category="paragraph"><block ref="f04d9a72ed4e336f6d3f26aa1ae4191f" category="inline-link-macro-rx"></block>.</block>
   <block id="99a41b50ffc589da72247d73d9ef02ed" category="paragraph">관련 정보는 다음을 참조하세요. <block ref="dc3edb02c7b9b729d8ce33699dc1f607" category="inline-link-macro-rx"></block> Microsoft SQL Server 작업 부하를 관리합니다.</block>
+  <block id="58abe9f5fbda29b547f9ab2de50f2332" category="section-title">Amazon Elastic Block Store(EBS) 사용량에 따라 절감액 최적화</block>
+  <block id="3cab156afe8725e62725f4973a3c9949" category="doc">대시보드 개선</block>
+  <block id="18657a21385444f338b37f8f0116ffc3" category="paragraph">새로운 대시보드는 간소화되고 더 잘 구성되어 데이터베이스 리소스와 Workload Factory의 주요 기능에 대한 개요를 한 화면에서 더 명확하게 제공합니다. 한 카드는 데이터베이스 리소스를 강조 표시하고, 한 카드는 잘 설계된 점수와 분석에 대한 정보를 제공하고, 한 카드는 오류 분석을 표시하고, 두 카드는 월별 비용과 잠재적 절감액을 표시하고, 한 카드는 샌드박스에 대한 정보를 표시합니다.</block>
+  <block id="52d93a06ea30bbc0d2d568569c6686f5" category="paragraph">잘 설계된 분석에는 Oracle 구성에 대한 다음과 같은 평가와 수정 사항이 포함됩니다.</block>
+  <block id="4667bb7539009ed136b942febb5737ba" category="list-text">NFS 프로토콜을 사용하는 스토리지 구성 운영 체제: 기존 Oracle 데이터베이스 배포에 대한 NFS 구성의 구성 문제를 평가하고 수정합니다.</block>
+  <block id="679f71c6d98f7a5f25e9535eb16a19b5" category="list-text">iSCSI 프로토콜을 사용하는 스토리지 구성 운영 체제: 기존 Oracle 데이터베이스 배포에 대한 iSCSI 구성의 구성 문제를 평가하고 수정합니다.</block>
+  <block id="7548e2cbb02ea769fa6f01e70f1d34ee" category="list-text">ASM(자동 스토리지 관리)을 사용한 스토리지 구성 운영 체제: 기존 Oracle 데이터베이스 배포에 대한 ASM 구성의 구성 문제를 평가합니다.</block>
+  <block id="bff5f6ac72c7a46da345751a22e8e0a1" category="section-title">데이터베이스용 Workload Factory에 대한 권한 변경</block>
+  <block id="c3cf114e732250ac6b24d30e117ab24b" category="paragraph">Workload Factory for Databases는 특정 작업에 필요한 사항과 필요한 권한만 선택할 수 있는 세부적인 내용을 더 명확하게 제공하기 위해 권한 정책을 업데이트했습니다. 자격 증명을 추가하면 이전 권한 모델인 _읽기 전용_ 및 _읽기/쓰기_ 대신 세 가지 권한 옵션 중에서 선택할 수 있습니다. 새로운 권한 모델은 권한 정책을 다음과 같이 구분합니다.</block>
+  <block id="d9fff61478503c71474a780705c79af6" category="list-text">_보기, 계획 및 분석_: 데이터베이스 리소스 인벤토리를 보고, 리소스 상태에 대해 알아보고, 데이터베이스 구성에 대한 잘 설계된 분석을 검토하고, 오류 로그 분석을 받고, 절감 효과를 살펴보세요.</block>
+  <block id="9ef8eb2bc51c8c6f6ba459302a542484" category="list-text">_운영 및 수정_: 데이터베이스 리소스에 대한 운영 작업을 수행하고 데이터베이스 구성 및 기본 FSx for ONTAP 파일 시스템 스토리지에 대한 문제를 해결합니다.</block>
+  <block id="3f285f24375531d34b8b7d73726b69bc" category="list-text">_데이터베이스 호스트 생성_: 모범 사례에 따라 데이터베이스 호스트와 기본 FSx for ONTAP 파일 시스템 스토리지를 배포합니다.</block>
+  <block id="6ca55df595e9339b20f869e49eb0d710" category="paragraph">자격 증명을 추가할 때 Workload Factory for Databases에 제공하려는 액세스 수준에 따라 이러한 권한 정책 중 하나 이상을 선택할 수 있습니다.</block>
+  <block id="b20b01e02162a68002ca1747d1bd3c10" category="inline-link-macro">워크로드 팩토리 권한 참조</block>
+  <block id="444b052e3d1349e221d4ceb42e6c1cf7" category="paragraph"><block ref="444b052e3d1349e221d4ceb42e6c1cf7" category="inline-link-macro-rx"></block></block>
+  <block id="034b7227f8903ae8faac7359c9b3d064" category="section-title">잘 설계된 대시보드 화면 추가</block>
+  <block id="7a524d371f7a263dae481eea0bc3de88" category="paragraph">데이터베이스 메뉴에 새로운 _잘 설계된_ 대시보드 화면이 추가되었습니다. 이 화면에서 전체 데이터베이스 자산의 구성 상태를 집계하여 볼 수 있습니다.</block>
+  <block id="54543cd5b64fb08ea26d865ed21c8691" category="section-title">NetApp Backup and Recovery 에서 데이터베이스 배포에 대한 편집 보호</block>
+  <block id="c7c9b75c76356b2b8aa328068cd75a1c" category="paragraph">Workload Factory 콘솔에서 보호된 리소스에 대한 보호를 편집하도록 선택한 다음 NetApp Console 의 백업 및 복구로 리디렉션되어 보호 정책이나 일정을 수정할 수 있습니다.</block>
+  <block id="f3a2b46dc542d840ca95ad3799ace39b" category="inline-link-macro">데이터베이스 배포에 대한 편집 보호</block>
+  <block id="2a601eb3188e615c20b76da1a5734646" category="paragraph"><block ref="2a601eb3188e615c20b76da1a5734646" category="inline-link-macro-rx"></block></block>
+  <block id="cf6dca9fc5d1f30c46f70906ef3152ce" category="section-title">오류 분석 기능에 사용 가능한 태그별 오류 필터링</block>
+  <block id="b79d711ddf4eb26397c99031692c7a26" category="paragraph">Workload Factory의 오류 분석 기능을 사용하면 인프라 중심 태그로 Microsoft SQL Server 오류 로그를 필터링하고 볼 수 있습니다. 이 향상된 기능은 문제를 신속하게 분류하고 해결하는 데 도움이 됩니다.</block>
+  <block id="c9c975f5587642db7fde90312ee94825" category="inline-link-macro">태그 필터링을 사용하여 오류 로그 분석</block>
+  <block id="99d2df171fdf12824fa9334fd19cf105" category="paragraph"><block ref="99d2df171fdf12824fa9334fd19cf105" category="inline-link-macro-rx"></block></block>
+  <block id="2598ae987a85e3352d674a4bfade0940" category="list-text">심각도, 기간, 오류 코드 등의 기준이나 컴퓨팅, 스토리지, 네트워크, 보안 등의 인프라 중심 태그를 기준으로 표시되는 오류를 세분화하려면 필터를 사용하세요.</block>
+  <block id="f24e1b415d71fa7221e6c4409d9ddcb9" category="list-text">스토리지 구성: Microsoft Multipath I/O(MPIO) 상태 및 설정을 포함하여 NFS 또는 iSCSI를 사용하여 배포할 때 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, 스토리지 효율성 및 운영 체제 구성이 포함됩니다.</block>
+  <block id="cb7f9c10896377bc079174e74f841859" category="section-title">구성 분석의 구성 요소</block>
+  <block id="6ef2457afc865f25d3bed5cf0e06ad81" category="paragraph">구성 분석에는 다음 구성 요소가 포함됩니다.</block>
+  <block id="1fa0a7ab43424d65902e6734a2c7cc84" category="list-text">잘 설계된 상태는 데이터베이스 구성의 전반적인 상태를 나타냅니다. 구성은 "최적화됨", "최적화되지 않음", "과도하게 프로비저닝됨"으로 분류됩니다. 잘 설계된 구성 상태는 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
+  <block id="5c947d6fa21e25852d9b8fc4ae1d52fb" category="list-text">점수에는 현재 분석된 모든 구성이 포함되며 백분율로 표시됩니다. 25% 점수는 데이터베이스 배포의 25%가 잘 설계되었다는 것을 의미합니다. 잘 설계된 점수는 *잘 설계된* 화면과 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
+  <block id="b63a27b7b1942197825500589350fdb1" category="list-text">구성은 스토리지, 컴퓨팅, 애플리케이션, 복원력, 복제라는 범주로 구성됩니다. 각 범주에는 정기적으로 분석되는 구체적인 구성 평가가 포함됩니다. 구성 범주는 *Well-architected* 화면과 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
+  <block id="2afa479317acb4455a0a649aab2944d1" category="section-title">2025년 11월 2일</block>
 </blocks>
