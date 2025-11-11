@@ -49,7 +49,7 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 가격"^]
 
 오류 로그 분석기를 사용하려면 다음 전제 조건을 충족해야 합니다.
 
-* 당신은 가지고 있어야 합니다link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기/쓰기_ 모드 권한"^] Workload Factory에서 새로운 데이터베이스 호스트를 생성합니다.
+* 당신은해야합니다 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_view, planning 및 analysis_ 권한 부여"^] AWS 계정에서 Workload Factory에 새로운 데이터베이스 호스트를 생성하세요.
 * link:https://docs.netapp.com/us-en/workload-databases/register-instance.html["SQL Server 인스턴스 등록"^]워크로드 팩토리에서.
 * 다음 전제 조건도 충족해야 합니다.  로그 오류를 분석하는 단계의 일부로 이러한 전제 조건을 완료하라는 메시지가 표시됩니다.
 +

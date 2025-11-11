@@ -23,10 +23,13 @@ NetApp Workload Factory for Databases를 사용하면 _기본_ 모드로 바로 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2개"] 자격 증명 및 사용 권한을 추가합니다
 [role="quick-margin-para"]
-다음 중에서 선택합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["_기본_, _읽기 전용_ 및 _읽기/쓰기_ 작동 모드"^]
+선택하세요link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["권한 정책"^] 귀하의 요구 사항을 충족하기 위해.
 
 [role="quick-margin-para"]
-_읽기 전용_ 또는 _읽기/쓰기_ 모드에서 작동하는 경우 다음이 필요합니다.link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["계정에 자격 증명을 수동으로 추가합니다"^] 데이터베이스 및 GenAI와 같은 워크로드 기능을 선택하고 필요한 권한에 대한 IAM 정책을 만듭니다.
+권한을 부여하지 않기로 선택하는 경우 Workload Factory for Databases를 사용하여 부분적으로 완성된 코드 샘플을 복사할 수 있습니다.
+
+[role="quick-margin-para"]
+권한을 부여하기로 선택한 경우 다음이 필요합니다.link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["계정에 자격 증명을 수동으로 추가합니다"^] 여기에는 데이터베이스 및 AI와 같은 워크로드 기능을 선택하고, 필요한 권한에 대한 IAM 정책을 만드는 것이 포함됩니다.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["세 가지"]리소스 검색 또는 배포
 [role="quick-margin-para"]

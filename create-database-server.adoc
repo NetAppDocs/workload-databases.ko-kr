@@ -60,7 +60,7 @@ DNS(Domain Name System) 리소스를 롤백하는 경우 AD 및 DNS의 리소스
 새 데이터베이스 호스트를 생성하기 전에 다음과 같은 사전 요구 사항이 있는지 확인하십시오.
 
 .자격 증명 및 권한
-당신은 가지고 있어야 합니다link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기/쓰기_ 모드 권한"^] Workload Factory에서 새로운 데이터베이스 호스트를 생성합니다.
+당신은해야합니다 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_데이터베이스 호스트 생성_ 권한 부여"^] AWS 계정에서 Workload Factory에 새로운 데이터베이스 호스트를 생성하세요.
 
 .Active Directory를 클릭합니다
 Active Directory에 연결할 때 다음을 수행하려면 권한이 있는 관리자 액세스 권한이 있어야 합니다.

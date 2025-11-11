@@ -144,9 +144,6 @@ Workload Factory는 AWS, NetApp ONTAP, Microsoft SQL Server, Oracle 및 PostgreS
 | Microsoft SQL Server를 참조하십시오 | SQL 서버 2016, 2017, 2019, 2022 | 어느 | FCI, 단일 인스턴스 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL 서버 2016, 2019, 2022 | 어느 | 항상 사용 가능한 가용성 그룹 
-
-
 | 신탁 | 19c | RHEL, SuSe 리눅스 | 독립형(단일/다중 테넌트) 
 
 
@@ -163,12 +160,6 @@ Workload Factory는 AWS, NetApp ONTAP, Microsoft SQL Server, Oracle 및 PostgreS
 
 
 | 신탁 | 21c | RHEL, SuSe 리눅스 | ASM(단일/멀티 테넌트)과 함께 독립형 
-
-
-| 신탁 | 19c | RHEL, SuSe 리눅스 | 데이터 가드 
-
-
-| 신탁 | 21c | RHEL, SuSe 리눅스 | 데이터 가드 
 
 
 | 포스트그레스큐엘 | 포스트그레SQL 15 | 아마존 리눅스 2023 AMI | HA, 독립형 인스턴스 

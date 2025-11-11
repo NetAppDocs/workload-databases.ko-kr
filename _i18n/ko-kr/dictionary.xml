@@ -517,8 +517,6 @@
   <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">중 하나를 사용하여 <block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>로그인합니다.</block>
   <block id="cef4156e4fa9e5869d4dee02c1b39d6e" category="paragraph">AWS 자격 증명을 _automate_permissions 로 설정하면 워크로드 공장 내에서 AWS 계정에서 새 데이터베이스 호스트를 구축하고 관리할 수 있습니다.</block>
   <block id="d6631cc039c798bd233c70bae3023936" category="paragraph">필요한 경우 코드박스에서 부분적으로 완성된 YAML 파일 템플릿을 다운로드하여 자격 증명이나 권한 없이 워크로드 팩토리 외부에 스택을 만들 수 있습니다. 코드 상자의 드롭다운에서 * CloudFormation * 을 선택하여 YAML 파일을 다운로드합니다.</block>
-  <block id="86b0140bb79dd7663425ee50a4e68361" category="inline-link-macro">워크로드 팩토리 작동 모드에 대해 알아보십시오</block>
-  <block id="3a0419549547987e965186c31b3610eb" category="paragraph">워크로드 팩토리에서 데이터베이스를 생성하려면 자동화 모드 권한이 필요합니다. 또는 기본 모드에서 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 워크로드 공장 외부에서 작업을 완료할 수 있습니다. <block ref="5968ff3deed2bc48d2bc3a731c0f115b" category="inline-link-macro-rx"></block> 를 눌러 사용할 모드를 결정합니다.</block>
   <block id="3bfb7d9388422f644c389daf1ad5c953" category="paragraph">또는 REST API를 사용하여 워크로드 팩토리 외부에 데이터베이스를 배포할 수 있도록 Codebox를 사용하여 템플릿을 복사할 수 있습니다. <block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>..</block>
   <block id="ac48048cc385514c8193aeb51f798df3" category="list-text">* 비용 산정 *: Elastic Block Store 및 FSx for Windows File Server를 사용한 기존 Microsoft SQL Server 배포의 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷 및 복제 항목화된 비용을 FSx for ONTAP와 비교하여 추산하는 Savings Calculator로 잠재적인 비용 절감 효과를 평가하십시오.</block>
   <block id="eb7ed5d3b1a2ff72006245ad37f9817b" category="paragraph">데이터베이스를 사용하려면 AWS 계정이 있어야 합니다.</block>
@@ -681,8 +679,6 @@
   <block id="c69c68bea63a58faad0233887cb8a9aa" category="section-title">2025년 4월 4일</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
-  <block id="f2f8123dee39336570b9e59a3326fd18" category="inline-link-macro">grant_read-only_or_read/write_permissions 를 참조하십시오</block>
-  <block id="f557e9f26b531156ccdbc9c32935d13a" category="list-text"><block ref="6a1dbb436eb1da80c34b82a70d7d9175" category="inline-link-macro-rx"></block> AWS 계정에서 * Explore Savings * 탭에서 EBS(Elastic Block Store) 및 FSx for Windows 시스템을 감지하고 절감 계산액을 절약 계산기에 표시합니다.</block>
   <block id="25696569671071b8bd3db9a4c5f6613e" category="doc">향상된 대시보드 기능</block>
   <block id="04f9acced28b52e064ba8ccb957a615c" category="list-text">교차 계정 및 교차 지역 보기는 BlueXP  워크로드 팩토리 콘솔에서 탭 간을 탐색할 때 사용할 수 있습니다. 새로운 뷰를 통해 리소스 관리, 모니터링 및 최적화가 향상됩니다.</block>
   <block id="6e21267988cadc818dd398393c695465" category="list-text">대시보드의 * potential savings * 타일에서 Amazon Elastic Block Store 또는 Amazon FSx for Windows 파일 서버에서 FSx for ONTAP로 전환하여 저장할 수 있는 항목을 빠르게 검토할 수 있습니다.</block>
@@ -724,8 +720,6 @@
   <block id="2cfa2ba77f1346dd5f1a96ad6f3af2b2" category="paragraph"><block ref="2cfa2ba77f1346dd5f1a96ad6f3af2b2" category="inline-link-macro-rx"></block></block>
   <block id="4f91bce4a20615964f35d2fd97ddb2e1" category="inline-link-macro">인스턴스 관리</block>
   <block id="68d9261728b0a851ce7bc78b7cfd2a69" category="paragraph"><block ref="68d9261728b0a851ce7bc78b7cfd2a69" category="inline-link-macro-rx"></block></block>
-  <block id="ccac5f43f95e209ed7e8f8ddd1b75d8b" category="inline-link-macro">AWS 계정 자격 증명 및 _읽기/쓰기_ 모드 권한</block>
-  <block id="b949760a108bef94fc7f866ca09b5155" category="list-text">작업 부하 공장에서 새 데이터베이스 호스트를 생성해야 <block ref="09d2f3d3c667abb40f8d2ba111b9c06b" category="inline-link-macro-rx"></block>합니다.</block>
   <block id="f8c2bea89896f4c645e761417ab6d4bd" category="paragraph">배포 서브넷이 기존 인터페이스 엔드포인트와 연결되어 있고 보안 그룹이 선택한 서브넷에 HTTPS(443) 프로토콜에 대한 액세스를 허용하는지 확인합니다.</block>
   <block id="e2aadc51c2249a0d2d63030bd046d5b5" category="paragraph">크로스 VPC DNS를 사용할 때, DNS가 있는 다른 VPC의 엔드포인트 보안 그룹은 배포 서브넷에 포트 443을 허용해야 합니다. 그렇지 않은 경우, 크로스 VPC Active Directory에 가입할 때 로컬 VPC의 DNS 확인자를 제공해야 합니다. <block ref="a756f9902f1db5a37f12d3f459f172a5" prefix=" " category="inline-code"></block> Active Directory에 연결합니다.</block>
   <block id="a40a9332a94e9ee509dd52088052022f" category="paragraph">관리 업무에는 다음이 포함됩니다.</block>
@@ -737,8 +731,6 @@
   <block id="d3379f7eb15b947ec99d4daad00317b3" category="list-text"><block ref="d3379f7eb15b947ec99d4daad00317b3" category="inline-link-macro-rx"></block></block>
   <block id="c4363ade7c2d208d79dee9b60bc51922" category="doc">워크로드 팩토리에서 잘 설계된 데이터베이스 구성을 구현합니다.</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">분석 대상</block>
-  <block id="05733d6679707441838e3ca92fcb1e85" category="inline-link-macro">AWS 계정 자격 증명 및 읽기/쓰기 권한</block>
-  <block id="e6ff59cff1eb616f7a9d6b770313807a" category="list-text">당신은 있어야합니다 <block ref="6428f71963510d960d64cd03bb6513ae" category="inline-link-macro-rx"></block> 데이터베이스 구성을 분석합니다.</block>
   <block id="663c686f4608ad8e700ed1cd99a57fcc" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 주의 깊게 검토하십시오. RSS 및 MAXDOP 설정의 경우 프로덕션 환경을 변경하기 전에 권장 설정을 테스트하여 성능 개선을 확인하는 것이 좋습니다.</block>
   <block id="55900adb296775523b32b30486b0de17" category="admonition">해결 프로세스로 인해 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성을 수정하기로 결정하기 전에 권장 사항을 주의 깊게 검토하세요.</block>
   <block id="8cdf23f9dd4f98a6b709a0a9d53ecd88" category="paragraph">구성 문제를 범주, 하위 범주, 상태, 심각도 및 태그별로 필터링할 수 있습니다.</block>
@@ -754,8 +746,6 @@
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">잘 설계된 데이터베이스 구성을 구현합니다.</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
-  <block id="742b9524a4ab93b49eb1614d2aa4287b" category="inline-link-macro">_기본_, _읽기 전용_ 및 _읽기/쓰기_ 작동 모드</block>
-  <block id="e19be16b30ba3a27ed29174edef4c120" category="paragraph">다음 중에서 선택합니다. <block ref="5653101a5bec855c555e8762c96ccdfc" category="inline-link-macro-rx"></block></block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">호스트 서버 배포</block>
   <block id="8373481dd509f9b495f59748db1aa76d" category="doc">데이터베이스의 워크로드 팩토리에 인스턴스 등록</block>
   <block id="91a3069301b0dd7ee29890c4b610ba27" category="section-title">작업에 관하여</block>
@@ -776,9 +766,6 @@
   <block id="9d3d55473abbb7eec4a1df3a6fd8ac50" category="paragraph">_읽기 전용_ 권한이 있는 AWS 자격 증명을 통해 Workload Factory는 AWS CloudFormation 콘솔에서 사용할 수 있는 CloudFormation 템플릿을 생성할 수 있습니다.</block>
   <block id="1a6183e6bc3067f41e368cb8ae65eee0" category="paragraph">작업 부하 공장에서 연결된 AWS 자격 증명이 없고 작업 부하 공장에서 새 서버를 생성하려면 * 옵션 1 * 을 따라 자격 증명 페이지로 이동합니다. 데이터베이스 워크로드에 대한 _읽기/쓰기_ 모드에 필요한 자격 증명과 권한을 수동으로 추가합니다.</block>
   <block id="b686945750b38d40d97b18356ad0a4c6" category="paragraph">AWS CloudFormation에서 배포할 전체 YAML 파일 템플릿을 다운로드할 수 있도록 워크로드 팩토리에서의 새 서버 만들기 양식을 작성하려면 * 옵션 2 * 를 따라 AWS CloudFormation 내에서 새 서버를 만드는 데 필요한 권한이 있는지 확인하십시오. 데이터베이스 워크로드에 대한 _읽기 전용_ 모드에 필요한 자격 증명과 권한을 수동으로 추가합니다.</block>
-  <block id="a8ff9ed21e668d7299478bf75b16abd9" category="inline-link-macro">AWS 계정 자격 증명 및 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한</block>
-  <block id="970fa5fe1f85bede58eadf785f5bb30d" category="paragraph">_빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한으로 워크로드 팩토리에서 이 작업을 완료할 수 있습니다.</block>
-  <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">AWS 계정 자격 증명과 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한을 추가해야 합니다.</block>
   <block id="9ae4e4b9fdc398feb3be344b26cbf99f" category="sidebar">데이터베이스 작업 모니터링</block>
   <block id="a43e14359a13ff9144351ad74db7b351" category="section-title">인스턴스에 대한 향상된 온보딩</block>
   <block id="af2ef84a7c6d5792c23eddfef4cc4ed9" category="paragraph">인스턴스 관리에 "감지되지 않음", "관리되지 않음" 또는 "관리됨"이라는 용어를 사용하는 대신, 워크로드 팩토리는 이제 인스턴스 온보딩에 "등록"을 사용합니다. 새로운 등록 프로세스에는 인스턴스 인증 및 준비가 포함되어 워크로드 팩토리 콘솔에서 데이터베이스 구성의 리소스를 생성, 모니터링, 분석 및 수정할 수 있습니다. 등록 프로세스의 준비 단계는 인스턴스가 관리할 준비가 되었는지 여부를 나타냅니다.</block>
@@ -838,7 +825,6 @@
   <block id="e4b085b007f80e7f8236f3693c0d0198" category="list-text">데이터베이스 타일에서 *절약 사항 살펴보기*를 선택한 다음 메뉴에서 *온-프레미스 Microsoft SQL Server*를 선택합니다.</block>
   <block id="546dcae8b2a33c531e585b76d51af0dd" category="paragraph">일부 권한이 제한된 경우, 인증에 성공한 후에도 탐색 저축 페이지가 데이터를 로드하지 않습니다.</block>
   <block id="012a999834d8188ec17b6ec67f4db97d" category="list-text">복원력: 로컬 스냅샷, FSx for ONTAP 백업, 지역 간 복제(CRR), Microsoft SQL 고가용성이 포함됩니다.</block>
-  <block id="884d3679394cea72f73ae724c1666492" category="paragraph">_읽기 전용_ 또는 _읽기/쓰기_ 모드에서 작동하는 경우 다음이 필요합니다.<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 데이터베이스 및 GenAI와 같은 워크로드 기능을 선택하고 필요한 권한에 대한 IAM 정책을 만듭니다.</block>
   <block id="1caf2514b723d82877e2b000e3ba5e3f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>리소스 검색 또는 배포</block>
   <block id="714bf7245115e9e60e5f4ba3dc04e4f5" category="paragraph">자격 증명 및 IAM 정책을 사용하면 인벤토리에서 기존 데이터베이스 리소스를 검색할 수 있습니다.<block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block> .  인벤토리는 리소스를 관리하기 위한 통합된 인터페이스를 제공합니다.</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
@@ -978,7 +964,6 @@
   <block id="ff8598dd406774c1ca9008fc13afdda5" category="inline-link-macro">Amazon Bedrock 데이터 보호 문서</block>
   <block id="f3bdceeaea10004cfc3c616ca8eb3736" category="paragraph">고객 데이터는 모델을 훈련하거나 개선하는 데 사용되지 않습니다.  Amazon Bedrock은 실시간으로 로그를 처리하지만 데이터를 학습하지는 않습니다.  결과는 참조용으로만 사용자 환경에 저장됩니다.  자세한 내용은 다음을 참조하세요.<block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block> .</block>
   <block id="b9ab059dc08ef721b8e84a71c31836ca" category="paragraph">오류 로그 분석기를 사용하려면 다음 전제 조건을 충족해야 합니다.</block>
-  <block id="03b5d863e5ce2e0457e2439ea29d15c0" category="list-text">당신은 가지고 있어야 합니다<block ref="09d2f3d3c667abb40f8d2ba111b9c06b" category="inline-link-macro-rx"></block> Workload Factory에서 새로운 데이터베이스 호스트를 생성합니다.</block>
   <block id="1638ab4de4a9db0d742db9639754f78d" category="list-text"><block ref="873d2450d820ba11c34ebce38f7d81a0" category="inline-link-macro-rx"></block>워크로드 팩토리에서.</block>
   <block id="646959962ba0d3aba0b9eba63fd30f66" category="list-text">다음 전제 조건도 충족해야 합니다.  로그 오류를 분석하는 단계의 일부로 이러한 전제 조건을 완료하라는 메시지가 표시됩니다.</block>
   <block id="b731c0685ba6b81efc2a3730248eb9d5" category="list-text">*아마존 베드록 활성화*</block>
@@ -1029,7 +1014,6 @@
   <block id="093a3d726cbf25e589822ef36b3e7d6d" category="summary">NetApp Workload Factory for Databases를 사용하여 Microsoft SQL 데이터베이스를 만듭니다.</block>
   <block id="d410c054e57809de4c2928a86ff5857a" category="doc">NetApp Workload Factory for Databases에서 Microsoft SQL 데이터베이스 만들기</block>
   <block id="e7c408256e10da6c2b63aa1ec40e89c6" category="paragraph">새로운 Microsoft SQL 데이터베이스를 만들면 NetApp Workload Factory for Databases 내의 리소스를 관리할 수 있습니다.</block>
-  <block id="7e330efc62ab9aa02e901fd0e9ddfe04" category="list-text">*자격 증명 및 권한*: 다음이 필요합니다.<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block> 워크로드 팩토리에서 새로운 데이터베이스를 생성합니다.</block>
   <block id="5def691d4ba23ba4c19e8fb3f4ebd179" category="list-text">*Windows 호스트*: _빠른 생성_ 모드를 사용하는 경우 새 데이터베이스에 대한 새 드라이브를 만들려면 Microsoft SQL Server에 충분한 드라이브 문자가 있어야 합니다.</block>
   <block id="45c09a12c8c7e32b997298e5ab0cc9f7" category="list-text">*Microsoft SQL Server*: 새 데이터베이스를 호스팅하려면 데이터베이스의 워크로드 팩토리에 관리되는 Microsoft SQL Server가 있어야 합니다.</block>
   <block id="fba597a5ff37192edad0ebb2de795a4d" category="list-text">*AWS 시스템 관리자*: 다음을 확인하세요.<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block> Microsoft SQL 호스트에서 AWS Systems Manager를 통해 사용자 권한이 활성화됩니다.</block>
@@ -1046,7 +1030,6 @@
   <block id="d99f6150a4efcd4d48fdaf436886511c" category="summary">NetApp Workload Factory for Databases에서 샌드박스 복제본을 만듭니다.</block>
   <block id="f11ac2427a7b573ec3b6ff10fab4b086" category="doc">NetApp Workload Factory에서 데이터베이스용 샌드박스 복제본 만들기</block>
   <block id="275720de7888dfa64f5efd2265bd4ff1" category="paragraph">NetApp Workload Factory for Databases에서 데이터베이스의 샌드박스 복제본을 만들면 소스 데이터베이스를 변경하지 않고도 복제본을 개발, 테스트, 통합, 분석, 교육, QA 등에 사용할 수 있습니다.</block>
-  <block id="7346725773928eba0f4a6bd24d75cfe2" category="list-text">*자격 증명 및 권한*: 다음이 필요합니다.<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block> Workload Factory에서 샌드박스 복제본을 생성합니다.</block>
   <block id="19d25173728d8d76e86a76626ff0e340" category="paragraph">또는 Codebox를 사용하여 부분적으로 완성된 템플릿을 복사하거나 완성된 템플릿을 만든 다음 REST API를 사용하여 Workload Factory 외부에서 샌드박스 복제본을 만들 수 있습니다. <block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block> .</block>
   <block id="de53b203cddcf425805457c9ee61f4fa" category="list-text">*Microsoft SQL Server*: 새로운 샌드박스 복제본을 호스팅하려면 Workload Factory for Databases에 관리되는 Microsoft SQL Server가 있어야 합니다.</block>
   <block id="c4445bf1142f4fd36aa3139618ee4f3f" category="list-text">*소스 데이터베이스*: 복제본에 사용할 수 있는 소스 데이터베이스가 필요합니다.</block>
@@ -1069,7 +1052,6 @@
   <block id="092e04ebb92f098a8d23a32d9a42e747" category="paragraph"><block ref="092e04ebb92f098a8d23a32d9a42e747" category="inline-image-macro-rx" type="image"></block></block>
   <block id="415a5d8c7b61b7b6644a82777ab19fd7" category="paragraph">+ * 대상 인스턴스 vCPU: 인스턴스에 가상 CPU가 48개 이하입니다.  * 메모리 할당: 인스턴스의 메모리가 128GB 이하입니다.</block>
   <block id="10bc36142cfe526f2ba0fecd1ac4fbe9" category="paragraph">+ * 데이터베이스 수준 엔터프라이즈 기능 * 온라인 인덱스 작업 * 리소스 관리자 * 피어 투 피어 또는 Oracle 복제 * R/Python 확장 * 메모리 최적화된 TempDB</block>
-  <block id="5e633dc647061a3cdb155c548d275ddc" category="paragraph">감지된 호스트에 대한 절감 혜택을 살펴보세요. Workload Factory는 기존 Microsoft SQL 서버에 연결하여 세부 정보를 계산기에 입력하여 자동으로 비교합니다.  이 계산기 옵션을 사용하려면 _읽기 전용_ 또는 _읽기/쓰기_ 권한을 부여해야 합니다. 사용 사례는 변경할 수 있지만, 다른 모든 세부 사항은 계산에서 자동으로 결정됩니다.</block>
   <block id="e5af3e73361e966fe2adc79aadc34d57" category="paragraph">Workload Factory는 감지된 Elastic Block Store와 FSx for Windows File Server 호스트 특성을 입력하여 자동으로 절감 효과를 알아볼 수 있도록 해줍니다.</block>
   <block id="8792c25f641e40dfbd968350e410bed0" category="paragraph">Workload Factory가 EBS 호스트를 감지하면 '절약 탐색' 탭으로 리디렉션됩니다.  Workload Factory가 EBS 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block> .</block>
   <block id="7ca6391eb61738d8b33e189705bb5857" category="paragraph">Workload Factory가 Windows 호스트용 FSx를 감지하면 '절약 탐색' 탭으로 리디렉션됩니다.  Workload Factory가 Windows 호스트용 FSx를 감지하지 못하면 계산기로 리디렉션됩니다.<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block> .</block>
@@ -1077,8 +1059,6 @@
   <block id="b5745d8b2f6a0cf9cddb7bbb1fed3157" category="list-text">Workload Factory의 SQL Server 온-프레미스 탭에 스크립트 출력을 업로드합니다.</block>
   <block id="b9382a492febc168d96a9e8228ee319f" category="paragraph">온프레미스 호스트에서 Microsoft SQL Server에 대한 비용 절감을 살펴본 후 Workload Factory에서 온프레미스 호스트 레코드를 제거할 수 있습니다.  Microsoft SQL Server 온프레미스 호스트의 작업 메뉴를 선택한 다음 *삭제*를 선택합니다.</block>
   <block id="1dbb11b39a311ecc5e8a64d372008d84" category="admonition">Workload Factory는 여러 개의 FSx for ONTAP 파일 시스템을 저장하거나 생성하는 것을 지원하지 않습니다.</block>
-  <block id="c29b94e2d4d4a00b7378026c4025918f" category="paragraph">_읽기/쓰기_ 모드에서는 Workload Factory에서 직접 FSx for ONTAP 을 사용하여 AWS EC2에 새로운 Microsoft SQL 서버를 배포할 수 있습니다.  Codebox 창에서 내용을 복사하고 Codebox 방법 중 하나를 사용하여 권장 구성을 배포할 수도 있습니다.</block>
-  <block id="8e40b4db610d42aa9e94bf6dddc5da17" category="paragraph">+ _기본_ 모드에서는 Codebox 창의 내용을 복사하고 Codebox 방법 중 하나를 사용하여 권장 구성을 배포할 수 있습니다.</block>
   <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp 다양한 방법으로 Workload Factory와 클라우드 서비스에 대한 지원을 제공합니다. 지식 기반(KB) 문서와 커뮤니티 포럼 등 광범위한 무료 셀프 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
   <block id="d18da0722f47f2cf3fb9e69d8727fb2a" category="doc">데이터베이스용 NetApp Workload Factory에 대한 도움말 받기</block>
   <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">FSx for ONTAP, 해당 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원에 대해서는 해당 제품의 Workload Factory 설명서에서 "도움말 받기"를 참조하세요.</block>
@@ -1151,15 +1131,12 @@
   <block id="b727574e55ad796217e2a7aaf6e9f42d" category="cell">SQL 서버 2017</block>
   <block id="ed36a1ef76a59ee3f15180e0441188ad" category="cell">어느</block>
   <block id="8cf301ab4443cef37ee630b5434c3fb2" category="cell">SQL 서버 2016, 2017, 2019, 2022</block>
-  <block id="835bfc5a74490eff719b5c8742da9048" category="cell">SQL 서버 2016, 2019, 2022</block>
-  <block id="91f9e116b3abf8558df521fb932a17ec" category="cell">항상 사용 가능한 가용성 그룹</block>
   <block id="30162ed78b6c10f731411f2fc440c24f" category="cell">신탁</block>
   <block id="89b327b02ad20e9d93a23c30a3bfa1bf" category="cell">19c</block>
   <block id="04bcbe2fb36bb4652b7f66367657c64b" category="cell">RHEL, SuSe 리눅스</block>
   <block id="6d40548220fdaa1735b97fafdbde0686" category="cell">독립형(단일/다중 테넌트)</block>
   <block id="0de4a754b71d1086723f693052fb7ed2" category="cell">21c</block>
   <block id="d4dd4b927f19f35413e56d438f3960de" category="cell">ASM(단일/멀티 테넌트)과 함께 독립형</block>
-  <block id="154b1e792860b6ece9bff342944b91b2" category="cell">데이터 가드</block>
   <block id="399bd1ee587245ecac6f39beaa99886f" category="cell">포스트그레스큐엘</block>
   <block id="ff97094f6c5420d1530362f8c8ec5d41" category="cell">포스트그레SQL 15</block>
   <block id="03c8e8d9438240d9d59f41ce5d676c9c" category="cell">아마존 리눅스 2023 AMI</block>
@@ -1246,7 +1223,6 @@
   <block id="ec1098eb54d9b05cc1e929562eb8d30d" category="doc">NetApp Workload Factory for Databases에 리소스 등록</block>
   <block id="0bc907adb7562b30973df586f142f009" category="paragraph">NetApp Workload Factory for Databases에서 인스턴스 및 데이터베이스 상태, 리소스 활용도, 보호 및 스토리지 성능을 모니터링할 수 있도록 Microsoft SQL Server 및 Oracle 데이터베이스의 인스턴스를 등록합니다.</block>
   <block id="3774c3fd6b6e5830079da1f94d3f1872" category="admonition">Workload Factory는 Microsoft SQL Server 인스턴스와 Oracle 데이터베이스 등록 및 관리만 지원합니다.  Workload Factory에서 선택한 AWS 계정 자격 증명에 따라 PostgreSQL 호스트가 인벤토리에 나타날 수 있습니다.  현재 Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 등록되지 않은 PostgreSQL 인스턴스만 지원합니다.</block>
-  <block id="22bab21849e5441abbd62affb81cd026" category="paragraph">인스턴스 또는 데이터베이스의 호스트가 인벤토리에 나타나야 합니다. 호스트가 인벤토리에 나타나려면<block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> .</block>
   <block id="962361e8c13e22625220beba80548057" category="list-text">인벤토리에서 데이터베이스 엔진으로 *Oracle*을 선택합니다.</block>
   <block id="1d72541b2e1a224311e8b78af73bab83" category="summary">NetApp Workload Factory for Databases에서 데이터베이스(샌드박스) 복제본을 생성 당시의 원래 버전으로 되돌립니다.</block>
   <block id="ecf8d68388a40ca09bc6475e0cb33a92" category="doc">NetApp Workload Factory for Databases에서 데이터베이스 복제본 되돌리기</block>
@@ -1300,7 +1276,6 @@
   <block id="d9fff61478503c71474a780705c79af6" category="list-text">_보기, 계획 및 분석_: 데이터베이스 리소스 인벤토리를 보고, 리소스 상태에 대해 알아보고, 데이터베이스 구성에 대한 잘 설계된 분석을 검토하고, 오류 로그 분석을 받고, 절감 효과를 살펴보세요.</block>
   <block id="9ef8eb2bc51c8c6f6ba459302a542484" category="list-text">_운영 및 수정_: 데이터베이스 리소스에 대한 운영 작업을 수행하고 데이터베이스 구성 및 기본 FSx for ONTAP 파일 시스템 스토리지에 대한 문제를 해결합니다.</block>
   <block id="3f285f24375531d34b8b7d73726b69bc" category="list-text">_데이터베이스 호스트 생성_: 모범 사례에 따라 데이터베이스 호스트와 기본 FSx for ONTAP 파일 시스템 스토리지를 배포합니다.</block>
-  <block id="6ca55df595e9339b20f869e49eb0d710" category="paragraph">자격 증명을 추가할 때 Workload Factory for Databases에 제공하려는 액세스 수준에 따라 이러한 권한 정책 중 하나 이상을 선택할 수 있습니다.</block>
   <block id="b20b01e02162a68002ca1747d1bd3c10" category="inline-link-macro">워크로드 팩토리 권한 참조</block>
   <block id="444b052e3d1349e221d4ceb42e6c1cf7" category="paragraph"><block ref="444b052e3d1349e221d4ceb42e6c1cf7" category="inline-link-macro-rx"></block></block>
   <block id="034b7227f8903ae8faac7359c9b3d064" category="section-title">잘 설계된 대시보드 화면 추가</block>
@@ -1321,4 +1296,33 @@
   <block id="5c947d6fa21e25852d9b8fc4ae1d52fb" category="list-text">점수에는 현재 분석된 모든 구성이 포함되며 백분율로 표시됩니다. 25% 점수는 데이터베이스 배포의 25%가 잘 설계되었다는 것을 의미합니다. 잘 설계된 점수는 *잘 설계된* 화면과 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
   <block id="b63a27b7b1942197825500589350fdb1" category="list-text">구성은 스토리지, 컴퓨팅, 애플리케이션, 복원력, 복제라는 범주로 구성됩니다. 각 범주에는 정기적으로 분석되는 구체적인 구성 평가가 포함됩니다. 구성 범주는 *Well-architected* 화면과 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
   <block id="2afa479317acb4455a0a649aab2944d1" category="section-title">2025년 11월 2일</block>
+  <block id="d0892726ec1e74441a4a801494ed29bb" category="paragraph">자격 증명을 추가할 때 Workload Factory for Databases에 제공하려는 액세스 수준에 따라 이러한 권한 정책 중 하나 이상을 선택할 수 있습니다.</block>
+  <block id="af7c77855745c2192ad309cfc11ed68c" category="inline-link-macro">_view, planning 및 analysis_ 권한 부여</block>
+  <block id="e532abcabd3833f3f7c459c33e56184e" category="list-text">당신은해야합니다 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> AWS 계정에서 Workload Factory에 새로운 데이터베이스 호스트를 생성하세요.</block>
+  <block id="3e44f3c8515896309f0ef94bd98f9c01" category="inline-link-macro">_데이터베이스 호스트 생성_ 권한 부여</block>
+  <block id="465e9d802e89a57d0c6d975dfa335b10" category="paragraph">당신은해야합니다 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> AWS 계정에서 Workload Factory에 새로운 데이터베이스 호스트를 생성하세요.</block>
+  <block id="faf57b7ea755136ba278c7ca635d000d" category="inline-link-macro">Workload Factory 권한에 대해 알아보세요</block>
+  <block id="ee8d92152066f3db5bcbd21ab0bf2f95" category="paragraph">워크로드 팩토리에서 데이터베이스를 생성하려면 _보기, 계획 및 분석_ 권한이 필요합니다. 또는 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 워크로드 팩토리 외부에서 작업을 완료할 수 있습니다. <block ref="2ed05d763ad52dc4a74c37608a2573bc" category="inline-link-macro-rx"></block> 어떤 모드를 사용할지 결정하세요.</block>
+  <block id="24f052bbfc9bd9df6db2a9420a7adf2b" category="inline-link-macro">AWS 계정 자격 증명 및 _보기, 계획 및 분석_ 권한</block>
+  <block id="4f56231d78cda077af94d3e0dfd51958" category="list-text">*자격 증명 및 권한*: 다음이 필요합니다. <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> Workload Factory에서 새로운 데이터베이스를 생성합니다.</block>
+  <block id="93d1a10f5427dcaad9dbfd835a2f78c4" category="paragraph">Workload Factory에서 _빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 이 작업을 완료할 수 있습니다.</block>
+  <block id="2025a0042a0ae8427cc7478e4f0629ea" category="paragraph">당신은 가지고 있어야 합니다 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> AWS 계정에서 워크로드 팩토리에 새로운 데이터베이스 호스트를 생성합니다.</block>
+  <block id="c2a828d4f87d9d9d6977488310b2783f" category="list-text">*자격 증명 및 권한*: 다음이 필요합니다. <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> Workload Factory에서 샌드박스 복제본을 생성합니다.</block>
+  <block id="e271b1d3bc72a38f89e2810646dd71a1" category="paragraph">감지된 호스트에 대한 절감 혜택을 살펴보세요. Workload Factory는 기존 Microsoft SQL 서버에 연결하여 세부 정보를 계산기에 입력하여 자동으로 비교합니다. 이 계산기 옵션을 사용하려면 _보기, 계획 및 분석_ 권한을 부여해야 합니다. 사용 사례는 변경할 수 있지만, 다른 모든 세부 사항은 계산에서 자동으로 결정됩니다.</block>
+  <block id="d186a87b5715922555a4959a0edebfb5" category="inline-link-macro">_보기, 계획 및 분석_ 권한 부여</block>
+  <block id="1dd2a215cce31e07e812222b302e45d0" category="list-text"><block ref="eb47095b3da29cffa9f1ed319e537b9b" category="inline-link-macro-rx"></block> AWS 계정에서 *Explore savings(절약 탐색)* 탭에서 Elastic Block Store(EBS) 및 FSx for Windows 시스템을 감지하고 절약 계산기에서 절약 계산을 표시합니다.</block>
+  <block id="660272dbb31c8ff32feca711ccb2eca8" category="paragraph">_데이터베이스 호스트 생성 권한_을 사용하면 Workload Factory에서 직접 FSx for ONTAP 사용하여 AWS EC2에 새로운 Microsoft SQL 서버를 배포할 수 있습니다. Codebox 창에서 내용을 복사하고 Codebox 방법 중 하나를 사용하여 권장 구성을 배포할 수도 있습니다.</block>
+  <block id="172e8ce3918eb0e11214d418457bac16" category="paragraph">권한이 없으면 Codebox 창에서 콘텐츠를 복사하고 Codebox 방법 중 하나를 사용하여 권장 구성을 배포할 수 있습니다.</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">관련 정보</block>
+  <block id="79e27ec6fe4e85288757fae779bab815" category="inline-link-macro">_운영 및 수정_ 권한 부여</block>
+  <block id="357d9dd76af15c8aaf8f09990a2846a9" category="list-text">당신은해야합니다<block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block> 귀하의 AWS 계정에서.</block>
+  <block id="e356e44b7b0d0cf4b654070dfef04e57" category="section-title">Microsoft SQL Server 리소스에 대한 편집 보호</block>
+  <block id="278b615e41498ce80d2681f3084c99c9" category="paragraph">NetApp Backup and Recovery 에서 이미 보호되고 있는 Microsoft SQL Server 인스턴스와 데이터베이스에 대한 보호 기능을 편집할 수 있습니다. 편집 보호를 사용하면 보호된 SQL Server 인스턴스에 대한 보호 정책이나 일정을 수정할 수 있습니다.</block>
+  <block id="cb7606a7d98f8eb425ed4ccd15723b8d" category="list-text">보호를 편집할 데이터베이스를 찾은 다음 메뉴에서 *보호 편집*을 선택합니다.</block>
+  <block id="a42023de78ebfc0b813130624c220f36" category="paragraph">NetApp Console 의 백업 및 복구로 리디렉션되어 보호 정책이나 일정을 수정할 수 있습니다.</block>
+  <block id="51bf12717b370e03e3310859db67cac6" category="inline-link-macro">권한 정책</block>
+  <block id="4e9dffb84355d8e05d841ef09cb0b14f" category="paragraph">선택하세요<block ref="7cb8f01033b9f51b50ad23ef165f92b6" category="inline-link-macro-rx"></block> 귀하의 요구 사항을 충족하기 위해.</block>
+  <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">권한을 부여하지 않기로 선택하는 경우 Workload Factory for Databases를 사용하여 부분적으로 완성된 코드 샘플을 복사할 수 있습니다.</block>
+  <block id="38c4c72673e051381c12c32e1dd20f50" category="paragraph">권한을 부여하기로 선택한 경우 다음이 필요합니다.<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 여기에는 데이터베이스 및 AI와 같은 워크로드 기능을 선택하고, 필요한 권한에 대한 IAM 정책을 만드는 것이 포함됩니다.</block>
+  <block id="14a812993e30c1769069f1d355d3b4a0" category="paragraph">인스턴스 또는 데이터베이스의 호스트가 인벤토리에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 다음이 필요합니다. <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> 귀하의 AWS 계정에서.</block>
 </blocks>

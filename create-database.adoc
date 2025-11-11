@@ -18,7 +18,7 @@ summary: NetApp Workload Factory for Databases를 사용하여 Microsoft SQL 데
 
 데이터베이스의 스토리지를 분리하려는 경우 _virtual 마운트 지점 _ 을(를) 사용하여 분리할 수 있습니다. 가상 마운트 지점을 사용하여 데이터베이스를 호스트의 몇 가지 공통 드라이브에 통합할 수 있습니다.
 
-워크로드 팩토리에서 데이터베이스를 생성하려면 자동화 모드 권한이 필요합니다. 또는 기본 모드에서 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 워크로드 공장 외부에서 작업을 완료할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["워크로드 팩토리 작동 모드에 대해 알아보십시오"^] 를 눌러 사용할 모드를 결정합니다.
+워크로드 팩토리에서 데이터베이스를 생성하려면 _보기, 계획 및 분석_ 권한이 필요합니다. 또는 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 워크로드 팩토리 외부에서 작업을 완료할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Workload Factory 권한에 대해 알아보세요"^] 어떤 모드를 사용할지 결정하세요.
 
 
 NOTE: SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이스 생성을 지원하지 않습니다.
@@ -26,7 +26,7 @@ NOTE: SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이�
 .시작하기 전에
 새 데이터베이스를 만들기 전에 다음 필수 구성 요소를 완료해야 합니다.
 
-* *자격 증명 및 권한*: 다음이 필요합니다.link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한"^] 워크로드 팩토리에서 새로운 데이터베이스를 생성합니다.
+* *자격 증명 및 권한*: 다음이 필요합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _보기, 계획 및 분석_ 권한"^] Workload Factory에서 새로운 데이터베이스를 생성합니다.
 +
 또는 REST API를 사용하여 워크로드 팩토리 외부에 데이터베이스를 배포할 수 있도록 Codebox를 사용하여 템플릿을 복사할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^]..
 
@@ -39,7 +39,7 @@ NOTE: SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이�
 
 == 데이터베이스를 만듭니다
 
-_빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한으로 워크로드 팩토리에서 이 작업을 완료할 수 있습니다.
+Workload Factory에서 _빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 이 작업을 완료할 수 있습니다.
 
 [role="tabbed-block"]
 ====

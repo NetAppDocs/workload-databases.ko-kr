@@ -49,7 +49,7 @@ Oracle 데이터베이스의 경우:
 
 == 시작하기 전에
 
-* 당신은 있어야합니다 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 읽기/쓰기 권한"^] 데이터베이스 구성을 분석합니다.
+* 당신은해야합니다link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_운영 및 수정_ 권한 부여"^] 귀하의 AWS 계정에서.
 * Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 저장소를 평가하려면 리소스를 Workload Factory에 등록해야 하며 저장소 유형은 FSx for ONTAP 이어야 합니다.link:register-instance.html["리소스 등록 방법을 알아보세요."]
 * 설정이나 구성을 수정하기 전에 각 권장 사항을 주의 깊게 검토하십시오. RSS 및 MAXDOP 설정의 경우 프로덕션 환경을 변경하기 전에 권장 설정을 테스트하여 성능 개선을 확인하는 것이 좋습니다.
 

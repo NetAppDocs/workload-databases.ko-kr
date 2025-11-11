@@ -72,3 +72,20 @@ NetApp Backup and Recovery를 사용하여 보호하려면 SQL Server 인스턴�
 link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-policies-create.html["Microsoft SQL Server 인스턴스와 데이터베이스를 보호하는 정책을 만드는 방법을 알아보세요."^].
 
 관련 정보는 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-mssql-protect-overview.html["백업 및 복구 문서"^] Microsoft SQL Server 작업 부하를 관리합니다.
+
+
+
+== Microsoft SQL Server 리소스에 대한 편집 보호
+
+NetApp Backup and Recovery 에서 이미 보호되고 있는 Microsoft SQL Server 인스턴스와 데이터베이스에 대한 보호 기능을 편집할 수 있습니다. 편집 보호를 사용하면 보호된 SQL Server 인스턴스에 대한 보호 정책이나 일정을 수정할 수 있습니다.
+
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.
+. 데이터베이스 메뉴에서 *인벤토리*를 선택합니다.
+. 인벤토리에서 엔진 유형으로 *Microsoft SQL Server*를 선택합니다.
+. *데이터베이스* 탭을 선택합니다.
+. 보호를 편집할 데이터베이스를 찾은 다음 메뉴에서 *보호 편집*을 선택합니다.
++
+NetApp Console 의 백업 및 복구로 리디렉션되어 보호 정책이나 일정을 수정할 수 있습니다.
+
+

@@ -19,7 +19,7 @@ NetApp Workload Factory for Databases에서 데이터베이스의 샌드박스 �
 .시작하기 전에
 샌드박스 클론을 생성하기 전에 다음 사전 요구 사항을 완료해야 합니다.
 
-* *자격 증명 및 권한*: 다음이 필요합니다.link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _읽기 전용_ 또는 _읽기/쓰기_ 모드 권한"^] Workload Factory에서 샌드박스 복제본을 생성합니다.
+* *자격 증명 및 권한*: 다음이 필요합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 계정 자격 증명 및 _보기, 계획 및 분석_ 권한"^] Workload Factory에서 샌드박스 복제본을 생성합니다.
 +
 또는 Codebox를 사용하여 부분적으로 완성된 템플릿을 복사하거나 완성된 템플릿을 만든 다음 REST API를 사용하여 Workload Factory 외부에서 샌드박스 복제본을 만들 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 자동화에 대해 자세히 알아보십시오"^] .
 
