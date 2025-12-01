@@ -79,14 +79,6 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["Work
 
 
 
-=== Workload Factory의 운영 모드
-
-_기본_, _읽기 전용_, _읽기/쓰기_의 세 가지 운영 모드는 Workload Factory 내부 및 외부에 배포하기 위한 유연한 옵션을 제공합니다. Workload Factory 외부에서 사용할 수 있는 코드 조각을 통해 _기본_ 모드에서 제로 트러스트에서 즉각적인 가치를 얻으세요. _읽기 전용_ 및 _읽기/쓰기_ 모드에서 증분적 신뢰를 통해 증분적 가치를 얻으세요.
-
-자세히 알아보세요 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Workload Factory의 운영 모드"^] .
-
-
-
 == NetApp Workload Factory를 사용하는 도구
 
 다음 도구와 함께 NetApp Workload Factory를 사용할 수 있습니다.
