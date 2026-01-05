@@ -561,7 +561,6 @@
   <block id="5c89f4f6af1a71c2ed6cfac605e94c16" category="paragraph"><block ref="5c89f4f6af1a71c2ed6cfac605e94c16" category="inline-link-macro-rx"></block></block>
   <block id="fd3039d7fbe9d24b3141aca3c62383a2" category="section-title">오버 프로비저닝된 Microsoft SQL Server 라이선스에 대한 평가 및 최적화</block>
   <block id="f90a806c02db45741274868bc065ab90" category="paragraph">이제 비용 절감 계산기는 Enterprise Edition이 Microsoft SQL Server 배포에 필요한지 여부를 평가합니다. 라이센스가 오버 프로비저닝되면 계산기는 다운그레이드를 권장합니다. 데이터베이스를 최적화하여 라이센스를 자동으로 다운그레이드할 수 있습니다.</block>
-  <block id="f319ba887c03b66fa6a83807c78f65e9" category="list-text">데이터베이스 타일에서 * 데이터베이스 인벤토리로 이동 * 을 선택합니다.</block>
   <block id="770dee3f954306dca2e369d2ef823c94" category="section-title">SQL Server 배포 분석</block>
   <block id="1d93f11e5331c46990f076ad4257106e" category="paragraph">이 계산기는 SQL Server 배포에 대한 포괄적인 분석을 수행하여 활용되는 리소스 및 기능이 SQL Server 버전과 적절하게 일치하는지 확인합니다. Standard Edition으로 다운그레이드를 권장하기 전에 계산기가 확인하는 주요 요소와 조건은 다음과 같습니다.</block>
   <block id="a0e3089d312c100208595d685b4104d2" category="list-text">구축 모델</block>
@@ -1354,4 +1353,7 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Ask me AI 어시스턴트 홈페이지 통합</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask me 기능을 사용하면 콘솔을 벗어나지 않고도 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있습니다.</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026년 1월 4일</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다.</block>
+  <block id="1d59c9bea900e36e3d5b9ca53cd55587" category="list-text">메뉴를 선택하세요 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 그런 다음 *데이터베이스*를 선택합니다.</block>
+  <block id="757a7ffb20a279d7239febb013141ad5" category="list-text">메뉴를 선택하세요 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 그런 다음 *저장소*를 선택하세요.</block>
 </blocks>
