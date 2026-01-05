@@ -1351,4 +1351,7 @@
   <block id="ae41853f33cf42c1d6ea60e021ce20b3" category="list-text">*선호하는 조직 단위 경로*: 선택적으로 Active Directory에서 가입할 조직 단위(OU)를 입력합니다.</block>
   <block id="5da5a84735de60ec35b817899791d509" category="list-text">*대상 Active Directory 그룹*: 선택적으로 컴퓨터를 추가할 대상 Active Directory 그룹을 입력합니다.</block>
   <block id="bfcc9fa5a3178fd803540af87a6b6ab7" category="section-title">2025년 12월 18일</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Ask me AI 어시스턴트 홈페이지 통합</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask me 기능을 사용하면 콘솔을 벗어나지 않고도 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있습니다.</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026년 1월 4일</block>
 </blocks>
