@@ -16,7 +16,7 @@ indexpage:
     links:
     - title: 비용 절감 효과를
       url: "/explore-savings.html"
-    - title: 인스턴스 등록
+    - title: 리소스 등록
       url: "/register-instance.html"
     - title: 인스턴스의 잘 설계된 상태를 확인하세요
       url: "/optimize-configurations.html"

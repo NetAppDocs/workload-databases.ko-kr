@@ -103,37 +103,37 @@ Workload Factory는 AWS, NetApp ONTAP, Microsoft SQL Server, Oracle 및 PostgreS
 | 엔진 | 버전 | 운영 체제 | 배포 모델 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2016 | Windows Server 2016 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2016 | Windows Server 2016 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2019 | Windows Server 2016 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2019 | Windows Server 2016 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2022 | Windows Server 2016 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2022 | Windows Server 2016 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2016 | Windows Server 2019 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2016 | Windows Server 2019 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2019 | Windows Server 2019 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2019 | Windows Server 2019 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2022 | Windows Server 2019 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2022 | Windows Server 2019 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2016 | Windows Server 2022 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2016 | Windows Server 2022 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2019 | Windows Server 2022 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2019 | Windows Server 2022 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL Server 2022 | Windows Server 2022 를 참조하십시오 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL Server 2022 | Windows Server 2022 를 참조하십시오 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL 서버 2017 | 어느 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL 서버 2017 | 어느 | FCI, 독립형 
 
 
-| Microsoft SQL Server를 참조하십시오 | SQL 서버 2016, 2017, 2019, 2022 | 어느 | FCI, 단일 인스턴스 
+| Microsoft SQL Server를 참조하십시오 | SQL 서버 2016, 2017, 2019, 2022 | 어느 | FCI, 독립형 
 
 
 | 신탁 | 19c | RHEL, SuSe 리눅스 | 독립형(단일/다중 테넌트) 

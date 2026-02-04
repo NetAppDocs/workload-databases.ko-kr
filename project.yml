@@ -37,7 +37,7 @@ sidebar:
         url: "/create-database-server.html"
       - title: PostgreSQL 서버를 생성합니다
         url: "/create-postgresql-server.html"
-    - title: 인스턴스 관리
+    - title: 리소스 관리
       entries:
       - title: 자원 관리
         url: manage-instance.html
