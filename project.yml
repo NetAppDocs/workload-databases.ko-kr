@@ -40,7 +40,7 @@ sidebar:
     - title: 리소스 관리
       entries:
       - title: 자원 관리
-        url: manage-instance.html
+        url: "/manage-instance.html"
       - title: 리소스 등록
         url: "/register-instance.html"
       - title: 데이터베이스를 만듭니다
