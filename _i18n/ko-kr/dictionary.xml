@@ -1340,11 +1340,8 @@
   <block id="a26f5beb654e47a87608f8a28b573758" category="list-text">FSx for ONTAP 파일 시스템 사용자 이름과 암호를 입력한 다음 * Next * 를 선택합니다.</block>
   <block id="34b2f9d708b57fa0ab164ac81a844832" category="paragraph">FSx for ONTAP 파일 시스템이 인증되면 * 다음 * 을 선택합니다.</block>
   <block id="9ed181f71730a4b981c04369e2f1719e" category="list-text">준비(3단계)에서는 인스턴스가 최소 요구 사항을 충족하는지 확인하십시오.</block>
-  <block id="6b5a6b5bbb8db715d3ff675c1200264b" category="paragraph">최소 요구 사항을 충족하려면 인스턴스에 AWS 및 NetApp PowerShell 모듈과 PowerShell 7 모듈이 설치되어 있어야 하며, 필수 조건 확인에 나열된 기능 중 하나 이상에 대한 필수 조건을 완료해야 합니다. .. 필수 조건은 *필수 조건 확인 보기*에서 확인하세요.</block>
-  <block id="a50f4670050c58a2a08ccc2babd2d5b2" category="paragraph">+ 인스턴스를 등록하려면 *잘 설계된 아키텍처 문제 및 권장 사항 검토*와 같은 단일 기능에 대한 모든 사전 요구 사항을 완료해야 합니다.</block>
   <block id="4aa1b1ff22a8dfe18a969e9e18594ab0" category="list-text">각 기능에 대한 *설정 세부 정보*를 선택하여 기능 사전 요구 사항에 대해 알아보고 화면의 지침에 따라 기능에 대한 누락된 사전 요구 사항을 완료하십시오.</block>
   <block id="d521398ad1462fd891ea513e4855ce5b" category="inline-link-macro">Well-Architected 문제를 검토하고 수정합니다</block>
-  <block id="de1cc997e7f69a895e3fb53fb41d279d" category="paragraph">Workload Factory가 인스턴스에 대해 <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>하도록 하려면 *우수한 아키텍처 문제 및 권장 사항 검토* 및 *우수한 아키텍처 문제 해결* 기능에 나열된 모든 필수 조건을 완료하십시오.</block>
   <block id="f035f450e95801f1197ab2843b43b16a" category="list-text">필수 조건이 완료되면 인스턴스를 *등록*하십시오.</block>
   <block id="9d96bcc0867ec5be17a78fc127af4785" category="paragraph">인스턴스 등록이 시작됩니다. 진행 상황을 확인하려면 *작업 모니터링* 탭을 선택하십시오.</block>
   <block id="efd81ed9168d148e7b33debfd48f5bbe" category="paragraph">인스턴스 등록은 데이터베이스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 또는 여러 데이터베이스를 등록할 수 있습니다.</block>
@@ -1357,9 +1354,12 @@
   <block id="aea7afc9754b2383c56fbbaee6c6009d" category="list-text">준비 단계(3단계)에서는 데이터베이스가 필수 요구 사항을 충족하는지 확인하십시오. 필요한 모든 모듈이 설치되어 있고 필수 요구 사항이 충족되면 *다음*을 선택하여 데이터베이스를 등록하십시오. 그렇지 않으면 다음 단계를 따르십시오.</block>
   <block id="1717c98238cd6bd4091f92979d40a891" category="list-text">*사전 요구 사항 확인 보기*에서 사전 요구 사항을 검토하십시오.</block>
   <block id="3f4c61df91a8ed4b5fc7622369d6e56d" category="paragraph">데이터베이스를 등록하려면 *Review well-architected issues and recommendations*와 같은 단일 기능에 대한 모든 필수 조건을 완료해야 합니다.</block>
-  <block id="7a38e7578edd4ba664ee05634d9ac39e" category="paragraph">데이터베이스에 대해 Workload Factory가 <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>하도록 하려면 *잘 설계된 아키텍처 문제 및 권장 사항 검토* 및 *잘 설계된 아키텍처 문제 해결* 기능에 나열된 모든 필수 조건을 완료하십시오.</block>
   <block id="9e7001c2bb163521a51de7186846104e" category="list-text">필수 구성 요소가 완료되면 데이터베이스를 *등록*하십시오.</block>
   <block id="aece37c900cf74271d49a4aec3628d66" category="paragraph">데이터베이스 등록이 시작됩니다. 진행 상황을 추적하려면 *작업 모니터링* 탭을 선택하십시오.</block>
   <block id="e6437d0fab94a9cc41e9fc0354b23716" category="section-title">2026년 2월 2일</block>
   <block id="ecd36d02576c4fe28ab61b5c14fa69c4" category="sidebar">리소스 관리</block>
+  <block id="5dd712766e41aed3df90d60e36279568" category="paragraph">최소 요구 사항을 충족하려면 인스턴스에 AWS 및 NetApp PowerShell 모듈과 PowerShell 7 모듈이 설치되어 있어야 하며, 필수 조건 확인에 나열된 기능 중 하나 이상에 대한 필수 조건을 완료해야 합니다.</block>
+  <block id="4f04ccc3925b5039da28842c277cda6c" category="paragraph">인스턴스를 등록하려면 *Review well-architected issues and recommendations*와 같은 단일 기능에 대한 모든 필수 조건을 완료해야 합니다.</block>
+  <block id="747eccfe479b7957e243e10257e40143" category="paragraph">인스턴스에 Workload Factory<block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>를 사용하려면 *우수한 아키텍처 문제 및 권장 사항 검토* 및 *우수한 아키텍처 문제 해결* 기능에 나열된 모든 필수 조건을 완료하십시오.</block>
+  <block id="7fa2af2634cfeecc9f90ce75c17fad3f" category="paragraph">데이터베이스에 대해 Workload Factory <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>를 사용하려면 *우수한 아키텍처 문제 및 권장 사항 검토* 및 *우수한 아키텍처 문제 해결* 기능에 나열된 모든 필수 조건을 완료하십시오.</block>
 </blocks>
