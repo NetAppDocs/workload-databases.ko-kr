@@ -475,9 +475,7 @@
   <block id="b68e42fa600661a13849ea15c997cea3" category="paragraph">시스템과 FSx for ONTAP(사용자 정의 및 감지)의 비용을 비교할 때 두 가지 계산기 옵션을 사용할 수 있습니다.</block>
   <block id="0e98c2470a9fecd3035980d6c9bd5dfe" category="section-title">감지된 호스트에 대한 절약 효과를 탐색합니다</block>
   <block id="bd0005565e08b9807da651535d09e628" category="inline-xref">맞춤화를 통한 절감 효과를 살펴보십시오</block>
-  <block id="3f1c1b5d06b7f8c588cd928fa1ac5e90" category="list-text">절약 효과 계산기에서 EBS 스토리지의 클론 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.</block>
   <block id="60d184cc6fb4054879723de86764a020" category="list-text">선택적으로 절감 계산기에서 FSx for Windows 스토리지의 클론(섀도 복사본) 및 스냅샷에 대한 다음 세부 정보를 제공하여 비용 절감 효과를 더욱 정확하게 추정할 수 있습니다.</block>
-  <block id="c552646e3717f4144059bd229d9b3c96" category="paragraph">Windows용 FSx 섀도 복사본이 감지되면 기본값은 * Daily * 입니다. 섀도 복사본이 감지되지 않으면 기본값은 * 스냅샷 빈도 없음 * 입니다.</block>
   <block id="724d4c3a0255dd97a61657dd67fdf48f" category="list-text">* 복제된 복사본 수 *: Windows용 FSx 구성에 복제된 복사본 수를 입력합니다.</block>
   <block id="021cd7b44c92e0977eee47344e7f4a7b" category="list-text"><block ref="d2c8dc6d0833da0998d37357f2d65fca" prefix="" category="inline-code"></block></block>
   <block id="afe3dddd43fed2e0f76617fa08ab254a" category="list-text"><block ref="078aab7ae8c1a0df339ac8525790d5e1" prefix="" category="inline-code"></block></block>
@@ -562,14 +560,12 @@
   <block id="fd3039d7fbe9d24b3141aca3c62383a2" category="section-title">오버 프로비저닝된 Microsoft SQL Server 라이선스에 대한 평가 및 최적화</block>
   <block id="f90a806c02db45741274868bc065ab90" category="paragraph">이제 비용 절감 계산기는 Enterprise Edition이 Microsoft SQL Server 배포에 필요한지 여부를 평가합니다. 라이센스가 오버 프로비저닝되면 계산기는 다운그레이드를 권장합니다. 데이터베이스를 최적화하여 라이센스를 자동으로 다운그레이드할 수 있습니다.</block>
   <block id="770dee3f954306dca2e369d2ef823c94" category="section-title">SQL Server 배포 분석</block>
-  <block id="1d93f11e5331c46990f076ad4257106e" category="paragraph">이 계산기는 SQL Server 배포에 대한 포괄적인 분석을 수행하여 활용되는 리소스 및 기능이 SQL Server 버전과 적절하게 일치하는지 확인합니다. Standard Edition으로 다운그레이드를 권장하기 전에 계산기가 확인하는 주요 요소와 조건은 다음과 같습니다.</block>
   <block id="a0e3089d312c100208595d685b4104d2" category="list-text">구축 모델</block>
   <block id="9c67ec91896556f3bd46fddd92093d04" category="list-text">이 계산기는 배포 모델과 Enterprise Edition이 필요한지 여부를 평가합니다.</block>
   <block id="1ca7013158d8416bb0a3239a9a7e8910" category="list-text">할당된 자원</block>
   <block id="9812aa4803326e6a5401134b4e94a3d3" category="list-text">계산기는 다음 라이선스에 따라 할당된 리소스의 상태를 평가합니다.</block>
   <block id="509a14e7eed7c8c8d42162d9af93a1ec" category="list-text">엔터프라이즈 기능 사용</block>
   <block id="4fdb074e0b83810d198c8cb5f3b2752e" category="list-text">계산기는 다음과 같은 Enterprise 기능이 사용 중인지 확인합니다.</block>
-  <block id="931f2fcd53e5a10ccfc806cb89a2b27c" category="paragraph">평가된 SQL Server 인스턴스가 위의 Enterprise 기능을 사용하지 않고 리소스 제한을 충족하는 경우 계산기는 라이선스를 Standard Edition으로 다운그레이드하는 것이 좋습니다. 이 권장 사항은 성능 또는 기능을 저하시키지 않고 SQL Server 라이센싱 비용을 최적화하는 데 도움이 됩니다.</block>
   <block id="5f08a8bbfa89b18958e70a8c6cbc44c3" category="paragraph">데이터베이스는 작업 진행 상황을 추적하고 장애가 발생할 경우 진단 및 문제를 해결할 수 있도록 작업 모니터링을 제공합니다. 유형 및 상태별로 작업을 필터링하고, 검색 기능을 사용하여 작업을 찾고, 작업 테이블을 다운로드할 수 있습니다.</block>
   <block id="5ade2a57e46cf328c900013574754aa9" category="list-text">작업 모니터링 기능은 _in progress_,_completed_,_completed with issions_, _failed_jobs 일별, 주별, 격주 및 월별로 추적합니다.</block>
   <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025년 1월 6일</block>
@@ -578,8 +574,6 @@
   <block id="a61ebf6aa74399e268808d3801b03702" category="section-title">컴퓨팅 적정 사이징 최적화</block>
   <block id="f72f493648b25528319887c50a65f0ce" category="inline-link-macro">Amazon Elastic Compute Cloud 설명서</block>
   <block id="bd5d7b32e4164faa655582f169744a05" category="paragraph">특정 인스턴스 유형으로 변경할 때 네트워크 구성이 재설정될 수 있으며, 이로 인해 최적화 중에 노드 연결이 실패하고 작업이 실패할 수 있습니다. DNS 설정 및 iSCSI 세션을 확인하고 업데이트하려면 수동 개입이 필요할 수 있습니다. EC2 크기 조정 제한에 대한 자세한 내용은 을 <block ref="b8406a09c509d5c1d937367114bd51b3" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="efc2466e55cc45101064c2ade9e1ac96" category="doc">온프레미스 데이터베이스 환경 비용 분석 및 마이그레이션 계획</block>
-  <block id="b070dbce75db746d44b4965253ae3c9f" category="paragraph">이제 데이터베이스를 위한 BlueXP  워크로드 팩토리에서는 Amazon FSx for NetApp ONTAP으로 온프레미스 데이터베이스 마이그레이션을 계획하고 분석합니다. 절감 계산기를 사용하여 클라우드에서 온프레미스 데이터베이스 환경을 실행하는 비용을 예측하고 온프레미스 데이터베이스 환경을 클라우드로 마이그레이션하기 위한 권장사항을 검토할 수 있습니다.</block>
   <block id="ae5954c9b41b0bfb09043a4117743d2d" category="inline-link-macro">온프레미스 데이터베이스 환경의 비용 절감 효과를 살펴보십시오</block>
   <block id="9621b726ce4b31f0b7bc139a85ef6f38" category="paragraph"><block ref="9621b726ce4b31f0b7bc139a85ef6f38" category="inline-link-macro-rx"></block></block>
   <block id="6003a521aa2fb4eca1577921d2f2d6ec" category="section-title">데이터베이스에 대한 새로운 최적화 평가</block>
@@ -590,12 +584,6 @@
   <block id="7c2632b8df180cfa1528450b19070928" category="paragraph"><block ref="7c2632b8df180cfa1528450b19070928" category="inline-link-macro-rx"></block></block>
   <block id="5e73d91731c9445e9a0cc34e1969976a" category="summary">Amazon EBS(Elastic Block Store), FSx for Windows File Server 및 SQL Server 온프레미스 데이터베이스 스토리지를 FSx for ONTAP 스토리지와 비교하십시오.</block>
   <block id="7cf65e2ff3a983e2d864a8b1c64765f1" category="open-title">Microsoft SQL Server 온프레미스</block>
-  <block id="979b029ad875506edc5721a6a441e313" category="list-text">SQL Server 온-프레미스 탭에서 스크립트를 다운로드하여 온-프레미스 SQL Server 환경을 평가합니다.</block>
-  <block id="2840f80705232625a2e7a961c5ae7c57" category="inline-image-macro">SQL Server 온-프레미스 탭의 스크린샷은 평가 스크립트를 다운로드하는 옵션을 보여 줍니다.</block>
-  <block id="43b057dd7af35e065506e3e9c40e69b5" category="paragraph"><block ref="43b057dd7af35e065506e3e9c40e69b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="11bfb2872e63a5ed545dd1a42c50ca27" category="list-text">SQL Server 호스트에서 스크립트를 실행합니다.</block>
-  <block id="e4784aa5341ea2989d2193e58d7d7f6d" category="inline-image-macro">SQL Server 온-프레미스 탭의 스크린샷은 평가 스크립트를 업로드하는 옵션을 보여 줍니다.</block>
-  <block id="2b894f40697fe51db0b06a9bf9f9a2a1" category="paragraph"><block ref="2b894f40697fe51db0b06a9bf9f9a2a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48d937e7fd66ff674c2cb93c60660383" category="list-text">Savings Calculator에서 온-프레미스 호스트의 지역을 선택합니다.</block>
   <block id="222ef17ae6eab247553156232cd650e1" category="list-text">보다 정확한 결과를 얻으려면 컴퓨팅 정보 및 스토리지 및 성능 세부 정보를 업데이트하십시오.</block>
   <block id="b0398f49dbe9d04be8ddd17378899545" category="list-text">필요에 따라 온프레미스 데이터베이스 환경의 클론(섀도 복사본) 및 스냅샷에 대한 다음과 같은 세부 정보를 제공하여 비용 절감 효과를 보다 정확하게 추정할 수 있습니다.</block>
@@ -607,7 +595,6 @@
   <block id="8e29c0a71b0719e3f6ed28d4a7c0b30d" category="paragraph">둘 이상의 SQL Server 인스턴스에 대한 대량 최적화는 ONTAP 구성 및 OS 구성에 지원되지 않습니다.</block>
   <block id="7dd6090f4d4627220763b41db74bb898" category="section-title">온프레미스 비용 절감 계산</block>
   <block id="9fb10d1d0413bc062aa3f807aa200e53" category="paragraph">Microsoft SQL Server 온-프레미스 스토리지에 대한 볼륨 크기의 비용 및 비율 절감 계산은 고려하지 않습니다.</block>
-  <block id="79dda14ccc601407ccb09f0fe3d93259" category="paragraph">EC2 인스턴스의 모든 아웃바운드 연결에 프록시 서버를 사용하는 경우 관리 작업이 작동하도록 다음 도메인에 대한 액세스를 허용해야 합니다.</block>
   <block id="4bd2e14395b83906b0838bbcc78df388" category="list-text"><block ref="3e51061ec4171070ff2ffdabfbd63cc3" prefix="" category="inline-code"></block></block>
   <block id="9b6e1103f46b83b38494e5b294e2c410" category="list-text"><block ref="c1eaf26c3b755ad5252456a5d3f34a2f" prefix="" category="inline-code"></block></block>
   <block id="f57c49a06b4a8a20d9a723cd677b9655" category="inline-link-macro">PostgreSQL 서버를 생성합니다</block>
@@ -628,7 +615,6 @@
   <block id="d2eadd2943100e3e5ea25460fadf93c2" category="list-text">새로운 FSx for ONTAP 파일 시스템의 경우 새 보안 그룹이 생성되어 SQL 노드에 연결됩니다. 기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 PostgreSQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다.</block>
   <block id="6040bb4a85eec1c3be0e69ac393a4c24" category="paragraph-title">모든 데이터베이스 작업 부하에 대한 잠재적 절감 효과</block>
   <block id="14e0ba144c9ea737e00075f15ba92914" category="paragraph-title">비용 절감 계산기</block>
-  <block id="b9c1a7494e47e88c73ed9177dac50512" category="paragraph">절감 계산기를 활용하여 FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드를 실행하는 다양한 비용 구성요소를 EBS(Elastic Block Store), FSx for Windows File Server, 온프레미스 스토리지와 비교할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 파일 시스템이 데이터베이스 워크로드에 가장 비용 효율적이라는 것을 알 수 있습니다.</block>
   <block id="34bd0eb13cbfc5b3e75abc9ef37d28a9" category="inline-xref">계산기 사용 방법에 대해 알아보십시오.</block>
   <block id="59bc614ceb0bb98400319eb2b4ed0194" category="paragraph">이 계산기에는 이러한 Microsoft SQL Server의 데이터베이스 워크로드용 스토리지가 FSx for ONTAP 파일 시스템을 사용할 경우 비용이 덜 드는지 여부가 표시됩니다. <block ref="3b1f4baa69b6d987101aa81b90456625" category="inline-xref-macro-rx"></block></block>
   <block id="726827e3f779b11768c209a653ef0f0e" category="paragraph"><block ref="726827e3f779b11768c209a653ef0f0e" category="inline-image-macro-rx" type="image"></block></block>
@@ -689,19 +675,7 @@
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">사용 권한 용어가 업데이트되었습니다</block>
   <block id="2d07fc9146d02690dffeffa52fbd2ec4" category="list-text">온프레미스 호스트 제거</block>
   <block id="c5d0b906e655aeb0e712fdc99742d179" category="list-text">클론 정리의 경우 새로 고치거나 삭제할 클론 데이터베이스(샌드박스)를 선택합니다.</block>
-  <block id="0cdf26a09e8e4cde6653e44f4abd73fb" category="doc">데이터베이스 구성 분석을 연기하거나 해제합니다</block>
-  <block id="77df5d7dfd76cd0e6a1a7a837c509672" category="paragraph">불필요한 경고와 부정확한 최적화 결과를 방지하기 위해 데이터베이스 환경에 적용되지 않는 특정 데이터베이스 구성 분석을 연기하거나 무시합니다. 연기되거나 무시된 구성 해석을 언제든지 다시 활성화할 수 있습니다.</block>
-  <block id="8a219fba8bbd202ad1f7a47267ff5a2d" category="list-text">* 30일 연기 *: 분석을 연기하면 30일 동안 분석이 중지됩니다. 30일이 지나면 분석이 자동으로 다시 시작됩니다.</block>
-  <block id="71e07950d625dfcf829cac7019fb6f26" category="list-text">* Dismiss * : 분석을 해제하면 분석이 무기한 연기됩니다. 필요한 경우 분석을 다시 시작할 수 있습니다.</block>
-  <block id="43d86b2167e8a3464a552ee706d46d88" category="paragraph-title">연기합니다</block>
-  <block id="38d07dc1916e6ca30a9f936368828d18" category="paragraph">구성 분석을 30일간 중지할 수 있습니다. 30일이 지나면 분석이 자동으로 다시 시작됩니다.</block>
-  <block id="8dca288df860b62f4b631d87b4320f91" category="paragraph">구성 분석이 30일 동안 중지됩니다.</block>
-  <block id="c8a59e7135a20b362f9c768b09454fdb" category="paragraph-title">해제</block>
-  <block id="26765b6cc82b68114c879d49f83b0e5a" category="paragraph">구성 분석을 무기한으로 중지하려면 해제 를 사용합니다. 필요한 경우 분석을 다시 시작할 수 있습니다.</block>
   <block id="bfc2ef5a56455cfacfde13cf1612e36b" category="paragraph">구성 분석이 중지됩니다.</block>
-  <block id="8e88e8d3ce1694ab82d525e91ae7c572" category="paragraph-title">재활성화</block>
-  <block id="54a679b97854ca1a358ef23dc83cfce6" category="paragraph">연기되거나 해제된 구성 분석을 언제든지 다시 활성화합니다.</block>
-  <block id="f01282bfdabc9c97224d922f36d898b8" category="paragraph">구성 분석이 다시 활성화되고 매일 앞으로 이동합니다.</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025년 5월 4일</block>
   <block id="905bc3578e603008d83976307778ddcc" category="list-text">인스턴스 유형 권장 사항을 받고 비용 정확도를 높이려면 다음을 수행하세요.</block>
   <block id="10d9194778791c152af2c0be1806e0b1" category="list-text">Amazon CloudWatch 및 AWS Compute Optimizer 권한을 부여합니다.</block>
@@ -727,10 +701,7 @@
   <block id="d3379f7eb15b947ec99d4daad00317b3" category="list-text"><block ref="d3379f7eb15b947ec99d4daad00317b3" category="inline-link-macro-rx"></block></block>
   <block id="c4363ade7c2d208d79dee9b60bc51922" category="doc">워크로드 팩토리에서 잘 설계된 데이터베이스 구성을 구현합니다.</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">분석 대상</block>
-  <block id="663c686f4608ad8e700ed1cd99a57fcc" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 주의 깊게 검토하십시오. RSS 및 MAXDOP 설정의 경우 프로덕션 환경을 변경하기 전에 권장 설정을 테스트하여 성능 개선을 확인하는 것이 좋습니다.</block>
-  <block id="55900adb296775523b32b30486b0de17" category="admonition">해결 프로세스로 인해 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성을 수정하기로 결정하기 전에 권장 사항을 주의 깊게 검토하세요.</block>
   <block id="8cdf23f9dd4f98a6b709a0a9d53ecd88" category="paragraph">구성 문제를 범주, 하위 범주, 상태, 심각도 및 태그별로 필터링할 수 있습니다.</block>
-  <block id="dd78deb6ef5fa791112d358b2eccdf97" category="paragraph">*PDF 내보내기*를 선택하면 조사 결과 보고서를 다운로드할 수도 있습니다.</block>
   <block id="f73028254f9c4297e3f60654068105e0" category="list-text">드롭다운 화살표를 선택하여 모든 구성에 대한 권장 사항을 확인합니다. 권장 사항에는 모범 사례, 최적화되지 않은 구성의 잠재적 함정, 중요 고려 사항 등이 포함됩니다. 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="dae891145ffbf1b1653fc3da2a87faac" category="list-text">옵션이 제공되는 경우 구성 문제를 *보고 수정*하도록 선택합니다.</block>
   <block id="45b5dce37159255d07342e3102124571" category="list-text">구성 문제를 해결하려면 * 계속 * 을 선택하십시오.</block>
@@ -859,19 +830,15 @@
   <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">구성 문제 해결</block>
   <block id="1c6128cdb2d10cb97e9f36f037cb4ceb" category="paragraph">FSx for ONTAP 스토리지에서 실행되는 SQL Server 또는 Oracle 환경의 구성 문제를 해결합니다.</block>
   <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">수정 프로세스로 인해 인스턴스 가동 중지나 서비스 중단이 발생할 수 있습니다.  구성 문제를 해결하기로 결정하기 전에 권장 사항을 주의 깊게 검토하세요.</block>
-  <block id="bfa392944d88404ace768c77a2975abf" category="paragraph">구성 수준 및 SQL Server 인스턴스 또는 Oracle 데이터베이스 수준에서 구성 분석을 연기, 해제 및 다시 활성화할 수 있습니다.</block>
-  <block id="450fabb8226fa1a89909f2bc792a37e5" category="paragraph">다음 지침에서는 구성 수준에서 분석을 연기, 취소 또는 다시 활성화하는 방법을 설명합니다.  특정 SQL Server 인스턴스나 Oracle 데이터베이스에 대해 다음 작업을 완료하려면 *대시보드* 탭에서 시작하세요.</block>
   <block id="4c7f98dd35929abb47ec47b5961e9ca4" category="paragraph">완전한 데이터베이스 환경 분석을 위해서는 리소스를 등록하고 온라인 상태로 유지해야 합니다.</block>
   <block id="aed8a618f1e8a1dc325945b821521d6c" category="paragraph"><block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="15e4986095a476a300a86c98e005c03f" category="list-text">메시지가 표시되면 관리자 권한이 있는 Windows 자격 증명을 제공합니다.</block>
-  <block id="6e3efb52bfff9a14482d677371391920" category="paragraph">외부 연결 없이 개인 네트워크에 인스턴스(SQL Server) 또는 데이터베이스(Oracle)를 등록하려면 다음 엔드포인트가 SQL Server가 있는 서브넷과 연결되어 있는 VPC에서 사용 가능해야 합니다.  인터페이스 엔드포인트가 연결된 보안 그룹에서 포트 443을 허용하는지 확인하세요.</block>
   <block id="0670483b9d94213fd07ca4df3baae2eb" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block>(SQL 서버)</block>
   <block id="6da87aebc1358666c2653e7d0852ee63" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block>(SQL 서버)</block>
   <block id="968e1e1e0d9bdbc5d123e7fe52928ccf" category="list-text">*인스턴스* 탭을 선택합니다.</block>
   <block id="574cb46655ea85708805d607e35d7b2e" category="list-text">단일 인스턴스 또는 여러 인스턴스를 등록할지 선택하세요.</block>
   <block id="2be3766a7781349eb1b5afffac277a87" category="section-title">Oracle 데이터베이스 등록</block>
   <block id="b1260d7204d7a54ec6aa4f9cebcb5433" category="list-text">단일 데이터베이스 또는 여러 데이터베이스를 등록할지 선택하세요.</block>
-  <block id="20adcf70350935fa6bdc7751bbf6442d" category="paragraph">리소스 등록 후 다음 작업을 수행할 수 있습니다.</block>
   <block id="c2b1e7ce1a2b40c91ad25a11bc6b9258" category="list-text">인벤토리에서 데이터베이스 보기</block>
   <block id="07071ae7b2f725f2cea50ff565939a5e" category="list-text"><block ref="07071ae7b2f725f2cea50ff565939a5e" category="inline-link-macro-rx"></block></block>
   <block id="acf0646ef57dc0492b63959fc34cdc91" category="inline-link-macro">데이터베이스 복제본 만들기(샌드박스)</block>
@@ -985,15 +952,9 @@
   <block id="e91df2086570d35902c167d64feb1a17" category="list-text">등록을 취소하려는 리소스를 찾은 다음 작업 메뉴를 선택하고 *등록 취소*를 선택합니다.</block>
   <block id="ed3b0a0e4302f7b2d136fab3b16aa821" category="doc">NetApp Workload Factory for Databases에서 절감 혜택을 살펴보세요</block>
   <block id="da04ea76e1caee6b818a505ce02fa93b" category="paragraph">Amazon Elastic Block Store(EBS), FSx for Windows File Server 및 온프레미스 스토리지와 FSx for ONTAP 스토리지를 사용하여 Microsoft SQL Server를 사용하는 비용을 비교하여 데이터베이스 워크로드에 대한 NetApp Workload Factory for Databases의 절감 효과를 알아보세요.</block>
-  <block id="b0dc0ddc3b447df040e0e8762a14c68c" category="paragraph">Workload Factory에서는 대시보드, 인벤토리 탭, 탐색 절감 탭을 통해 Amazon Elastic Block Store(EBS), FSx for Windows File Server 및 온프레미스 스토리지에서 실행되는 데이터베이스 워크로드에 대한 절감 효과를 알아볼 수 있는 여러 가지 방법을 제공합니다.  어떤 경우든, 절감 계산기를 사용하면 FSx for ONTAP 파일 시스템에서 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이선스, 스냅샷, 복제본과 같은 Microsoft SQL Server 워크로드를 실행하는 데 드는 다양한 비용 구성 요소를 Elastic Block Store(EBS), FSx for Windows File Server, 온프레미스 스토리지와 비교할 수 있습니다.</block>
-  <block id="a4e51d52bc464b022375b8780b342f79" category="paragraph">Workload Factory에서 FSx for ONTAP 파일 시스템에서 이러한 워크로드를 실행하면 비용을 절감할 수 있다고 판단하는 경우 Workload Factory 콘솔의 절감 계산기에서 직접 FSx for ONTAP 통해 Microsoft SQL을 배포할 수 있습니다.  Elastic Block Store, FSx for Windows File Server 또는 온프레미스 스토리지를 통해 여러 Microsoft SQL Server 인스턴스가 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.</block>
-  <block id="9c987d520f60a3366527c3f40f808979" category="paragraph">FSx for ONTAP 에서 모든 데이터베이스 워크로드를 실행함으로써 얻을 수 있는 잠재적 비용 절감에 대한 개요를 확인하려면 Workload Factory 콘솔의 데이터베이스 *대시보드*를 방문하세요.  *잠재적 절감* 타일에서는 Elastic Block Store와 FSx for Windows File Server에서 처리 중인 모든 데이터베이스 워크로드 수, 잠재적 비용 절감액, 절감 비율, 막대 그래프의 시각적 표현을 볼 수 있습니다.</block>
   <block id="e123e8395730b190f146babf1b2d52a4" category="inline-image-macro">Workload Factory 콘솔의 데이터베이스 대시보드에서 잠재적 절감 타일을 스크린샷으로 보여 줍니다.  잠재적 절감 타일은 Elastic Block Store와 FSx for Windows File Server에서 수행하는 모든 데이터베이스 워크로드 수, 잠재적 비용 절감액, 절감 비율, 막대 그래프의 시각적 표현을 보여줍니다.</block>
   <block id="092e04ebb92f098a8d23a32d9a42e747" category="paragraph"><block ref="092e04ebb92f098a8d23a32d9a42e747" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5af3e73361e966fe2adc79aadc34d57" category="paragraph">Workload Factory는 감지된 Elastic Block Store와 FSx for Windows File Server 호스트 특성을 입력하여 자동으로 절감 효과를 알아볼 수 있도록 해줍니다.</block>
-  <block id="8792c25f641e40dfbd968350e410bed0" category="paragraph">Workload Factory가 EBS 호스트를 감지하면 '절약 탐색' 탭으로 리디렉션됩니다.  Workload Factory가 EBS 호스트를 감지하지 못하면 계산기로 리디렉션됩니다.<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block> .</block>
-  <block id="7ca6391eb61738d8b33e189705bb5857" category="paragraph">Workload Factory가 Windows 호스트용 FSx를 감지하면 '절약 탐색' 탭으로 리디렉션됩니다.  Workload Factory가 Windows 호스트용 FSx를 감지하지 못하면 계산기로 리디렉션됩니다.<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block> .</block>
-  <block id="b5745d8b2f6a0cf9cddb7bbb1fed3157" category="list-text">Workload Factory의 SQL Server 온-프레미스 탭에 스크립트 출력을 업로드합니다.</block>
   <block id="b9382a492febc168d96a9e8228ee319f" category="paragraph">온프레미스 호스트에서 Microsoft SQL Server에 대한 비용 절감을 살펴본 후 Workload Factory에서 온프레미스 호스트 레코드를 제거할 수 있습니다.  Microsoft SQL Server 온프레미스 호스트의 작업 메뉴를 선택한 다음 *삭제*를 선택합니다.</block>
   <block id="1dbb11b39a311ecc5e8a64d372008d84" category="admonition">Workload Factory는 여러 개의 FSx for ONTAP 파일 시스템을 저장하거나 생성하는 것을 지원하지 않습니다.</block>
   <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp 다양한 방법으로 Workload Factory와 클라우드 서비스에 대한 지원을 제공합니다. 지식 기반(KB) 문서와 커뮤니티 포럼 등 광범위한 무료 셀프 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
@@ -1092,12 +1053,9 @@
   <block id="58ee6063aaed57090a82d5cfa901a882" category="summary">NetApp Workload Factory for Databases는 Microsoft SQL Server 구성을 스캔하여 운영상의 우수성을 달성하는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
   <block id="04b3e1206245453c778ab6cffd793ea7" category="inline-link-macro">Workload Factory의 구성 분석과 잘 설계된 상태에 대해 알아보세요.</block>
   <block id="9198e3a1fac406d0bf2e8a31d569e09c" category="paragraph"><block ref="9198e3a1fac406d0bf2e8a31d569e09c" category="inline-link-macro-rx"></block></block>
-  <block id="1d8f9be49aaafb6902357ae957cf2900" category="paragraph">Workload Factory는 매일 데이터베이스 구성을 분석합니다.  일일 분석은 잘 설계된 상태, 통찰력 및 권장 사항을 제공하며 구성 문제를 자동으로 해결하는 옵션을 통해 구성이 모범 사례를 충족하도록 합니다.</block>
-  <block id="15ff0edfa22106f59b2d6897f5c93ff7" category="paragraph">Workload Factory 콘솔 내의 데이터베이스 인벤토리에서 구성 문제에 대한 권장 사항을 검토하고 해당 문제를 해결할 수 있는 옵션이 있습니다.</block>
   <block id="61ee1dd5e668df870f53e81aa15e3813" category="paragraph">Workload Factory는 다음 구성의 잘 설계된 상태를 분석합니다.</block>
   <block id="b8995cc72a69581d30a1bda023cdd963" category="list-text">복제본: Workload Factory 내부 또는 외부에서 생성되어 60일 이상 된 복제본(샌드박스)을 새로 고치고 삭제하는 옵션이 포함되어 있습니다.</block>
   <block id="7ad2228e24b645ace87b19a4d0e1ea84" category="list-text">저장소 레이아웃: 리두 로그 배치, 임시 테이블스페이스 배치, 데이터 파일 배치, 아카이브 로그 배치, 제어 파일 배치 및 바이너리 배치, ASM 디스크 그룹 LUN 수 포함</block>
-  <block id="d8e924feff88175a3a6e329d7a242ef9" category="list-text">Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 저장소를 평가하려면 리소스를 Workload Factory에 등록해야 하며 저장소 유형은 FSx for ONTAP 이어야 합니다.<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="bf2b2769ceeef90639022670d2ded3af" category="list-text">*인벤토리*에서 엔진 유형을 선택합니다: Microsoft SQL Server 또는 Oracle.</block>
   <block id="97dc4b0ba577b7da6dfbf77719b88d70" category="list-text">특정 구성에 맞게 수정할 리소스를 선택합니다.</block>
   <block id="0c173783cbcf5f1b41a4b4c810a55a8a" category="list-text">Microsoft SQL Server를 선택한 경우 *인스턴스* 탭을 선택합니다.</block>
@@ -1106,11 +1064,9 @@
   <block id="0a54f15a678a47b48d82268f86efdc99" category="list-text">복제본을 새로 고치면 소스 데이터베이스와 동기화됩니다.  새로 고침은 Workload Factory에서 생성된 복제본에만 사용할 수 있습니다.</block>
   <block id="f842fe7ac3d7da41d936288b414e6598" category="list-text">복제본을 삭제하면 영구적으로 제거되고, 저장 공간이 확보되며, 비용이 절감됩니다.  Workload Factory 내부 및 외부에서 생성된 복제본을 삭제할 수 있습니다.</block>
   <block id="74d409755480cc932aeaf23b6f09b823" category="paragraph">Workload Factory가 문제 해결을 시작합니다.  작업 상태를 보려면 *작업 모니터링* 탭을 선택하세요.</block>
-  <block id="8e2ad9a1989936828c220859a77a615f" category="paragraph">데이터베이스 구성에 대한 애플리케이션 요구 사항은 다양합니다.  Workload Factory는 특정 데이터베이스 구성에 대한 분석을 건너뛰고 관련 문제만 모니터링하고 관련 구성의 상태를 정확하게 파악할 수 있는 두 가지 옵션을 제공합니다.  특정 구성 분석이 연기되거나 무시되면 해당 구성은 전체 최적화 점수에 포함되지 않습니다.</block>
   <block id="6aaef09cae74be9963dbe52f3f3d7ac1" category="list-text">인벤토리에서 데이터베이스 엔진 유형을 선택합니다: *Microsoft SQL Server* 또는 *Oracle*.</block>
   <block id="3171f14b71a4811069dc6e060c1f9f7a" category="list-text">연기할 구성이 있는 SQL Server 인스턴스나 Oracle 데이터베이스로 이동한 다음, 작업 메뉴를 선택하고 *Well-architected*를 선택합니다.</block>
   <block id="ca7509f05b7eb996cdb457d74197634c" category="list-text">Well-architected 분석 페이지에서 연기할 구성까지 아래로 스크롤하고 작업 메뉴를 선택한 다음 *해제*를 선택합니다.</block>
-  <block id="ac4005750f183c3470bff91188e0ceb5" category="list-text">구성 해제 대화 상자에서 *30일 연기*를 선택한 다음 *해제*를 선택합니다.</block>
   <block id="a1d71d2f9c80113890561cab6b64ffa1" category="list-text">해제 구성 대화 상자에서 *해제* 옵션을 선택한 다음 *해제*를 선택하여 해제를 확인합니다.</block>
   <block id="51bbd388cda4367b34d6dc50a5e134a5" category="list-text">Well-architected 분석 페이지에서 *해제된 구성*을 선택하면 해제된 구성만 표시됩니다.</block>
   <block id="bc4a349f7f95e73490c3e2f8aaabe892" category="list-text">연기되거나 취소된 구성에 대한 구성 분석을 다시 시작하려면 *다시 활성화*를 선택합니다.</block>
@@ -1153,7 +1109,6 @@
   <block id="5c312d6e56cb086ef38ed7860931fe1c" category="summary">NetApp Workload Factory for Databases에서 리소스 상태, 리소스 활용도, 보호 및 스토리지 성능을 모니터링할 수 있도록 리소스를 등록합니다.</block>
   <block id="ec1098eb54d9b05cc1e929562eb8d30d" category="doc">NetApp Workload Factory for Databases에 리소스 등록</block>
   <block id="0bc907adb7562b30973df586f142f009" category="paragraph">NetApp Workload Factory for Databases에서 인스턴스 및 데이터베이스 상태, 리소스 활용도, 보호 및 스토리지 성능을 모니터링할 수 있도록 Microsoft SQL Server 및 Oracle 데이터베이스의 인스턴스를 등록합니다.</block>
-  <block id="3774c3fd6b6e5830079da1f94d3f1872" category="admonition">Workload Factory는 Microsoft SQL Server 인스턴스와 Oracle 데이터베이스 등록 및 관리만 지원합니다.  Workload Factory에서 선택한 AWS 계정 자격 증명에 따라 PostgreSQL 호스트가 인벤토리에 나타날 수 있습니다.  현재 Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 등록되지 않은 PostgreSQL 인스턴스만 지원합니다.</block>
   <block id="1d72541b2e1a224311e8b78af73bab83" category="summary">NetApp Workload Factory for Databases에서 데이터베이스(샌드박스) 복제본을 생성 당시의 원래 버전으로 되돌립니다.</block>
   <block id="ecf8d68388a40ca09bc6475e0cb33a92" category="doc">NetApp Workload Factory for Databases에서 데이터베이스 복제본 되돌리기</block>
   <block id="b006ea3a9fc3f700c7ea6c3fc404a855" category="paragraph">데이터베이스를 복제하면 생성 시 복제본은 _기준_ 복제본입니다.  복제된 데이터베이스의 데이터는 생성 당시의 소스 데이터베이스와 동일합니다.  데이터베이스 복제본의 데이터는 시간이 지남에 따라 변경되므로 복제본이 처음 생성되었을 때의 기준으로 데이터를 되돌리고 싶을 수 있습니다.  이 작업을 클론의 재기준화라고 합니다.  새로운 복제본을 만드는 대신 복제본의 기준을 다시 정하면 공간을 절약할 수 있습니다. 그러나 데이터베이스 복제본에 적용된 모든 변경 사항은 삭제됩니다.</block>
@@ -1295,8 +1250,6 @@
   <block id="ae41853f33cf42c1d6ea60e021ce20b3" category="list-text">*선호하는 조직 단위 경로*: 선택적으로 Active Directory에서 가입할 조직 단위(OU)를 입력합니다.</block>
   <block id="5da5a84735de60ec35b817899791d509" category="list-text">*대상 Active Directory 그룹*: 선택적으로 컴퓨터를 추가할 대상 Active Directory 그룹을 입력합니다.</block>
   <block id="bfcc9fa5a3178fd803540af87a6b6ab7" category="section-title">2025년 12월 18일</block>
-  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Ask me AI 어시스턴트 홈페이지 통합</block>
-  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask me 기능을 사용하면 콘솔을 벗어나지 않고도 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있습니다.</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026년 1월 4일</block>
   <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다.</block>
   <block id="1d59c9bea900e36e3d5b9ca53cd55587" category="list-text">메뉴를 선택하세요 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 그런 다음 *데이터베이스*를 선택합니다.</block>
@@ -1317,8 +1270,6 @@
   <block id="62513284927014959d72209d516f5de0" category="list-text">데이터베이스 메뉴에서 *절약 내역 살펴보기*를 선택합니다.</block>
   <block id="fc5d667e56107ceb5ef42e12c10ca5d7" category="list-text">Explore savings에서 *SQL Server on Elastic Block Store(EBS)* 탭을 선택합니다.</block>
   <block id="03c5728ca31aa7858c337d700d809a4b" category="list-text">Explore savings에서 *SQL Server on FSx for Windows* 탭을 선택합니다.</block>
-  <block id="95ad763c3d649fcb7d3f890682ae2e41" category="list-text">절약 사항 살펴보기에서 *SQL Server 온프레미스* 탭을 선택합니다.</block>
-  <block id="cffbf3f16e677dd5e894b7e108845552" category="list-text">평가 스크립트를 다운로드하십시오. 이 스크립트는 PowerShell을 기반으로 하는 데이터 수집 툴입니다. SQL Server 구성 및 성능 데이터를 수집하여 Workload Factory에 업로드합니다. 마이그레이션 어드바이저는 데이터를 평가하고 SQL Server 환경에 대한 FSx for ONTAP 배포 계획을 수립합니다.</block>
   <block id="a125bdcfa4481b5703ae9331e90da567" category="list-text">온프레미스 SQL Server 탭에서 최대 5개의 데이터베이스 호스트를 선택한 다음 *절약액 탐색*을 선택하여 온프레미스 SQL Server 호스트에 대한 FSx for ONTAP의 비용 분석을 실행합니다.</block>
   <block id="a1c8ed705aea3935dc8713a705d8c885" category="paragraph">Workload Factory는 여러 온프레미스 SQL Server 호스트를 단일 FSx for ONTAP 구성 권장 사항으로 통합하여 비용 절감을 최적화합니다. 단, 선택한 온프레미스 호스트가 단일 FSx for ONTAP 파일 시스템의 처리량, 용량 또는 IOPS 제한을 초과하는 경우는 예외입니다.</block>
   <block id="ed83a5691e7d487ebb17fc63bd4577a4" category="cell">FCI, 독립형</block>
@@ -1326,8 +1277,6 @@
   <block id="09a225d62dc8856d4aa05f1d013d64fb" category="list-text">스토리지 구성: 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, 스토리지 효율성, Automatic Storage Management(ASM) 사용 여부와 관계없이 NFS 또는 iSCSI를 사용하는 배포에 대한 운영 체제 구성(Microsoft Multipath I/O(MPIO) 상태 및 설정 포함), 그리고 다음 dNFS 설정: dNFS 활성화, dNFS 일관된 IP 확인, dNFS 구성 파일 및 dNFS<block ref="4740c034d97ca90a96b8050082816605" prefix=" " category="inline-code"></block></block>
   <block id="8a91764939fe812c81b542206d9d0af7" category="paragraph">FSx for ONTAP 파일 시스템 스토리지에서 실행되는 경우에만 리소스를 등록할 수 있습니다.</block>
   <block id="905518fc8d8d1e03b6625a1429570b1f" category="inline-link-macro">오류 로그 분석</block>
-  <block id="d0b9001fbcd773720f36bdaa72f9e80c" category="inline-link-macro">Well-Architected Review</block>
-  <block id="cdde0c1e8ee71f76520f0a66301e17bf" category="paragraph">인스턴스(SQL Server) 또는 데이터베이스(Oracle)를 등록하는 과정은 인스턴스 또는 데이터베이스 인증, FSx for ONTAP 인증, 그리고 준비의 세 단계로 구성됩니다. 준비 단계에서는 모든 AWS, NetApp, PowerShell 모듈이 인스턴스 또는 데이터베이스에 설치되어 있는지, 그리고 <block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 또는 <block ref="14e4d6df7f3769a1a791ddbfa16b30d7" category="inline-link-macro-rx"></block>와 같은 Workload Factory for Databases 기능의 최소 요구 사항이 충족되었는지 확인합니다.</block>
   <block id="ad93849f6190198b574a03052debf9ee" category="section-title">Microsoft SQL Server 인스턴스 등록</block>
   <block id="92d119793835b54b4d7e2c5bcf09d96d" category="paragraph">인스턴스 등록은 인스턴스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 인스턴스 또는 여러 인스턴스를 등록할 수 있습니다.</block>
   <block id="1e353ab5fd8467e0928740d5976845d6" category="paragraph">Workload Factory는 SQL Server에 대한 FCI(Failover Cluster Instance) 및 독립 실행형 배포 등록을 지원합니다.</block>
@@ -1342,7 +1291,6 @@
   <block id="9ed181f71730a4b981c04369e2f1719e" category="list-text">준비(3단계)에서는 인스턴스가 최소 요구 사항을 충족하는지 확인하십시오.</block>
   <block id="4aa1b1ff22a8dfe18a969e9e18594ab0" category="list-text">각 기능에 대한 *설정 세부 정보*를 선택하여 기능 사전 요구 사항에 대해 알아보고 화면의 지침에 따라 기능에 대한 누락된 사전 요구 사항을 완료하십시오.</block>
   <block id="d521398ad1462fd891ea513e4855ce5b" category="inline-link-macro">Well-Architected 문제를 검토하고 수정합니다</block>
-  <block id="f035f450e95801f1197ab2843b43b16a" category="list-text">필수 조건이 완료되면 인스턴스를 *등록*하십시오.</block>
   <block id="9d96bcc0867ec5be17a78fc127af4785" category="paragraph">인스턴스 등록이 시작됩니다. 진행 상황을 확인하려면 *작업 모니터링* 탭을 선택하십시오.</block>
   <block id="efd81ed9168d148e7b33debfd48f5bbe" category="paragraph">인스턴스 등록은 데이터베이스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 또는 여러 데이터베이스를 등록할 수 있습니다.</block>
   <block id="67b60232330635a005ec1fd48b8378f5" category="list-text">인벤토리에서 엔진 유형으로 *Oracle* 을 선택하십시오.</block>
@@ -1354,12 +1302,96 @@
   <block id="aea7afc9754b2383c56fbbaee6c6009d" category="list-text">준비 단계(3단계)에서는 데이터베이스가 필수 요구 사항을 충족하는지 확인하십시오. 필요한 모든 모듈이 설치되어 있고 필수 요구 사항이 충족되면 *다음*을 선택하여 데이터베이스를 등록하십시오. 그렇지 않으면 다음 단계를 따르십시오.</block>
   <block id="1717c98238cd6bd4091f92979d40a891" category="list-text">*사전 요구 사항 확인 보기*에서 사전 요구 사항을 검토하십시오.</block>
   <block id="3f4c61df91a8ed4b5fc7622369d6e56d" category="paragraph">데이터베이스를 등록하려면 *Review well-architected issues and recommendations*와 같은 단일 기능에 대한 모든 필수 조건을 완료해야 합니다.</block>
-  <block id="9e7001c2bb163521a51de7186846104e" category="list-text">필수 구성 요소가 완료되면 데이터베이스를 *등록*하십시오.</block>
   <block id="aece37c900cf74271d49a4aec3628d66" category="paragraph">데이터베이스 등록이 시작됩니다. 진행 상황을 추적하려면 *작업 모니터링* 탭을 선택하십시오.</block>
   <block id="e6437d0fab94a9cc41e9fc0354b23716" category="section-title">2026년 2월 2일</block>
   <block id="ecd36d02576c4fe28ab61b5c14fa69c4" category="sidebar">리소스 관리</block>
   <block id="5dd712766e41aed3df90d60e36279568" category="paragraph">최소 요구 사항을 충족하려면 인스턴스에 AWS 및 NetApp PowerShell 모듈과 PowerShell 7 모듈이 설치되어 있어야 하며, 필수 조건 확인에 나열된 기능 중 하나 이상에 대한 필수 조건을 완료해야 합니다.</block>
   <block id="4f04ccc3925b5039da28842c277cda6c" category="paragraph">인스턴스를 등록하려면 *Review well-architected issues and recommendations*와 같은 단일 기능에 대한 모든 필수 조건을 완료해야 합니다.</block>
-  <block id="747eccfe479b7957e243e10257e40143" category="paragraph">인스턴스에 Workload Factory<block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>를 사용하려면 *우수한 아키텍처 문제 및 권장 사항 검토* 및 *우수한 아키텍처 문제 해결* 기능에 나열된 모든 필수 조건을 완료하십시오.</block>
   <block id="7fa2af2634cfeecc9f90ce75c17fad3f" category="paragraph">데이터베이스에 대해 Workload Factory <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>를 사용하려면 *우수한 아키텍처 문제 및 권장 사항 검토* 및 *우수한 아키텍처 문제 해결* 기능에 나열된 모든 필수 조건을 완료하십시오.</block>
+  <block id="b3aa99c5cc9ef827951e68e398c5af2e" category="doc">SQL Server 온프레미스 데이터베이스 환경 비용 분석 및 마이그레이션 계획</block>
+  <block id="56b090f7afa365cc9265c8fc7c52c73c" category="paragraph">BlueXP 워크로드 팩토리(데이터베이스용)는 이제 온프레미스 SQL Server 데이터베이스를 Amazon FSx for NetApp ONTAP로 마이그레이션하기 위해 감지, 분석 및 계획을 지원합니다. 비용 절감 계산기를 사용하여 클라우드에서 온프레미스 SQL Server 데이터베이스 환경을 운영하는 데 드는 비용을 추산하고 온프레미스 데이터베이스 환경을 클라우드로 마이그레이션하기 위한 권장 사항을 확인할 수 있습니다.</block>
+  <block id="8d73c4037df134a624f4a3cc9d442a9e" category="doc">Ask Me AI 어시스턴트 홈 페이지 통합</block>
+  <block id="a00917b130263595d00c3587c0e66a4f" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask Me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask Me를 통해 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있으며, 이 모든 작업을 콘솔에서 바로 수행할 수 있습니다.</block>
+  <block id="4b51d568a03393cf563624fcbba9143f" category="doc">일회성 평가</block>
+  <block id="c87bb3ba3f920d90c329acddc2fe7385" category="paragraph">Workload Factory는 이제 필요할 때마다 데이터베이스 배포 구성을 분석할 수 있는 일회성 평가 기능을 제공합니다. 신규 배포, 마이그레이션 후, 문제 해결 등 다양한 상황에서 활용할 수 있습니다. 평가 결과를 통해 배포 구성을 최적화하고 모범 사례를 준수하는 데 도움이 되는 권장 사항을 받아볼 수 있습니다. 이 기능을 통해 복잡한 설정 과정 없이도 잘 설계된 기능을 활용해 볼 수 있습니다. Workload Factory에 자격 증명을 저장하거나, 데이터베이스 리소스를 등록하거나, 외부 연결을 설정할 필요 없이 데이터베이스를 평가할 수 있습니다.</block>
+  <block id="e0b323aef6004097ab97ed7d77d06388" category="inline-link-macro">데이터베이스 배포에 대한 일회성 평가를 수행합니다</block>
+  <block id="fa29998d7ba5fe0bb430a106a7dd86bc" category="paragraph"><block ref="fa29998d7ba5fe0bb430a106a7dd86bc" category="inline-link-macro-rx"></block></block>
+  <block id="db82eade40cb0d84a1267b72a439d756" category="section-title">Microsoft SQL Server의 Always On 가용성 그룹 및 Oracle 데이터베이스의 Data Guard에 대한 등록 지원</block>
+  <block id="9074af594544775f8103abf495f3e489" category="paragraph">이제 NetApp Workload Factory의 데이터베이스 워크로드에서 Always On 가용성 그룹(AOAG) 배포 모델을 사용하는 Microsoft SQL Server 인스턴스와 Data Guard 배포 모델을 사용하는 Oracle 데이터베이스를 검색하고 등록할 수 있습니다. 이 개선 사항을 통해 Workload Factory 콘솔에서 SQL Server 및 Oracle 리소스를 더욱 효율적으로 관리할 수 있습니다.</block>
+  <block id="f7b5008af0a2a63908c672bf116eb9cd" category="paragraph">AOAG 인스턴스와 Data Guard 데이터베이스를 등록한 후에는 리소스 세부 정보 보기 및 오류 로그 분석과 같은 NetApp Workload Factory for Databases의 다양한 기능을 활용할 수 있습니다.</block>
+  <block id="b670d12d9dbeacc2f76bcbbabb59b072" category="paragraph">Workload Factory for Databases는 AOAG 배포 모델을 사용하는 Microsoft SQL Server 인스턴스에 대한 well-architected 분석도 지원합니다. 가용성 그룹에 속한 SQL Server 인스턴스의 구성을 분석하고 배포 구성을 최적화하고 모범 사례를 준수하도록 권장 사항을 받을 수 있습니다. 이 기능을 사용하려면 AOAG 인스턴스를 등록하십시오.</block>
+  <block id="fd16a8943ae80384234824f7a04cb2eb" category="inline-link-macro">데이터베이스용 Workload Factory에 리소스를 등록합니다</block>
+  <block id="e2da1373bb80f776ff6f57fbbe534851" category="paragraph"><block ref="e2da1373bb80f776ff6f57fbbe534851" category="inline-link-macro-rx"></block></block>
+  <block id="acc6acf63c7f7148c690b518cbbc53ca" category="paragraph">체계적인 분석에는 운영 체제에 최신 패치가 있는지 확인하고 설치 방법을 알려주는 Oracle용 *운영 체제 패치*가 포함되어 있습니다.</block>
+  <block id="10c0be29accc7dc47a6524aa470214cb" category="paragraph">또한, Oracle용 Well-Architected 분석 기능은 스토리지 레이아웃과 같은 구성이 다른 구성에 종속되어 있을 때 알려줍니다. 이 알림은 연결된 구성을 최적화하여 제공되는 모든 권장 사항이 최적화되도록 하는 데 필요한 조치를 안내합니다.</block>
+  <block id="c02b138b3ded0ad5c64dc6ef4350f29e" category="section-title">Oracle 온프레미스 데이터베이스 환경 비용 분석 및 마이그레이션 계획</block>
+  <block id="c419699e9c7d19ed5944ddf6b8598cfe" category="paragraph">Workload Factory for Databases는 이제 Oracle 온프레미스 데이터베이스 마이그레이션을 Amazon FSx for NetApp ONTAP로 분석하고 계획하는 데 도움을 줍니다. 비용 절감 계산기를 사용하여 클라우드에서 Oracle 온프레미스 데이터베이스 환경을 운영하는 데 드는 비용을 추산하고 온프레미스 데이터베이스 환경을 클라우드로 마이그레이션하기 위한 권장 사항을 검토할 수 있습니다.</block>
+  <block id="129560e32411be4dc94c9cfeada8ea67" category="section-title">Workload Factory에서 사용할 수 있는 새로운 Ask Me 북마크</block>
+  <block id="4ea89e975474ebd5bba8d32ced2e95cc" category="paragraph">Workload Factory 콘솔의 모든 화면에 새로운 Ask Me 북마크를 추가했습니다. 이 개선 사항을 통해 필요할 때 언제든지 Ask Me에 더 쉽고 빠르게 액세스할 수 있습니다. Ask Me는 사용자의 워크로드 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있도록 지원하는 AI 비서입니다.</block>
+  <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">새로운 북마크를 클릭하면 어느 페이지에서든 Ask Me를 열 수 있습니다. 현재 작업 중인 내용을 방해하지 않고 사이드 패널에 Ask Me가 실행되어, 현재 작업과 관련된 간단한 설명과 추천 사항을 제공합니다.</block>
+  <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">Ask Me에 대해 자세히 알아보기</block>
+  <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
+  <block id="72219d6b90a43e85186a57163993d521" category="paragraph">대시보드, 인벤토리 탭 또는 절감 효과 탐색 탭을 사용하여 EBS, FSx for Windows File Server 및 온프레미스 스토리지에서 데이터베이스 워크로드에 대한 절감 효과를 확인할 수 있습니다. 모든 경우에 절감 효과 계산기를 사용하여 FSx for ONTAP 파일 시스템에서 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷 및 클론과 같은 Microsoft SQL Server 워크로드 실행의 다양한 비용 구성 요소를 Elastic Block Store(EBS), FSx for Windows File Server 및 온프레미스 스토리지와 비교할 수 있습니다.</block>
+  <block id="6166c6c7be48cb17428de715fa305517" category="paragraph">Workload Factory에서 FSx for ONTAP에 대한 비용 절감을 발견하면 Workload Factory 콘솔의 비용 절감 계산기에서 직접 FSx for ONTAP를 통해 Microsoft SQL을 배포할 수 있습니다. Elastic Block Store, FSx for Windows File Server 또는 온프레미스 스토리지에 여러 Microsoft SQL Server 인스턴스가 있는 경우 단일 SQL 인스턴스를 사용하는 FSx for ONTAP 구성을 권장합니다.</block>
+  <block id="4eae00719f6d18a728f20c8e08ceee75" category="paragraph">Workload Factory 콘솔의 데이터베이스 *대시보드*를 방문하여 FSx for ONTAP에서 모든 데이터베이스 워크로드를 실행할 때 발생할 수 있는 잠재적 비용 절감액에 대한 개요를 확인하십시오. *잠재적 절감* 타일에는 EBS 및 FSx for Windows File Server의 데이터베이스 워크로드, 잠재적 비용 절감액, 절감률 및 막대 그래프가 표시됩니다.</block>
+  <block id="5fdcccba8663e4f92a14f1ee0e4d7962" category="paragraph">비용 절감 계산기를 사용하여 FSx for ONTAP 파일 시스템에서 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷, 클론과 같은 Microsoft SQL Server 워크로드 실행의 다양한 비용 구성요소를 Elastic Block Store(EBS), FSx for Windows File Server 및 온프레미스 스토리지와 비교할 수 있습니다. FSx for ONTAP 파일 시스템은 데이터베이스 워크로드에 가장 비용 효율적인 옵션일 수 있습니다.</block>
+  <block id="2fea5a198a028f6581bc28995e4910b9" category="paragraph">이 계산기는 SQL Server 배포 상태를 확인하여 사용 중인 리소스와 기능이 SQL Server 에디션과 일치하는지 확인합니다. Standard 에디션으로 다운그레이드를 권장하기 전에 계산기가 확인하는 주요 요소 및 조건은 다음과 같습니다:</block>
+  <block id="31e5bf576cc19bb2bc811ae96e41e957" category="paragraph">평가 대상 SQL Server 인스턴스가 위의 Enterprise 기능을 사용하지 않고 리소스 제약 조건을 충족하는 경우, 계산기는 라이선스를 Standard Edition으로 다운그레이드할 것을 권장합니다. 이 계산기는 성능이나 기능을 저하시키지 않고 SQL Server 라이선스 비용을 최적화하는 데 도움을 줍니다.</block>
+  <block id="56ca4d069f6721eb0a196ce2285e3159" category="paragraph">Workload Factory가 EBS 호스트를 감지하면 절약 탐색 탭으로 이동합니다. EBS 호스트를 감지하지 못하면 계산기로 이동하여 <block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>.</block>
+  <block id="fb05c33e1057a3d9c7b41d4d59cdc2ff" category="list-text">Savings calculator에서 보다 정확한 비용 절감 추정을 위해 EBS 스토리지의 클론 및 스냅샷에 대한 다음 세부 정보를 제공할 수 있습니다.</block>
+  <block id="9d8c1f1405c74f9711b726b843ae1436" category="paragraph">Workload Factory가 Windows용 FSx 호스트를 감지하면 절약 탐색 탭으로 리디렉션됩니다. Windows용 FSx 호스트를 감지하지 못하면 계산기로 리디렉션하여 <block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>.</block>
+  <block id="4ea2c0ba28d2208ed50f97ad362a12b2" category="paragraph">Workload Factory에서 FSx for Windows 섀도 복사본을 감지하면 기본값을 *매일*로 설정합니다. 섀도 복사본을 감지하지 못하면 기본값을 *스냅샷 빈도 없음*으로 설정합니다.</block>
+  <block id="c3f277f5c1a3e311c0864b3d0e14f8a6" category="list-text">저축 탐색에서 엔진 유형 *Microsoft SQL Server*를 선택합니다.</block>
+  <block id="8e4019409c31aba926586d6cb97dac58" category="list-text">다음으로 *SQL Server 온프레미스* 탭을 선택합니다.</block>
+  <block id="0d51cb5ce976496c739cc33ba7dfc350" category="list-text">SQL Server 온프레미스 탭에서 *평가 스크립트* &gt; *평가 스크립트 정보*를 선택하고 제공된 정보를 검토하십시오.</block>
+  <block id="2a0eb44ec1b969b9594506eb2a56b2d8" category="list-text">*평가 스크립트 다운로드*를 선택합니다.</block>
+  <block id="5333d528a428cfa931e74c829fe44b34" category="paragraph">이 스크립트는 PowerShell을 기반으로 하는 데이터 수집 툴입니다. SQL Server 구성 및 성능 데이터를 수집하여 Workload Factory에 업로드합니다. 마이그레이션 어드바이저는 데이터를 평가하고 SQL Server 환경에 대한 FSx for ONTAP 배포 계획을 수립합니다.</block>
+  <block id="603c093b6806b6b6ffd91ff7d1f9a440" category="list-text">SQL Server 호스트에서 충분한 권한을 가진 사용자로 스크립트를 실행하십시오.</block>
+  <block id="b88e72fee1ac88a0555931722cf6b637" category="list-text">Workload Factory의 SQL Server 온프레미스 탭에서 *스크립트 결과 업로드*를 선택합니다.</block>
+  <block id="c8f5692d3e3a403d3759c4bcc99495e3" category="open-title">온프레미스 Oracle Server</block>
+  <block id="7efcb90c512b9314c3208918a1a22fcb" category="list-text">다음으로 *Oracle Server on-premises* 탭을 선택합니다.</block>
+  <block id="74016a033d6133ddd6b4b43bf277d15b" category="list-text">온프레미스 Oracle 서버 탭에서 *평가 스크립트* &gt; *평가 스크립트 정보*를 선택하고 제공된 정보를 검토합니다.</block>
+  <block id="73983c38e5c950d76509b0e2bd7ae41a" category="paragraph">이 스크립트는 PowerShell 기반 데이터 수집 도구입니다. Oracle 서버 구성 및 성능 데이터를 수집합니다.</block>
+  <block id="5ab613454acb1a2c5b6852c4d357429e" category="list-text">충분한 권한을 가진 사용자로 Oracle 호스트에서 스크립트를 실행하십시오.</block>
+  <block id="ded8e8ba5b4a2e07025a34f48a6023e4" category="list-text">*스크립트 결과 업로드*를 선택한 다음 스크립트 출력 파일을 Workload Factory 콘솔에 업로드하십시오. 마이그레이션 어드바이저가 데이터를 평가하고 Oracle Server 환경에 대한 FSx for ONTAP 배포 계획을 수립합니다.</block>
+  <block id="66998e3518ee5045b211ee6e878c16a4" category="list-text">온프레미스 Oracle 서버 탭에서 온프레미스 Oracle 서버를 선택한 다음 *절감 효과 살펴보기*를 선택하여 FSx for ONTAP에 대한 비용 분석을 실행합니다.</block>
+  <block id="4511f32d33e21257085df585e8c9dc3a" category="cell">Always On 가용성 그룹</block>
+  <block id="650870d240bc8043d6977b1a1c975ce0" category="cell">19c, 21c</block>
+  <block id="edd8af7eaa131179cb70a5db89636876" category="cell">Data Guard</block>
+  <block id="5a493bafe2fb35c6f5339a3ced4adce7" category="paragraph">Workload Factory는 데이터베이스 구성을 매일 분석합니다. 일일 분석을 통해 우수한 아키텍처 상태, 인사이트 및 권장 사항을 제공합니다. 구성 문제를 자동으로 수정하여 모범 사례를 준수할 수 있습니다.</block>
+  <block id="4ec20b6d44158ae33673aec51794c09b" category="paragraph">Workload Factory 콘솔 내의 데이터베이스 인벤토리에서 구성 문제에 대한 권장 사항을 검토하고 해당 문제를 해결할 수 있습니다.</block>
+  <block id="4a798c756347a1f9f34d59ee0f8fb34d" category="paragraph">SQL Server 리소스의 경우 데이터베이스 구성에 대한 모범 사례를 검토하기 위해 일회성 평가를 수행할 수 있습니다. 일회성 평가를 수행하기 위해 리소스를 등록하거나 자격 증명을 저장할 필요는 없습니다.</block>
+  <block id="cac9df85ec3dc71ff56914f00db69c7a" category="list-text">컴퓨팅: 운영 체제 패치 포함</block>
+  <block id="2ad033703ef0dac4d52edf323faa1918" category="paragraph">Oracle용 아키텍처 분석 기능은 구성이 다른 구성에 의존하는 경우 알려주고 연결된 구성을 최적화하기 위한 조치를 나열합니다.</block>
+  <block id="89e18dfb2f73d9aea558dfa37e146a3d" category="section-title">SQL Server 데이터베이스 구성에 대한 일회성 평가를 수행합니다</block>
+  <block id="fc1edbd0f2b3738c54d8f2398b9945a0" category="paragraph">자격 증명을 저장하거나 인스턴스를 등록하지 않고 Microsoft SQL Server 인스턴스의 well-architected 상태를 확인하기 위해 일회성 평가를 수행합니다.</block>
+  <block id="f64b3cb5f5729ca0945015067499622a" category="paragraph">스크립트를 실행하고 결과를 업로드하는 횟수는 원하는 만큼 반복할 수 있습니다. 업로드할 때마다 최신 결과를 기반으로 잘 설계된 아키텍처의 상태 및 인사이트가 업데이트됩니다.</block>
+  <block id="a790f6e28b649137870b00ccf3589944" category="list-text">메뉴 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *데이터베이스*를 선택합니다.</block>
+  <block id="6095483bc20af74df0bca991f69f87dd" category="list-text">*Inventory*에서 *One-time assessment* &gt; *Learn about assessment*를 선택하세요. 일회성 평가에 대한 정보를 검토하세요.</block>
+  <block id="be87867043f3a6e9ec43771084901ca7" category="list-text">* 스크립트 다운로드 * 를 선택합니다.</block>
+  <block id="79473441dd5f2ed36fd986a90db7c9cf" category="list-text">스크립트를 Microsoft SQL Server 호스트에 복사합니다.</block>
+  <block id="cea7ad7075430d1bd0be98ca92701bcb" category="list-text">PowerShell에서 스크립트를 실행합니다. 하나의 스크립트로 모든 인스턴스의 메타데이터를 수집할 수 있습니다.</block>
+  <block id="b33feb370f35879eddcd9293135b1df1" category="list-text">*일회성 평가* &gt; *업로드*를 선택합니다. 파일을 찾아 Workload Factory 콘솔에 업로드합니다.</block>
+  <block id="3065c918b2ac31893b241184a7b01959" category="list-text">모든 구성에 대한 권장 사항을 확인합니다. 권장 사항에는 모범 사례와 구성이 최적화되지 않은 경우 발생할 수 있는 문제가 포함됩니다.</block>
+  <block id="c70615017296ffdedf34ebb8730eaa77" category="section-title">구성을 수정, 해제 및 재활성화하기 전에</block>
+  <block id="50bac09b5a353b5521f0ff914fff6808" category="list-text">리소스는 Workload Factory에 등록되어 있어야 하며 스토리지 유형은 FSx for ONTAP이어야 합니다.<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
+  <block id="85d21d13c3f58b49f129dacfb4cab3a1" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 검토하십시오. RSS 및 MAXDOP의 경우, 운영 환경을 변경하기 전에 권장 설정을 테스트하여 성능을 확인하십시오.</block>
+  <block id="550a46672ef778ca098c025d166cdd66" category="admonition">구성을 수정하면 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성을 수정하기 전에 권장 사항을 주의 깊게 검토해야 합니다.</block>
+  <block id="88228ff74222d41a7b32f7f73b628495" category="paragraph">*PDF 내보내기*를 선택하여 결과 보고서를 다운로드하십시오.</block>
+  <block id="370419de045637c04622917ea040cd16" category="section-title">데이터베이스 구성 분석 해제</block>
+  <block id="b3af08a651def642c2a5741d36be8f65" category="paragraph">데이터베이스 환경에 적용되지 않는 특정 데이터베이스 구성에 대한 분석을 무시하여 불필요한 경고 및 부정확한 최적화 결과를 방지하십시오. 무시한 구성 분석은 언제든지 다시 활성화할 수 있습니다.</block>
+  <block id="d6b510061438391f590afb73a62f098c" category="paragraph">언제든지 분석을 다시 활성화할 수 있습니다. 해당 구성은 더 이상 전체 최적화 점수에 포함되지 않습니다.</block>
+  <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">해제된 구성 분석을 다시 활성화합니다</block>
+  <block id="99206ff00921c00b5d887375a108d167" category="paragraph">해제된 구성 분석을 언제든지 다시 활성화할 수 있습니다. 하나 이상의 구성을 선택하여 다시 활성화할 수 있습니다.</block>
+  <block id="a25cb7311bf319b68bd7bff7ddd66451" category="paragraph">구성 분석이 다시 활성화되어 앞으로 매일 실행됩니다.</block>
+  <block id="1a0cee014540e049f4d08b2ca15c2447" category="inline-link-macro">Well-Architected 평가</block>
+  <block id="27cfb14157482da47350bb4484f7e792" category="paragraph">인스턴스(SQL Server) 또는 데이터베이스(Oracle)를 등록하는 데는 인스턴스 또는 데이터베이스 인증, FSx for ONTAP 인증, 준비의 세 단계가 필요합니다. 준비 단계에서는 인스턴스 또는 데이터베이스에 AWS, NetApp 및 PowerShell 모듈을 설치하고 <block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 또는 <block ref="d21897e75c312daacd024fa4c48cd6a7" category="inline-link-macro-rx"></block>와 같은 Workload Factory for Databases 기능의 최소 요구 사항을 충족해야 합니다.</block>
+  <block id="672da44d295a636d22c64c52022ddf81" category="paragraph">Workload Factory는 Microsoft SQL Server 인스턴스와 Oracle 데이터베이스 등록 및 관리만 지원합니다. Workload Factory에서 선택한 AWS 계정 자격 증명에 따라 PostgreSQL 호스트가 인벤토리에 표시됩니다. 현재 Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 등록되지 않은 PostgreSQL 인스턴스를 지원합니다.</block>
+  <block id="7651418602ee7e0d7035d3f2eed1ac58" category="paragraph">외부 연결이 없는 프라이빗 네트워크에 인스턴스 또는 데이터베이스를 등록하려면 필요한 엔드포인트를 VPC에서 사용 가능하게 만들고 관련 서브넷과 연결해야 합니다. 인터페이스 엔드포인트에 대해 보안 그룹에서 포트 443을 허용하십시오.</block>
+  <block id="aa880a36f751894aa3fd6f4bc9d30355" category="paragraph">아웃바운드 EC2 연결에 프록시 서버를 사용하는 경우 관리 작업을 위해 다음 도메인에 대한 액세스를 허용하십시오.</block>
+  <block id="e11b622d7aca9ce195d133de33a0810c" category="paragraph">Workload Factory가 <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>할 수 있도록 하려면 *우수한 아키텍처 문제 및 권장 사항 검토* 및 *우수한 아키텍처 문제 해결*의 모든 필수 조건을 완료하십시오.</block>
+  <block id="e0d8c69e59771c6aec0a81c72d078833" category="list-text">모든 사전 요구 사항을 완료한 후 인스턴스를 *등록* 하십시오.</block>
+  <block id="485a40f8631dfca236f2084899a28a0c" category="list-text">필수 구성 요소를 완료한 후 데이터베이스를 *등록*하십시오.</block>
+  <block id="2b1eb132ebb67244be9fd5e374964f2e" category="paragraph">등록 후에는 다음 작업을 수행할 수 있습니다.</block>
+  <block id="6ddfbfe3d38a813f004cc2f37d2a5866" category="section-title">2026년 3월 2일</block>
 </blocks>
