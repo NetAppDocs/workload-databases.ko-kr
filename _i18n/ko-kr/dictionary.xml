@@ -501,7 +501,6 @@
   <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">사전 예방적인 관찰 가능성</block>
   <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">통찰력을 행동으로</block>
   <block id="7a3fc3cf12e9da54628c7311398bee5c" category="list-text">AWS의 잘 설계된 프레임워크 조언자</block>
-  <block id="de29686d1474303323860ff8044fc4ed" category="paragraph">최적화 범위는 평가 중인 구성 요소에 따라 다릅니다. 예를 들어, 스토리지 최적화는 SQL 인스턴스 수준에서 이루어지는 반면, 컴퓨팅 최적화는 호스트 레벨에서 이루어집니다.</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
   <block id="d1e68728a28b7936858b1484445ef50f" category="sidebar">구성 최적화</block>
   <block id="35c4b7b7975b86786b96de60f8d9159c" category="doc">데이터베이스용 BlueXP  워크로드 공장 초기 릴리즈</block>
@@ -706,10 +705,6 @@
   <block id="dae891145ffbf1b1653fc3da2a87faac" category="list-text">옵션이 제공되는 경우 구성 문제를 *보고 수정*하도록 선택합니다.</block>
   <block id="45b5dce37159255d07342e3102124571" category="list-text">구성 문제를 해결하려면 * 계속 * 을 선택하십시오.</block>
   <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">일일 구성 분석</block>
-  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">잘 구성된 상태</block>
-  <block id="a64cfe5c8ae4b3445ff288e9acf4b12e" category="list-text">잘 짜여진 점수</block>
-  <block id="a4394e01049a42d14bd6258585de98b7" category="list-text">구성 범주</block>
-  <block id="8b75b787538a5ee0eb97dc541694c82a" category="list-text">분석 범위</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">잘 설계된 데이터베이스 구성을 구현합니다.</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
@@ -830,8 +825,6 @@
   <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">구성 문제 해결</block>
   <block id="1c6128cdb2d10cb97e9f36f037cb4ceb" category="paragraph">FSx for ONTAP 스토리지에서 실행되는 SQL Server 또는 Oracle 환경의 구성 문제를 해결합니다.</block>
   <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">수정 프로세스로 인해 인스턴스 가동 중지나 서비스 중단이 발생할 수 있습니다.  구성 문제를 해결하기로 결정하기 전에 권장 사항을 주의 깊게 검토하세요.</block>
-  <block id="4c7f98dd35929abb47ec47b5961e9ca4" category="paragraph">완전한 데이터베이스 환경 분석을 위해서는 리소스를 등록하고 온라인 상태로 유지해야 합니다.</block>
-  <block id="aed8a618f1e8a1dc325945b821521d6c" category="paragraph"><block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="15e4986095a476a300a86c98e005c03f" category="list-text">메시지가 표시되면 관리자 권한이 있는 Windows 자격 증명을 제공합니다.</block>
   <block id="0670483b9d94213fd07ca4df3baae2eb" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block>(SQL 서버)</block>
   <block id="6da87aebc1358666c2653e7d0852ee63" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block>(SQL 서버)</block>
@@ -1174,11 +1167,6 @@
   <block id="c9c975f5587642db7fde90312ee94825" category="inline-link-macro">태그 필터링을 사용하여 오류 로그 분석</block>
   <block id="99d2df171fdf12824fa9334fd19cf105" category="paragraph"><block ref="99d2df171fdf12824fa9334fd19cf105" category="inline-link-macro-rx"></block></block>
   <block id="2598ae987a85e3352d674a4bfade0940" category="list-text">심각도, 기간, 오류 코드 등의 기준이나 컴퓨팅, 스토리지, 네트워크, 보안 등의 인프라 중심 태그를 기준으로 표시되는 오류를 세분화하려면 필터를 사용하세요.</block>
-  <block id="cb7f9c10896377bc079174e74f841859" category="section-title">구성 분석의 구성 요소</block>
-  <block id="6ef2457afc865f25d3bed5cf0e06ad81" category="paragraph">구성 분석에는 다음 구성 요소가 포함됩니다.</block>
-  <block id="1fa0a7ab43424d65902e6734a2c7cc84" category="list-text">잘 설계된 상태는 데이터베이스 구성의 전반적인 상태를 나타냅니다. 구성은 "최적화됨", "최적화되지 않음", "과도하게 프로비저닝됨"으로 분류됩니다. 잘 설계된 구성 상태는 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
-  <block id="5c947d6fa21e25852d9b8fc4ae1d52fb" category="list-text">점수에는 현재 분석된 모든 구성이 포함되며 백분율로 표시됩니다. 25% 점수는 데이터베이스 배포의 25%가 잘 설계되었다는 것을 의미합니다. 잘 설계된 점수는 *잘 설계된* 화면과 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
-  <block id="b63a27b7b1942197825500589350fdb1" category="list-text">구성은 스토리지, 컴퓨팅, 애플리케이션, 복원력, 복제라는 범주로 구성됩니다. 각 범주에는 정기적으로 분석되는 구체적인 구성 평가가 포함됩니다. 구성 범주는 *Well-architected* 화면과 Workload Factory 콘솔의 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에서 참조됩니다.</block>
   <block id="2afa479317acb4455a0a649aab2944d1" category="section-title">2025년 11월 2일</block>
   <block id="d0892726ec1e74441a4a801494ed29bb" category="paragraph">자격 증명을 추가할 때 Workload Factory for Databases에 제공하려는 액세스 수준에 따라 이러한 권한 정책 중 하나 이상을 선택할 수 있습니다.</block>
   <block id="af7c77855745c2192ad309cfc11ed68c" category="inline-link-macro">_view, planning 및 analysis_ 권한 부여</block>
@@ -1394,4 +1382,88 @@
   <block id="485a40f8631dfca236f2084899a28a0c" category="list-text">필수 구성 요소를 완료한 후 데이터베이스를 *등록*하십시오.</block>
   <block id="2b1eb132ebb67244be9fd5e374964f2e" category="paragraph">등록 후에는 다음 작업을 수행할 수 있습니다.</block>
   <block id="6ddfbfe3d38a813f004cc2f37d2a5866" category="section-title">2026년 3월 2일</block>
+  <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">작동 방식</block>
+  <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 환경에서 실행되는 워크로드를 매일 분석합니다. 이 분석을 통해 아키텍처 상태, 인사이트 및 권장 사항을 확인할 수 있습니다.</block>
+  <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">일일 분석이 완료되면 배포의 Well-architected 대시보드에 구성 상태가 "최적화됨" 또는 "최적화되지 않음"으로 표시됩니다. 총 최적화 점수, 범주별 구성 문제, 구성 문제 및 권장 사항 목록을 확인할 수 있습니다. 구성 문제에 대한 권장 사항을 검토할 수 있습니다. 일부 문제는 Workload Factory에서 자동으로 수정되지만, 다른 문제는 수동 개입이 필요합니다. 이 경우 Workload Factory는 권장 변경 사항을 구현하는 데 도움이 되는 자세한 지침을 제공합니다.</block>
+  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">사용 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다. 특정 구성 분석을 제외하면 Workload Factory는 해당 구성을 전체 최적화 점수 계산에 포함하지 않습니다.</block>
+  <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">중요한 이유</block>
+  <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 인사이트 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 모범 사례를 적용합니다. Workload Factory 콘솔에서 적용되는 자동화된 수정 사항은 인적 오류를 줄이고 일관된 관리를 보장하며 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
+  <block id="b5c307f00406a7d48e2b76f206ea8a5f" category="paragraph">완벽한 데이터베이스 환경 분석을 위해서는 다음을 수행해야 합니다.</block>
+  <block id="a54f5b1fe41547cbf19f1fb9561340dc" category="inline-link-macro">리소스 등록</block>
+  <block id="32b8a48be5601496781767d49968bd51" category="list-text"><block ref="89c16bb90a0fdfa73434baf56ae09810" category="inline-link-macro-rx"></block> 온라인 상태인지 확인합니다.</block>
+  <block id="25c44f83d9d45dc9b2d2a8e46fcc5b19" category="list-text">링크를 연결합니다. 링크 연결을 통해 Workload Factory는 스토리지 레이아웃 및 복원력과 같은 모든 데이터베이스 배포 구성을 분석할 수 있습니다.</block>
+  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">기존 링크를 연결하는 방법 또는 새 링크를 생성하고 연결하는 방법을 알아보십시오</block>
+  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.</block>
+  <block id="64aefaaa1ffe9f3b50d13850f89ff59a" category="list-text">AWS 계정에 _view, planning, and analysis_ 권한을 부여하세요.</block>
+  <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">AWS 계정에 권한을 부여하는 방법을 알아보십시오</block>
+  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
+  <block id="1828f0f67d6613341efbc43d822fd8dc" category="section-title">데이터베이스 워크로드에 대한 모범 사례 및 권장 사항</block>
+  <block id="1ed3d8c93156794cc432b123457d635f" category="paragraph">Workload Factory는 잘 설계된 데이터베이스 워크로드 운영을 위한 모범 사례 및 권장 사항을 제공합니다. 이 아키텍처 분석은 Microsoft SQL Server 및 Oracle Database의 스토리지 크기, 스토리지 레이아웃, 스토리지 구성, 컴퓨팅, 애플리케이션(SQL Server) 및 복원력과 관련된 구성 및 설정을 평가합니다.</block>
+  <block id="894445e8ea6df545bfbc4247797a2162" category="section-title">스토리지 사이징</block>
+  <block id="5418270ffed466b82b925869518520c0" category="list-text">*스토리지 계층*</block>
+  <block id="117987020781031a1637fb2474fcda5a" category="paragraph">최적의 성능을 보장하려면 FSx for ONTAP 볼륨에 기본 SSD 계층을 사용하십시오. 용량 풀 계층을 사용하면 성능이 저하되고 지연 시간이 증가할 수 있습니다. 기본 SSD 계층은 고성능 워크로드에 맞게 설계되었으며, 용량 풀 계층은 비용 효율성에 최적화되어 있어 SQL Server 워크로드의 성능 요구 사항을 충족하지 못할 수 있습니다.</block>
+  <block id="50a35154861297e0463ad6610197fd71" category="list-text">*파일 시스템 여유 공간*</block>
+  <block id="d3b9cd115041e7966b18702c6a73f2a0" category="paragraph">파일 시스템 용량은 전체 볼륨 크기보다 충분히 높게 유지하십시오. 여유 공간이 너무 부족하면 성능 문제가 발생하고, 너무 많으면 스토리지가 낭비되고 비용이 증가합니다.</block>
+  <block id="e52ac523a924c00b4c5ccd742f0d98f3" category="list-text">*로그 드라이브 크기*</block>
+  <block id="88a778779ac5da9ed188a4ca76e5ea7b" category="paragraph">SQL Server 로그 드라이브의 크기를 적절하게 설정하고 모니터링하여 로그 드라이브 용량 부족으로 인한 트랜잭션 롤백, 데이터베이스 사용 불가, 데이터 손상 및 성능 문제를 방지하십시오.</block>
+  <block id="300311b18477e304f1d9e66ce254c8fd" category="list-text">*TempDB 드라이브 크기*</block>
+  <block id="6f6c8627ab8cdaf7724764b892b49c26" category="paragraph">최적의 성능과 시스템 안정성을 유지하려면 TempDB의 크기를 적절하게 설정하고 모니터링해야 합니다. TempDB 공간이 부족하면 쿼리 속도 저하, 애플리케이션 시간 초과 및 시스템 충돌이 발생할 수 있습니다.</block>
+  <block id="196cc0216fd769aaf46f47da965f30f0" category="section-title">스토리지 레이아웃</block>
+  <block id="983e88e86ed869a9aab818469a6f0c9d" category="list-text">*데이터 파일(.mdf) 배치* 및 *로그 파일(.ldf) 배치*</block>
+  <block id="cea56a3ff1140d20f606958853a708ce" category="paragraph">데이터 파일과 로그 파일을 별도의 드라이브에 저장하면 성능이 향상되고 백업 및 복원 작업을 독립적으로 수행할 수 있습니다.</block>
+  <block id="5b9b356226fe0fdbf3042c364d45373b" category="list-text">*TempDB 배치*</block>
+  <block id="7a94f55aa80442d5d46490909ae726d7" category="paragraph">I/O 경합을 방지하고 SQL Server 성능 및 안정성을 향상시키려면 TempDB를 전용 드라이브에 배치하십시오. 그렇지 않으면 I/O 병목 현상, 쿼리 속도 저하 및 시스템 불안정 문제가 발생할 수 있습니다.</block>
+  <block id="6e8775bd755a8835ce86806d669677ea" category="section-title">스토리지 구성</block>
+  <block id="6fff5b0f8a5584251f9c517e970984b4" category="list-text">*ONTAP 구성*</block>
+  <block id="7824f7be61b3770dbf45d9c0e7149f1a" category="paragraph">FSx for ONTAP 볼륨에 대해 씬 프로비저닝, 자동 크기 조정 및 공간 관리를 활성화하여 스토리지 효율성과 비용 효율성을 최적화하십시오. 활성 데이터에 대한 고성능을 유지하면서 오래된 스냅샷을 용량 계층으로 이동하도록 계층화 정책을 구성하십시오. LUN의 경우, 적절한 I/O 정렬을 위해 OS 유형이 운영 체제 파티셔닝 체계와 일치하는지 확인하고, 쓰기 오류를 방지하기 위해 공간 예약을 활성화하고, 스토리지가 가득 찼을 때 자동 공간 재확보 및 호스트 알림을 허용하도록 공간 할당을 활성화하십시오.</block>
+  <block id="f17cbc45bebb2b318df7730cf320226f" category="list-text">*운영 체제*</block>
+  <block id="64845b1fc47ddfef3f821cf6b77deab0" category="paragraph">EC2의 SQL Server 데이터베이스와 FSx for ONTAP에 대한 고가용성 및 데이터 액세스 일관성을 보장하기 위해 적절한 시간 제한 설정으로 Microsoft Multipath I/O(MPIO)를 활성화하고 구성하십시오. MPIO는 장애 조치 시 향상된 복원력과 성능을 위해 중복 경로를 제공합니다. 최적의 디스크 사용률과 성능을 위해 NTFS 할당 단위 크기를 적절하게 구성하십시오.</block>
+  <block id="a623a8d0366bf079411aa30be45b2d10" category="section-title">컴퓨팅</block>
+  <block id="552508d9abd0206f8a2258a4e950c0ce" category="list-text">*컴퓨팅 적정 규모 조정*</block>
+  <block id="e2f45442bdec494bd836b4ec7ed91332" category="paragraph">워크로드 요구 사항에 따라 SQL Server EC2 인스턴스의 크기를 적절히 조정하여 성능과 비용 효율성의 균형을 유지하십시오. 현재 인스턴스가 프로비저닝이 부족한 경우 업그레이드를 통해 CPU, 메모리 및 I/O 용량을 향상시킬 수 있습니다. 프로비저닝이 과도한 경우 다운그레이드를 통해 성능을 유지하면서 비용을 절감할 수 있습니다.</block>
+  <block id="f4aa5339a6267f9aa498876d3f99817d" category="list-text">*운영 체제 패치*</block>
+  <block id="9078834dd366cfbcfbb7495028b90ff2" category="paragraph">보안 및 시스템 안정성을 향상시키려면 최신 운영 체제 패치를 적용하십시오.</block>
+  <block id="f7ea56e7a1a3d21f93afb8868a46597f" category="list-text">*네트워크 어댑터 설정*</block>
+  <block id="3e87f3ec9808572e9326017dfb470169" category="paragraph">수신측 스케일링(RSS)을 구성하여 네트워크 처리를 여러 프로세서에 분산시키고 네트워크 성능을 향상시키십시오. 프로덕션 환경에 적용하기 전에 설정을 테스트하십시오.</block>
+  <block id="46042d8ee782bd40a22e572200cc7f86" category="list-text">*MTU 정렬*</block>
+  <block id="0ffe6b9fe982d3cb2c6117acb223809c" category="paragraph">EC2 인스턴스의 최대 전송 단위(MTU) 설정을 FSx for ONTAP와 정렬하여 네트워크 단편화를 방지하고 SQL Server 성능을 최적화하십시오. MTU 불일치를 수정하면 모든 노드와 네트워크 경로에서 일관된 MTU 구성을 보장할 수 있습니다.</block>
+  <block id="213ae318e1d77a9d7c891744d5e088ad" category="section-title">애플리케이션(SQL Server)</block>
+  <block id="ee998db55a5373c890946748cb8dafeb" category="list-text">*라이센스*</block>
+  <block id="dc2c42603ecce6ed6ff4935c61807ce2" category="paragraph">SQL Server 라이선스 평가 및 권장 사항은 호스트 수준에서 제공됩니다. Workload Factory는 데이터베이스 인프라에서 비용을 지불하는 상용 소프트웨어 라이선스 기능을 사용하지 않는 것으로 감지되면 라이선스를 "최적화되지 않음"으로 간주합니다. 최적화되지 않은 라이선스는 불필요한 비용을 초래할 수 있습니다. SQL Server 라이선스 사용 현황을 검토하여 비용을 지불하는 모든 기능을 활용하고 있는지 확인하십시오.</block>
+  <block id="a8642bb1e88dfe2e58d1d4d34aed2d28" category="list-text">*Microsoft SQL Server 패치*</block>
+  <block id="aeb19b16f26ffba9cda709a80fdd7572" category="paragraph">최신 SQL Server 패치를 적용하여 보안을 강화하고 취약점으로부터 보호하며 시스템 안정성을 향상시키십시오.</block>
+  <block id="4eddb0eeecb1e4ae314e258e08e465e3" category="list-text">*MAXDOP*</block>
+  <block id="a87a9d28595a379a45146753041d53f3" category="paragraph">쿼리 성능을 최적화하려면 MAXDOP를 구성하십시오. 일반적으로 4, 8 또는 16 값이 적합합니다. 워크로드를 테스트하고 CXPACKET과 같은 병렬 처리 대기 유형을 모니터링하십시오.</block>
+  <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">안정성</block>
+  <block id="277088f7a0bc1d2b0023dc08b1d30e37" category="list-text">*로컬 스냅샷 예약*</block>
+  <block id="2a18a15eebd0bb67a6bfebc30c94b035" category="paragraph">정기적인 스냅샷을 예약하여 특정 시점의 백업을 생성하고, 실수로 인한 삭제, 데이터 손상 및 기타 문제 발생 시 신속하게 복구하세요.</block>
+  <block id="29e7ad88f894625110c66db9a5db3cae" category="list-text">*백업 구성*</block>
+  <block id="4f191d1258f960fe582f682581657e6d" category="paragraph">데이터 보존 및 규정 준수 요구 사항을 충족하도록 FSx for ONTAP 백업 또는 AWS Backup을 구성하십시오. 중복 백업을 방지하십시오.</block>
+  <block id="b34347ddf6e48f7eb5aee09d6f7b92a6" category="list-text">*지역 간 복제*</block>
+  <block id="d4a143ea376b0803a77b86507a94ef57" category="paragraph">데이터 가용성과 재해 복구를 향상시키려면 지역 간 복제(CRR)를 활성화하십시오. CRR을 사용하여 지역 장애로부터 보호하고 비즈니스 연속성을 보장하십시오.</block>
+  <block id="7b3f859ceed0c4f3ae005839c139cd94" category="list-text">*Microsoft SQL Server 고가용성*</block>
+  <block id="95e2d9af5f0697796bab45294c72c532" category="paragraph">모든 클러스터 노드에서 공유 스토리지에 액세스할 수 있는지, 장애 조치 중 충돌을 방지하기 위해 노드 간에 드라이브 문자가 동일한지, 클러스터 상태를 위한 쿼럼이 설정되어 있는지, 클라우드 환경에 맞게 하트비트 임계값이 설정되어 있는지, SQL Server 서비스가 자동 시작 및 장애 조치를 위해 설정되어 있는지 확인하여 SQL Server의 고가용성이 설정되어 있는지 확인하십시오.</block>
+  <block id="e2521a2a2f696d450620b08167cf1c24" category="list-text">*클론 정리*</block>
+  <block id="a794e82abecb038fd6fa9a47fd045637" category="paragraph">스토리지 비용을 절감하려면 정기적으로 검토하고 오래된 클론을 삭제하세요. 오래되고 사용하지 않는 클론은 비용 증가의 원인이 됩니다.</block>
+  <block id="652ffdd012027e3af53ecb01c1e500ab" category="paragraph">스토리지 성능을 최적화하고 성능 저하를 방지하기 위해 적절한 파일 시스템 용량을 유지하십시오. 충분한 여유 용량은 효율적인 스토리지 관리를 가능하게 하고 데이터베이스 성장을 지원합니다.</block>
+  <block id="2162171f540307c958ebbf45ee85c9e6" category="list-text">*스왑 공간*</block>
+  <block id="d84ec6da982197f7083af7347dab367c" category="paragraph">시스템이 메모리 부족 현상을 처리하고 속도 저하 또는 충돌을 방지할 수 있도록 RAM 용량에 따라 스왑 공간을 설정하십시오.</block>
+  <block id="8e2df12faf538d6bacaf28eee1c9ba5c" category="list-text">*Oracle 바이너리 배치*</block>
+  <block id="b783d71d72c6af6a879383d98084b39c" category="paragraph">최적의 성능과 안정성을 보장하기 위해 I/O 경합을 줄이려면 Oracle 바이너리를 전용 볼륨에 배치하십시오. 이렇게 분리하면 소프트웨어 업데이트가 간소화되고 실수로 인한 수정이나 손상 위험이 최소화됩니다.</block>
+  <block id="191de1563ead1b097eb12ccf44a2c6e4" category="list-text">*데이터 파일 배치*</block>
+  <block id="c16d7b149b235cecee807abf5f897328" category="paragraph">데이터 파일을 전용 볼륨이나 제어 파일과 함께 배치하여 임의 I/O를 격리하고 성능을 향상시키십시오. 이러한 분리를 통해 사용자 지정 스냅샷 구성, 계층화 정책 및 효율성 메커니즘을 구현하여 성능과 비용을 최적화할 수 있습니다.</block>
+  <block id="5c5a39c795bca8602578d6afc0b265b0" category="list-text">*Control 파일 배치*</block>
+  <block id="d8dcefdf0aa7cd4e098cfddd267dc143" category="paragraph">단일 장애 지점을 방지하고 이중화를 추가하기 위해 제어 파일의 복사본을 서로 다른 볼륨이나 디스크에 저장하십시오. 제어 파일은 전용 볼륨에 배치하거나 리두 로그 또는 데이터 파일과 공유할 수 있지만, 성능 요구 사항으로 인해 객체 스토리지로 계층화된 볼륨에는 배치하지 마십시오.</block>
+  <block id="d2a9eedab15224a70b510d60bff1eacf" category="list-text">*Redo 로그 배치*</block>
+  <block id="874e6770e7350eb26458ff75f3c9371b" category="paragraph">리두 로그는 전용 볼륨에 배치하거나 임시 파일 또는 제어 파일과 적절히 공유하여 쓰기 I/O 작업이 많은 환경을 격리하고 성능을 향상시키십시오. 리두 로그의 각 복사본은 이중화를 위해 별도의 볼륨에 저장하십시오. 리두 로그는 자주 업데이트되므로 볼륨 스냅샷이나 오브젝트 스토리지로 계층화된 볼륨에는 배치하지 마십시오.</block>
+  <block id="cef21d61286ad1feaed1b9c70b94e413" category="list-text">*임시 배치*</block>
+  <block id="cf0091757f6ff40803416e58f1745563" category="paragraph">임시 파일은 전용 볼륨에 저장하거나 리두 파일 또는 제어 파일과 적절히 공유하여 쓰기 I/O 작업이 많은 작업을 격리하고 성능을 향상시켜야 합니다. 다중화된 임시 복사본은 각각 별도의 볼륨에 저장하여 이중화를 확보해야 합니다. 임시 파일은 업데이트 빈도가 높으므로 볼륨 스냅샷이나 객체 스토리지로 계층화된 볼륨에 저장해서는 안 됩니다.</block>
+  <block id="e160b9717e54bc435262f70122ed19d8" category="list-text">*아카이브 배치*</block>
+  <block id="a0659f391b761a5b4ff8b65f28154fd3" category="paragraph">아카이브 로그를 전용 볼륨에 배치하여 높은 I/O 요구 사항이 다른 데이터베이스 작업을 방해하지 않도록 함으로써 성능 및 복구 프로세스를 향상시키십시오.</block>
+  <block id="ba4e74fb4a08b807adc219f9df1ea143" category="list-text">*ASM 전용 구성: ASM 데이터 디스크 그룹 LUN, ASM 로그 디스크 그룹 LUN 및 ASM 아카이브 디스크 그룹 LUN*</block>
+  <block id="e7c6352933ceb00c7f004d9b3b578903" category="paragraph">최적의 성능과 이중화를 위해 LUN을 ASM(Automatic Storage Management) 데이터, 리두 로그 및 아카이브 로그 디스크 그룹에 분산하십시오.</block>
+  <block id="d911b17f4f4cdcca62a04ad77aa9403d" category="list-text">*ONTAP*</block>
+  <block id="d1bf0b5773fa36619112fb2acdf1eef8" category="paragraph">씬 프로비저닝, 자동 크기 조정 및 공간 관리를 볼륨에 대해 활성화하여 Oracle 데이터베이스용 FSx for ONTAP 구성을 최적화하십시오. 성능과 비용의 균형을 맞추기 위해 적절한 스냅샷 정책 및 계층화 전략을 구성하십시오. LUN의 경우 쓰기 오류를 방지하고 자동 공간 재확보를 활성화하기 위해 적절한 OS 유형 정렬, 공간 예약 및 공간 할당 설정을 확인하십시오.</block>
+  <block id="ec2a0c82b5fcb006f719221eff77fb9b" category="paragraph">최적의 Oracle 데이터베이스 성능을 위해 운영 체제 설정을 구성하십시오. 여기에는 데이터베이스 워크로드에 맞게 커널 매개 변수를 조정하고 네트워크 파일 시스템 액세스를 위해 NFS 또는 dNFS 설정을 적절하게 구성하는 것이 포함됩니다.</block>
+  <block id="f02adb373ce0bc6a6199e6d2ba9b16b9" category="paragraph">Oracle 데이터베이스 환경의 보안, 안정성 및 성능 향상을 위해 운영 체제 패치를 정기적으로 적용하십시오.</block>
 </blocks>
