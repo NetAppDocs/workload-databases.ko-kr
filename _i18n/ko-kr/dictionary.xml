@@ -587,7 +587,6 @@
   <block id="222ef17ae6eab247553156232cd650e1" category="list-text">보다 정확한 결과를 얻으려면 컴퓨팅 정보 및 스토리지 및 성능 세부 정보를 업데이트하십시오.</block>
   <block id="b0398f49dbe9d04be8ddd17378899545" category="list-text">필요에 따라 온프레미스 데이터베이스 환경의 클론(섀도 복사본) 및 스냅샷에 대한 다음과 같은 세부 정보를 제공하여 비용 절감 효과를 보다 정확하게 추정할 수 있습니다.</block>
   <block id="7240997fa0d75a11f0b991615772d5d3" category="list-text">* 복제된 복사본 수 *: 온-프레미스 구성에서 복제된 복사본의 수를 입력합니다.</block>
-  <block id="af022f8b2257d68b04e48e672c457177" category="list-text">응용 프로그램: Microsoft SQL Server 라이선스, Microsoft SQL Server 패치 및 MAXDOP 설정이 포함됩니다</block>
   <block id="1c8d307950dbef59ce61b6bc729fdb52" category="section-title">2025년 2월 3일</block>
   <block id="382e51924c0a806fea2a0017322199a5" category="section-title">최적화 제한 사항</block>
   <block id="d65e48d2f6a810cde4c31e5a88aecedb" category="section-title">ONTAP 및 OS 구성 최적화</block>
@@ -674,7 +673,6 @@
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">사용 권한 용어가 업데이트되었습니다</block>
   <block id="2d07fc9146d02690dffeffa52fbd2ec4" category="list-text">온프레미스 호스트 제거</block>
   <block id="c5d0b906e655aeb0e712fdc99742d179" category="list-text">클론 정리의 경우 새로 고치거나 삭제할 클론 데이터베이스(샌드박스)를 선택합니다.</block>
-  <block id="bfc2ef5a56455cfacfde13cf1612e36b" category="paragraph">구성 분석이 중지됩니다.</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025년 5월 4일</block>
   <block id="905bc3578e603008d83976307778ddcc" category="list-text">인스턴스 유형 권장 사항을 받고 비용 정확도를 높이려면 다음을 수행하세요.</block>
   <block id="10d9194778791c152af2c0be1806e0b1" category="list-text">Amazon CloudWatch 및 AWS Compute Optimizer 권한을 부여합니다.</block>
@@ -735,7 +733,6 @@
   <block id="4698c78219bd6bc2a4fb47e8f4149213" category="section-title">워크로드 팩토리에서 Windows 인증 지원</block>
   <block id="a3fbe9088342ceac653613ae546dd620" category="list-text">스토리지 구성: 용량 관리, 씬 프로비저닝, 계층화 정책, 스냅샷, Microsoft Multipath I/O(MPIO) 상태 및 MPIO 시간 초과 설정이 포함됩니다.</block>
   <block id="29ce878a000bdfaa01aa19a803eb9f01" category="paragraph">*모두 선택*이 기본값이지만, 수정할 특정 리소스를 선택할 수 있습니다.</block>
-  <block id="476140ae72277e361d19df8904bed3f8" category="list-text">클론 정리를 제외한 모든 구성에 대해 권장 사항 세부 정보를 검토하여 문제를 해결하기로 선택할 경우 어떤 일이 발생하는지 알아보세요. 일부 수정 작업으로 인해 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다.</block>
   <block id="b223957af5cc7e8c75e716638466ec57" category="section-title">개인 네트워크에 인스턴스 등록</block>
   <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">2025년 6월 30일</block>
   <block id="d2240cc857b28c2cc0c761811ebb0e4d" category="paragraph">데이터베이스용 워크로드 팩토리는 Amazon FSx for NetApp ONTAP 스토리지에서 실행되는 인스턴스를 등록하는 온보딩 프로세스를 개선했습니다. 이제 등록할 인스턴스를 대량으로 선택할 수 있습니다. 인스턴스가 등록되면 워크로드 팩토리 콘솔에서 데이터베이스 리소스를 만들고 관리할 수 있습니다.</block>
@@ -817,14 +814,12 @@
   <block id="ada60b484b7d2e3edafc98754146c7c3" category="paragraph">리소스를 다시 등록할 수 있습니다.</block>
   <block id="605deef06e1372beea22ad9cd2be1a6a" category="inline-link-macro">리소스 등록</block>
   <block id="cdef502718e102280b7153349fc5453d" category="paragraph">당신은해야합니다<block ref="7b211aa8ea2e7da5bf6451b8c7477b8d" category="inline-link-macro-rx"></block> 다음 관리 업무를 수행합니다.</block>
-  <block id="8778288856610f6bf20035173fbad2be" category="paragraph">불필요한 알림과 부정확한 최적화 결과를 방지하기 위해 사용자 환경에 적용되지 않는 특정 구성에 대한 분석을 취소할 수도 있습니다.</block>
   <block id="e40dd147294abaab8b8ebe348a6ff323" category="paragraph">Microsoft SQL Server 인스턴스의 경우:</block>
   <block id="e13a21e0f6e79bd6e277440afe81c7a2" category="list-text">컴퓨팅: 크기 조정, 운영 체제 패치, RSS(수신 측 크기 조정), TCP 오프로딩, MTU 정렬과 같은 네트워크 어댑터 설정이 포함됩니다.</block>
   <block id="dede452df8eba39c0a57cc96ce3b98c4" category="paragraph">Oracle 데이터베이스의 경우:</block>
   <block id="438f1f56c44366f5204e6f9931b85516" category="inline-link-macro">리소스 등록 방법을 알아보세요.</block>
   <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">구성 문제 해결</block>
   <block id="1c6128cdb2d10cb97e9f36f037cb4ceb" category="paragraph">FSx for ONTAP 스토리지에서 실행되는 SQL Server 또는 Oracle 환경의 구성 문제를 해결합니다.</block>
-  <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">수정 프로세스로 인해 인스턴스 가동 중지나 서비스 중단이 발생할 수 있습니다.  구성 문제를 해결하기로 결정하기 전에 권장 사항을 주의 깊게 검토하세요.</block>
   <block id="15e4986095a476a300a86c98e005c03f" category="list-text">메시지가 표시되면 관리자 권한이 있는 Windows 자격 증명을 제공합니다.</block>
   <block id="0670483b9d94213fd07ca4df3baae2eb" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block>(SQL 서버)</block>
   <block id="6da87aebc1358666c2653e7d0852ee63" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block>(SQL 서버)</block>
@@ -1300,8 +1295,6 @@
   <block id="56b090f7afa365cc9265c8fc7c52c73c" category="paragraph">BlueXP 워크로드 팩토리(데이터베이스용)는 이제 온프레미스 SQL Server 데이터베이스를 Amazon FSx for NetApp ONTAP로 마이그레이션하기 위해 감지, 분석 및 계획을 지원합니다. 비용 절감 계산기를 사용하여 클라우드에서 온프레미스 SQL Server 데이터베이스 환경을 운영하는 데 드는 비용을 추산하고 온프레미스 데이터베이스 환경을 클라우드로 마이그레이션하기 위한 권장 사항을 확인할 수 있습니다.</block>
   <block id="8d73c4037df134a624f4a3cc9d442a9e" category="doc">Ask Me AI 어시스턴트 홈 페이지 통합</block>
   <block id="a00917b130263595d00c3587c0e66a4f" category="paragraph">Workload Factory 콘솔 홈 페이지에는 Ask Me AI 어시스턴트가 내장되어 있어 스토리지 환경에 대한 질문을 하고, 환경에서 직접 맞춤형 인사이트를 얻고, 이전 대화를 참조할 수 있습니다. Ask Me를 통해 워크로드를 이해하고, 문제를 해결하고, Workload Factory에 대해 자세히 알아볼 수 있으며, 이 모든 작업을 콘솔에서 바로 수행할 수 있습니다.</block>
-  <block id="4b51d568a03393cf563624fcbba9143f" category="doc">일회성 평가</block>
-  <block id="c87bb3ba3f920d90c329acddc2fe7385" category="paragraph">Workload Factory는 이제 필요할 때마다 데이터베이스 배포 구성을 분석할 수 있는 일회성 평가 기능을 제공합니다. 신규 배포, 마이그레이션 후, 문제 해결 등 다양한 상황에서 활용할 수 있습니다. 평가 결과를 통해 배포 구성을 최적화하고 모범 사례를 준수하는 데 도움이 되는 권장 사항을 받아볼 수 있습니다. 이 기능을 통해 복잡한 설정 과정 없이도 잘 설계된 기능을 활용해 볼 수 있습니다. Workload Factory에 자격 증명을 저장하거나, 데이터베이스 리소스를 등록하거나, 외부 연결을 설정할 필요 없이 데이터베이스를 평가할 수 있습니다.</block>
   <block id="e0b323aef6004097ab97ed7d77d06388" category="inline-link-macro">데이터베이스 배포에 대한 일회성 평가를 수행합니다</block>
   <block id="fa29998d7ba5fe0bb430a106a7dd86bc" category="paragraph"><block ref="fa29998d7ba5fe0bb430a106a7dd86bc" category="inline-link-macro-rx"></block></block>
   <block id="db82eade40cb0d84a1267b72a439d756" category="section-title">Microsoft SQL Server의 Always On 가용성 그룹 및 Oracle 데이터베이스의 Data Guard에 대한 등록 지원</block>
@@ -1347,31 +1340,22 @@
   <block id="650870d240bc8043d6977b1a1c975ce0" category="cell">19c, 21c</block>
   <block id="edd8af7eaa131179cb70a5db89636876" category="cell">Data Guard</block>
   <block id="5a493bafe2fb35c6f5339a3ced4adce7" category="paragraph">Workload Factory는 데이터베이스 구성을 매일 분석합니다. 일일 분석을 통해 우수한 아키텍처 상태, 인사이트 및 권장 사항을 제공합니다. 구성 문제를 자동으로 수정하여 모범 사례를 준수할 수 있습니다.</block>
-  <block id="4ec20b6d44158ae33673aec51794c09b" category="paragraph">Workload Factory 콘솔 내의 데이터베이스 인벤토리에서 구성 문제에 대한 권장 사항을 검토하고 해당 문제를 해결할 수 있습니다.</block>
-  <block id="4a798c756347a1f9f34d59ee0f8fb34d" category="paragraph">SQL Server 리소스의 경우 데이터베이스 구성에 대한 모범 사례를 검토하기 위해 일회성 평가를 수행할 수 있습니다. 일회성 평가를 수행하기 위해 리소스를 등록하거나 자격 증명을 저장할 필요는 없습니다.</block>
   <block id="cac9df85ec3dc71ff56914f00db69c7a" category="list-text">컴퓨팅: 운영 체제 패치 포함</block>
   <block id="2ad033703ef0dac4d52edf323faa1918" category="paragraph">Oracle용 아키텍처 분석 기능은 구성이 다른 구성에 의존하는 경우 알려주고 연결된 구성을 최적화하기 위한 조치를 나열합니다.</block>
-  <block id="89e18dfb2f73d9aea558dfa37e146a3d" category="section-title">SQL Server 데이터베이스 구성에 대한 일회성 평가를 수행합니다</block>
-  <block id="fc1edbd0f2b3738c54d8f2398b9945a0" category="paragraph">자격 증명을 저장하거나 인스턴스를 등록하지 않고 Microsoft SQL Server 인스턴스의 well-architected 상태를 확인하기 위해 일회성 평가를 수행합니다.</block>
-  <block id="f64b3cb5f5729ca0945015067499622a" category="paragraph">스크립트를 실행하고 결과를 업로드하는 횟수는 원하는 만큼 반복할 수 있습니다. 업로드할 때마다 최신 결과를 기반으로 잘 설계된 아키텍처의 상태 및 인사이트가 업데이트됩니다.</block>
   <block id="a790f6e28b649137870b00ccf3589944" category="list-text">메뉴 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *데이터베이스*를 선택합니다.</block>
-  <block id="6095483bc20af74df0bca991f69f87dd" category="list-text">*Inventory*에서 *One-time assessment* &gt; *Learn about assessment*를 선택하세요. 일회성 평가에 대한 정보를 검토하세요.</block>
   <block id="be87867043f3a6e9ec43771084901ca7" category="list-text">* 스크립트 다운로드 * 를 선택합니다.</block>
   <block id="79473441dd5f2ed36fd986a90db7c9cf" category="list-text">스크립트를 Microsoft SQL Server 호스트에 복사합니다.</block>
   <block id="cea7ad7075430d1bd0be98ca92701bcb" category="list-text">PowerShell에서 스크립트를 실행합니다. 하나의 스크립트로 모든 인스턴스의 메타데이터를 수집할 수 있습니다.</block>
   <block id="b33feb370f35879eddcd9293135b1df1" category="list-text">*일회성 평가* &gt; *업로드*를 선택합니다. 파일을 찾아 Workload Factory 콘솔에 업로드합니다.</block>
-  <block id="3065c918b2ac31893b241184a7b01959" category="list-text">모든 구성에 대한 권장 사항을 확인합니다. 권장 사항에는 모범 사례와 구성이 최적화되지 않은 경우 발생할 수 있는 문제가 포함됩니다.</block>
   <block id="c70615017296ffdedf34ebb8730eaa77" category="section-title">구성을 수정, 해제 및 재활성화하기 전에</block>
   <block id="50bac09b5a353b5521f0ff914fff6808" category="list-text">리소스는 Workload Factory에 등록되어 있어야 하며 스토리지 유형은 FSx for ONTAP이어야 합니다.<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="85d21d13c3f58b49f129dacfb4cab3a1" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 검토하십시오. RSS 및 MAXDOP의 경우, 운영 환경을 변경하기 전에 권장 설정을 테스트하여 성능을 확인하십시오.</block>
-  <block id="550a46672ef778ca098c025d166cdd66" category="admonition">구성을 수정하면 인스턴스 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성을 수정하기 전에 권장 사항을 주의 깊게 검토해야 합니다.</block>
   <block id="88228ff74222d41a7b32f7f73b628495" category="paragraph">*PDF 내보내기*를 선택하여 결과 보고서를 다운로드하십시오.</block>
   <block id="370419de045637c04622917ea040cd16" category="section-title">데이터베이스 구성 분석 해제</block>
   <block id="b3af08a651def642c2a5741d36be8f65" category="paragraph">데이터베이스 환경에 적용되지 않는 특정 데이터베이스 구성에 대한 분석을 무시하여 불필요한 경고 및 부정확한 최적화 결과를 방지하십시오. 무시한 구성 분석은 언제든지 다시 활성화할 수 있습니다.</block>
   <block id="d6b510061438391f590afb73a62f098c" category="paragraph">언제든지 분석을 다시 활성화할 수 있습니다. 해당 구성은 더 이상 전체 최적화 점수에 포함되지 않습니다.</block>
   <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">해제된 구성 분석을 다시 활성화합니다</block>
   <block id="99206ff00921c00b5d887375a108d167" category="paragraph">해제된 구성 분석을 언제든지 다시 활성화할 수 있습니다. 하나 이상의 구성을 선택하여 다시 활성화할 수 있습니다.</block>
-  <block id="a25cb7311bf319b68bd7bff7ddd66451" category="paragraph">구성 분석이 다시 활성화되어 앞으로 매일 실행됩니다.</block>
   <block id="1a0cee014540e049f4d08b2ca15c2447" category="inline-link-macro">Well-Architected 평가</block>
   <block id="27cfb14157482da47350bb4484f7e792" category="paragraph">인스턴스(SQL Server) 또는 데이터베이스(Oracle)를 등록하는 데는 인스턴스 또는 데이터베이스 인증, FSx for ONTAP 인증, 준비의 세 단계가 필요합니다. 준비 단계에서는 인스턴스 또는 데이터베이스에 AWS, NetApp 및 PowerShell 모듈을 설치하고 <block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 또는 <block ref="d21897e75c312daacd024fa4c48cd6a7" category="inline-link-macro-rx"></block>와 같은 Workload Factory for Databases 기능의 최소 요구 사항을 충족해야 합니다.</block>
   <block id="672da44d295a636d22c64c52022ddf81" category="paragraph">Workload Factory는 Microsoft SQL Server 인스턴스와 Oracle 데이터베이스 등록 및 관리만 지원합니다. Workload Factory에서 선택한 AWS 계정 자격 증명에 따라 PostgreSQL 호스트가 인벤토리에 표시됩니다. 현재 Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 등록되지 않은 PostgreSQL 인스턴스를 지원합니다.</block>
@@ -1388,7 +1372,6 @@
   <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">사용 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다. 특정 구성 분석을 제외하면 Workload Factory는 해당 구성을 전체 최적화 점수 계산에 포함하지 않습니다.</block>
   <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">중요한 이유</block>
   <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 인사이트 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 모범 사례를 적용합니다. Workload Factory 콘솔에서 적용되는 자동화된 수정 사항은 인적 오류를 줄이고 일관된 관리를 보장하며 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
-  <block id="b5c307f00406a7d48e2b76f206ea8a5f" category="paragraph">완벽한 데이터베이스 환경 분석을 위해서는 다음을 수행해야 합니다.</block>
   <block id="a54f5b1fe41547cbf19f1fb9561340dc" category="inline-link-macro">리소스 등록</block>
   <block id="32b8a48be5601496781767d49968bd51" category="list-text"><block ref="89c16bb90a0fdfa73434baf56ae09810" category="inline-link-macro-rx"></block> 온라인 상태인지 확인합니다.</block>
   <block id="25c44f83d9d45dc9b2d2a8e46fcc5b19" category="list-text">링크를 연결합니다. 링크 연결을 통해 Workload Factory는 스토리지 레이아웃 및 복원력과 같은 모든 데이터베이스 배포 구성을 분석할 수 있습니다.</block>
@@ -1466,4 +1449,57 @@
   <block id="d1bf0b5773fa36619112fb2acdf1eef8" category="paragraph">씬 프로비저닝, 자동 크기 조정 및 공간 관리를 볼륨에 대해 활성화하여 Oracle 데이터베이스용 FSx for ONTAP 구성을 최적화하십시오. 성능과 비용의 균형을 맞추기 위해 적절한 스냅샷 정책 및 계층화 전략을 구성하십시오. LUN의 경우 쓰기 오류를 방지하고 자동 공간 재확보를 활성화하기 위해 적절한 OS 유형 정렬, 공간 예약 및 공간 할당 설정을 확인하십시오.</block>
   <block id="ec2a0c82b5fcb006f719221eff77fb9b" category="paragraph">최적의 Oracle 데이터베이스 성능을 위해 운영 체제 설정을 구성하십시오. 여기에는 데이터베이스 워크로드에 맞게 커널 매개 변수를 조정하고 네트워크 파일 시스템 액세스를 위해 NFS 또는 dNFS 설정을 적절하게 구성하는 것이 포함됩니다.</block>
   <block id="f02adb373ce0bc6a6199e6d2ba9b16b9" category="paragraph">Oracle 데이터베이스 환경의 보안, 안정성 및 성능 향상을 위해 운영 체제 패치를 정기적으로 적용하십시오.</block>
+  <block id="d3274d6efd4629f10f6f21cf8a7c4820" category="doc">SQL Server에 대한 일회성 평가</block>
+  <block id="8f42179a48bba7e0f2424b2849f64183" category="paragraph">Workload Factory는 이제 필요할 때마다 SQL Server 데이터베이스 배포 구성을 분석하는 일회성 평가를 제공합니다. 신규 배포, 마이그레이션 후, 문제 해결 등 다양한 상황에서 활용할 수 있습니다. 배포 구성을 최적화하고 모범 사례를 준수하는 데 도움이 되는 권장 사항을 받아볼 수 있습니다. 이는 설정 프로세스에 완전히 전념하지 않고도 잘 설계된 기능을 사용할 수 있는 기회입니다. Workload Factory에 자격 증명을 저장하거나 데이터베이스 리소스를 등록하거나 외부 연결을 설정하지 않고도 데이터베이스를 평가할 수 있습니다.</block>
+  <block id="d34510ab77e099f24fa05ceac3ff150c" category="paragraph">잘 설계된 아키텍처 분석에는 Oracle에 대한 다음과 같은 새로운 구성이 포함됩니다.</block>
+  <block id="9712df87120461c7551eea660e7f56a6" category="list-text">*Oracle Critical Patch Updates*: 지원되는 Oracle 자체 관리형 데이터베이스 설치에 누락된 보안 패치를 평가합니다.</block>
+  <block id="b435abcc161e9c500b1c5e15baf0cbb5" category="list-text">*지역 간 복제*: Oracle 데이터베이스를 제공하는 FSx for ONTAP 파일 시스템에 대해 지역 간 복제(CRR)가 활성화되어 있는지 확인합니다.</block>
+  <block id="1d06ae97515a4da719bc482a7995a7ae" category="list-text">*애플리케이션 정합성 보장 스냅샷*: Oracle 데이터베이스가 NetApp SnapCenter를 통해 애플리케이션 정합성 보장 스냅샷으로 보호되는지 확인합니다.</block>
+  <block id="6a4580dc4131680131fa2d1447aa1deb" category="section-title">Oracle에 대한 일회성 평가</block>
+  <block id="d268ce986e7de78be251b51e6126893b" category="paragraph">Workload Factory는 이제 필요할 때마다 Oracle 데이터베이스 배포 구성을 분석할 수 있는 일회성 평가 기능을 제공합니다(신규 배포, 마이그레이션 후, 문제 해결 등). 배포 구성을 최적화하고 모범 사례를 준수하는 데 도움이 되는 권장 사항을 받아볼 수 있습니다. 이 기능을 통해 설정 프로세스를 완전히 수행하지 않고도 잘 설계된 기능을 사용해 볼 수 있습니다. Workload Factory에 자격 증명을 저장하거나, 데이터베이스 리소스를 등록하거나, 외부 연결을 설정하지 않고도 데이터베이스를 평가할 수 있습니다.</block>
+  <block id="9c1752a9ed07d091eb717e163d985505" category="inline-link-macro">Oracle 데이터베이스 배포에 대한 일회성 평가를 수행하십시오</block>
+  <block id="24d6ca96f32f995e477bbc13ce8c644a" category="paragraph"><block ref="24d6ca96f32f995e477bbc13ce8c644a" category="inline-link-macro-rx"></block></block>
+  <block id="48b0592736b0870e6ff074c10fa5d5dc" category="section-title">여러 Oracle 데이터베이스의 비용 절감 효과 개선</block>
+  <block id="dc6ae15573380001d0b7dbda2215fba9" category="paragraph">Oracle의 비용 절감 분석을 개선하여 여러 Oracle 온프레미스 데이터베이스를 하나의 FSx for ONTAP 파일 시스템에 통합된 스토리지 솔루션으로 제공합니다. 이러한 통합은 여러 데이터베이스에 필요한 파일 시스템 수를 줄여 스토리지 비용을 최적화하고 비용 절감 효과를 향상시킵니다.</block>
+  <block id="141e832aa43713671a149000ddcd45e7" category="inline-link-macro">Oracle 온프레미스에서 감지된 데이터베이스에 대한 비용 절감 효과를 살펴보십시오</block>
+  <block id="dd6bcf35b4739e139fa3041add91e4f2" category="paragraph"><block ref="dd6bcf35b4739e139fa3041add91e4f2" category="inline-link-macro-rx"></block></block>
+  <block id="7e54439875eebd71cfeadcfc4cd7318c" category="paragraph">Workload Factory는 여러 Oracle 온프레미스 데이터베이스를 단일 FSx for ONTAP 구성 권장 사항으로 통합하여 비용 절감을 최적화합니다. 단, 선택한 온프레미스 데이터베이스가 단일 FSx for ONTAP 파일 시스템의 처리량, 용량 또는 IOPS 제한을 초과하는 경우는 예외입니다.</block>
+  <block id="6a5a609e38cb11091780a0494b87dc4d" category="paragraph">또한 환경에 적용되지 않는 구성 분석을 해제하여 불필요한 알림과 부정확한 결과를 방지할 수 있습니다.</block>
+  <block id="c3ebb88c8fa8ba0761ebfdca34dbaeba" category="paragraph">Workload Factory 콘솔 내의 데이터베이스 인벤토리 또는 Well-architected 대시보드에서 문제를 검토하고 수정할 수 있습니다.</block>
+  <block id="3a40f68be193f0f7bc0c01f622d3cc5f" category="paragraph">선택적으로, 자격 증명을 저장하거나 리소스를 등록하지 않고도 데이터베이스 구성에 대한 모범 사례를 검토하기 위해 일회성 평가를 수행할 수 있습니다.</block>
+  <block id="e112d8634bd0280eb27ad63e9eeb9493" category="list-text">애플리케이션: Microsoft SQL Server 라이센스, Microsoft SQL Server 패치 및 MAXDOP 설정 포함</block>
+  <block id="f953bb98ceaddd49464d672fa425c300" category="list-text">애플리케이션: Oracle Critical Patch Updates 포함</block>
+  <block id="10e1b7780581fec77099c3ba816f3e14" category="list-text">복원력: 지역 간 복제(CRR) 및 애플리케이션 정합성 보장 스냅샷 포함</block>
+  <block id="c20a2029d45b71b182aee84243212b9d" category="section-title">구성을 일회성으로 평가하십시오</block>
+  <block id="384e59575141746d138a94a55377c6e8" category="paragraph">자격 증명을 저장하거나 리소스를 등록하지 않고도 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 아키텍처 설계 상태를 일회성으로 평가할 수 있습니다.</block>
+  <block id="c091a4936cfa8cd2dad53f925bd5aee2" category="paragraph">스크립트를 실행하고 결과를 여러 번 업로드할 수 있습니다. Workload Factory는 업로드할 때마다 아키텍처 설계 상태와 인사이트를 업데이트합니다.</block>
+  <block id="16764b6a83028e2ba158fe9563fecab0" category="open-title">Microsoft SQL Server 인스턴스</block>
+  <block id="95cd2e65021832c5e9a52a57dd07ff01" category="list-text">*인벤토리*에서 엔진 유형으로 *SQL Server*를 선택하십시오.</block>
+  <block id="9d98556bc723d858756fd0843fa906c5" category="list-text">*일회성 평가* &gt; *평가에 대해 알아보기*를 선택하세요. 일회성 평가에 대한 정보를 확인하세요.</block>
+  <block id="7c0eb4e39d40023981d0b86686c042ec" category="list-text">모든 구성에 대한 권장 사항을 확인합니다. Workload Factory는 구성이 최적화되지 않은 경우 권장 사항에 모범 사례 및 잠재적 문제를 포함합니다.</block>
+  <block id="5ffbe0deb5b41148dc58e63a20df8411" category="open-title">Oracle 데이터베이스</block>
+  <block id="5ff54af90bf02d618e79e03c84b00700" category="list-text">*인벤토리*에서 엔진 유형으로 *Oracle*을 선택하십시오.</block>
+  <block id="8cbcf57c0ff19d0bfce7c5c703a985f7" category="list-text">Python 스크립트를 Oracle 데이터베이스 호스트에 복사하십시오.</block>
+  <block id="1403600c1d66e7c9c648c18cc49caa6b" category="list-text">해당 셸에서 스크립트를 실행하세요. 하나의 스크립트가 모든 데이터베이스에서 메타데이터를 수집합니다.</block>
+  <block id="b740c45c86ad7009995655549fe4d99e" category="paragraph">데이터베이스 환경을 지속적으로 모니터링하고 구성 문제를 자동으로 수정하려면 다음 요구 사항을 충족해야 합니다. 이러한 요구 사항은 일회성 평가에는 필요하지 않습니다.</block>
+  <block id="ee3b04dc1b62ec42f7ac81b2e81b8eef" category="admonition">구성을 수정하면 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성을 수정하기 전에 권장 사항을 주의 깊게 검토하십시오.</block>
+  <block id="4f03f223eb6e4b828fcf786106ebb22e" category="list-text">클론 정리를 제외한 모든 구성의 경우 권장 사항 세부 정보를 검토하여 문제 해결의 영향을 확인하십시오. 일부 복구 작업으로 인해 다운타임이나 서비스 중단이 발생할 수 있습니다.</block>
+  <block id="9d5f676da687a39223271ef7bfef6eb9" category="paragraph">Workload Factory는 구성 분석을 중지합니다.</block>
+  <block id="26ba07e6b041d123d9095fe79f71abdf" category="paragraph">Workload Factory는 구성 분석을 다시 활성화하고 지금부터 매일 실행합니다.</block>
+  <block id="ba52550fcd053eb4d2da84f252e514e7" category="section-title">데이터베이스 환경 분석 옵션</block>
+  <block id="fbce5e4a64b8c9a295b946cbdba92ed5" category="paragraph">Workload Factory는 데이터베이스 환경을 분석하기 위한 다음 옵션을 제공합니다.</block>
+  <block id="b2583e88253ca682a5c9db94c5ed500a" category="inline-link-macro">일회성 평가</block>
+  <block id="552cb152a031acb4dd113f600e3ade2f" category="list-text">*일회성 평가*: <block ref="8a4d4d5f036a1f87bfd488fd328f962f" category="inline-link-macro-rx"></block>를 수행하여 자격 증명을 저장하거나 리소스를 등록하지 않고 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 아키텍처가 잘 설계되었는지 확인할 수 있습니다.</block>
+  <block id="2527ed375db9a9b7c8eb438c41b158af" category="list-text">*지속적인 모니터링*: 리소스를 등록하여 지속적인 모니터링을 활성화하세요. Workload Factory는 데이터베이스 환경을 정기적으로 분석하고, 구성 최적화를 위한 지속적인 권장 사항을 제공하며, 문제를 자동으로 해결합니다.</block>
+  <block id="c00d1429cf92a83ae3a29f82b1d3ce87" category="paragraph">일회성 평가의 경우 분석하려는 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에 대한 자격 증명을 한 번만 제공하면 됩니다.</block>
+  <block id="8e66e2128d2e2c62b019aa77535f4ea2" category="paragraph">지속적인 모니터링을 위해서는 AWS 계정에 리소스를 등록하고, 링크를 연결하고, 권한을 부여해야 합니다.</block>
+  <block id="e498749f3c42246d50b15c81c101d988" category="section-title">애플리케이션</block>
+  <block id="6f4c4a3cb603b128e3558183f12a42c6" category="list-text">*Oracle 중요 패치 업데이트*</block>
+  <block id="b73450e7e11af7bf00f7fdd615541be8" category="paragraph">최신 Oracle 중요 패치 업데이트를 적용하여 보안 취약점을 해결하고 데이터베이스 환경의 무결성을 유지하십시오. 잠재적인 위협으로부터 보호하고 보안 모범 사례를 준수하려면 정기적으로 패치를 검토하고 적용하십시오.</block>
+  <block id="02bc0523497de72834c4c7990e32d155" category="section-title">복원력</block>
+  <block id="10797d31a69c2502a69facc97a069c1e" category="list-text">*교차 리전 복제(CRR)*</block>
+  <block id="a9e4d72be69fab8a75dc490382a14871" category="paragraph">Oracle 데이터베이스의 데이터 가용성과 재해 복구 기능을 강화하려면 지역 간 복제(CRR)를 활성화하십시오. CRR은 지리적으로 분산된 위치에 데이터를 복제하여 지역 장애로부터 보호하고 비즈니스 연속성을 보장합니다.</block>
+  <block id="4e3fbfcdffe2becd73a5b796de048459" category="list-text">*애플리케이션 정합성 보장 스냅샷*</block>
+  <block id="0d0d1e59f6397f54691afa326ea6ef15" category="paragraph">NetApp SnapCenter와 함께 애플리케이션 정합성 보장 스냅샷을 사용하여 특정 시점의 볼륨 데이터에 대한 정확하고 안정적인 스냅샷을 생성할 수 있습니다. 이를 통해 애플리케이션을 원활하게 실행하고 데이터를 안전하게 보호할 수 있습니다. SnapCenter는 백업을 간소화하고 데이터를 신속하고 정확하게 복원하여 다운타임을 줄이고 가장 중요한 워크로드를 보호합니다.</block>
+  <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026년 4월 6일</block>
 </blocks>
