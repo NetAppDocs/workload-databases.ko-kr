@@ -1125,7 +1125,6 @@
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">*닫기*를 선택하세요.</block>
   <block id="0b640c5e49490eb540208568a359492b" category="summary">NetApp Workload Factory for Databases의 새로운 소식을 알아보세요.</block>
   <block id="1c6922f994b9da3a35a8bb9b0644ab56" category="doc">데이터베이스용 NetApp Workload Factory의 새로운 기능</block>
-  <block id="61c3763b08308c467fdf40bde3586f08" category="section-title">2026년 10월 6일</block>
   <block id="7197ea7b7a0d83f9800a417fd561bcea" category="sidebar">NetApp Workload Factory의 FSx for ONTAP 파일 시스템 스토리지를 기반으로 Microsoft SQL Server 구성을 배포하고 데이터베이스 환경을 관리합니다.</block>
   <block id="d83c92d6ba7b7ac809c4616f670db665" category="sidebar">데이터베이스용 NetApp Workload Factory 설명서</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp 콘솔</block>
@@ -1502,4 +1501,5 @@
   <block id="4e3fbfcdffe2becd73a5b796de048459" category="list-text">*애플리케이션 정합성 보장 스냅샷*</block>
   <block id="0d0d1e59f6397f54691afa326ea6ef15" category="paragraph">NetApp SnapCenter와 함께 애플리케이션 정합성 보장 스냅샷을 사용하여 특정 시점의 볼륨 데이터에 대한 정확하고 안정적인 스냅샷을 생성할 수 있습니다. 이를 통해 애플리케이션을 원활하게 실행하고 데이터를 안전하게 보호할 수 있습니다. SnapCenter는 백업을 간소화하고 데이터를 신속하고 정확하게 복원하여 다운타임을 줄이고 가장 중요한 워크로드를 보호합니다.</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026년 4월 6일</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025년 10월 6일</block>
 </blocks>
