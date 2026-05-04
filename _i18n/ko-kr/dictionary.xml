@@ -13,7 +13,6 @@
   <block id="655a2ef85749dcbb368e1b8b32300552" category="list-text">무결성 확인 대화 상자에서 * 무결성 확인 * 을 클릭합니다.</block>
   <block id="d2212da19c03bb2b369faeaf9d65f109" category="list-text">Sandbox 또는 작업 모니터링에서 무결성 확인 상태를 확인합니다.</block>
   <block id="8ea37d89915fca644158ae5283f70e68" category="paragraph">무결성 검사에 실패하면 sandbox 클론을 사용하지 말고 새 sandbox 클론을 생성하는 것이 좋습니다.</block>
-  <block id="4d347b6072ee47e025ccdfd378498ab5" category="summary">REST API 코드를 사용하여 샌드박스 클론을 CI/CD 파이프라인에 연결하여 자동화를 통해 소프트웨어 제공을 개선할 수 있습니다.</block>
   <block id="2af2cf99863645202599afd2708773e2" category="doc">샌드박스 클론을 CI/CD 툴에 연결합니다</block>
   <block id="bc71cf96586c8edb703f886cce218a0c" category="paragraph">데이터베이스 복제본에 새 버전의 소프트웨어를 자동으로 제공하려면 CI/CD 파이프라인에 연결해야 합니다. 이 작업에서 제공한 REST API 코드를 사용하여 연결합니다.</block>
   <block id="452804eac893658bcf658126b3087551" category="list-text">Connect to CI/CD tools * 를 선택합니다.</block>
@@ -761,7 +760,6 @@
   <block id="0f2833865dd9bd39be8189333dae1c4f" category="list-text">*복제본 새로 고침 빈도*: 메뉴에서 복제본이 새로 고침되는 빈도를 선택합니다.</block>
   <block id="ca1bcaaac2fa2065767d6cb9b43a5bf7" category="list-text">절약 탐색 탭에서 FSx for Windows File Server 저장소를 사용하여 데이터베이스 호스트의 *절약 탐색*을 선택합니다.</block>
   <block id="546dcae8b2a33c531e585b76d51af0dd" category="paragraph">일부 권한이 제한된 경우, 인증에 성공한 후에도 탐색 저축 페이지가 데이터를 로드하지 않습니다.</block>
-  <block id="012a999834d8188ec17b6ec67f4db97d" category="list-text">복원력: 로컬 스냅샷, FSx for ONTAP 백업, 지역 간 복제(CRR), Microsoft SQL 고가용성이 포함됩니다.</block>
   <block id="1caf2514b723d82877e2b000e3ba5e3f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>리소스 검색 또는 배포</block>
   <block id="714bf7245115e9e60e5f4ba3dc04e4f5" category="paragraph">자격 증명 및 IAM 정책을 사용하면 인벤토리에서 기존 데이터베이스 리소스를 검색할 수 있습니다.<block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block> .  인벤토리는 리소스를 관리하기 위한 통합된 인터페이스를 제공합니다.</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
@@ -942,7 +940,6 @@
   <block id="da04ea76e1caee6b818a505ce02fa93b" category="paragraph">Amazon Elastic Block Store(EBS), FSx for Windows File Server 및 온프레미스 스토리지와 FSx for ONTAP 스토리지를 사용하여 Microsoft SQL Server를 사용하는 비용을 비교하여 데이터베이스 워크로드에 대한 NetApp Workload Factory for Databases의 절감 효과를 알아보세요.</block>
   <block id="e123e8395730b190f146babf1b2d52a4" category="inline-image-macro">Workload Factory 콘솔의 데이터베이스 대시보드에서 잠재적 절감 타일을 스크린샷으로 보여 줍니다.  잠재적 절감 타일은 Elastic Block Store와 FSx for Windows File Server에서 수행하는 모든 데이터베이스 워크로드 수, 잠재적 비용 절감액, 절감 비율, 막대 그래프의 시각적 표현을 보여줍니다.</block>
   <block id="092e04ebb92f098a8d23a32d9a42e747" category="paragraph"><block ref="092e04ebb92f098a8d23a32d9a42e747" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e5af3e73361e966fe2adc79aadc34d57" category="paragraph">Workload Factory는 감지된 Elastic Block Store와 FSx for Windows File Server 호스트 특성을 입력하여 자동으로 절감 효과를 알아볼 수 있도록 해줍니다.</block>
   <block id="b9382a492febc168d96a9e8228ee319f" category="paragraph">온프레미스 호스트에서 Microsoft SQL Server에 대한 비용 절감을 살펴본 후 Workload Factory에서 온프레미스 호스트 레코드를 제거할 수 있습니다.  Microsoft SQL Server 온프레미스 호스트의 작업 메뉴를 선택한 다음 *삭제*를 선택합니다.</block>
   <block id="1dbb11b39a311ecc5e8a64d372008d84" category="admonition">Workload Factory는 여러 개의 FSx for ONTAP 파일 시스템을 저장하거나 생성하는 것을 지원하지 않습니다.</block>
   <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp 다양한 방법으로 Workload Factory와 클라우드 서비스에 대한 지원을 제공합니다. 지식 기반(KB) 문서와 커뮤니티 포럼 등 광범위한 무료 셀프 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
@@ -1416,7 +1413,6 @@
   <block id="aeb19b16f26ffba9cda709a80fdd7572" category="paragraph">최신 SQL Server 패치를 적용하여 보안을 강화하고 취약점으로부터 보호하며 시스템 안정성을 향상시키십시오.</block>
   <block id="4eddb0eeecb1e4ae314e258e08e465e3" category="list-text">*MAXDOP*</block>
   <block id="a87a9d28595a379a45146753041d53f3" category="paragraph">쿼리 성능을 최적화하려면 MAXDOP를 구성하십시오. 일반적으로 4, 8 또는 16 값이 적합합니다. 워크로드를 테스트하고 CXPACKET과 같은 병렬 처리 대기 유형을 모니터링하십시오.</block>
-  <block id="820b8f74ad843d1574106ec4cadfc07e" category="section-title">안정성</block>
   <block id="277088f7a0bc1d2b0023dc08b1d30e37" category="list-text">*로컬 스냅샷 예약*</block>
   <block id="2a18a15eebd0bb67a6bfebc30c94b035" category="paragraph">정기적인 스냅샷을 예약하여 특정 시점의 백업을 생성하고, 실수로 인한 삭제, 데이터 손상 및 기타 문제 발생 시 신속하게 복구하세요.</block>
   <block id="29e7ad88f894625110c66db9a5db3cae" category="list-text">*백업 구성*</block>
@@ -1468,7 +1464,6 @@
   <block id="3a40f68be193f0f7bc0c01f622d3cc5f" category="paragraph">선택적으로, 자격 증명을 저장하거나 리소스를 등록하지 않고도 데이터베이스 구성에 대한 모범 사례를 검토하기 위해 일회성 평가를 수행할 수 있습니다.</block>
   <block id="e112d8634bd0280eb27ad63e9eeb9493" category="list-text">애플리케이션: Microsoft SQL Server 라이센스, Microsoft SQL Server 패치 및 MAXDOP 설정 포함</block>
   <block id="f953bb98ceaddd49464d672fa425c300" category="list-text">애플리케이션: Oracle Critical Patch Updates 포함</block>
-  <block id="10e1b7780581fec77099c3ba816f3e14" category="list-text">복원력: 지역 간 복제(CRR) 및 애플리케이션 정합성 보장 스냅샷 포함</block>
   <block id="c20a2029d45b71b182aee84243212b9d" category="section-title">구성을 일회성으로 평가하십시오</block>
   <block id="384e59575141746d138a94a55377c6e8" category="paragraph">자격 증명을 저장하거나 리소스를 등록하지 않고도 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 아키텍처 설계 상태를 일회성으로 평가할 수 있습니다.</block>
   <block id="c091a4936cfa8cd2dad53f925bd5aee2" category="paragraph">스크립트를 실행하고 결과를 여러 번 업로드할 수 있습니다. Workload Factory는 업로드할 때마다 아키텍처 설계 상태와 인사이트를 업데이트합니다.</block>
@@ -1502,4 +1497,14 @@
   <block id="0d0d1e59f6397f54691afa326ea6ef15" category="paragraph">NetApp SnapCenter와 함께 애플리케이션 정합성 보장 스냅샷을 사용하여 특정 시점의 볼륨 데이터에 대한 정확하고 안정적인 스냅샷을 생성할 수 있습니다. 이를 통해 애플리케이션을 원활하게 실행하고 데이터를 안전하게 보호할 수 있습니다. SnapCenter는 백업을 간소화하고 데이터를 신속하고 정확하게 복원하여 다운타임을 줄이고 가장 중요한 워크로드를 보호합니다.</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026년 4월 6일</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025년 10월 6일</block>
+  <block id="e41556fc62415ea0a9f5770be89f198d" category="summary">샌드박스 클론을 REST API 코드를 사용하여 CI 및 CD 파이프라인에 연결하면 자동화를 통해 소프트웨어 제공을 개선할 수 있습니다.</block>
+  <block id="7c82c4b76396ded628b47eba74c65565" category="paragraph">Workload Factory는 감지된 호스트 특성을 입력하여 비용 절감 효과를 자동으로 확인할 수 있습니다.</block>
+  <block id="d3fcf12bb075f268d31cdb0724f5ce8c" category="section-title">감지된 Microsoft SQL Server 호스트에 대한 절감 효과 살펴보기</block>
+  <block id="86a575769a61e2abed6c5895311f8530" category="section-title">감지된 Oracle 호스트에 대한 비용 절감 효과 살펴보기</block>
+  <block id="44f6dcaf4df7850e972b2333b05391b1" category="list-text">저장 공간 탐색에서 *Elastic Block Store(EBS)의 Oracle* 탭을 선택하세요.</block>
+  <block id="d2b291a665d715eddff69d121f8023e5" category="list-text">필요한 경우 Oracle 자격 증명을 사용하여 데이터베이스 호스트를 인증하거나 누락된 Oracle 권한을 추가하십시오.</block>
+  <block id="e83aba812fc0f70eadb6faace95a02ef" category="paragraph">Workload Factory는 여러 Oracle 호스트를 단일 FSx for ONTAP 구성 권장 사항으로 통합하여 비용 절감을 최적화합니다. 단, 선택한 EBS 호스트가 단일 FSx for ONTAP 파일 시스템에 대한 처리량, 용량 또는 IOPS 제한을 초과하는 경우는 예외입니다.</block>
+  <block id="2a1f70a024ddcf60632c72e3981ec1bd" category="paragraph">Oracle 온프레미스 호스트를 통한 비용 절감 효과를 확인한 후에는 Workload Factory에서 온프레미스 호스트 레코드를 제거할 수 있습니다. Oracle 온프레미스 호스트의 작업 메뉴를 선택한 다음 *Delete*를 선택하십시오.</block>
+  <block id="59b293a0a31a179071c10aecd46b5de5" category="list-text">복원력: 로컬 스냅샷, 백업 구성, 지역 간 복제(CRR), Microsoft SQL 고가용성 및 클론 정리 기능을 포함합니다.</block>
+  <block id="07081ec6223cf25eb33c5a000e4055a1" category="list-text">복원력: 지역 간 복제(CRR), 애플리케이션 정합성 보장 스냅샷, 백업 구성 및 클론 정리 기능을 포함합니다</block>
 </blocks>

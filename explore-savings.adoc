@@ -163,7 +163,7 @@ FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하�
 
 === 감지된 호스트에 대한 절약 효과를 탐색합니다
 
-Workload Factory는 감지된 Elastic Block Store와 FSx for Windows File Server 호스트 특성을 입력하여 자동으로 절감 효과를 알아볼 수 있도록 해줍니다.
+Workload Factory는 감지된 호스트 특성을 입력하여 비용 절감 효과를 자동으로 확인할 수 있습니다.
 
 .시작하기 전에
 시작하기 전에 다음 사전 요구 사항을 완료하십시오.
@@ -220,6 +220,10 @@ Workload Factory는 감지된 Elastic Block Store와 FSx for Windows File Server
 
 
 
+
+
+
+==== 감지된 Microsoft SQL Server 호스트에 대한 절감 효과 살펴보기
 
 스토리지 유형에 해당하는 탭 아래의 단계를 따릅니다.
 
@@ -318,6 +322,59 @@ Workload Factory는 여러 온프레미스 SQL Server 호스트를 단일 FSx fo
 
 
 
+.온프레미스 호스트 제거
+온프레미스 호스트에서 Microsoft SQL Server에 대한 비용 절감을 살펴본 후 Workload Factory에서 온프레미스 호스트 레코드를 제거할 수 있습니다.  Microsoft SQL Server 온프레미스 호스트의 작업 메뉴를 선택한 다음 *삭제*를 선택합니다.
+
+--
+====
+데이터베이스 호스트 구성에 대한 세부 정보를 제공한 후 페이지에 제공된 계산 및 권장 사항을 검토합니다.
+
+또한 페이지 하단으로 스크롤하여 다음 중 하나를 선택하여 보고서를 봅니다.
+
+* * PDF 내보내기 *
+* * 이메일로 보내기 *
+* * 계산 보기 *
+
+
+FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
+
+
+
+==== 감지된 Oracle 호스트에 대한 비용 절감 효과 살펴보기
+
+스토리지 유형에 해당하는 탭 아래의 단계를 따릅니다.
+
+[role="tabbed-block"]
+====
+.Amazon EBS(Elastic Block Store)
+--
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *데이터베이스*를 선택합니다.
+. 데이터베이스 메뉴에서 *절약 내역 살펴보기*를 선택합니다.
+. 저장 공간 탐색에서 *Elastic Block Store(EBS)의 Oracle* 탭을 선택하세요.
++
+Workload Factory가 EBS 호스트를 감지하면 절약 탐색 탭으로 이동합니다. EBS 호스트를 감지하지 못하면 계산기로 이동하여 <<맞춤화를 통한 절감 효과를 살펴보십시오,맞춤화를 통한 절감 효과를 살펴보십시오>>.
+
+. *저축 살펴보기*에서 EBS에서 실행 중인 하나 이상의 데이터베이스 호스트를 선택한 다음 *저축 살펴보기*를 선택합니다.
+. 필요한 경우 Oracle 자격 증명을 사용하여 데이터베이스 호스트를 인증하거나 누락된 Oracle 권한을 추가하십시오.
++
+인증에 성공한 후에도 저축 탐색 페이지에서 데이터가 로드되지 않으면, *인벤토리* 탭을 선택하여 데이터를 다시 로드한 다음, *저축 탐색* 탭을 다시 선택하세요.
+
+. Savings calculator에서 보다 정확한 비용 절감 추정을 위해 EBS 스토리지의 클론 및 스냅샷에 대한 다음 세부 정보를 제공할 수 있습니다.
++
+.. *스냅샷 빈도*: 메뉴에서 스냅샷 빈도를 선택하세요.
+.. *복제본 새로 고침 빈도*: 메뉴에서 복제본이 새로 고침되는 빈도를 선택합니다.
+.. * 복제 사본 수 *: EBS 구성에 복제된 사본 수를 입력합니다.
+.. * 월별 변경율 *: 클론 및 스냅샷 데이터가 매월 평균 변경되는 비율을 입력합니다.
+.. *호스트 추가*: 선택적으로, 절감액 계산에 포함할 감지된 EBS 호스트를 최대 5개까지 선택합니다.
++
+Workload Factory는 여러 Oracle 호스트를 단일 FSx for ONTAP 구성 권장 사항으로 통합하여 비용 절감을 최적화합니다. 단, 선택한 EBS 호스트가 단일 FSx for ONTAP 파일 시스템에 대한 처리량, 용량 또는 IOPS 제한을 초과하는 경우는 예외입니다.
+
+
+
+
+
 --
 .온프레미스 Oracle Server
 --
@@ -353,6 +410,9 @@ Workload Factory는 여러 Oracle 온프레미스 데이터베이스를 단일 F
 
 
 
+.온프레미스 호스트 제거
+Oracle 온프레미스 호스트를 통한 비용 절감 효과를 확인한 후에는 Workload Factory에서 온프레미스 호스트 레코드를 제거할 수 있습니다. Oracle 온프레미스 호스트의 작업 메뉴를 선택한 다음 *Delete*를 선택하십시오.
+
 --
 ====
 데이터베이스 호스트 구성에 대한 세부 정보를 제공한 후 페이지에 제공된 계산 및 권장 사항을 검토합니다.
@@ -365,9 +425,6 @@ Workload Factory는 여러 Oracle 온프레미스 데이터베이스를 단일 F
 
 
 FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
-
-.온프레미스 호스트 제거
-온프레미스 호스트에서 Microsoft SQL Server에 대한 비용 절감을 살펴본 후 Workload Factory에서 온프레미스 호스트 레코드를 제거할 수 있습니다.  Microsoft SQL Server 온프레미스 호스트의 작업 메뉴를 선택한 다음 *삭제*를 선택합니다.
 
 
 
