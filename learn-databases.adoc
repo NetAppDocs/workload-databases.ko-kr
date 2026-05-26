@@ -17,7 +17,7 @@ NetApp Workload Factory for Databases는 최적화, 자동 씬 클로닝, 모니
 
 == NetApp Workload Factory for Databases란 무엇인가요?
 
-NetApp Workload Factory for Databases는 업계 모범 사례를 준수하는 동시에 성능 및 비용 기대치를 충족하도록 최적화된 Amazon FSx for NetApp ONTAP (FSx for ONTAP) 배포 환경으로 Microsoft SQL Server 데이터를 감지, 평가, 계획, 프로비저닝하고 이동합니다.  NetApp Workload Factory for Databases는 전체 수명 주기 동안 FSx for ONTAP 의 데이터베이스에 대한 지속적인 최적화 및 관리를 제공합니다.
+NetApp Workload Factory for Databases는 Microsoft SQL Server, PostgreSQL 및 Oracle 데이터를 Amazon FSx for NetApp ONTAP(FSx for ONTAP) 배포 환경으로 검색, 평가, 계획, 프로비저닝 및 마이그레이션합니다. 이러한 배포 환경은 업계 모범 사례를 준수하면서 성능 및 비용 기대치를 충족하도록 최적화됩니다. NetApp Workload Factory for Databases는 FSx for ONTAP에서 데이터베이스를 지속적으로 최적화하고 관리합니다.
 
 Workload Factory에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["Workload Factory 개요"^] .
 
@@ -25,7 +25,7 @@ Workload Factory에 대한 자세한 내용은 다음을 참조하세요.link:ht
 
 == 자체 관리형 데이터베이스를 위한 Workload Factory의 이점
 
-Workload Factory는 자체 관리형 데이터베이스에 대한 다음과 같은 유익한 모범 사례와 자동화를 제공합니다.
+Workload Factory는 자체 관리형 데이터베이스를 위한 모범 사례와 자동화 기능을 제공합니다.
 
 
 
@@ -43,7 +43,7 @@ Workload Factory는 자체 관리형 데이터베이스에 대한 다음과 같�
 
 Workload Factory는 _Codebox_를 통해 내장된 자동화 기능을 도입했습니다.  Codebox는 다음과 같은 자동화 혜택을 제공합니다.
 
-* * 코드 스니펫 생성 *: 리소스 생성 중에 IAC(Infrastructure-as-Code) 스니펫이 생성되므로 기존 오케스트레이션 워크플로우와의 원활한 통합이 가능합니다.
+* *코드 스니펫 생성*: Workload Factory는 리소스 생성 중에 IaC(Infrastructure-as-Code) 스니펫을 생성하여 기존 오케스트레이션 워크플로와의 원활한 통합을 지원합니다.
 * *인프라로서의 코드 공동 파일럿*: Codebox는 개발자와 DevOps가 Workload Factory에서 지원하는 모든 작업을 실행하는 코드를 생성하는 데 도움이 되는 인프라로서의 코드(IaC) 공동 파일럿입니다.
 * * 코드 뷰어 및 자동화 카탈로그 *: 코드박스는 자동화를 빠르게 분석할 수 있는 코드 뷰어와 빠른 향후 재사용을 위한 자동화 카탈로그를 제공합니다.
 
@@ -54,16 +54,16 @@ Workload Factory는 _Codebox_를 통해 내장된 자동화 기능을 도입했�
 
 Workload Factory for Databases는 다음과 같은 기능을 제공합니다.
 
-* * 간단하고 빠른 배포 *: 사양 질문에 대한 답변을 선택하고 AWS에서 Microsoft SQL Server의 프로비저닝 및 구성 방법을 조사하는 데 일반적으로 필요한 시간을 제거하여 프로비저닝 환경을 간소화하고 간소화합니다.
-* *자동 오케스트레이션*: Workload Factory 콘솔에서 _Quick_ 및 _Advanced_ 생성 배포 모드, Chatbot, Codebox를 통한 AWS CloudFormation을 통해 사용 가능합니다.
-* * 기본 제공 기능 *: 구축 구성에 내장된 NetApp, Microsoft 및 Amazon 모범 사례 및 AWS 리소스 선택 항목을 활용합니다.
-* * 비용 산정 *: Elastic Block Store 및 FSx for Windows File Server를 사용한 기존 Microsoft SQL Server 배포의 스토리지, 컴퓨팅, SQL 라이센스, 스냅샷 및 복제 항목화된 비용을 FSx for ONTAP와 비교하여 추산하는 Savings Calculator로 잠재적인 비용 절감 효과를 평가하십시오.
-* *재사용 가능한 자동화 템플릿*: Workload Factory Codebox에서 CloudFormation 템플릿을 만들고, 재사용하고, 사용자 지정하여 여러 환경에서 향후 Microsoft SQL Server를 배포할 수 있습니다.
-* * AWS 리소스 검색 및 프로비저닝 *: AWS 계정에서 배포된 FSx for ONTAP, FSx for Windows 파일 서버 및 Elastic Block Store에서 Microsoft SQL 서버를 자동으로 감지합니다. 데이터베이스 인벤토리는 다른 AWS 스토리지 시스템의 서버에 대한 비용 절감 기회를 탐색하거나 FSx for ONTAP 기반 서버 및 인스턴스용 관리 툴을 탐색하기 위한 시작 지점으로 사용됩니다.
-* * Sandbox 생성 *: 프로덕션 데이터에 영향을 주지 않고 테스트, 통합, 진단 및 교육에 사용할 수 있는 온디맨드 격리된 데이터베이스 환경을 만듭니다.
-* * 데이터베이스 생성 *: 데이터베이스 데이터 정렬, 파일 이름 및 크기를 구성하기 위해 _Quick_or_Advanced_create 모드를 사용하여 기존 Microsoft SQL Server용 사용자 데이터베이스를 생성합니다. 스토리지 구성이 포함되어 있습니다.
-* * 작업 모니터링 * : 데이터베이스 작업 실행 진행 상황을 모니터링하고 추적하며 오류가 발생할 경우 문제를 진단하고 해결합니다.
-* *지속적인 최적화*: Microsoft SQL Server 자산을 오프라인으로 지속적으로 검사하여 운영 효율성을 높이는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 포괄적인 보고서를 제공합니다.
+* *비용 추정*: 기존 Microsoft SQL Server 및 Oracle 배포 환경(Elastic Block Store, FSx for Windows File Server 및 온프레미스 포함)과 FSx for ONTAP을 비교했을 때 스토리지, 컴퓨팅, SQL 라이선스, 스냅샷 및 클론 관련 항목별 비용을 추정하고 자세히 보여주는 비용 절감 계산기를 사용하여 잠재적인 비용 절감 효과를 평가해 보세요.
+* *간편하고 빠른 배포*: NetApp, Microsoft 및 Amazon의 모범 사례가 내장되어 있어 호스트, 데이터베이스 및 샌드박스 프로비저닝을 간소화하고 효율화하여 AWS에서 Microsoft SQL Server 및 PostgreSQL 인스턴스를 수동으로 구성하는 복잡성을 제거합니다.
++
+** Workload Factory 콘솔에서 _Quick_ 또는 _Advanced_ 생성 모드를 사용하여 배포하거나, Codebox를 통해 AWS CloudFormation 템플릿을 생성, 재사용 및 사용자 지정하여 여러 환경에 걸쳐 향후 배포에 활용할 수 있습니다.
+** 스토리지 구성 및 샌드박스 클론을 사용하여 온디맨드 격리 데이터베이스를 생성하여 테스트, 통합, 진단 및 교육에 사용할 수 있으며 운영 데이터에 영향을 주지 않습니다.
+
+
+* *Well-architected 평가 기능*: Microsoft SQL Server 및 Oracle 환경을 지속적으로 스캔하여 AWS 모범 사례를 기반으로 운영 효율성, 보안, 안정성, 성능 효율성 및 비용 최적화를 달성하는 데 도움이 되는 통찰력, 기회 및 권장 사항에 대한 종합 보고서를 제공합니다.
+* *오류 분석*: AI 분석기를 사용하여 로그 오류를 분석하고 문제를 해결하여 자세한 오류 메시지, 문제 해결 단계 및 문제 해결을 위한 권장 사항을 확인하십시오.
+* *중앙 집중식 관리*: 한 곳에서 Amazon FSx for NetApp ONTAP의 Microsoft SQL Server, Oracle 및 PostgreSQL 리소스를 관리하세요. Workload Factory에서 연결된 인프라, AWS 계정, 자격 증명, 연결된 Amazon FSx for NetApp ONTAP 파일 시스템, NFS 볼륨 및 iSCSI LUN을 포함한 스토리지 사용량, 보호 상태, 성능, 아키텍처 우수성 상태 및 오류 분석을 확인할 수 있습니다.
 
 
 
@@ -96,7 +96,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["Work
 
 == 지원되는 구성
 
-Workload Factory는 AWS, NetApp ONTAP, Microsoft SQL Server, Oracle 및 PostgreSQL 모범 사례에 따라 다음과 같은 데이터베이스 엔진, 버전, 운영 체제 및 배포 모델을 지원합니다.
+AWS, NetApp ONTAP, Microsoft SQL Server, Oracle 및 PostgreSQL의 모범 사례를 준수하여 Workload Factory를 다음 데이터베이스 엔진, 버전, 운영 체제 및 배포 모델과 함께 사용할 수 있습니다.
 
 [cols="1,1,1,1"]
 |===
