@@ -92,10 +92,6 @@
   <block id="cd1a078082e7012671955f628fc5a709" category="paragraph">AWS 서비스 인터페이스 엔드포인트(SQS, FSx, EC2, CloudWatch, Cloud Formation, SSM) 및 S3 게이트웨이 끝점은 배포 중에 찾을 수 없는 경우 생성됩니다.</block>
   <block id="4f8707176b7235252f943ef6ef597d55" category="paragraph">VPC DNS 속성<block ref="cb0df2380d372b70fd568d139d704794" prefix=" " category="inline-code"></block> 및<block ref="df550516571c5adda5f49cb0f14d22f1" prefix=" " category="inline-code"></block> 이(가) 으로 설정되어 있지 않은 경우 엔드포인트 주소 확인을 사용하도록 수정됩니다.<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block></block>
   <block id="8738f299dd52a2650f23bf1ae30694fa" category="list-text">Cluster configuration - Node 1 * 필드의 드롭다운 메뉴에서 * Availability zone * 의 가용 영역을 선택하고 * Subnet * 드롭다운 메뉴에서 서브넷을 선택합니다.</block>
-  <block id="5ac7c1b392927ce429f17a8855e854b5" category="list-text">* 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다.</block>
-  <block id="ba4f09fe932ad91d759a5dd3636acec6" category="list-text">노드에서 Microsoft SQL 및 Windows 클러스터 통신에 필요한 포트 및 프로토콜을 지원하기 위한 워크로드 보안 그룹이 생성됩니다.</block>
-  <block id="1f653bdd2a02e3ebdc4f28328a96b00f" category="list-text">AWS에서 관리하는 Active Directory의 경우 디렉터리 서비스에 연결된 보안 그룹이 Microsoft SQL 노드에 자동으로 추가되어 Active Directory와 통신할 수 있습니다.</block>
-  <block id="84c62c2707904a024819612ef450ef1d" category="list-text">기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 SQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다. 새 FSx for ONTAP 시스템이 생성되면 FSx for ONTAP 파일 시스템에 대한 새 보안 그룹이 생성되고 동일한 보안 그룹도 SQL 노드에 연결됩니다.</block>
   <block id="1001245fbd8a96ced15590168ee50912" category="list-text">응용 프로그램 설정 * 에서 다음을 제공합니다.</block>
   <block id="5f90cc9084764f349d384957856b0b40" category="list-text">SQL Server 설치 유형 * 에서 * 라이센스 포함 AMI * 또는 * 사용자 지정 AMI 사용 * 을 선택합니다.</block>
   <block id="51af4699ded2f99936c69e9d355ac856" category="list-text">라이센스 포함 AMI * 를 선택한 경우 다음을 제공합니다.</block>
@@ -431,7 +427,6 @@
   <block id="42284190cc0e4af01d69e70bf8966f0e" category="paragraph">기존 FSx for ONTAP 파일 시스템의 경우 다음을 확인하십시오.</block>
   <block id="996d6e2f42d7b52c1cba72a8225cbb65" category="list-text">FSx for ONTAP에 연결된 라우팅 그룹을 사용하면 서브넷으로의 경로를 배포에 사용할 수 있습니다.</block>
   <block id="74c33b9e5d949f9ac1669cc2da38be60" category="list-text">보안 그룹은 배포에 사용되는 서브넷, 특히 HTTPS(443) 및 iSCSI(3260) TCP 포트의 트래픽을 허용합니다.</block>
-  <block id="513217cdb8cfdacc4a193bdd0bbbee78" category="paragraph">사용자 관리 Active Directory의 경우 AD 인스턴스에 구성된 보안 그룹이 배포에 사용되는 서브넷의 트래픽을 허용하는지 확인합니다. 보안 그룹은 Microsoft SQL용 EC2 인스턴스가 구성된 서브넷에서 Active Directory 도메인 컨트롤러와의 통신을 허용해야 합니다.</block>
   <block id="f565eb47bc8c215541fe00205d9b37d3" category="doc">맞춤화를 통한 절감 효과를 살펴보십시오</block>
   <block id="bfbd25ddeba7cedc974f1a5a1d0a295c" category="paragraph">이제 절감 계산기에서 Amazon EC2의 Microsoft SQL Server에 대한 구성 설정을 FSx for Windows File Server 및 Elastic Block Store 스토리지와 함께 사용자 지정할 수 있습니다. 스토리지 요구사항에 따라 FSx for ONTAP 스토리지가 데이터베이스 워크로드에 가장 비용 효율적이라는 사실을 발견할 수 있습니다.</block>
   <block id="f94c119bb7d164adbb1a390a249741e0" category="section-title">홈 페이지에서 절약 계산기로 이동합니다</block>
@@ -518,8 +513,6 @@
   <block id="7a65409a338637d9c410720ad6eb8500" category="list-text">새 PostgreSQL 서버를 생성하려면 스토리지 백엔드로 FSx for ONTAP 파일 시스템이 필요합니다. 기존 FSx for ONTAP 파일 시스템을 사용하거나 새 파일 시스템을 생성할 수 있습니다. 기존 FSx for ONTAP 파일 시스템을 데이터베이스 서버 스토리지 백엔드로 선택하면 PostgreSQL 워크로드에 대한 새 스토리지 VM이 생성됩니다.</block>
   <block id="75b39c0795d7295af69b1d13bbf82285" category="list-text">* 가용 영역 *: 가용 영역 및 서브넷을 선택합니다.</block>
   <block id="d576650f664651e9b2569ccb346b6649" category="list-text">Cluster configuration - Node 1 * 필드에서 * Availability zone * 드롭다운 메뉴에서 가용 영역을 선택하고 * Subnet * 드롭다운 메뉴에서 서브넷을 선택합니다.</block>
-  <block id="720301aea3fac96d94759700c949e15f" category="paragraph">새 서버 배포 중에 두 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.</block>
-  <block id="f8473adfeac8aca2a2eaa799d6cde778" category="list-text">PostgreSQL에 필요한 포트 및 프로토콜을 허용하는 워크로드 보안 그룹이 생성됩니다.</block>
   <block id="5d48b45f2ad58c8e1145b474d95593f9" category="list-text">드롭다운 메뉴에서 * 운영 체제 * 를 선택합니다.</block>
   <block id="6dd53f240f48678994cf9b0109fa0ec2" category="list-text">드롭다운 메뉴에서 * PostgreSQL 버전 * 을 선택합니다.</block>
   <block id="d456e032669379ad4e2388045a89301d" category="list-text">* 데이터베이스 서버 이름 *: 데이터베이스 클러스터 이름을 입력합니다.</block>
@@ -598,7 +591,6 @@
   <block id="30e232f58ccaf796b9d3c66a4c7f3eae" category="list-text">* 단일 인스턴스 배포 *: 새 PostgreSQL 서버가 생성될 때 단일 가용성 영역 FSx for ONTAP 파일 시스템이 생성됩니다. 또한 데이터, 로그 및 tempdb 파일용으로 별도의 볼륨과 LUN이 생성됩니다.</block>
   <block id="5ac68d725f8eef71a0523eb1c6cca14f" category="list-text">Landing zone * 아래에 다음을 제공합니다.</block>
   <block id="9a7005e13653f915b8e1367cbdc68e4e" category="list-text">배포 모델 * 에서 * 독립 실행형 인스턴스 * 또는 * 고가용성(HA) * 을 선택합니다.</block>
-  <block id="d2eadd2943100e3e5ea25460fadf93c2" category="list-text">새로운 FSx for ONTAP 파일 시스템의 경우 새 보안 그룹이 생성되어 SQL 노드에 연결됩니다. 기존 FSx for ONTAP 파일 시스템의 경우 연결된 보안 그룹이 PostgreSQL 노드에 자동으로 추가되어 파일 시스템과의 통신이 가능합니다.</block>
   <block id="6040bb4a85eec1c3be0e69ac393a4c24" category="paragraph-title">모든 데이터베이스 작업 부하에 대한 잠재적 절감 효과</block>
   <block id="14e0ba144c9ea737e00075f15ba92914" category="paragraph-title">비용 절감 계산기</block>
   <block id="34bd0eb13cbfc5b3e75abc9ef37d28a9" category="inline-xref">계산기 사용 방법에 대해 알아보십시오.</block>
@@ -611,8 +603,6 @@
   <block id="037fbb0239239f2168489bba99e09b67" category="list-text">* PDF 내보내기 *</block>
   <block id="10acfa1cd5e4b3b5f4da60bba2257672" category="list-text">* 이메일로 보내기 *</block>
   <block id="3902a76bb589f831b404ce1ec9865654" category="list-text">* 계산 보기 *</block>
-  <block id="68bfcbb9e0f73d04499c64e0bc23d369" category="inline-xref">FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다</block>
-  <block id="a8aa5970e795fc6acbc94959e79d385e" category="paragraph">FSx for ONTAP으로 전환하려면 의 지침을 <block ref="111c1b12d181a36b3809e884a469d22f" category="inline-xref-macro-rx"></block>따릅니다.</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025년 3월 3일</block>
   <block id="5b9ce98e8b3125f8d921be7829ab8a26" category="sidebar">Microsoft SQL Server를 만듭니다</block>
   <block id="25b3aca23d0668827e396e11779fd3e8" category="paragraph"><block ref="25b3aca23d0668827e396e11779fd3e8" category="inline-link-macro-rx"></block></block>
@@ -620,7 +610,6 @@
   <block id="05e1e00bdb39e9c766a6a0f69a222a3b" category="list-text"><block ref="05e1e00bdb39e9c766a6a0f69a222a3b" category="inline-link-macro-rx"></block></block>
   <block id="7115d78353263dbb2dbe063624f9f601" category="list-text"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
   <block id="4666cc74583e6d5c1f202a52bee57a9b" category="list-text"><block ref="4666cc74583e6d5c1f202a52bee57a9b" category="inline-link-macro-rx"></block></block>
-  <block id="b344730cd36668c36266c1d50c447eea" category="list-text">* 보안 그룹 *: 기존 보안 그룹을 선택하거나 새 보안 그룹을 만듭니다. 새 서버 배포 중에 세 개의 보안 그룹이 SQL 노드(EC2 인스턴스)에 연결됩니다.</block>
   <block id="292e876f4d1d5af73b815913bd3d9b26" category="doc">PostgreSQL 고가용성 구성입니다</block>
   <block id="047e8f86b83bb2e8d4c34b1dc560257b" category="paragraph">이제 PostgreSQL Server에 대한 고가용성(HA) 구성을 배포할 수 있습니다.</block>
   <block id="8bb788607f31f673e25d0ba34b09a14d" category="doc">최적화 개선 사항</block>
@@ -1247,9 +1236,7 @@
   <block id="6b49f93b8fce5f712f19faf1d7e86198" category="list-text">*모든 인스턴스에 동일한 자격 증명 사용* 또는 *자격 증명 수동 관리*를 선택합니다.</block>
   <block id="f401c2a4f95521388399cd9160d348c0" category="list-text">사용자 이름과 암호 정보를 제공하여 SQL Server 및 Windows를 인증합니다.</block>
   <block id="5af06cdcd5f2ae831a171dc46f044c7f" category="paragraph">인스턴스가 인증되면 * 다음 * 을 선택합니다.</block>
-  <block id="86f5d456064bc146b2c9f4537f5b1d93" category="list-text">FSx for ONTAP 인증(2단계)을 수행하려면 다음을 수행합니다.</block>
   <block id="69724d4e89d54d12f3752423c87be644" category="list-text">*모든 리소스에 동일한 자격 증명 사용* 또는 *수동으로 자격 증명 관리* 를 선택합니다.</block>
-  <block id="a26f5beb654e47a87608f8a28b573758" category="list-text">FSx for ONTAP 파일 시스템 사용자 이름과 암호를 입력한 다음 * Next * 를 선택합니다.</block>
   <block id="34b2f9d708b57fa0ab164ac81a844832" category="paragraph">FSx for ONTAP 파일 시스템이 인증되면 * 다음 * 을 선택합니다.</block>
   <block id="9ed181f71730a4b981c04369e2f1719e" category="list-text">준비(3단계)에서는 인스턴스가 최소 요구 사항을 충족하는지 확인하십시오.</block>
   <block id="4aa1b1ff22a8dfe18a969e9e18594ab0" category="list-text">각 기능에 대한 *설정 세부 정보*를 선택하여 기능 사전 요구 사항에 대해 알아보고 화면의 지침에 따라 기능에 대한 누락된 사전 요구 사항을 완료하십시오.</block>
@@ -1257,11 +1244,9 @@
   <block id="9d96bcc0867ec5be17a78fc127af4785" category="paragraph">인스턴스 등록이 시작됩니다. 진행 상황을 확인하려면 *작업 모니터링* 탭을 선택하십시오.</block>
   <block id="efd81ed9168d148e7b33debfd48f5bbe" category="paragraph">인스턴스 등록은 데이터베이스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 또는 여러 데이터베이스를 등록할 수 있습니다.</block>
   <block id="67b60232330635a005ec1fd48b8378f5" category="list-text">인벤토리에서 엔진 유형으로 *Oracle* 을 선택하십시오.</block>
-  <block id="5ad1176ca2fc8fe103dbef7c2c2368a4" category="list-text">데이터베이스를 인증하려면(1단계) 다음을 수행하십시오.</block>
   <block id="4a259cdca92c769ffaab7b1900cdf9a3" category="list-text">사용자 이름과 암호 정보를 제공하여 Oracle 사용자 및 ASM(Automatic Storage Management) 그리드 사용자(해당하는 경우)를 인증합니다.</block>
   <block id="d80e97cf9f44825e6a448342f9ee18ae" category="paragraph">데이터베이스가 인증되면 *다음*을 선택합니다.</block>
   <block id="90252dc7d534ac36ea9f5b1fd7c90573" category="list-text">FSx for ONTAP 인증(2단계)을 수행하려면 다음 단계를 완료한 후 *다음*을 선택하십시오.</block>
-  <block id="0d5d725b7763bd90d5bb71ad44e05f13" category="list-text">FSx for ONTAP 파일 시스템 사용자 이름과 암호를 입력하십시오.</block>
   <block id="aea7afc9754b2383c56fbbaee6c6009d" category="list-text">준비 단계(3단계)에서는 데이터베이스가 필수 요구 사항을 충족하는지 확인하십시오. 필요한 모든 모듈이 설치되어 있고 필수 요구 사항이 충족되면 *다음*을 선택하여 데이터베이스를 등록하십시오. 그렇지 않으면 다음 단계를 따르십시오.</block>
   <block id="1717c98238cd6bd4091f92979d40a891" category="list-text">*사전 요구 사항 확인 보기*에서 사전 요구 사항을 검토하십시오.</block>
   <block id="3f4c61df91a8ed4b5fc7622369d6e56d" category="paragraph">데이터베이스를 등록하려면 *Review well-architected issues and recommendations*와 같은 단일 기능에 대한 모든 필수 조건을 완료해야 합니다.</block>
@@ -1513,4 +1498,45 @@
   <block id="23c8b3278aec20410e7c213fe3d1710e" category="paragraph">AWS, NetApp ONTAP, Microsoft SQL Server, Oracle 및 PostgreSQL의 모범 사례를 준수하여 Workload Factory를 다음 데이터베이스 엔진, 버전, 운영 체제 및 배포 모델과 함께 사용할 수 있습니다.</block>
   <block id="38906c16694b06c5ec22a20b6840bc5d" category="paragraph">데이터베이스에는 다음과 같은 통합 AWS 서비스가 포함됩니다.</block>
   <block id="3be044b694628f6e958377c22febfacd" category="section-title">2026년 5월 3일</block>
+  <block id="779d05f80e557ffb6b9d91002c8c535c" category="doc">Amazon Elastic Block Store의 Oracle 호스트에 대한 맞춤형 절감</block>
+  <block id="3a4be47663e2fa751113137a974a3fbf" category="paragraph">NetApp Workload Factory for Databases를 사용하면 Amazon Elastic Block Store(EBS)의 Oracle 호스트에 대한 비용 절감 효과를 사용자 지정할 수 있습니다. 스냅샷 빈도, 복제본 수, 볼륨 세부 정보 등 여러 필드를 조정하여 비용 절감에 미치는 영향을 확인할 수 있습니다.</block>
+  <block id="df8ce82904fb7f768a98668382cdec3a" category="inline-link-macro">EBS에서 Oracle 호스트에 대한 절감액 살펴보기</block>
+  <block id="d1839e6ad7687f9aaf499df8a37a528b" category="paragraph"><block ref="d1839e6ad7687f9aaf499df8a37a528b" category="inline-link-macro-rx"></block></block>
+  <block id="1ed508a845657aa228cb523211b501a0" category="section-title">Microsoft SQL Server 및 PostgreSQL 호스트 배포를 위한 다중 보안 그룹 선택</block>
+  <block id="5f3983aebdf54bf31555d0b354f825df" category="paragraph">NetApp Workload Factory for Databases에서는 이제 Microsoft SQL Server 및 PostgreSQL 호스트를 배포할 때 여러 보안 그룹을 선택할 수 있습니다. 이를 통해 데이터베이스 워크로드에 대한 네트워크 보안을 구성할 때 더욱 유연성을 확보할 수 있습니다.</block>
+  <block id="2e9b0a449319af8e501ebf42f946b3a4" category="inline-link-macro">Microsoft SQL Server 호스트 배포</block>
+  <block id="36827721f24c7683f7cbb55f48380665" category="list-text"><block ref="36827721f24c7683f7cbb55f48380665" category="inline-link-macro-rx"></block></block>
+  <block id="3b1a9a0ee670c86859aadb420ba7a43d" category="inline-link-macro">PostgreSQL 호스트 배포</block>
+  <block id="d9d75ceb2e92d25dfa5fd1bd2ea01dfc" category="list-text"><block ref="d9d75ceb2e92d25dfa5fd1bd2ea01dfc" category="inline-link-macro-rx"></block></block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="section-title">NetApp Workload Factory에서 AWS GovCloud (US) 지원</block>
+  <block id="092e50fff7799a091642caa817b6e9ee" category="paragraph">NetApp Workload Factory는 AWS GovCloud(미국) 계정을 지원합니다. GovCloud 계정을 사용하면 AWS GovCloud(미국) 리전에 데이터베이스 워크로드를 배포하고 관리할 수 있습니다.</block>
+  <block id="6ff0d958975c87c2993a4cbc405cf5e2" category="paragraph">GovCloud 계정의 경우 AWS SSM 파라미터 ARN 값을 다음 형식으로 입력하십시오.<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block></block>
+  <block id="d35fe72916965367b860a356cc655c22" category="inline-link-macro">AWS GovCloud 문서</block>
+  <block id="3605f548d7067c850fcfa120dccc5284" category="paragraph">해당 값은 AWS Management Console의 파라미터 세부 정보 아래에 있는 파라미터 저장소에서 확인할 수 있습니다. AWS SSM 파라미터 유형은 "보안 문자열"이어야 하며 이름은 <block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block> 형식이어야 합니다. <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 SSM 파라미터를 검색하는 방법에 대한 자세한 내용을 확인하세요.</block>
+  <block id="1ffb1c1e9c9cf46be39ad78618e7329d" category="paragraph">GovCloud 계정의 경우 Active Directory 자격 증명에 대한 AWS SSM Parameter ARN 값을 다음 형식으로 입력하십시오:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 확인하십시오.</block>
+  <block id="c1617fe1cfd84c9b1bc06ba892d45a49" category="paragraph">GovCloud 계정의 경우 FSx for ONTAP 자격 증명에 대한 AWS SSM Parameter ARN 값을 다음 형식으로 입력하십시오:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 확인하십시오.</block>
+  <block id="d81272299934c4775982dc603c25dbf2" category="list-text">*기존 FSx for ONTAP 선택*: FSx for ONTAP 이름을 선택하고 파일 시스템의 사용자 이름과 암호를 입력합니다.</block>
+  <block id="e574ad20aebdb0717a191a1f8a42a773" category="list-text">*보안 그룹*: 워크로드 보안 그룹은 노드에서 Microsoft SQL 및 Windows 클러스터 통신에 필요한 포트와 프로토콜을 허용하도록 생성됩니다. 또한 하나 이상의 보안 그룹을 선택할 수 있습니다.</block>
+  <block id="28da446fb4b04fab548977677825309f" category="list-text">Active Directory 도메인의 사용자 이름과 암호를 입력하십시오.</block>
+  <block id="f00fe8f9c85e91dd0181e63717f16462" category="paragraph">GovCloud 계정의 경우 FSx for ONTAP 자격 증명에 대한 AWS SSM Parameter ARN 값을 다음 형식으로 입력하십시오:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 확인하십시오.</block>
+  <block id="5703c433440d20d33af4c4796d45da41" category="list-text">*보안 그룹*: PostgreSQL에 필요한 포트 및 프로토콜을 허용하기 위해 워크로드 보안 그룹이 생성됩니다. 또한 하나 이상의 보안 그룹을 선택할 수 있습니다.</block>
+  <block id="48aa17a242c1289545660436a5da586e" category="paragraph">GovCloud 계정의 경우, 자격 증명에 대한 AWS SSM Parameter ARN 값을 다음 형식으로 입력하세요:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 확인하세요.</block>
+  <block id="79841a1330c11b7cedd1a1d3cbb4ae1c" category="paragraph">+ GovCloud 계정의 경우 다음 형식으로 FSx for ONTAP 자격 증명에 대한 AWS SSM Parameter ARN 값을 입력합니다.<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block> AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다.<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block> <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 SSM 파라미터 검색에 대해 자세히 알아보십시오.</block>
+  <block id="6e9a724ad6108741081bde02ae2912e7" category="paragraph">+ 새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.</block>
+  <block id="d452bc6133c698b08bf18ab5b595d341" category="list-text">*Simple Notification Service*: 선택적으로 드롭다운 메뉴에서 PostgreSQL용 SNS 주제를 선택하여 이 구성에 대해 Simple Notification Service(SNS)를 활성화할 수 있습니다.</block>
+  <block id="4a82368a947d7ff0c661da3504176f5c" category="paragraph">가장 정확한 절감액 추정치를 얻으려면 계산기의 필드를 사용자 지정하세요.</block>
+  <block id="9ef59a9ba51ad7927edec8e6fcbeb5ed" category="section-title">Microsoft SQL Server 호스트에 대한 절감 효과 사용자 지정</block>
+  <block id="e3b5d24f9b2b4bd0d9776a64e49e3aee" category="inline-xref">FSx for ONTAP 파일 시스템을 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다</block>
+  <block id="120a7a3f9a78e3752bd191352982ccaf" category="paragraph">FSx for ONTAP으로 전환하려면 다음 지침을 따르십시오<block ref="ab783e4a59e2505394508c3b2225ca48" category="inline-xref-macro-rx"></block>.</block>
+  <block id="78c80474c1ac9b3ac29b3054a0be0356" category="section-title">EBS에서 Oracle 호스트에 대한 절감 효과 맞춤 설정</block>
+  <block id="63a6d626ebb7927e5fc36780f4bb6247" category="paragraph">Amazon Elastic Block Store(EBS)에서 실행되는 Oracle 호스트에 대한 가장 정확한 비용 절감 예상치를 얻으려면 계산기의 필드를 사용자 지정하십시오.</block>
+  <block id="8e99d4b967a68c2639bd0e29eb652859" category="list-text">데이터베이스에서 *절약 사항 살펴보기*를 선택한 다음 *Oracle on EBS*를 선택합니다.</block>
+  <block id="cb1217d0ae1d0062d087d1a39e9f29af" category="list-text">*Oracle 에디션*: 드롭다운 메뉴에서 Oracle 에디션을 선택하세요.</block>
+  <block id="298643abfe0d666f175f7f94a8751629" category="list-text">*월별 Oracle BYOL 비용($)*: 선택 사항으로 월별 Oracle BYOL 비용을 달러로 입력합니다.</block>
+  <block id="45d65f4c65aa938b39f96d1b869cd23a" category="paragraph">AWS GovCloud(US) 사용자는 AWS Secrets Manager를 사용하여 FSx for ONTAP 자격 증명을 인증해야 합니다. 다른 모든 사용자는 파일 시스템 자격 증명을 사용하여 FSx for ONTAP을 인증해야 합니다.</block>
+  <block id="2ef73c74b0cad2520f602596db0ba30e" category="list-text">GovCloud 계정의 경우 FSx for ONTAP 자격 증명이 포함된 AWS SSM Parameter ARN을 입력하거나, 다른 모든 계정의 경우 FSx for ONTAP 파일 시스템 사용자 이름과 암호를 입력한 다음 *다음*을 선택하십시오.</block>
+  <block id="9fc473da6470452a4af104eed53ea7a9" category="paragraph">GovCloud 계정의 경우 AWS SSM Parameter ARN 값은 AWS Management Console의 Parameter details 아래에 있는 Parameter Store에서 다음 형식으로 제공됩니다:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="a698aa1fbee7824723aef2f6f3386343" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="fcf9f8c650605555c801d6284a159f59" category="list-text">데이터베이스를 인증하려면(1단계) 다음 단계를 수행한 후 *다음*을 선택하십시오.</block>
+  <block id="4c290bde270addf9889d6824ca16e3ab" category="paragraph">AWS SSM 파라미터 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="a698aa1fbee7824723aef2f6f3386343" prefix=" " category="inline-code"></block>. AWS SSM 파라미터 ARN 값은 다음 형식으로 입력하십시오:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="431b3c73dcd090440f753c5d3af80bb0" category="section-title">2026년 6월 1일</block>
 </blocks>

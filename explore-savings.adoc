@@ -78,6 +78,12 @@ image:screenshot-ebs-savings-calculator-update.png["저축 계산기 페이지�
 
 === 맞춤화를 통한 절감 효과를 살펴보십시오
 
+가장 정확한 절감액 추정치를 얻으려면 계산기의 필드를 사용자 지정하세요.
+
+
+
+==== Microsoft SQL Server 호스트에 대한 절감 효과 사용자 지정
+
 스토리지 유형에 해당하는 탭 아래의 단계를 따릅니다.
 
 [role="tabbed-block"]
@@ -157,7 +163,54 @@ image:screenshot-ebs-savings-calculator-update.png["저축 계산기 페이지�
 * * 계산 보기 *
 
 
-FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
+FSx for ONTAP으로 전환하려면 다음 지침을 따르십시오<<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다>>.
+
+
+
+==== EBS에서 Oracle 호스트에 대한 절감 효과 맞춤 설정
+
+Amazon Elastic Block Store(EBS)에서 실행되는 Oracle 호스트에 대한 가장 정확한 비용 절감 예상치를 얻으려면 계산기의 필드를 사용자 지정하십시오.
+
+.단계
+. 중 하나를 사용하여 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["콘솔 환경"^]로그인합니다.
+. 메뉴를 선택하세요 image:workloads-menu-icon.png["햄버거 메뉴 아이콘은 스토리지, EDA, AI, 데이터베이스, VMware 및 관리와 같은 워크로드로 이동하는 데 사용됩니다."] 그런 다음 *데이터베이스*를 선택합니다.
+. 데이터베이스에서 *절약 사항 살펴보기*를 선택한 다음 *Oracle on EBS*를 선택합니다.
+. Savings Calculator에서 다음 세부 정보를 제공합니다.
++
+.. * 지역 * : 드롭다운 메뉴에서 지역을 선택합니다.
+.. * 배포 모델 *: 드롭다운 메뉴에서 배포 모델을 선택합니다.
+.. *Oracle 에디션*: 드롭다운 메뉴에서 Oracle 에디션을 선택하세요.
+.. * 월별 데이터 변경률(%) *: 클론 및 스냅샷 데이터가 매월 평균 변경되는 비율을 입력합니다.
+.. * 스냅샷 주파수 *: 드롭다운 메뉴에서 스냅샷 주파수를 선택합니다.
+.. * 복제 사본 수 *: EBS 구성에 복제된 사본 수를 입력합니다.
+.. *월별 Oracle BYOL 비용($)*: 선택 사항으로 월별 Oracle BYOL 비용을 달러로 입력합니다.
+.. EC2 사양에서 다음을 제공합니다.
++
+*** * 기계 설명 * : 선택적으로 기계를 설명하는 이름을 입력합니다.
+*** * 인스턴스 유형 *: 드롭다운 메뉴에서 EC2 인스턴스 유형을 선택합니다.
+
+
+.. 볼륨 유형 아래에서 하나 이상의 볼륨 유형에 대해 다음 세부 정보를 제공합니다. IOPS 및 처리량은 특정 디스크 유형 볼륨에 적용됩니다.
++
+*** * 볼륨 수 *
+*** * 볼륨당 스토리지 용량(GiB) *
+*** * 볼륨당 프로비저닝된 IOPS *
+*** * 처리량 MB/s *
+
+
+.. 상시 가용성 배포 모델을 선택한 경우 * 보조 EC2 사양 * 및 * 볼륨 유형 * 에 대한 세부 정보를 제공하십시오.
+
+
+
+
+데이터베이스 호스트 구성에 대한 세부 정보를 제공한 후 페이지에 제공된 계산 및 권장 사항을 검토합니다.
+
+또한 페이지 하단으로 스크롤하여 다음 중 하나를 선택하여 보고서를 봅니다.
+
+* * PDF 내보내기 *
+* * 이메일로 보내기 *
+* * 계산 보기 *
+
 
 
 
@@ -336,7 +389,7 @@ Workload Factory는 여러 온프레미스 SQL Server 호스트를 단일 FSx fo
 * * 계산 보기 *
 
 
-FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
+FSx for ONTAP으로 전환하려면 다음 지침을 따르십시오<<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다>>.
 
 
 
@@ -423,8 +476,6 @@ Oracle 온프레미스 호스트를 통한 비용 절감 효과를 확인한 후
 * * 이메일로 보내기 *
 * * 계산 보기 *
 
-
-FSx for ONTAP으로 전환하려면 의 지침을 <<FSx for ONTAP를 사용하여 AWS EC2에 Microsoft SQL Server를 배포합니다,FSx for ONTAP 파일 시스템을 사용하여 AQS EC2에 Microsoft SQL Server를 배포합니다>>따릅니다.
 
 
 
