@@ -212,10 +212,10 @@ GovCloud 계정의 경우, 자격 증명에 대한 AWS SSM Parameter ARN 값을 
 +
 ... * 새 FSx for ONTAP 생성 *: 사용자 이름과 암호를 입력합니다.
 +
-+ GovCloud 계정의 경우 다음 형식으로 FSx for ONTAP 자격 증명에 대한 AWS SSM Parameter ARN 값을 입력합니다. `{fsx:{"username":"fsxadmin","password":"pass"}}` AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다. `/netapp/wlmdb/<anyname>` link:https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ssm.html["AWS GovCloud 문서"^]에서 SSM 파라미터 검색에 대해 자세히 알아보십시오.
+GovCloud 계정의 경우 FSx for ONTAP 자격 증명에 대한 AWS SSM Parameter ARN 값을 다음 형식으로 입력하십시오: `{fsx:{"username":"fsxadmin","password":"pass"}}`. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다 `/netapp/wlmdb/<anyname>`. SSM 파라미터 검색에 대한 자세한 내용은 link:https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ssm.html["AWS GovCloud 문서"^]에서 확인하십시오.
 
 +
-+ 새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.
+새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.
 
 ... * 기존 FSx for ONTAP 선택 *: 드롭다운 메뉴에서 ONTAP용 FSx 이름을 선택하고 파일 시스템의 사용자 이름과 암호를 입력합니다.
 +
