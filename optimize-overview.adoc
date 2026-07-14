@@ -25,6 +25,7 @@ Workload Factory for Databases는 Amazon FSx for NetApp ONTAP 스토리지에 Mi
 
 
 
+[[how-it-works]]
 == 작동 방식
 
 Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 환경에서 실행되는 워크로드를 매일 분석합니다. 이 분석을 통해 아키텍처 상태, 인사이트 및 권장 사항을 확인할 수 있습니다.
@@ -35,12 +36,14 @@ Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 환경�
 
 
 
+[[why-it-matters]]
 == 중요한 이유
 
 Workload Factory는 지속적인 평가와 권장 사항 인사이트 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 모범 사례를 적용합니다. Workload Factory 콘솔에서 적용되는 자동화된 수정 사항은 인적 오류를 줄이고 일관된 관리를 보장하며 워크로드 인프라 전반의 성능과 안정성을 유지합니다.
 
 
 
+[[options-for-analyzing-your-database-environment]]
 == 데이터베이스 환경 분석 옵션
 
 Workload Factory는 데이터베이스 환경을 분석하기 위한 다음 옵션을 제공합니다.
@@ -51,6 +54,7 @@ Workload Factory는 데이터베이스 환경을 분석하기 위한 다음 옵�
 
 
 
+[[analysis-requirements]]
 == 분석 요구 사항
 
 일회성 평가의 경우 분석하려는 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에 대한 자격 증명을 한 번만 제공하면 됩니다.
@@ -70,12 +74,14 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AW
 
 
 
+[[best-practices-and-recommendations-for-database-workloads]]
 == 데이터베이스 워크로드에 대한 모범 사례 및 권장 사항
 
 Workload Factory는 잘 설계된 데이터베이스 워크로드 운영을 위한 모범 사례 및 권장 사항을 제공합니다. 이 아키텍처 분석은 Microsoft SQL Server 및 Oracle Database의 스토리지 크기, 스토리지 레이아웃, 스토리지 구성, 컴퓨팅, 애플리케이션(SQL Server) 및 복원력과 관련된 구성 및 설정을 평가합니다.
 
 
 
+[[microsoft-sql-server]]
 === Microsoft SQL Server를 참조하십시오
 
 
@@ -196,6 +202,7 @@ SQL Server 라이선스 평가 및 권장 사항은 호스트 수준에서 제�
 
 
 
+[[oracle]]
 === 신탁
 
 

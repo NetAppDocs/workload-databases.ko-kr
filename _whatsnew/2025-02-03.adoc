@@ -4,6 +4,7 @@
 
 
 
+[[sql-server-on-premises-database-environments-cost-analysis-and-migration-planning]]
 === SQL Server 온프레미스 데이터베이스 환경 비용 분석 및 마이그레이션 계획
 
 BlueXP 워크로드 팩토리(데이터베이스용)는 이제 온프레미스 SQL Server 데이터베이스를 Amazon FSx for NetApp ONTAP로 마이그레이션하기 위해 감지, 분석 및 계획을 지원합니다. 비용 절감 계산기를 사용하여 클라우드에서 온프레미스 SQL Server 데이터베이스 환경을 운영하는 데 드는 비용을 추산하고 온프레미스 데이터베이스 환경을 클라우드로 마이그레이션하기 위한 권장 사항을 확인할 수 있습니다.
@@ -12,6 +13,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["온�
 
 
 
+[[new-optimization-assessments-for-databases]]
 === 데이터베이스에 대한 새로운 최적화 평가
 
 이제 데이터베이스용 BlueXP  워크로드 공장에서 다음 평가를 사용할 수 있습니다. 이러한 평가는 잠재적인 보안 취약점을 탐지 및 방어하고 성능 병목 현상을 감지 및 완화하는 데 중점을 둡니다.

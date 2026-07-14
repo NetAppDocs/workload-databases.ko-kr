@@ -15,6 +15,7 @@ Workload Factory for Databases에서 새로운 Microsoft SQL Server 또는 데�
 
 
 
+[[about-this-task]]
 == 이 작업에 대해
 
 Workload Factory에서 Microsoft SQL Server를 만들기 전에 데이터베이스 호스트 구성, Microsoft 다중 경로 I/O 구성, Active Directory 배포, 네트워킹 세부 정보 및 이 작업을 완료하는 데 필요한 요구 사항에 대해 알아보세요.
@@ -55,6 +56,7 @@ DNS(Domain Name System) 리소스를 롤백하는 경우 AD 및 DNS의 리소스
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 새 데이터베이스 호스트를 생성하기 전에 다음과 같은 사전 요구 사항이 있는지 확인하십시오.
@@ -75,6 +77,7 @@ Active Directory에 연결할 때 다음을 수행하려면 권한이 있는 관
 
 
 
+[[step-1-create-a-database-server]]
 == 1단계: 데이터베이스 서버를 만듭니다
 
 Workload Factory에서 _자동화_ 모드 권한을 사용하여 _빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 이 작업을 완료할 수 있습니다.  Codebox에서 제공되는 다음 도구도 사용할 수 있습니다: REST API, AWS CLI, AWS CloudFormation, Terraform. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^] .
@@ -399,6 +402,7 @@ CloudWatch에서 스택의 이름으로 로그 그룹이 생성됩니다. 모든
 ====
 
 
+[[step-2-enable-remote-connection-on-the-microsoft-sql-server]]
 == 2단계: Microsoft SQL Server에서 원격 연결을 사용하도록 설정합니다
 
 서버가 배포된 후 Workload Factory는 Microsoft SQL Server에서 원격 연결을 활성화하지 않습니다.  원격 연결을 활성화하려면 다음 단계를 완료하세요.

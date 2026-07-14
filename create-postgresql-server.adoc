@@ -15,6 +15,7 @@ NetApp Workload Factory for Databases에서 새로운 PostgreSQL 서버 또는 �
 
 
 
+[[about-this-task]]
 == 이 작업에 대해
 
 Workload Factory에서 PostgreSQL 서버를 생성하기 전에 데이터베이스 호스트 구성에 사용 가능한 스토리지 배포 유형, Workload Factory 운영 모드 및 이 작업을 완료하는 데 필요한 요구 사항에 대해 알아보세요.
@@ -30,12 +31,14 @@ Workload Factory에서 PostgreSQL 서버를 생성하기 전에 데이터베이�
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 당신은 가지고 있어야 합니다 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_데이터베이스 호스트 생성_ 권한 부여"^] AWS 계정에서 워크로드 팩토리에 새로운 데이터베이스 호스트를 생성합니다.
 
 
 
+[[create-a-postgresql-server]]
 == PostgreSQL 서버를 생성합니다
 
 _QUICK CREATE_OR_Advanced CREATE_DEPLOCATION 모드를 사용하면 _AUTOMATE_MODE 권한을 사용하여 워크로드 공장에서 이 작업을 완료할 수 있습니다. 또한 코드상자에서 제공되는 REST API, AWS CLI, AWS CloudFormation 및 Terraform 툴을 사용할 수 있습니다. link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["자동화를 위해 Codebox를 사용하는 방법을 알아보십시오"^]..

@@ -4,6 +4,7 @@
 
 
 
+[[databases-dashboard-enhancements]]
 === 데이터베이스 대시보드 기능 향상
 
 대시보드의 새로운 설계에는 다음과 같은 그래픽과 개선 사항이 포함되어 있습니다.
@@ -19,6 +20,7 @@
 
 
 
+[[new-completed-with-issues-status-in-job-monitoring]]
 === 작업 모니터링에서 새로운 'Completed with Issues' 상태입니다
 
 이제 데이터베이스에 대한 작업 모니터링 기능이 새로운 'Completed with Issues' 상태를 제공하므로 어떤 하위 작업에 문제가 있는지, 어떤 문제가 있는지 알 수 있습니다.
@@ -27,6 +29,7 @@ link:https://docs.netapp.com/us-en/workload-databases/monitor-databases.html["�
 
 
 
+[[assessment-and-optimization-for-over-provisioned-microsoft-sql-server-licenses]]
 === 오버 프로비저닝된 Microsoft SQL Server 라이선스에 대한 평가 및 최적화
 
 이제 비용 절감 계산기는 Enterprise Edition이 Microsoft SQL Server 배포에 필요한지 여부를 평가합니다. 라이센스가 오버 프로비저닝되면 계산기는 다운그레이드를 권장합니다. 데이터베이스를 최적화하여 라이센스를 자동으로 다운그레이드할 수 있습니다.

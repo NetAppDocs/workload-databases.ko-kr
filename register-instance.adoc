@@ -17,6 +17,7 @@ FSx for ONTAP 파일 시스템 스토리지에서 실행되는 경우에만 리�
 
 
 
+[[about-the-task]]
 == 작업에 관하여
 
 인스턴스(SQL Server) 또는 데이터베이스(Oracle)를 등록하는 데는 인스턴스 또는 데이터베이스 인증, FSx for ONTAP 인증, 준비의 세 단계가 필요합니다. 준비 단계에서는 인스턴스 또는 데이터베이스에 AWS, NetApp 및 PowerShell 모듈을 설치하고 link:analyze-error-logs.html["오류 로그 분석"] 또는 link:optimize-configurations.html["Well-Architected 평가"]와 같은 Workload Factory for Databases 기능의 최소 요구 사항을 충족해야 합니다.
@@ -27,12 +28,14 @@ AWS GovCloud(US) 사용자는 AWS Secrets Manager를 사용하여 FSx for ONTAP 
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 인스턴스 또는 데이터베이스의 호스트가 인벤토리에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 다음이 필요합니다. link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["_view, planning 및 analysis_ 권한 부여"^] 귀하의 AWS 계정에서.
 
 
 
+[[registering-an-instance-in-a-private-network]]
 === 개인 네트워크에 인스턴스 등록
 
 외부 연결이 없는 프라이빗 네트워크에 인스턴스 또는 데이터베이스를 등록하려면 필요한 엔드포인트를 VPC에서 사용 가능하게 만들고 관련 서브넷과 연결해야 합니다. 인터페이스 엔드포인트에 대해 보안 그룹에서 포트 443을 허용하십시오.
@@ -52,6 +55,7 @@ AWS GovCloud(US) 사용자는 AWS Secrets Manager를 사용하여 FSx for ONTAP 
 
 
 
+[[register-a-microsoft-sql-server-instance]]
 == Microsoft SQL Server 인스턴스 등록
 
 인스턴스 등록은 인스턴스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 인스턴스 또는 여러 인스턴스를 등록할 수 있습니다.
@@ -109,6 +113,7 @@ Workload Factory가 link:optimize-configurations.html["Well-Architected 문제�
 
 
 
+[[register-an-oracle-database]]
 == Oracle 데이터베이스 등록
 
 인스턴스 등록은 데이터베이스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 또는 여러 데이터베이스를 등록할 수 있습니다.

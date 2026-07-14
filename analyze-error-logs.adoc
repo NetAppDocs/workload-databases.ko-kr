@@ -15,6 +15,7 @@ summary: Workload Factory for Databases 내에서 오류 로그를 분석합니�
 
 
 
+[[about-this-task]]
 == 이 작업에 대해
 
 오류 로그 분석 및 수정은 SQL Server 인스턴스와 Oracle 데이터베이스의 상태와 성능을 유지하는 데 도움이 됩니다.  오류 로그를 효과적으로 해석하려면 신중한 분석과 전문성이 필요합니다. 수동 모니터링, 오류 감지, 근본 원인 분석은 시간이 많이 걸리고 오류가 발생하기 쉽습니다. 이러한 과제로 인해 문제 해결이 지연되고, 가동 중지 시간이 늘어나고, 운영상의 비효율성이 발생할 수 있습니다.  스마트 오류 로그 분석기는 다음과 같은 주요 이점을 통해 이러한 과제를 해결합니다.
@@ -33,6 +34,7 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 가격"^]
 
 
 
+[[data-privacy-and-security]]
 === 데이터 개인정보 보호 및 보안
 
 이 기능은 다음과 같은 조치를 통해 데이터 개인 정보 보호 및 보안을 보장합니다.
@@ -45,6 +47,7 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 가격"^]
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 오류 로그 분석기를 사용하려면 다음 전제 조건을 충족해야 합니다.
@@ -86,6 +89,7 @@ SQL Server 또는 Oracle 호스트와 연결된 EC2 인스턴스 프로필 역�
 
 
 
+[[analyze-error-logs]]
 == 오류 로그 분석
 
 Workload Factory 콘솔을 사용하여 SQL Server 오류 로그를 분석합니다.

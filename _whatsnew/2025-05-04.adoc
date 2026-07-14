@@ -4,6 +4,7 @@
 
 
 
+[[dashboard-enhancements]]
 === 향상된 대시보드 기능
 
 * 교차 계정 및 교차 지역 보기는 BlueXP  워크로드 팩토리 콘솔에서 탭 간을 탐색할 때 사용할 수 있습니다. 새로운 뷰를 통해 리소스 관리, 모니터링 및 최적화가 향상됩니다.
@@ -12,18 +13,21 @@
 
 
 
+[[ad-hoc-scan-available-for-database-configurations]]
 === 데이터베이스 구성에 대해 Ad Hoc 스캔을 사용할 수 있습니다
 
 데이터베이스용 BlueXP  워크로드 팩토리는 관리형 Microsoft SQL Server 인스턴스를 FSx for ONTAP 스토리지로 자동으로 검사하여 잠재적인 구성 문제가 있는지 확인합니다. 이제 매일 스캔하는 것 외에도 언제든지 스캔할 수 있습니다.
 
 
 
+[[removal-of-on-premises-assessment-records]]
 === 온프레미스 평가 기록 제거
 
 Microsoft SQL Server 온-프레미스 호스트의 절감 효과를 살펴본 후 BlueXP  워크로드 공장에서 온-프레미스 호스트 레코드를 제거할 수 있습니다.
 
 
 
+[[optimization-enhancements]]
 === 최적화 개선 사항
 
 
@@ -40,6 +44,7 @@ Microsoft SQL Server 온-프레미스 호스트의 절감 효과를 살펴본 �
 
 
 
+[[updated-permissions-terminology]]
 === 사용 권한 용어가 업데이트되었습니다
 
 워크로드 팩토리 사용자 인터페이스와 문서에서는 이제 읽기 권한을 나타내는 데 "읽기 전용"을 사용하고 자동화 권한을 나타내는 데 "읽기/쓰기"를 사용합니다.

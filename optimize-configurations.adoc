@@ -19,6 +19,7 @@ link:optimize-overview.html["Workload Factory의 구성 분석과 잘 설계된 
 
 
 
+[[about-this-task]]
 == 이 작업에 대해
 
 Workload Factory는 데이터베이스 구성을 매일 분석합니다. 일일 분석을 통해 우수한 아키텍처 상태, 인사이트 및 권장 사항을 제공합니다. 구성 문제를 자동으로 수정하여 모범 사례를 준수할 수 있습니다.
@@ -55,6 +56,7 @@ Oracle용 아키텍처 분석 기능은 구성이 다른 구성에 의존하는 
 
 
 
+[[perform-a-one-time-assessment-of-your-configurations]]
 == 구성을 일회성으로 평가하십시오
 
 자격 증명을 저장하거나 리소스를 등록하지 않고도 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 아키텍처 설계 상태를 일회성으로 평가할 수 있습니다.
@@ -102,6 +104,7 @@ Oracle용 아키텍처 분석 기능은 구성이 다른 구성에 의존하는 
 ====
 
 
+[[before-you-begin-fixing-dismissing-and-re-activating-configurations]]
 == 구성을 수정, 해제 및 재활성화하기 전에
 
 데이터베이스 환경을 지속적으로 모니터링하고 구성 문제를 자동으로 수정하려면 다음 요구 사항을 충족해야 합니다. 이러한 요구 사항은 일회성 평가에는 필요하지 않습니다.
@@ -113,6 +116,7 @@ Oracle용 아키텍처 분석 기능은 구성이 다른 구성에 의존하는 
 
 
 
+[[fix-a-configuration-issue]]
 == 구성 문제 해결
 
 FSx for ONTAP 스토리지에서 실행되는 SQL Server 또는 Oracle 환경의 구성 문제를 해결합니다.
@@ -161,6 +165,7 @@ Workload Factory가 문제 해결을 시작합니다.  작업 상태를 보려�
 
 
 
+[[dismiss-the-analysis-of-database-configurations]]
 == 데이터베이스 구성 분석 해제
 
 데이터베이스 환경에 적용되지 않는 특정 데이터베이스 구성에 대한 분석을 무시하여 불필요한 경고 및 부정확한 최적화 결과를 방지하십시오. 무시한 구성 분석은 언제든지 다시 활성화할 수 있습니다.
@@ -182,6 +187,7 @@ Workload Factory는 구성 분석을 중지합니다.
 
 
 
+[[reactivate-a-dismissed-configuration-analysis]]
 == 해제된 구성 분석을 다시 활성화합니다
 
 해제된 구성 분석을 언제든지 다시 활성화할 수 있습니다. 하나 이상의 구성을 선택하여 다시 활성화할 수 있습니다.
