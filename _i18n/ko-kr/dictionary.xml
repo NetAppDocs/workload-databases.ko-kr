@@ -136,7 +136,6 @@
   <block id="6f03d6ad36824b69611930dbe2fb4d42" category="paragraph">데이터베이스가 생성되면 데이터를 호스트하는 독립 LUN과 데이터베이스의 로그 파일을 구성하는 두 개의 새 볼륨이 FSx for ONTAP 파일 시스템에 생성됩니다. 새 데이터베이스의 데이터베이스 파일은 씬 프로비저닝되며 새 데이터베이스에 할당된 총 크기의 몇 MB만 사용합니다.</block>
   <block id="6d7b2a50e46356cb2ecf2805e3b5bb59" category="paragraph">데이터베이스의 스토리지를 분리하려는 경우 _virtual 마운트 지점 _ 을(를) 사용하여 분리할 수 있습니다. 가상 마운트 지점을 사용하여 데이터베이스를 호스트의 몇 가지 공통 드라이브에 통합할 수 있습니다.</block>
   <block id="92e04fe5d2a269f38993f394f5b1eb9b" category="admonition">SMB 프로토콜을 사용하는 Microsoft SQL Server는 데이터베이스 생성을 지원하지 않습니다.</block>
-  <block id="7dd1095f5b5a654fc784015352d1066d" category="paragraph">새 데이터베이스를 만들기 전에 다음 필수 구성 요소를 완료해야 합니다.</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server를 참조하십시오</block>
   <block id="1271a3d360115d2332889fc326f89944" category="section-title">데이터베이스를 만듭니다</block>
   <block id="16b7e1ed68be5b41e619ec00b93a3de0" category="list-text">사용자 데이터베이스 만들기 페이지의 데이터베이스 정보에서 다음을 제공합니다.</block>
@@ -288,7 +287,6 @@
   <block id="ad308330f566581c7c1ac5769e060883" category="paragraph">데이터베이스는 FSx for ONTAP가 지원되는 모든 상용 지역에서 지원됩니다.<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">다음 AWS 지역은 지원되지 않습니다.</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">중국 지역</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud(미국) 지역</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">비밀 클라우드</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">최고 비밀 클라우드</block>
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">도움말 보기</block>
@@ -312,15 +310,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
-  <block id="67b0a66954400448325457f930e0f82b" category="paragraph">작업 모니터링은 작업에 따라 최대 3가지 수준의 모니터링을 지원합니다. 예를 들어 새 데이터베이스 및 샌드박스 클론 생성을 위해 작업 모니터링은 상위 작업과 하위 작업을 추적합니다.</block>
-  <block id="b830a8f027299af6d1d8ffbb130bcc58" category="list-text">작업 모니터링 수준</block>
-  <block id="f52bf93027629736a089ef7f590091e0" category="list-text">레벨 1(상위 작업): 호스트 배포 작업을 추적합니다.</block>
-  <block id="0954e42bf0119b1189263290f1e567d2" category="list-text">레벨 2(하위 작업): 호스트 배포 상위 작업과 관련된 하위 작업을 추적합니다.</block>
-  <block id="df942ff3756f5cbd24f42b521acc64f8" category="list-text">수준 3(작업): 각 자원에 대해 수행된 작업의 순서를 나열합니다.</block>
-  <block id="79ea79a1991592553b64d7ab6d30bdc0" category="list-text">작업 상태입니다</block>
-  <block id="5c7a83ffcacee6b5f8b97e61c20dc908" category="list-text">작업 이벤트 보존</block>
-  <block id="a4c455fbdb91b6c5a283d4a40626cd5b" category="list-text">작업 모니터링 이벤트는 사용자 인터페이스에서 30일 동안 유지됩니다.</block>
-  <block id="4639d0e2e2909a747265c2f704128bca" category="section-title">작업을 모니터링합니다</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1개</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2개</block>
   <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 자격 증명 및 사용 권한을 추가합니다</block>
@@ -480,12 +469,6 @@
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">자동화를 위해 Codebox를 사용하는 방법을 알아보십시오</block>
   <block id="04dff47f9a41cfa54b616dd86a4a6043" category="list-text">스토리지 사이징: 스토리지 계층, 파일 시스템 여유 공간, 로그 드라이브 크기 및 TempDB 드라이브 크기가 포함됩니다</block>
   <block id="b1107628010e55afc5ec740439838f10" category="list-text">스토리지 레이아웃: 사용자 데이터 파일 배치, 로그 파일 배치 및 TempDB 배치가 포함됩니다</block>
-  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">주요 기능은 다음과 같습니다.</block>
-  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">모범 사례 자동 검증</block>
-  <block id="029d49350caff46ab3e1f31c9c60f494" category="list-text">적합한 사이징 권장 사항</block>
-  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">사전 예방적인 관찰 가능성</block>
-  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">통찰력을 행동으로</block>
-  <block id="7a3fc3cf12e9da54628c7311398bee5c" category="list-text">AWS의 잘 설계된 프레임워크 조언자</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024년 11월 3일</block>
   <block id="d1e68728a28b7936858b1484445ef50f" category="sidebar">구성 최적화</block>
   <block id="35c4b7b7975b86786b96de60f8d9159c" category="doc">데이터베이스용 BlueXP  워크로드 공장 초기 릴리즈</block>
@@ -547,8 +530,6 @@
   <block id="9812aa4803326e6a5401134b4e94a3d3" category="list-text">계산기는 다음 라이선스에 따라 할당된 리소스의 상태를 평가합니다.</block>
   <block id="509a14e7eed7c8c8d42162d9af93a1ec" category="list-text">엔터프라이즈 기능 사용</block>
   <block id="4fdb074e0b83810d198c8cb5f3b2752e" category="list-text">계산기는 다음과 같은 Enterprise 기능이 사용 중인지 확인합니다.</block>
-  <block id="5f08a8bbfa89b18958e70a8c6cbc44c3" category="paragraph">데이터베이스는 작업 진행 상황을 추적하고 장애가 발생할 경우 진단 및 문제를 해결할 수 있도록 작업 모니터링을 제공합니다. 유형 및 상태별로 작업을 필터링하고, 검색 기능을 사용하여 작업을 찾고, 작업 테이블을 다운로드할 수 있습니다.</block>
-  <block id="5ade2a57e46cf328c900013574754aa9" category="list-text">작업 모니터링 기능은 _in progress_,_completed_,_completed with issions_, _failed_jobs 일별, 주별, 격주 및 월별로 추적합니다.</block>
   <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025년 1월 6일</block>
   <block id="f2398fe4ddb880ba6c52b376ef9b960c" category="list-text"><block ref="f2398fe4ddb880ba6c52b376ef9b960c" category="inline-link-macro-rx"></block></block>
   <block id="f7626e6c4414254923965c059c538355" category="section-title">최적화를 위한 운영 체제 패치 평가</block>
@@ -679,8 +660,6 @@
   <block id="f73028254f9c4297e3f60654068105e0" category="list-text">드롭다운 화살표를 선택하여 모든 구성에 대한 권장 사항을 확인합니다. 권장 사항에는 모범 사례, 최적화되지 않은 구성의 잠재적 함정, 중요 고려 사항 등이 포함됩니다. 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="dae891145ffbf1b1653fc3da2a87faac" category="list-text">옵션이 제공되는 경우 구성 문제를 *보고 수정*하도록 선택합니다.</block>
   <block id="45b5dce37159255d07342e3102124571" category="list-text">구성 문제를 해결하려면 * 계속 * 을 선택하십시오.</block>
-  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">일일 구성 분석</block>
-  <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">분석 요구 사항</block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">잘 설계된 데이터베이스 구성을 구현합니다.</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">호스트 서버 배포</block>
@@ -1002,12 +981,6 @@
   <block id="11a6396604d8219ed002cb8225307c46" category="paragraph">NetApp Workload Factory for Databases에서 리소스를 관리하면 데이터베이스 및 복제본 생성, 리소스 활용 및 모니터링을 비롯한 고급 기능을 사용할 수 있습니다. 또한, 데이터베이스 구성의 잘 설계된 상태를 분석하고 구성 모범 사례를 구현하여 성능을 개선하고 운영 비용을 절감할 수 있습니다. 리소스 관리 기능은 FSx for ONTAP 파일 시스템 스토리지에서 실행되는 Microsoft SQL Server 및 Oracle 환경에만 적용됩니다.</block>
   <block id="e98220d7d332a2a7434542839da04607" category="list-text">인벤토리에서 데이터베이스 보기</block>
   <block id="0690b01336afa366f51f1055a4ad9fe3" category="summary">NetApp Workload Factory for Databases 내에서 데이터베이스 작업을 추적하고 데이터베이스를 모니터링합니다.</block>
-  <block id="a6b42ef301955a90099ca61e9ef81cf4" category="doc">Workload Factory에서 데이터베이스 작업 모니터링</block>
-  <block id="286fce2abd655f344b009a041e8e00c8" category="paragraph">NetApp Workload Factory for Databases 내에서 데이터베이스 작업을 추적하고 데이터베이스를 모니터링하여 데이터베이스 작업에 대한 가시성과 제어력을 향상시킵니다.</block>
-  <block id="1cd28a54c1c28cd395b6d2b065f22570" category="paragraph">데이터베이스 작업의 진행 상황을 추적하고, 오류가 발생할 경우 진단하여 문제를 해결하기 위해 작업을 모니터링합니다.</block>
-  <block id="83ec30ad643377590496c7c3f631d82e" category="list-text">데이터베이스 메뉴에서 *작업 모니터링*을 선택합니다.</block>
-  <block id="25372b696736cc8872762877a51aa062" category="list-text">작업 모니터링에서 필터나 검색을 사용하여 작업 결과를 좁히세요. 또한, 일자리 보고서를 다운로드할 수도 있습니다.</block>
-  <block id="a2d1f59bacfe584c82f07fe77341a830" category="list-text">선택적으로 작업의 작업 메뉴를 선택하고 *CloudFormation으로 이동*을 클릭하여 AWS CloudFormation 콘솔에서 작업 로그를 볼 수 있습니다.</block>
   <block id="58ee6063aaed57090a82d5cfa901a882" category="summary">NetApp Workload Factory for Databases는 Microsoft SQL Server 구성을 스캔하여 운영상의 우수성을 달성하는 데 도움이 되는 통찰력과 권장 사항을 제공합니다.</block>
   <block id="04b3e1206245453c778ab6cffd793ea7" category="inline-link-macro">Workload Factory의 구성 분석과 잘 설계된 상태에 대해 알아보세요.</block>
   <block id="9198e3a1fac406d0bf2e8a31d569e09c" category="paragraph"><block ref="9198e3a1fac406d0bf2e8a31d569e09c" category="inline-link-macro-rx"></block></block>
@@ -1030,7 +1003,6 @@
   <block id="bc4a349f7f95e73490c3e2f8aaabe892" category="list-text">연기되거나 취소된 구성에 대한 구성 분석을 다시 시작하려면 *다시 활성화*를 선택합니다.</block>
   <block id="7c6a7786a083c7d074bada76f0bcd33b" category="summary">Workload Factory for Databases는 Microsoft SQL Server 및 Oracle 구성을 정기적으로 분석하여 문제가 있는지 확인합니다.</block>
   <block id="8317ffd1a53e5d269aaac07d321b8dd0" category="doc">Workload Factory의 데이터베이스 환경에 대한 구성 분석</block>
-  <block id="1725276922bab9d023ef938d5fce0d7c" category="paragraph">Workload Factory for Databases는 Amazon FSx for NetApp ONTAP 스토리지에 Microsoft SQL Server 및 Oracle을 배포하는 데 문제가 있는지 확인하기 위해 정기적으로 데이터베이스 구성을 분석합니다.  문제가 발견되면 Workload Factory는 문제가 무엇인지 보여주고 데이터베이스 구성에서 최고의 성능, 비용 효율성, 모범 사례 준수를 보장하기 위해 무엇을 변경해야 하는지 설명합니다.</block>
   <block id="84ee3cc4e2a4f169585c115121112580" category="paragraph">Workload Factory 콘솔의 NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요. 이 통합을 통해 다음과 같은 보호 목표를 달성할 수 있습니다. 로컬 기본 Amazon FSx for NetApp ONTAP (FSx for ONTAP) 스토리지의 로컬 스냅샷으로 워크로드를 백업하고, 워크로드를 보조 FSx for ONTAP 스토리지로 복제합니다.</block>
   <block id="bb1b704677e0a9ac00a2bda88f85fe27" category="paragraph">Workload Factory는 NetApp Backup and Recovery를 사용하여 워크로드를 보호할 준비를 하기 위해 Microsoft SQL Server용 플러그인의 리소스 검색, 필수 구성 요소 검증, 구성 및 설치를 자동화합니다. 이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.</block>
   <block id="e9575ae90b7ec054c43a9797544d0103" category="paragraph">NetApp Backup and Recovery는 NetApp SnapMirror 데이터 복제 기술을 활용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.</block>
@@ -1066,7 +1038,6 @@
   <block id="63ba9d2341fcd316dd11a8e4d659a680" category="list-text">샌드박스에서 새로 고치려는 샌드박스 복제본의 작업 메뉴를 선택합니다.</block>
   <block id="5c312d6e56cb086ef38ed7860931fe1c" category="summary">NetApp Workload Factory for Databases에서 리소스 상태, 리소스 활용도, 보호 및 스토리지 성능을 모니터링할 수 있도록 리소스를 등록합니다.</block>
   <block id="ec1098eb54d9b05cc1e929562eb8d30d" category="doc">NetApp Workload Factory for Databases에 리소스 등록</block>
-  <block id="0bc907adb7562b30973df586f142f009" category="paragraph">NetApp Workload Factory for Databases에서 인스턴스 및 데이터베이스 상태, 리소스 활용도, 보호 및 스토리지 성능을 모니터링할 수 있도록 Microsoft SQL Server 및 Oracle 데이터베이스의 인스턴스를 등록합니다.</block>
   <block id="1d72541b2e1a224311e8b78af73bab83" category="summary">NetApp Workload Factory for Databases에서 데이터베이스(샌드박스) 복제본을 생성 당시의 원래 버전으로 되돌립니다.</block>
   <block id="ecf8d68388a40ca09bc6475e0cb33a92" category="doc">NetApp Workload Factory for Databases에서 데이터베이스 복제본 되돌리기</block>
   <block id="b006ea3a9fc3f700c7ea6c3fc404a855" category="paragraph">데이터베이스를 복제하면 생성 시 복제본은 _기준_ 복제본입니다.  복제된 데이터베이스의 데이터는 생성 당시의 소스 데이터베이스와 동일합니다.  데이터베이스 복제본의 데이터는 시간이 지남에 따라 변경되므로 복제본이 처음 생성되었을 때의 기준으로 데이터를 되돌리고 싶을 수 있습니다.  이 작업을 클론의 재기준화라고 합니다.  새로운 복제본을 만드는 대신 복제본의 기준을 다시 정하면 공간을 절약할 수 있습니다. 그러나 데이터베이스 복제본에 적용된 모든 변경 사항은 삭제됩니다.</block>
@@ -1139,11 +1110,8 @@
   <block id="465e9d802e89a57d0c6d975dfa335b10" category="paragraph">당신은해야합니다 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> AWS 계정에서 Workload Factory에 새로운 데이터베이스 호스트를 생성하세요.</block>
   <block id="faf57b7ea755136ba278c7ca635d000d" category="inline-link-macro">Workload Factory 권한에 대해 알아보세요</block>
   <block id="ee8d92152066f3db5bcbd21ab0bf2f95" category="paragraph">워크로드 팩토리에서 데이터베이스를 생성하려면 _보기, 계획 및 분석_ 권한이 필요합니다. 또는 부분적으로 완료된 코드 템플릿을 복사하거나 다운로드하여 워크로드 팩토리 외부에서 작업을 완료할 수 있습니다. <block ref="2ed05d763ad52dc4a74c37608a2573bc" category="inline-link-macro-rx"></block> 어떤 모드를 사용할지 결정하세요.</block>
-  <block id="24f052bbfc9bd9df6db2a9420a7adf2b" category="inline-link-macro">AWS 계정 자격 증명 및 _보기, 계획 및 분석_ 권한</block>
-  <block id="4f56231d78cda077af94d3e0dfd51958" category="list-text">*자격 증명 및 권한*: 다음이 필요합니다. <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> Workload Factory에서 새로운 데이터베이스를 생성합니다.</block>
   <block id="93d1a10f5427dcaad9dbfd835a2f78c4" category="paragraph">Workload Factory에서 _빠른 생성_ 또는 _고급 생성_ 배포 모드를 사용하여 이 작업을 완료할 수 있습니다.</block>
   <block id="2025a0042a0ae8427cc7478e4f0629ea" category="paragraph">당신은 가지고 있어야 합니다 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> AWS 계정에서 워크로드 팩토리에 새로운 데이터베이스 호스트를 생성합니다.</block>
-  <block id="c2a828d4f87d9d9d6977488310b2783f" category="list-text">*자격 증명 및 권한*: 다음이 필요합니다. <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> Workload Factory에서 샌드박스 복제본을 생성합니다.</block>
   <block id="e271b1d3bc72a38f89e2810646dd71a1" category="paragraph">감지된 호스트에 대한 절감 혜택을 살펴보세요. Workload Factory는 기존 Microsoft SQL 서버에 연결하여 세부 정보를 계산기에 입력하여 자동으로 비교합니다. 이 계산기 옵션을 사용하려면 _보기, 계획 및 분석_ 권한을 부여해야 합니다. 사용 사례는 변경할 수 있지만, 다른 모든 세부 사항은 계산에서 자동으로 결정됩니다.</block>
   <block id="d186a87b5715922555a4959a0edebfb5" category="inline-link-macro">_보기, 계획 및 분석_ 권한 부여</block>
   <block id="1dd2a215cce31e07e812222b302e45d0" category="list-text"><block ref="eb47095b3da29cffa9f1ed319e537b9b" category="inline-link-macro-rx"></block> AWS 계정에서 *Explore savings(절약 탐색)* 탭에서 Elastic Block Store(EBS) 및 FSx for Windows 시스템을 감지하고 절약 계산기에서 절약 계산을 표시합니다.</block>
@@ -1160,7 +1128,6 @@
   <block id="4e9dffb84355d8e05d841ef09cb0b14f" category="paragraph">선택하세요<block ref="7cb8f01033b9f51b50ad23ef165f92b6" category="inline-link-macro-rx"></block> 귀하의 요구 사항을 충족하기 위해.</block>
   <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">권한을 부여하지 않기로 선택하는 경우 Workload Factory for Databases를 사용하여 부분적으로 완성된 코드 샘플을 복사할 수 있습니다.</block>
   <block id="38c4c72673e051381c12c32e1dd20f50" category="paragraph">권한을 부여하기로 선택한 경우 다음이 필요합니다.<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block> 여기에는 데이터베이스 및 AI와 같은 워크로드 기능을 선택하고, 필요한 권한에 대한 IAM 정책을 만드는 것이 포함됩니다.</block>
-  <block id="14a812993e30c1769069f1d355d3b4a0" category="paragraph">인스턴스 또는 데이터베이스의 호스트가 인벤토리에 나타나야 합니다. 호스트가 인벤토리에 나타나려면 다음이 필요합니다. <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> 귀하의 AWS 계정에서.</block>
   <block id="4afeabae14ccab1ba1ff53887c3a9701" category="doc">Amazon Elastic Block Store(EBS) 데이터베이스 계산기에서 비용 절감 최적화</block>
   <block id="d9f7bd12b1b11b300e5288560b5e9987" category="paragraph">두 가지 새로운 계산기 기능은 EBS 스토리지를 사용하여 여러 인스턴스를 실행할 때 비용 절감 분석을 개선하여 FSx for ONTAP 으로 전환하면 더 많은 비용을 절감할 수 있습니다.</block>
   <block id="32ccdc5dd4f059ebfa9dabaa8c301cf0" category="list-text">Workload Factory는 하나의 FSx for ONTAP 파일 시스템에서 여러 데이터베이스 호스트를 위한 통합 스토리지 솔루션을 제공합니다.  이러한 통합을 통해 여러 데이터베이스 호스트에 필요한 파일 시스템 수가 줄어들어 스토리지 비용이 최적화되고, 결과적으로 비용 절감 효과가 더욱 커집니다.</block>
@@ -1230,24 +1197,17 @@
   <block id="8a91764939fe812c81b542206d9d0af7" category="paragraph">FSx for ONTAP 파일 시스템 스토리지에서 실행되는 경우에만 리소스를 등록할 수 있습니다.</block>
   <block id="905518fc8d8d1e03b6625a1429570b1f" category="inline-link-macro">오류 로그 분석</block>
   <block id="ad93849f6190198b574a03052debf9ee" category="section-title">Microsoft SQL Server 인스턴스 등록</block>
-  <block id="92d119793835b54b4d7e2c5bcf09d96d" category="paragraph">인스턴스 등록은 인스턴스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 인스턴스 또는 여러 인스턴스를 등록할 수 있습니다.</block>
   <block id="1e353ab5fd8467e0928740d5976845d6" category="paragraph">Workload Factory는 SQL Server에 대한 FCI(Failover Cluster Instance) 및 독립 실행형 배포 등록을 지원합니다.</block>
   <block id="eb0b58928657c5dc4eb473380f85c004" category="list-text">인스턴스를 인증하려면(1단계) 다음을 수행한 후 *다음*을 선택합니다.</block>
   <block id="6b49f93b8fce5f712f19faf1d7e86198" category="list-text">*모든 인스턴스에 동일한 자격 증명 사용* 또는 *자격 증명 수동 관리*를 선택합니다.</block>
   <block id="f401c2a4f95521388399cd9160d348c0" category="list-text">사용자 이름과 암호 정보를 제공하여 SQL Server 및 Windows를 인증합니다.</block>
   <block id="5af06cdcd5f2ae831a171dc46f044c7f" category="paragraph">인스턴스가 인증되면 * 다음 * 을 선택합니다.</block>
-  <block id="69724d4e89d54d12f3752423c87be644" category="list-text">*모든 리소스에 동일한 자격 증명 사용* 또는 *수동으로 자격 증명 관리* 를 선택합니다.</block>
-  <block id="34b2f9d708b57fa0ab164ac81a844832" category="paragraph">FSx for ONTAP 파일 시스템이 인증되면 * 다음 * 을 선택합니다.</block>
-  <block id="9ed181f71730a4b981c04369e2f1719e" category="list-text">준비(3단계)에서는 인스턴스가 최소 요구 사항을 충족하는지 확인하십시오.</block>
   <block id="4aa1b1ff22a8dfe18a969e9e18594ab0" category="list-text">각 기능에 대한 *설정 세부 정보*를 선택하여 기능 사전 요구 사항에 대해 알아보고 화면의 지침에 따라 기능에 대한 누락된 사전 요구 사항을 완료하십시오.</block>
   <block id="d521398ad1462fd891ea513e4855ce5b" category="inline-link-macro">Well-Architected 문제를 검토하고 수정합니다</block>
   <block id="9d96bcc0867ec5be17a78fc127af4785" category="paragraph">인스턴스 등록이 시작됩니다. 진행 상황을 확인하려면 *작업 모니터링* 탭을 선택하십시오.</block>
-  <block id="efd81ed9168d148e7b33debfd48f5bbe" category="paragraph">인스턴스 등록은 데이터베이스 인증, FSx for ONTAP 인증, 그리고 누락된 필수 구성 요소 완료 준비의 세 단계로 구성됩니다. 단일 또는 여러 데이터베이스를 등록할 수 있습니다.</block>
   <block id="67b60232330635a005ec1fd48b8378f5" category="list-text">인벤토리에서 엔진 유형으로 *Oracle* 을 선택하십시오.</block>
   <block id="4a259cdca92c769ffaab7b1900cdf9a3" category="list-text">사용자 이름과 암호 정보를 제공하여 Oracle 사용자 및 ASM(Automatic Storage Management) 그리드 사용자(해당하는 경우)를 인증합니다.</block>
   <block id="d80e97cf9f44825e6a448342f9ee18ae" category="paragraph">데이터베이스가 인증되면 *다음*을 선택합니다.</block>
-  <block id="90252dc7d534ac36ea9f5b1fd7c90573" category="list-text">FSx for ONTAP 인증(2단계)을 수행하려면 다음 단계를 완료한 후 *다음*을 선택하십시오.</block>
-  <block id="aea7afc9754b2383c56fbbaee6c6009d" category="list-text">준비 단계(3단계)에서는 데이터베이스가 필수 요구 사항을 충족하는지 확인하십시오. 필요한 모든 모듈이 설치되어 있고 필수 요구 사항이 충족되면 *다음*을 선택하여 데이터베이스를 등록하십시오. 그렇지 않으면 다음 단계를 따르십시오.</block>
   <block id="1717c98238cd6bd4091f92979d40a891" category="list-text">*사전 요구 사항 확인 보기*에서 사전 요구 사항을 검토하십시오.</block>
   <block id="3f4c61df91a8ed4b5fc7622369d6e56d" category="paragraph">데이터베이스를 등록하려면 *Review well-architected issues and recommendations*와 같은 단일 기능에 대한 모든 필수 조건을 완료해야 합니다.</block>
   <block id="aece37c900cf74271d49a4aec3628d66" category="paragraph">데이터베이스 등록이 시작됩니다. 진행 상황을 추적하려면 *작업 모니터링* 탭을 선택하십시오.</block>
@@ -1304,7 +1264,6 @@
   <block id="4511f32d33e21257085df585e8c9dc3a" category="cell">Always On 가용성 그룹</block>
   <block id="650870d240bc8043d6977b1a1c975ce0" category="cell">19c, 21c</block>
   <block id="edd8af7eaa131179cb70a5db89636876" category="cell">Data Guard</block>
-  <block id="5a493bafe2fb35c6f5339a3ced4adce7" category="paragraph">Workload Factory는 데이터베이스 구성을 매일 분석합니다. 일일 분석을 통해 우수한 아키텍처 상태, 인사이트 및 권장 사항을 제공합니다. 구성 문제를 자동으로 수정하여 모범 사례를 준수할 수 있습니다.</block>
   <block id="cac9df85ec3dc71ff56914f00db69c7a" category="list-text">컴퓨팅: 운영 체제 패치 포함</block>
   <block id="2ad033703ef0dac4d52edf323faa1918" category="paragraph">Oracle용 아키텍처 분석 기능은 구성이 다른 구성에 의존하는 경우 알려주고 연결된 구성을 최적화하기 위한 조치를 나열합니다.</block>
   <block id="a790f6e28b649137870b00ccf3589944" category="list-text">메뉴 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *데이터베이스*를 선택합니다.</block>
@@ -1313,7 +1272,6 @@
   <block id="cea7ad7075430d1bd0be98ca92701bcb" category="list-text">PowerShell에서 스크립트를 실행합니다. 하나의 스크립트로 모든 인스턴스의 메타데이터를 수집할 수 있습니다.</block>
   <block id="b33feb370f35879eddcd9293135b1df1" category="list-text">*일회성 평가* &gt; *업로드*를 선택합니다. 파일을 찾아 Workload Factory 콘솔에 업로드합니다.</block>
   <block id="c70615017296ffdedf34ebb8730eaa77" category="section-title">구성을 수정, 해제 및 재활성화하기 전에</block>
-  <block id="50bac09b5a353b5521f0ff914fff6808" category="list-text">리소스는 Workload Factory에 등록되어 있어야 하며 스토리지 유형은 FSx for ONTAP이어야 합니다.<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="85d21d13c3f58b49f129dacfb4cab3a1" category="list-text">설정이나 구성을 수정하기 전에 각 권장 사항을 검토하십시오. RSS 및 MAXDOP의 경우, 운영 환경을 변경하기 전에 권장 설정을 테스트하여 성능을 확인하십시오.</block>
   <block id="88228ff74222d41a7b32f7f73b628495" category="paragraph">*PDF 내보내기*를 선택하여 결과 보고서를 다운로드하십시오.</block>
   <block id="370419de045637c04622917ea040cd16" category="section-title">데이터베이스 구성 분석 해제</block>
@@ -1321,8 +1279,6 @@
   <block id="d6b510061438391f590afb73a62f098c" category="paragraph">언제든지 분석을 다시 활성화할 수 있습니다. 해당 구성은 더 이상 전체 최적화 점수에 포함되지 않습니다.</block>
   <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">해제된 구성 분석을 다시 활성화합니다</block>
   <block id="99206ff00921c00b5d887375a108d167" category="paragraph">해제된 구성 분석을 언제든지 다시 활성화할 수 있습니다. 하나 이상의 구성을 선택하여 다시 활성화할 수 있습니다.</block>
-  <block id="1a0cee014540e049f4d08b2ca15c2447" category="inline-link-macro">Well-Architected 평가</block>
-  <block id="27cfb14157482da47350bb4484f7e792" category="paragraph">인스턴스(SQL Server) 또는 데이터베이스(Oracle)를 등록하는 데는 인스턴스 또는 데이터베이스 인증, FSx for ONTAP 인증, 준비의 세 단계가 필요합니다. 준비 단계에서는 인스턴스 또는 데이터베이스에 AWS, NetApp 및 PowerShell 모듈을 설치하고 <block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 또는 <block ref="d21897e75c312daacd024fa4c48cd6a7" category="inline-link-macro-rx"></block>와 같은 Workload Factory for Databases 기능의 최소 요구 사항을 충족해야 합니다.</block>
   <block id="672da44d295a636d22c64c52022ddf81" category="paragraph">Workload Factory는 Microsoft SQL Server 인스턴스와 Oracle 데이터베이스 등록 및 관리만 지원합니다. Workload Factory에서 선택한 AWS 계정 자격 증명에 따라 PostgreSQL 호스트가 인벤토리에 표시됩니다. 현재 Workload Factory는 Amazon Linux 운영 체제에서만 실행되는 등록되지 않은 PostgreSQL 인스턴스를 지원합니다.</block>
   <block id="7651418602ee7e0d7035d3f2eed1ac58" category="paragraph">외부 연결이 없는 프라이빗 네트워크에 인스턴스 또는 데이터베이스를 등록하려면 필요한 엔드포인트를 VPC에서 사용 가능하게 만들고 관련 서브넷과 연결해야 합니다. 인터페이스 엔드포인트에 대해 보안 그룹에서 포트 443을 허용하십시오.</block>
   <block id="aa880a36f751894aa3fd6f4bc9d30355" category="paragraph">아웃바운드 EC2 연결에 프록시 서버를 사용하는 경우 관리 작업을 위해 다음 도메인에 대한 액세스를 허용하십시오.</block>
@@ -1334,85 +1290,12 @@
   <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">작동 방식</block>
   <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory는 Amazon FSx for NetApp ONTAP 파일 시스템 배포 환경에서 실행되는 워크로드를 매일 분석합니다. 이 분석을 통해 아키텍처 상태, 인사이트 및 권장 사항을 확인할 수 있습니다.</block>
   <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">일일 분석이 완료되면 배포의 Well-architected 대시보드에 구성 상태가 "최적화됨" 또는 "최적화되지 않음"으로 표시됩니다. 총 최적화 점수, 범주별 구성 문제, 구성 문제 및 권장 사항 목록을 확인할 수 있습니다. 구성 문제에 대한 권장 사항을 검토할 수 있습니다. 일부 문제는 Workload Factory에서 자동으로 수정되지만, 다른 문제는 수동 개입이 필요합니다. 이 경우 Workload Factory는 권장 변경 사항을 구현하는 데 도움이 되는 자세한 지침을 제공합니다.</block>
-  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">사용 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다. 특정 구성 분석을 제외하면 Workload Factory는 해당 구성을 전체 최적화 점수 계산에 포함하지 않습니다.</block>
   <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">중요한 이유</block>
   <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory는 지속적인 평가와 권장 사항 인사이트 및 문제 해결을 결합하여 대규모 스토리지, 데이터베이스 및 VMware 환경에 모범 사례를 적용합니다. Workload Factory 콘솔에서 적용되는 자동화된 수정 사항은 인적 오류를 줄이고 일관된 관리를 보장하며 워크로드 인프라 전반의 성능과 안정성을 유지합니다.</block>
-  <block id="a54f5b1fe41547cbf19f1fb9561340dc" category="inline-link-macro">리소스 등록</block>
-  <block id="32b8a48be5601496781767d49968bd51" category="list-text"><block ref="89c16bb90a0fdfa73434baf56ae09810" category="inline-link-macro-rx"></block> 온라인 상태인지 확인합니다.</block>
-  <block id="25c44f83d9d45dc9b2d2a8e46fcc5b19" category="list-text">링크를 연결합니다. 링크 연결을 통해 Workload Factory는 스토리지 레이아웃 및 복원력과 같은 모든 데이터베이스 배포 구성을 분석할 수 있습니다.</block>
-  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">기존 링크를 연결하는 방법 또는 새 링크를 생성하고 연결하는 방법을 알아보십시오</block>
-  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.</block>
-  <block id="64aefaaa1ffe9f3b50d13850f89ff59a" category="list-text">AWS 계정에 _view, planning, and analysis_ 권한을 부여하세요.</block>
-  <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">AWS 계정에 권한을 부여하는 방법을 알아보십시오</block>
-  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
-  <block id="1828f0f67d6613341efbc43d822fd8dc" category="section-title">데이터베이스 워크로드에 대한 모범 사례 및 권장 사항</block>
-  <block id="1ed3d8c93156794cc432b123457d635f" category="paragraph">Workload Factory는 잘 설계된 데이터베이스 워크로드 운영을 위한 모범 사례 및 권장 사항을 제공합니다. 이 아키텍처 분석은 Microsoft SQL Server 및 Oracle Database의 스토리지 크기, 스토리지 레이아웃, 스토리지 구성, 컴퓨팅, 애플리케이션(SQL Server) 및 복원력과 관련된 구성 및 설정을 평가합니다.</block>
-  <block id="894445e8ea6df545bfbc4247797a2162" category="section-title">스토리지 사이징</block>
-  <block id="5418270ffed466b82b925869518520c0" category="list-text">*스토리지 계층*</block>
-  <block id="117987020781031a1637fb2474fcda5a" category="paragraph">최적의 성능을 보장하려면 FSx for ONTAP 볼륨에 기본 SSD 계층을 사용하십시오. 용량 풀 계층을 사용하면 성능이 저하되고 지연 시간이 증가할 수 있습니다. 기본 SSD 계층은 고성능 워크로드에 맞게 설계되었으며, 용량 풀 계층은 비용 효율성에 최적화되어 있어 SQL Server 워크로드의 성능 요구 사항을 충족하지 못할 수 있습니다.</block>
-  <block id="50a35154861297e0463ad6610197fd71" category="list-text">*파일 시스템 여유 공간*</block>
-  <block id="d3b9cd115041e7966b18702c6a73f2a0" category="paragraph">파일 시스템 용량은 전체 볼륨 크기보다 충분히 높게 유지하십시오. 여유 공간이 너무 부족하면 성능 문제가 발생하고, 너무 많으면 스토리지가 낭비되고 비용이 증가합니다.</block>
-  <block id="e52ac523a924c00b4c5ccd742f0d98f3" category="list-text">*로그 드라이브 크기*</block>
-  <block id="88a778779ac5da9ed188a4ca76e5ea7b" category="paragraph">SQL Server 로그 드라이브의 크기를 적절하게 설정하고 모니터링하여 로그 드라이브 용량 부족으로 인한 트랜잭션 롤백, 데이터베이스 사용 불가, 데이터 손상 및 성능 문제를 방지하십시오.</block>
-  <block id="300311b18477e304f1d9e66ce254c8fd" category="list-text">*TempDB 드라이브 크기*</block>
-  <block id="6f6c8627ab8cdaf7724764b892b49c26" category="paragraph">최적의 성능과 시스템 안정성을 유지하려면 TempDB의 크기를 적절하게 설정하고 모니터링해야 합니다. TempDB 공간이 부족하면 쿼리 속도 저하, 애플리케이션 시간 초과 및 시스템 충돌이 발생할 수 있습니다.</block>
-  <block id="196cc0216fd769aaf46f47da965f30f0" category="section-title">스토리지 레이아웃</block>
-  <block id="983e88e86ed869a9aab818469a6f0c9d" category="list-text">*데이터 파일(.mdf) 배치* 및 *로그 파일(.ldf) 배치*</block>
-  <block id="cea56a3ff1140d20f606958853a708ce" category="paragraph">데이터 파일과 로그 파일을 별도의 드라이브에 저장하면 성능이 향상되고 백업 및 복원 작업을 독립적으로 수행할 수 있습니다.</block>
-  <block id="5b9b356226fe0fdbf3042c364d45373b" category="list-text">*TempDB 배치*</block>
-  <block id="7a94f55aa80442d5d46490909ae726d7" category="paragraph">I/O 경합을 방지하고 SQL Server 성능 및 안정성을 향상시키려면 TempDB를 전용 드라이브에 배치하십시오. 그렇지 않으면 I/O 병목 현상, 쿼리 속도 저하 및 시스템 불안정 문제가 발생할 수 있습니다.</block>
-  <block id="6e8775bd755a8835ce86806d669677ea" category="section-title">스토리지 구성</block>
-  <block id="6fff5b0f8a5584251f9c517e970984b4" category="list-text">*ONTAP 구성*</block>
-  <block id="7824f7be61b3770dbf45d9c0e7149f1a" category="paragraph">FSx for ONTAP 볼륨에 대해 씬 프로비저닝, 자동 크기 조정 및 공간 관리를 활성화하여 스토리지 효율성과 비용 효율성을 최적화하십시오. 활성 데이터에 대한 고성능을 유지하면서 오래된 스냅샷을 용량 계층으로 이동하도록 계층화 정책을 구성하십시오. LUN의 경우, 적절한 I/O 정렬을 위해 OS 유형이 운영 체제 파티셔닝 체계와 일치하는지 확인하고, 쓰기 오류를 방지하기 위해 공간 예약을 활성화하고, 스토리지가 가득 찼을 때 자동 공간 재확보 및 호스트 알림을 허용하도록 공간 할당을 활성화하십시오.</block>
-  <block id="f17cbc45bebb2b318df7730cf320226f" category="list-text">*운영 체제*</block>
-  <block id="64845b1fc47ddfef3f821cf6b77deab0" category="paragraph">EC2의 SQL Server 데이터베이스와 FSx for ONTAP에 대한 고가용성 및 데이터 액세스 일관성을 보장하기 위해 적절한 시간 제한 설정으로 Microsoft Multipath I/O(MPIO)를 활성화하고 구성하십시오. MPIO는 장애 조치 시 향상된 복원력과 성능을 위해 중복 경로를 제공합니다. 최적의 디스크 사용률과 성능을 위해 NTFS 할당 단위 크기를 적절하게 구성하십시오.</block>
   <block id="a623a8d0366bf079411aa30be45b2d10" category="section-title">컴퓨팅</block>
-  <block id="552508d9abd0206f8a2258a4e950c0ce" category="list-text">*컴퓨팅 적정 규모 조정*</block>
-  <block id="e2f45442bdec494bd836b4ec7ed91332" category="paragraph">워크로드 요구 사항에 따라 SQL Server EC2 인스턴스의 크기를 적절히 조정하여 성능과 비용 효율성의 균형을 유지하십시오. 현재 인스턴스가 프로비저닝이 부족한 경우 업그레이드를 통해 CPU, 메모리 및 I/O 용량을 향상시킬 수 있습니다. 프로비저닝이 과도한 경우 다운그레이드를 통해 성능을 유지하면서 비용을 절감할 수 있습니다.</block>
-  <block id="f4aa5339a6267f9aa498876d3f99817d" category="list-text">*운영 체제 패치*</block>
-  <block id="9078834dd366cfbcfbb7495028b90ff2" category="paragraph">보안 및 시스템 안정성을 향상시키려면 최신 운영 체제 패치를 적용하십시오.</block>
-  <block id="f7ea56e7a1a3d21f93afb8868a46597f" category="list-text">*네트워크 어댑터 설정*</block>
-  <block id="3e87f3ec9808572e9326017dfb470169" category="paragraph">수신측 스케일링(RSS)을 구성하여 네트워크 처리를 여러 프로세서에 분산시키고 네트워크 성능을 향상시키십시오. 프로덕션 환경에 적용하기 전에 설정을 테스트하십시오.</block>
-  <block id="46042d8ee782bd40a22e572200cc7f86" category="list-text">*MTU 정렬*</block>
-  <block id="0ffe6b9fe982d3cb2c6117acb223809c" category="paragraph">EC2 인스턴스의 최대 전송 단위(MTU) 설정을 FSx for ONTAP와 정렬하여 네트워크 단편화를 방지하고 SQL Server 성능을 최적화하십시오. MTU 불일치를 수정하면 모든 노드와 네트워크 경로에서 일관된 MTU 구성을 보장할 수 있습니다.</block>
-  <block id="213ae318e1d77a9d7c891744d5e088ad" category="section-title">애플리케이션(SQL Server)</block>
-  <block id="ee998db55a5373c890946748cb8dafeb" category="list-text">*라이센스*</block>
-  <block id="dc2c42603ecce6ed6ff4935c61807ce2" category="paragraph">SQL Server 라이선스 평가 및 권장 사항은 호스트 수준에서 제공됩니다. Workload Factory는 데이터베이스 인프라에서 비용을 지불하는 상용 소프트웨어 라이선스 기능을 사용하지 않는 것으로 감지되면 라이선스를 "최적화되지 않음"으로 간주합니다. 최적화되지 않은 라이선스는 불필요한 비용을 초래할 수 있습니다. SQL Server 라이선스 사용 현황을 검토하여 비용을 지불하는 모든 기능을 활용하고 있는지 확인하십시오.</block>
-  <block id="a8642bb1e88dfe2e58d1d4d34aed2d28" category="list-text">*Microsoft SQL Server 패치*</block>
-  <block id="aeb19b16f26ffba9cda709a80fdd7572" category="paragraph">최신 SQL Server 패치를 적용하여 보안을 강화하고 취약점으로부터 보호하며 시스템 안정성을 향상시키십시오.</block>
-  <block id="4eddb0eeecb1e4ae314e258e08e465e3" category="list-text">*MAXDOP*</block>
   <block id="a87a9d28595a379a45146753041d53f3" category="paragraph">쿼리 성능을 최적화하려면 MAXDOP를 구성하십시오. 일반적으로 4, 8 또는 16 값이 적합합니다. 워크로드를 테스트하고 CXPACKET과 같은 병렬 처리 대기 유형을 모니터링하십시오.</block>
-  <block id="277088f7a0bc1d2b0023dc08b1d30e37" category="list-text">*로컬 스냅샷 예약*</block>
-  <block id="2a18a15eebd0bb67a6bfebc30c94b035" category="paragraph">정기적인 스냅샷을 예약하여 특정 시점의 백업을 생성하고, 실수로 인한 삭제, 데이터 손상 및 기타 문제 발생 시 신속하게 복구하세요.</block>
-  <block id="29e7ad88f894625110c66db9a5db3cae" category="list-text">*백업 구성*</block>
-  <block id="4f191d1258f960fe582f682581657e6d" category="paragraph">데이터 보존 및 규정 준수 요구 사항을 충족하도록 FSx for ONTAP 백업 또는 AWS Backup을 구성하십시오. 중복 백업을 방지하십시오.</block>
-  <block id="b34347ddf6e48f7eb5aee09d6f7b92a6" category="list-text">*지역 간 복제*</block>
-  <block id="d4a143ea376b0803a77b86507a94ef57" category="paragraph">데이터 가용성과 재해 복구를 향상시키려면 지역 간 복제(CRR)를 활성화하십시오. CRR을 사용하여 지역 장애로부터 보호하고 비즈니스 연속성을 보장하십시오.</block>
-  <block id="7b3f859ceed0c4f3ae005839c139cd94" category="list-text">*Microsoft SQL Server 고가용성*</block>
-  <block id="95e2d9af5f0697796bab45294c72c532" category="paragraph">모든 클러스터 노드에서 공유 스토리지에 액세스할 수 있는지, 장애 조치 중 충돌을 방지하기 위해 노드 간에 드라이브 문자가 동일한지, 클러스터 상태를 위한 쿼럼이 설정되어 있는지, 클라우드 환경에 맞게 하트비트 임계값이 설정되어 있는지, SQL Server 서비스가 자동 시작 및 장애 조치를 위해 설정되어 있는지 확인하여 SQL Server의 고가용성이 설정되어 있는지 확인하십시오.</block>
-  <block id="e2521a2a2f696d450620b08167cf1c24" category="list-text">*클론 정리*</block>
-  <block id="a794e82abecb038fd6fa9a47fd045637" category="paragraph">스토리지 비용을 절감하려면 정기적으로 검토하고 오래된 클론을 삭제하세요. 오래되고 사용하지 않는 클론은 비용 증가의 원인이 됩니다.</block>
-  <block id="652ffdd012027e3af53ecb01c1e500ab" category="paragraph">스토리지 성능을 최적화하고 성능 저하를 방지하기 위해 적절한 파일 시스템 용량을 유지하십시오. 충분한 여유 용량은 효율적인 스토리지 관리를 가능하게 하고 데이터베이스 성장을 지원합니다.</block>
-  <block id="2162171f540307c958ebbf45ee85c9e6" category="list-text">*스왑 공간*</block>
   <block id="d84ec6da982197f7083af7347dab367c" category="paragraph">시스템이 메모리 부족 현상을 처리하고 속도 저하 또는 충돌을 방지할 수 있도록 RAM 용량에 따라 스왑 공간을 설정하십시오.</block>
-  <block id="8e2df12faf538d6bacaf28eee1c9ba5c" category="list-text">*Oracle 바이너리 배치*</block>
-  <block id="b783d71d72c6af6a879383d98084b39c" category="paragraph">최적의 성능과 안정성을 보장하기 위해 I/O 경합을 줄이려면 Oracle 바이너리를 전용 볼륨에 배치하십시오. 이렇게 분리하면 소프트웨어 업데이트가 간소화되고 실수로 인한 수정이나 손상 위험이 최소화됩니다.</block>
-  <block id="191de1563ead1b097eb12ccf44a2c6e4" category="list-text">*데이터 파일 배치*</block>
-  <block id="c16d7b149b235cecee807abf5f897328" category="paragraph">데이터 파일을 전용 볼륨이나 제어 파일과 함께 배치하여 임의 I/O를 격리하고 성능을 향상시키십시오. 이러한 분리를 통해 사용자 지정 스냅샷 구성, 계층화 정책 및 효율성 메커니즘을 구현하여 성능과 비용을 최적화할 수 있습니다.</block>
-  <block id="5c5a39c795bca8602578d6afc0b265b0" category="list-text">*Control 파일 배치*</block>
-  <block id="d8dcefdf0aa7cd4e098cfddd267dc143" category="paragraph">단일 장애 지점을 방지하고 이중화를 추가하기 위해 제어 파일의 복사본을 서로 다른 볼륨이나 디스크에 저장하십시오. 제어 파일은 전용 볼륨에 배치하거나 리두 로그 또는 데이터 파일과 공유할 수 있지만, 성능 요구 사항으로 인해 객체 스토리지로 계층화된 볼륨에는 배치하지 마십시오.</block>
-  <block id="d2a9eedab15224a70b510d60bff1eacf" category="list-text">*Redo 로그 배치*</block>
-  <block id="874e6770e7350eb26458ff75f3c9371b" category="paragraph">리두 로그는 전용 볼륨에 배치하거나 임시 파일 또는 제어 파일과 적절히 공유하여 쓰기 I/O 작업이 많은 환경을 격리하고 성능을 향상시키십시오. 리두 로그의 각 복사본은 이중화를 위해 별도의 볼륨에 저장하십시오. 리두 로그는 자주 업데이트되므로 볼륨 스냅샷이나 오브젝트 스토리지로 계층화된 볼륨에는 배치하지 마십시오.</block>
-  <block id="cef21d61286ad1feaed1b9c70b94e413" category="list-text">*임시 배치*</block>
-  <block id="cf0091757f6ff40803416e58f1745563" category="paragraph">임시 파일은 전용 볼륨에 저장하거나 리두 파일 또는 제어 파일과 적절히 공유하여 쓰기 I/O 작업이 많은 작업을 격리하고 성능을 향상시켜야 합니다. 다중화된 임시 복사본은 각각 별도의 볼륨에 저장하여 이중화를 확보해야 합니다. 임시 파일은 업데이트 빈도가 높으므로 볼륨 스냅샷이나 객체 스토리지로 계층화된 볼륨에 저장해서는 안 됩니다.</block>
-  <block id="e160b9717e54bc435262f70122ed19d8" category="list-text">*아카이브 배치*</block>
-  <block id="a0659f391b761a5b4ff8b65f28154fd3" category="paragraph">아카이브 로그를 전용 볼륨에 배치하여 높은 I/O 요구 사항이 다른 데이터베이스 작업을 방해하지 않도록 함으로써 성능 및 복구 프로세스를 향상시키십시오.</block>
-  <block id="ba4e74fb4a08b807adc219f9df1ea143" category="list-text">*ASM 전용 구성: ASM 데이터 디스크 그룹 LUN, ASM 로그 디스크 그룹 LUN 및 ASM 아카이브 디스크 그룹 LUN*</block>
   <block id="e7c6352933ceb00c7f004d9b3b578903" category="paragraph">최적의 성능과 이중화를 위해 LUN을 ASM(Automatic Storage Management) 데이터, 리두 로그 및 아카이브 로그 디스크 그룹에 분산하십시오.</block>
-  <block id="d911b17f4f4cdcca62a04ad77aa9403d" category="list-text">*ONTAP*</block>
-  <block id="d1bf0b5773fa36619112fb2acdf1eef8" category="paragraph">씬 프로비저닝, 자동 크기 조정 및 공간 관리를 볼륨에 대해 활성화하여 Oracle 데이터베이스용 FSx for ONTAP 구성을 최적화하십시오. 성능과 비용의 균형을 맞추기 위해 적절한 스냅샷 정책 및 계층화 전략을 구성하십시오. LUN의 경우 쓰기 오류를 방지하고 자동 공간 재확보를 활성화하기 위해 적절한 OS 유형 정렬, 공간 예약 및 공간 할당 설정을 확인하십시오.</block>
-  <block id="ec2a0c82b5fcb006f719221eff77fb9b" category="paragraph">최적의 Oracle 데이터베이스 성능을 위해 운영 체제 설정을 구성하십시오. 여기에는 데이터베이스 워크로드에 맞게 커널 매개 변수를 조정하고 네트워크 파일 시스템 액세스를 위해 NFS 또는 dNFS 설정을 적절하게 구성하는 것이 포함됩니다.</block>
-  <block id="f02adb373ce0bc6a6199e6d2ba9b16b9" category="paragraph">Oracle 데이터베이스 환경의 보안, 안정성 및 성능 향상을 위해 운영 체제 패치를 정기적으로 적용하십시오.</block>
   <block id="d3274d6efd4629f10f6f21cf8a7c4820" category="doc">SQL Server에 대한 일회성 평가</block>
   <block id="8f42179a48bba7e0f2424b2849f64183" category="paragraph">Workload Factory는 이제 필요할 때마다 SQL Server 데이터베이스 배포 구성을 분석하는 일회성 평가를 제공합니다. 신규 배포, 마이그레이션 후, 문제 해결 등 다양한 상황에서 활용할 수 있습니다. 배포 구성을 최적화하고 모범 사례를 준수하는 데 도움이 되는 권장 사항을 받아볼 수 있습니다. 이는 설정 프로세스에 완전히 전념하지 않고도 잘 설계된 기능을 사용할 수 있는 기회입니다. Workload Factory에 자격 증명을 저장하거나 데이터베이스 리소스를 등록하거나 외부 연결을 설정하지 않고도 데이터베이스를 평가할 수 있습니다.</block>
   <block id="d34510ab77e099f24fa05ceac3ff150c" category="paragraph">잘 설계된 아키텍처 분석에는 Oracle에 대한 다음과 같은 새로운 구성이 포함됩니다.</block>
@@ -1429,7 +1312,6 @@
   <block id="dd6bcf35b4739e139fa3041add91e4f2" category="paragraph"><block ref="dd6bcf35b4739e139fa3041add91e4f2" category="inline-link-macro-rx"></block></block>
   <block id="7e54439875eebd71cfeadcfc4cd7318c" category="paragraph">Workload Factory는 여러 Oracle 온프레미스 데이터베이스를 단일 FSx for ONTAP 구성 권장 사항으로 통합하여 비용 절감을 최적화합니다. 단, 선택한 온프레미스 데이터베이스가 단일 FSx for ONTAP 파일 시스템의 처리량, 용량 또는 IOPS 제한을 초과하는 경우는 예외입니다.</block>
   <block id="6a5a609e38cb11091780a0494b87dc4d" category="paragraph">또한 환경에 적용되지 않는 구성 분석을 해제하여 불필요한 알림과 부정확한 결과를 방지할 수 있습니다.</block>
-  <block id="c3ebb88c8fa8ba0761ebfdca34dbaeba" category="paragraph">Workload Factory 콘솔 내의 데이터베이스 인벤토리 또는 Well-architected 대시보드에서 문제를 검토하고 수정할 수 있습니다.</block>
   <block id="3a40f68be193f0f7bc0c01f622d3cc5f" category="paragraph">선택적으로, 자격 증명을 저장하거나 리소스를 등록하지 않고도 데이터베이스 구성에 대한 모범 사례를 검토하기 위해 일회성 평가를 수행할 수 있습니다.</block>
   <block id="e112d8634bd0280eb27ad63e9eeb9493" category="list-text">애플리케이션: Microsoft SQL Server 라이센스, Microsoft SQL Server 패치 및 MAXDOP 설정 포함</block>
   <block id="f953bb98ceaddd49464d672fa425c300" category="list-text">애플리케이션: Oracle Critical Patch Updates 포함</block>
@@ -1444,7 +1326,6 @@
   <block id="5ff54af90bf02d618e79e03c84b00700" category="list-text">*인벤토리*에서 엔진 유형으로 *Oracle*을 선택하십시오.</block>
   <block id="8cbcf57c0ff19d0bfce7c5c703a985f7" category="list-text">Python 스크립트를 Oracle 데이터베이스 호스트에 복사하십시오.</block>
   <block id="1403600c1d66e7c9c648c18cc49caa6b" category="list-text">해당 셸에서 스크립트를 실행하세요. 하나의 스크립트가 모든 데이터베이스에서 메타데이터를 수집합니다.</block>
-  <block id="b740c45c86ad7009995655549fe4d99e" category="paragraph">데이터베이스 환경을 지속적으로 모니터링하고 구성 문제를 자동으로 수정하려면 다음 요구 사항을 충족해야 합니다. 이러한 요구 사항은 일회성 평가에는 필요하지 않습니다.</block>
   <block id="ee3b04dc1b62ec42f7ac81b2e81b8eef" category="admonition">구성을 수정하면 다운타임이나 서비스 중단이 발생할 수 있습니다. 구성을 수정하기 전에 권장 사항을 주의 깊게 검토하십시오.</block>
   <block id="4f03f223eb6e4b828fcf786106ebb22e" category="list-text">클론 정리를 제외한 모든 구성의 경우 권장 사항 세부 정보를 검토하여 문제 해결의 영향을 확인하십시오. 일부 복구 작업으로 인해 다운타임이나 서비스 중단이 발생할 수 있습니다.</block>
   <block id="9d5f676da687a39223271ef7bfef6eb9" category="paragraph">Workload Factory는 구성 분석을 중지합니다.</block>
@@ -1453,17 +1334,9 @@
   <block id="fbce5e4a64b8c9a295b946cbdba92ed5" category="paragraph">Workload Factory는 데이터베이스 환경을 분석하기 위한 다음 옵션을 제공합니다.</block>
   <block id="b2583e88253ca682a5c9db94c5ed500a" category="inline-link-macro">일회성 평가</block>
   <block id="552cb152a031acb4dd113f600e3ade2f" category="list-text">*일회성 평가*: <block ref="8a4d4d5f036a1f87bfd488fd328f962f" category="inline-link-macro-rx"></block>를 수행하여 자격 증명을 저장하거나 리소스를 등록하지 않고 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스의 아키텍처가 잘 설계되었는지 확인할 수 있습니다.</block>
-  <block id="2527ed375db9a9b7c8eb438c41b158af" category="list-text">*지속적인 모니터링*: 리소스를 등록하여 지속적인 모니터링을 활성화하세요. Workload Factory는 데이터베이스 환경을 정기적으로 분석하고, 구성 최적화를 위한 지속적인 권장 사항을 제공하며, 문제를 자동으로 해결합니다.</block>
-  <block id="c00d1429cf92a83ae3a29f82b1d3ce87" category="paragraph">일회성 평가의 경우 분석하려는 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에 대한 자격 증명을 한 번만 제공하면 됩니다.</block>
-  <block id="8e66e2128d2e2c62b019aa77535f4ea2" category="paragraph">지속적인 모니터링을 위해서는 AWS 계정에 리소스를 등록하고, 링크를 연결하고, 권한을 부여해야 합니다.</block>
   <block id="e498749f3c42246d50b15c81c101d988" category="section-title">애플리케이션</block>
-  <block id="6f4c4a3cb603b128e3558183f12a42c6" category="list-text">*Oracle 중요 패치 업데이트*</block>
   <block id="b73450e7e11af7bf00f7fdd615541be8" category="paragraph">최신 Oracle 중요 패치 업데이트를 적용하여 보안 취약점을 해결하고 데이터베이스 환경의 무결성을 유지하십시오. 잠재적인 위협으로부터 보호하고 보안 모범 사례를 준수하려면 정기적으로 패치를 검토하고 적용하십시오.</block>
   <block id="02bc0523497de72834c4c7990e32d155" category="section-title">복원력</block>
-  <block id="10797d31a69c2502a69facc97a069c1e" category="list-text">*교차 리전 복제(CRR)*</block>
-  <block id="a9e4d72be69fab8a75dc490382a14871" category="paragraph">Oracle 데이터베이스의 데이터 가용성과 재해 복구 기능을 강화하려면 지역 간 복제(CRR)를 활성화하십시오. CRR은 지리적으로 분산된 위치에 데이터를 복제하여 지역 장애로부터 보호하고 비즈니스 연속성을 보장합니다.</block>
-  <block id="4e3fbfcdffe2becd73a5b796de048459" category="list-text">*애플리케이션 정합성 보장 스냅샷*</block>
-  <block id="0d0d1e59f6397f54691afa326ea6ef15" category="paragraph">NetApp SnapCenter와 함께 애플리케이션 정합성 보장 스냅샷을 사용하여 특정 시점의 볼륨 데이터에 대한 정확하고 안정적인 스냅샷을 생성할 수 있습니다. 이를 통해 애플리케이션을 원활하게 실행하고 데이터를 안전하게 보호할 수 있습니다. SnapCenter는 백업을 간소화하고 데이터를 신속하고 정확하게 복원하여 다운타임을 줄이고 가장 중요한 워크로드를 보호합니다.</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026년 4월 6일</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025년 10월 6일</block>
   <block id="e41556fc62415ea0a9f5770be89f198d" category="summary">샌드박스 클론을 REST API 코드를 사용하여 CI 및 CD 파이프라인에 연결하면 자동화를 통해 소프트웨어 제공을 개선할 수 있습니다.</block>
@@ -1521,8 +1394,6 @@
   <block id="f00fe8f9c85e91dd0181e63717f16462" category="paragraph">GovCloud 계정의 경우 FSx for ONTAP 자격 증명에 대한 AWS SSM Parameter ARN 값을 다음 형식으로 입력하십시오:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 확인하십시오.</block>
   <block id="5703c433440d20d33af4c4796d45da41" category="list-text">*보안 그룹*: PostgreSQL에 필요한 포트 및 프로토콜을 허용하기 위해 워크로드 보안 그룹이 생성됩니다. 또한 하나 이상의 보안 그룹을 선택할 수 있습니다.</block>
   <block id="48aa17a242c1289545660436a5da586e" category="paragraph">GovCloud 계정의 경우, 자격 증명에 대한 AWS SSM Parameter ARN 값을 다음 형식으로 입력하세요:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 확인하세요.</block>
-  <block id="79841a1330c11b7cedd1a1d3cbb4ae1c" category="paragraph">+ GovCloud 계정의 경우 다음 형식으로 FSx for ONTAP 자격 증명에 대한 AWS SSM Parameter ARN 값을 입력합니다.<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block> AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다.<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block> <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>에서 SSM 파라미터 검색에 대해 자세히 알아보십시오.</block>
-  <block id="6e9a724ad6108741081bde02ae2912e7" category="paragraph">+ 새로운 FSx for ONTAP 파일 시스템은 설치 시간을 30분 이상 추가할 수 있습니다.</block>
   <block id="d452bc6133c698b08bf18ab5b595d341" category="list-text">*Simple Notification Service*: 선택적으로 드롭다운 메뉴에서 PostgreSQL용 SNS 주제를 선택하여 이 구성에 대해 Simple Notification Service(SNS)를 활성화할 수 있습니다.</block>
   <block id="4a82368a947d7ff0c661da3504176f5c" category="paragraph">가장 정확한 절감액 추정치를 얻으려면 계산기의 필드를 사용자 지정하세요.</block>
   <block id="9ef59a9ba51ad7927edec8e6fcbeb5ed" category="section-title">Microsoft SQL Server 호스트에 대한 절감 효과 사용자 지정</block>
@@ -1533,10 +1404,279 @@
   <block id="8e99d4b967a68c2639bd0e29eb652859" category="list-text">데이터베이스에서 *절약 사항 살펴보기*를 선택한 다음 *Oracle on EBS*를 선택합니다.</block>
   <block id="cb1217d0ae1d0062d087d1a39e9f29af" category="list-text">*Oracle 에디션*: 드롭다운 메뉴에서 Oracle 에디션을 선택하세요.</block>
   <block id="298643abfe0d666f175f7f94a8751629" category="list-text">*월별 Oracle BYOL 비용($)*: 선택 사항으로 월별 Oracle BYOL 비용을 달러로 입력합니다.</block>
-  <block id="45d65f4c65aa938b39f96d1b869cd23a" category="paragraph">AWS GovCloud(US) 사용자는 AWS Secrets Manager를 사용하여 FSx for ONTAP 자격 증명을 인증해야 합니다. 다른 모든 사용자는 파일 시스템 자격 증명을 사용하여 FSx for ONTAP을 인증해야 합니다.</block>
-  <block id="2ef73c74b0cad2520f602596db0ba30e" category="list-text">GovCloud 계정의 경우 FSx for ONTAP 자격 증명이 포함된 AWS SSM Parameter ARN을 입력하거나, 다른 모든 계정의 경우 FSx for ONTAP 파일 시스템 사용자 이름과 암호를 입력한 다음 *다음*을 선택하십시오.</block>
-  <block id="9fc473da6470452a4af104eed53ea7a9" category="paragraph">GovCloud 계정의 경우 AWS SSM Parameter ARN 값은 AWS Management Console의 Parameter details 아래에 있는 Parameter Store에서 다음 형식으로 제공됩니다:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. AWS SSM Parameter 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="a698aa1fbee7824723aef2f6f3386343" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
   <block id="fcf9f8c650605555c801d6284a159f59" category="list-text">데이터베이스를 인증하려면(1단계) 다음 단계를 수행한 후 *다음*을 선택하십시오.</block>
-  <block id="4c290bde270addf9889d6824ca16e3ab" category="paragraph">AWS SSM 파라미터 유형은 "Secure String"이어야 하며 이름은 다음 형식이어야 합니다<block ref="a698aa1fbee7824723aef2f6f3386343" prefix=" " category="inline-code"></block>. AWS SSM 파라미터 ARN 값은 다음 형식으로 입력하십시오:<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>. SSM 파라미터 검색에 대한 자세한 내용은 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
   <block id="431b3c73dcd090440f753c5d3af80bb0" category="section-title">2026년 6월 1일</block>
+  <block id="78a4e31d1c34a343ac1189ff737a0982" category="doc">잘 설계된 아키텍처 분석에서 Oracle 및 Microsoft SQL Server의 구성 변경 사항</block>
+  <block id="1d617de46837a3d67b6850fd27b13c02" category="paragraph">잘 설계된 아키텍처 분석에서 여러 데이터베이스 구성이 통합되고 다음 구성으로 이름이 변경되었습니다.</block>
+  <block id="70dc13ee7e3320f270e7236f7fa9f60d" category="list-text">*블록 장치 공간 관리*: 공간 예약, 공간 할당 및 부분 예비 용량을 포함합니다.</block>
+  <block id="c75bc7e1a77b2b8e809bf87a1b1c2b5b" category="list-text">*스토리지 효율성*: 압축, 중복 제거 및 컴팩션 포함</block>
+  <block id="706125d817b831eb4c31ea90c004eee2" category="list-text">*Tiering/TCO 최적화*: 계층화 정책 및 계층화 최소 냉각 일수 포함</block>
+  <block id="08ab4e6e5d6d250dd93617842402b41f" category="list-text">*로컬 스냅샷 예약*: 스냅샷 정책 포함</block>
+  <block id="3791b9a912543795aa72719e1fa5c488" category="inline-link-macro">워크로드 팩토리의 구성 분석</block>
+  <block id="5874b771173388bd46c8912da31750a0" category="paragraph"><block ref="5874b771173388bd46c8912da31750a0" category="inline-link-macro-rx"></block></block>
+  <block id="da0c92072a1db7fee3208bcad3ad822b" category="section-title">데이터베이스에 대한 IAM 권한 정책 업데이트</block>
+  <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">데이터베이스 권한이 업데이트되어 기능 액세스가 향상되었고, 불필요한 경우 SSM 액세스가 제한되었습니다.</block>
+  <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">보기, 계획 및 분석 권한은 AWS SSM 문서로 제한됩니다. 이러한 권한을 사용하면 호스트, 인스턴스 및 데이터베이스를 볼 수 있습니다. 또한 필요에 따라 리소스에 대한 기본 온디맨드 아키텍처 분석을 실행할 수 있습니다.</block>
+  <block id="e9ad7ba5991717b52c215bd25e788b28" category="paragraph">운영 및 복구 권한을 통해 리소스를 변경하고, 오류 로그를 분석하고, 리소스에 대한 포괄적이고 체계적인 분석을 수행하고, 구성 문제를 수정할 수 있습니다.</block>
+  <block id="b8646f09ea34b75c077cfea12f75617b" category="inline-link-macro">권한 참조</block>
+  <block id="c041c2dfd235a9062883922df8e04748" category="paragraph"><block ref="c041c2dfd235a9062883922df8e04748" category="inline-link-macro-rx"></block></block>
+  <block id="21b694dc2503eab08ab245a8bcfe9f1c" category="inline-link-macro">AI 관리에 대해 알아보기</block>
+  <block id="d4d3603f8d07cf225f744c7e81bf9374" category="admonition">계정 관리자가 AI 기능을 비활성화한 경우 메시지가 표시되며 AI 분석을 사용할 수 없습니다. 관리자에게 문의하거나 <block ref="a4efb9d0168cfdc15063741b91ed0040" category="inline-link-macro-rx"></block>.</block>
+  <block id="08c0c91e4ebd389e49d8401cc707b402" category="paragraph">새 데이터베이스를 생성하기 전에 다음 필수 조건을 완료하십시오.</block>
+  <block id="e58af96aa41efa7b7129c35a28907a57" category="inline-link-macro">AWS 계정 자격 증명 및 _작업 및 복구_ 권한</block>
+  <block id="1e4408f83c8df67583019f5dfedf1213" category="list-text">*자격 증명 및 권한*: Workload Factory에서 새 데이터베이스를 생성하려면 <block ref="1a05fe4795203e9e173c7abb17442c68" category="inline-link-macro-rx"></block>이(가) 있어야 합니다.</block>
+  <block id="73a7f4e2adc565d1202c5f44437f9744" category="list-text">*자격 증명 및 권한*: Workload Factory에서 샌드박스 복제본을 생성하려면 <block ref="1a05fe4795203e9e173c7abb17442c68" category="inline-link-macro-rx"></block>이(가) 있어야 합니다.</block>
+  <block id="454b8bf6ce5d6ce9ec4bbed2cbcc375b" category="doc">데이터베이스용 Workload Factory에서 작업 모니터링</block>
+  <block id="674b84367e7a585d7eb4cb69538ab5be" category="paragraph">FSx for ONTAP, 자격 증명 및 링크 작업의 실행을 모니터링하고 추적하며 NetApp Workload Factory의 Tracker를 사용하여 작업 진행 상황을 모니터링합니다.</block>
+  <block id="8dbebb7d8525e0c16443f866feb41a02" category="paragraph">Workload Factory는 모니터링 기능인 Tracker를 제공하여 FSx for ONTAP, 자격 증명 및 링크 작업의 진행 상황과 상태를 모니터링하고 추적하고, 작업 및 하위 작업에 대한 세부 정보를 검토하고, 문제 또는 오류를 진단할 수 있도록 지원합니다.</block>
+  <block id="6092aff2fd96382c8039bf4b05f69f42" category="paragraph">트래커에서는 다양한 작업을 수행할 수 있습니다. 기간(최근 24시간, 7일, 14일 또는 30일), 작업량, 상태 및 사용자별로 작업을 필터링할 수 있고, 검색 기능을 사용하여 작업을 찾을 수 있으며, 작업 테이블을 CSV 파일로 다운로드할 수 있습니다. 트래커는 언제든지 새로 고침할 수 있습니다. 실패한 작업을 빠르게 재시도하거나 실패한 작업의 매개변수를 수정하여 다시 시도할 수도 있습니다.</block>
+  <block id="9233b1148f18eb744b69d4d3620c296c" category="paragraph">트래커는 작업 유형에 따라 두 가지 수준의 모니터링을 지원합니다. 파일 시스템 배포 등 각 작업에 대해 작업 설명, 상태, 시작 시간, 작업 기간, 사용자, 지역, 프록시 리소스, 작업 ID 및 모든 관련 하위 작업이 표시됩니다. API 응답을 확인하여 작업 중에 발생한 상황을 파악할 수 있습니다.</block>
+  <block id="5cdbeb1c4cc65e8f551e161828701113" category="list-text">추적 작업 레벨 예시</block>
+  <block id="21a1f3fb63f8e2b67d072b29080f89f9" category="list-text">레벨 1(작업): 파일 시스템 배포를 추적합니다.</block>
+  <block id="5517abda6821fee1e969e9d59498b33e" category="list-text">레벨 2(하위 작업): 파일 시스템 배포와 관련된 하위 작업을 추적합니다.</block>
+  <block id="88ebc1f479e6de47fd711c4be81c4d26" category="list-text">운영 상태</block>
+  <block id="afcc9733e2e2e0ce70f1ecee29c8f008" category="list-text">트래커에서 작업 상태는 _진행 중_, _성공_, _실패_로 표시됩니다.</block>
+  <block id="de32977622108a1960ab0fcf45adaf80" category="list-text">작동 주파수</block>
+  <block id="a9853b6069302c4152781f48222c3541" category="list-text">작업 빈도는 작업 유형과 작업 일정에 따라 결정됩니다.</block>
+  <block id="01b0a4fcc33bdafd6e65537f24f463de" category="list-text">이벤트 보존</block>
+  <block id="b3c382e94f4b4abcc049ce95e85dc998" category="list-text">이벤트는 사용자 인터페이스에서 30일 동안 보관됩니다.</block>
+  <block id="cfd98e00a6e308c04ab9f76a854b6989" category="section-title">운영 상황을 추적하고 모니터링합니다</block>
+  <block id="e80eb219e8472681a001172074028f46" category="paragraph">Tracker를 사용하여 NetApp Console에서 작업을 추적하고 모니터링합니다.</block>
+  <block id="90f9c44ed80c8f4c833d62a795593434" category="list-text">메뉴 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 *관리*를 선택하십시오.</block>
+  <block id="31793001124176cff5a1e8aea00621a1" category="list-text">관리 메뉴에서 *Tracker*를 선택합니다.</block>
+  <block id="2ba65fb298b74a9b72d949d4fe3479b3" category="list-text">트래커에서는 필터 또는 검색 기능을 사용하여 작업 결과를 좁힐 수 있습니다. 작업 보고서를 다운로드할 수도 있습니다.</block>
+  <block id="aa2a2cd452f8a71b2f2dcdae68114732" category="section-title">API 요청 보기</block>
+  <block id="68538d555ae12c680ea428aaa850d90f" category="paragraph">트래커의 작업에 대한 API 요청을 Codebox에서 확인하십시오.</block>
+  <block id="968877018213bf42962084001c210472" category="list-text">트래커에서 작업을 선택합니다.</block>
+  <block id="bd56fc255ce900fc195c9bc0d7ed20c0" category="list-text">작업 메뉴를 선택한 다음 *API 요청 보기*를 선택합니다.</block>
+  <block id="1448fba076a066622a9f93a25ab170a2" category="section-title">실패한 작업 재시도</block>
+  <block id="89f1070b2ef1ba678a8cb4823fa74cb2" category="paragraph">트래커에서 실패한 작업을 다시 시도할 수 있습니다. 실패한 작업의 오류 메시지를 복사할 수도 있습니다.</block>
+  <block id="2d7556f00012ad460e93441b51cce6ea" category="admonition">실패한 작업에 대해 허용되는 재시도 횟수는 x회로 제한됩니다.</block>
+  <block id="b866b632b7f32ded2a0a0907100641bf" category="list-text">트래커에서 실패한 작업을 선택합니다.</block>
+  <block id="9d506eb8fb5e05c2467a690e5e727cd8" category="list-text">작업 메뉴를 선택한 다음 *다시 시도*를 선택합니다.</block>
+  <block id="121145d60db2324903b129ae74d6c0a9" category="paragraph">작업이 재시작되었습니다.</block>
+  <block id="bde5076ae2a993de9042a7e1dd4dc445" category="section-title">실패한 작업 편집 및 재시도</block>
+  <block id="2ae5a8ae85adca2aebf16aa81130c9c5" category="paragraph">실패한 작업의 매개변수를 수정하고 Tracker 외부에서 작업을 다시 시도하십시오.</block>
+  <block id="0270fd4391a6b334aa157faf0a6b7304" category="list-text">작업 메뉴를 선택한 다음 *편집 후 다시 시도*를 선택합니다.</block>
+  <block id="a071e4310b0dbc18ec326c217f47692f" category="paragraph">매개변수를 수정하고 작업을 다시 시도할 수 있는 작업 페이지로 이동합니다.</block>
+  <block id="49814788ce382c87a117a40e54ae858b" category="paragraph">작업이 재시작되었습니다. Tracker에서 작업 상태를 확인하십시오.</block>
+  <block id="2699ce4834e3dde5ebf6ecc63a20668f" category="paragraph">Workload Factory는 데이터베이스 구성을 매일 분석합니다. 일일 분석을 통해 우수한 아키텍처 상태, 인사이트 및 권장 사항을 제공합니다.</block>
+  <block id="13a5b378a5653f612b43f5a72bd01ebf" category="paragraph">AWS 계정에 _보기, 계획 및 분석_ 권한을 부여하면 다양한 권장 사항을 확인할 수 있습니다. _운영 및 수정_ 권한을 부여하면 모든 권장 사항을 이용할 수 있으며, 모범 사례를 준수하도록 구성 문제를 자동으로 수정할 수 있습니다.</block>
+  <block id="f0e6b8c01ee6280b1e2c01fc31fc15bc" category="paragraph">Workload Factory 콘솔 내의 데이터베이스 인벤토리 또는 잘 설계된 아키텍처 대시보드에서 문제를 검토하고 수정할 수 있습니다. 데이터베이스 구성 요구 사항은 다양하므로, 사용 중인 데이터베이스 환경에 적용되지 않는 특정 구성의 분석을 무시할 수 있습니다. 이렇게 하면 불필요한 경고와 부정확한 최적화 결과를 방지할 수 있습니다.</block>
+  <block id="6988a60bf6eae2f55b7ea830a8e6eb42" category="inline-link-macro">사용자 지정 규칙에 대해 자세히 알아보십시오.</block>
+  <block id="7d42d1268339efac1f7013d0c68448d7" category="paragraph">또한 일반 언어로 사용자 지정 규칙을 만들어 조직 표준 및 NetApp 모범 사례에 따라 환경의 유효성을 검사할 수 있습니다. 모의 실행을 통해 규칙을 테스트한 다음, 모든 환경에서 실행되도록 예약할 수 있습니다. <block ref="bb56f08e5b6beded55992987f1280d78" category="inline-link-macro-rx"></block></block>
+  <block id="bbb1ab722da0458db430250c6f9c7ecf" category="paragraph">각 구성에 대해 현재 값과 권장 값을 확인할 수 있습니다.</block>
+  <block id="51648136bc76557527e95cc08d7d8442" category="section-title">필요 시 평가 수행</block>
+  <block id="5c27d2d0f6aa4dc0aa396077ed4f1d4a" category="paragraph">AWS 계정에 _운영 및 수정_ 권한을 부여하면 Oracle 데이터베이스에 대한 온디맨드 평가를 수행할 수 있습니다. 이 평가를 실행하기 위해 리소스를 등록할 필요는 없습니다.</block>
+  <block id="5227b8ee327ecf194cc43a7ae9929373" category="list-text">*보기 및 수정*을 선택합니다.</block>
+  <block id="de660a2c1b217998786c97e826fbaebe" category="list-text">Well-architected 상태 탭에서 *지금 분석*을 선택합니다.</block>
+  <block id="51a946e47b36e2a8e6bdc90ecaffb549" category="paragraph">데이터베이스 환경의 지속적인 평가 및 구성 문제 자동 수정을 위해서는 다음 요구 사항이 필요합니다. 이러한 요구 사항은 일회성 평가에는 필요하지 않습니다.</block>
+  <block id="0073a9a9fec00b0e0d441fbce3c544fa" category="list-text">워크로드 팩토리에 리소스를 등록해야 하며 스토리지 유형은 FSx for ONTAP이어야 합니다. <block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
+  <block id="b1ae0ae9242e09dd4fa8f55938d508c0" category="inline-link-macro">Workload Factory에서 데이터베이스 리소스에 대한 구성 분석 및 아키텍처 우수성 상태에 대해 알아보세요.</block>
+  <block id="b043d22379220d7c37654b5eb6a3d126" category="list-text"><block ref="b043d22379220d7c37654b5eb6a3d126" category="inline-link-macro-rx"></block></block>
+  <block id="a9d8fc136a7c1528e9a5743b9de2661a" category="inline-link-macro">링크를 사용하여 FSx for ONTAP 파일 시스템에 연결합니다.</block>
+  <block id="dd4a2200748e1259c6fcaf870c467634" category="list-text"><block ref="dd4a2200748e1259c6fcaf870c467634" category="inline-link-macro-rx"></block></block>
+  <block id="4bd4792ab17b2dfaf1c72610c348727b" category="inline-link-macro">사용자 지정 규칙에 대해 알아보기</block>
+  <block id="8444c5470da00bec410076ad80f12456" category="list-text"><block ref="8444c5470da00bec410076ad80f12456" category="inline-link-macro-rx"></block></block>
+  <block id="c249c97fe800a930c35e0c53dc6aee34" category="paragraph">Workload Factory for Databases는 정기적으로 데이터베이스 구성을 분석하여 Amazon FSx for NetApp ONTAP 스토리지에 배포된 Microsoft SQL Server 및 Oracle에 문제가 있는지 확인합니다. 문제가 발견되면 Workload Factory는 문제의 원인과 해결 방법을 제시하여 데이터베이스 구성이 최상의 성능, 비용 효율성 및 모범 사례 준수를 달성하도록 도와줍니다.</block>
+  <block id="963b0a9785e6644e0fdfc032d0cd9b6d" category="paragraph">Workload Factory는 잘 설계된 데이터베이스 워크로드를 위한 모범 사례 및 권장 사항을 제공합니다. 아키텍처 분석은 Microsoft SQL Server 및 Oracle Database의 스토리지, 컴퓨팅, 애플리케이션, 복원력 및 클론 생성과 관련된 구성 및 설정을 평가합니다.</block>
+  <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">사용자 환경에 적용되지 않는 구성에 대한 분석은 제외할 수 있습니다. 이렇게 하면 불필요한 알림과 부정확한 최적화 결과를 방지할 수 있습니다.</block>
+  <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">사용자 지정 규칙에 대해 자세히 알아보기</block>
+  <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">또한 일반 언어로 사용자 지정 규칙을 만들어 조직 표준 및 NetApp 모범 사례에 따라 환경의 유효성을 검사할 수 있습니다. 모의 실행을 통해 규칙을 테스트한 다음, 모든 환경에서 실행되도록 예약할 수 있습니다. <block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
+  <block id="e2f155aff866bc2907bb5aaf211ff083" category="paragraph">일회성 평가의 경우, 분석하려는 Microsoft SQL Server 인스턴스 또는 Oracle 데이터베이스에 대한 자격 증명을 한 번만 제공하면 됩니다.</block>
+  <block id="3132f405525cd70f7bad3d7130c03410" category="list-text">*지속적인 평가*: Workload Factory는 데이터베이스 환경을 정기적으로 분석하고, 구성 최적화를 위한 지속적인 권장 사항을 제공하며, 문제를 자동으로 수정합니다.</block>
+  <block id="90d64ee5b341967517900bb62d4c728f" category="paragraph">지속적인 평가를 위해서는 AWS 계정에 리소스를 등록하고, 링크를 연결하고, 권한을 부여해야 합니다.</block>
+  <block id="49a10780393d000b311748a7793ade55" category="section-title">Microsoft SQL Server 모범 사례</block>
+  <block id="7d1cc293036e2017c7baf9a6bb73fd17" category="paragraph">다음 모범 사례 및 권장 사항은 Microsoft SQL Server 워크로드에 적용됩니다.</block>
+  <block id="8c4aa541ee911e8d80451ef8cc304806" category="section-title">스토리지</block>
+  <block id="d2c74a0b2370a7994e2c41c03e1f69bf" category="paragraph-title">스토리지 계층</block>
+  <block id="48792e7901f205d3495a4ceecf82104d" category="paragraph">성능에 민감한 SQL 워크로드에는 기본 SSD 계층을 사용하십시오.</block>
+  <block id="eeddaf6dcc22498a1ca23cbb5ab462e1" category="paragraph">최적의 성능을 위해서는 FSx for ONTAP 볼륨에 기본 SSD 계층을 사용하십시오. 용량 풀 계층을 사용하면 성능이 저하되고 지연 시간이 증가할 수 있습니다. 기본 SSD 계층은 고성능 워크로드에 맞게 설계되었으며, 용량 풀 계층은 비용 효율성에 최적화되어 있어 SQL Server 워크로드의 성능 요구 사항을 충족하지 못할 수 있습니다.</block>
+  <block id="69d3d1b390fe55f780caca8f8609eba0" category="paragraph-title">파일 시스템 여유 공간</block>
+  <block id="d523849e567b425b986c6490d0b079c9" category="paragraph">전체 볼륨 크기보다 충분한 여유 용량을 확보하십시오.</block>
+  <block id="d03ee155a1b1c5adedc8bc1ea1a60c3f" category="paragraph">파일 시스템 용량은 전체 볼륨 크기보다 충분히 확보하십시오. 여유 공간이 너무 적으면 성능 문제가 발생하고, 너무 많으면 저장 공간이 낭비되고 비용이 증가합니다.</block>
+  <block id="a3b0d7ad4ce9d75cff9d4aef3eb86b62" category="paragraph-title">로그 드라이브 크기</block>
+  <block id="0d7fedb3fb94ac9db7d03559c12e2023" category="paragraph">로그 드라이브의 크기를 적절하게 조정하고 모니터링하여 롤백 및 서비스 중단을 방지하십시오.</block>
+  <block id="55839a84a9d5f4546a06311512c78e78" category="paragraph">SQL Server 로그 드라이브의 크기를 적절하게 관리하고 모니터링하여 로그 드라이브 용량 부족으로 인한 트랜잭션 롤백, 데이터베이스 사용 불가, 데이터 손상 및 성능 문제를 방지하십시오.</block>
+  <block id="b75b38b240aa16e7f7a133981a60673a" category="paragraph-title">TempDB 드라이브 크기</block>
+  <block id="3d7ec405e5245de459ac95b0e0cf9408" category="paragraph">병목 현상과 시간 초과를 방지하도록 TempDB의 크기를 조정합니다.</block>
+  <block id="b8b2e35bc22e3e4ee50b55a84f59d89e" category="paragraph">성능과 안정성을 유지하려면 TempDB의 크기를 조정하고 모니터링하십시오. TempDB 공간이 부족하면 쿼리 속도 저하, 애플리케이션 시간 초과 및 시스템 충돌이 발생할 수 있습니다.</block>
+  <block id="894e4914bdd54c61d3c018914b6bfe7e" category="paragraph-title">데이터 및 로그 파일 배치</block>
+  <block id="edaa44b4673f1ace33a6bf9e95e6fd62" category="paragraph">분리된 <block ref="937f38432beb92fdba3d47780720bdf7" prefix=" " category="inline-code"></block> 및 <block ref="cb15b9539ae0d984ff8740c68b52561c" prefix=" " category="inline-code"></block> 경로.</block>
+  <block id="e7ebfdd1505a7af8df3df607fc4f76de" category="paragraph">데이터 파일과 로그 파일을 서로 다른 드라이브에 분리하여 병렬 I/O, 백업 유연성 및 복원 동작을 개선하십시오. 소규모 데이터베이스의 경우 데이터 및 로그 LUN 경로를 서로 다른 볼륨으로 분리하는 것이 좋습니다.</block>
+  <block id="761c97293a8026d7c7f8ec2593a47382" category="paragraph-title">TempDB 배치</block>
+  <block id="04f18a6883939a0f0475c400a6f1b379" category="paragraph">전용 드라이브를 사용합니다.</block>
+  <block id="eb90a59c44b45a41d6b8156ff6bb6d5f" category="paragraph">I/O 경합을 방지하고 SQL Server 성능 및 안정성을 향상시키려면 TempDB를 전용 드라이브에 배치하십시오.</block>
+  <block id="6cd880eabbec3488232c6cba3fbcf998" category="paragraph-title">씬 프로비저닝</block>
+  <block id="5c98dcfd59ba12311a4b40fe4c061502" category="paragraph">필요에 따라 스토리지를 할당합니다.</block>
+  <block id="7d00f267930eb94ba2b5e3ffd925a4d6" category="paragraph">FSx for ONTAP 볼륨에 씬 프로비저닝을 구성하여 스토리지 활용도를 높이고 비용을 절감하십시오. 씬 프로비저닝을 사용하면 전체 용량을 한 번에 예약하는 대신 필요에 따라 스토리지를 할당할 수 있습니다.</block>
+  <block id="dac3217c156bbf86e088921748624a95" category="paragraph-title">자동 크기 조정 및 자동 크기 조정 모드</block>
+  <block id="6d5b78a56096b43f47ab2b1559418542" category="paragraph">볼륨을 자동으로 늘립니다.</block>
+  <block id="f8b1a4ac4b87f668ed344cedc89310e0" category="paragraph">자동 크기 조정 기능을 켜고 모드를<block ref="4d200fce73a8e1cc965cfc2c43343824" prefix=" " category="inline-code"></block> 설정하여 볼륨이 가득 차서 읽기 전용이 되기 전에 자동으로 증가하도록 합니다.</block>
+  <block id="ea87fe154a3b0752922812472bd1e33d" category="paragraph-title">블록 장치 공간 관리</block>
+  <block id="d82733fa8b83c7e6ff9b3484ae4ddbdb" category="paragraph">SQL Server에서 사용하는 LUN에 대한 블록 장치 공간 설정을 구성합니다.</block>
+  <block id="1a4af9dd8b0718ca82a5280f6ee0cf01" category="paragraph">Microsoft SQL Server 인스턴스에서 사용하는 LUN의 블록 디바이스 공간 설정을 구성하여 쓰기 오류를 방지하고 FSx for ONTAP의 공간 효율성을 향상시킵니다.</block>
+  <block id="8a707a0c8529edc214836d6a826d0e58" category="paragraph-title">스냅샷 복사본 예약 및 자동 삭제</block>
+  <block id="228fa58f3d0893b479077c0e80653337" category="paragraph">활성 데이터를 위한 공간을 확보하십시오.</block>
+  <block id="134980a2b985cf7e78464d1df07f8900" category="paragraph">활성 데이터에 필요한 공간을 확보하려면 스냅샷 복사본 예약률을 0%로 설정하고 스냅샷 자동 삭제를 활성화하십시오.</block>
+  <block id="9b4c3976d453e66a3dd22e2793fc3a8e" category="paragraph-title">공간 관리</block>
+  <block id="0ce6d7a30d8954cd07ff4dba5cbe7d03" category="paragraph">스냅샷 복사본을 삭제하기 전에 볼륨을 확장하십시오.</block>
+  <block id="2476aa452a62d62160e670e98f0ab2fb" category="paragraph">저장 공간이 부족해지면 스냅샷 복사본을 삭제하기 전에 볼륨을 확장하십시오. 볼륨을 확장하면 "볼륨 용량 부족" 오류를 방지하고 쓰기 실패를 줄이며 스냅샷 복구 지점을 보존할 수 있습니다.</block>
+  <block id="99a4db627c18d74e0c6835ad609e2644" category="paragraph-title">계층화/TCO 최적화</block>
+  <block id="0cbe9d93db06e8320c6315e8347f8e0c" category="paragraph">스냅샷 전용 계층화 정책을 사용하여 스냅샷 데이터를 계층화합니다.</block>
+  <block id="b04592a941f106f17c24013cd67843c0" category="paragraph">스냅샷 전용 티어링 정책을 사용하십시오. 이 정책은 활성 데이터를 SSD 티어에 유지하고 스냅샷 데이터만 용량 티어로 이동합니다. 이 접근 방식을 통해 SQL 워크로드의 저지연 성능을 유지하면서 스토리지 비용을 절감할 수 있습니다. 스냅샷 데이터는 7일의 쿨링 기간 후에 티어링됩니다.</block>
+  <block id="af20abc7154e9ee224c54b48b6ec7d63" category="paragraph-title">스토리지 효율성</block>
+  <block id="97d67971c5e355df3efafcc19837ddfb" category="paragraph">중복 제거, 압축 및 컴팩션 기능을 사용하십시오.</block>
+  <block id="6c49bace7f5a1990fdc7dc4d7a9dcfae" category="paragraph">성능을 유지하면서 스토리지 사용량과 비용을 줄이기 위해 중복 제거, 압축 및 컴팩션 기능을 활성화하십시오.</block>
+  <block id="6fcd25081a49cfc1b0ec4806afa3d35f" category="paragraph-title">OS 유형</block>
+  <block id="24acec3b12ef97ec2b34e3a2fa7efc85" category="paragraph">ONTAP LUN OS 유형을 호스트 파티셔닝에 맞추십시오.</block>
+  <block id="4dc199c782f9154731cbef4836a8c1a1" category="paragraph">올바른 I/O 정렬을 유지하려면 ONTAP LUN 운영 체제 값을 호스트 파티셔닝 체계와 일치시키십시오.</block>
+  <block id="90999b34ec14dedf379fa674961057fa" category="paragraph-title">MPIO 정책, 세션, 상태 및 시간 초과 설정</block>
+  <block id="1a48fbbfd5ce10ce23ee05574028ed47" category="paragraph">멀티패스 I/O(MPIO) 정책, 세션, 상태 및 시간 초과 설정을 구성합니다.</block>
+  <block id="aa5db6de95fdbce8978cd3d3ab233a3c" category="paragraph">복원력과 처리량을 위해 멀티패스 I/O(MPIO)를 구성하십시오. iSCSI LUN의 SQL Server에 대해 대상 인터페이스당 5개의 MPIO 세션을 사용하고, 경로 상태를 모니터링하며, 호스트 시간 초과를 60초로 설정하십시오.</block>
+  <block id="a42fd8229369082ad3674453750c8cb7" category="paragraph-title">NTFS 할당 단위 크기</block>
+  <block id="c7e18970a572792767bc4d2fd2ea05a3" category="paragraph">64K로 설정합니다.</block>
+  <block id="54fb57e43ead133701d85d34f84385d2" category="paragraph">SQL Server 워크로드의 디스크 효율성을 향상시키고 조각화를 줄이려면 NTFS 할당 단위 크기를 64K로 설정하십시오.</block>
+  <block id="aff279b636a9024db3b44375d88e80eb" category="paragraph-title">예약된 로컬 스냅샷</block>
+  <block id="94c95b7b51d009b9d2eb49440bbfc689" category="paragraph">예약된 스냅샷을 비활성화합니다.</block>
+  <block id="45eb819837b9c2a7adbea195ac9d00c8" category="paragraph">Microsoft SQL Server에서 사용하는 FSx for ONTAP 볼륨에 대한 예약된 스냅샷을 비활성화하십시오. 대신 NetApp SnapCenter 등의 툴을 사용하여 외부에서 스냅샷을 관리하십시오. 이러한 툴은 애플리케이션 정합성 보장 백업을 생성하고 복원 작업 중 데이터 손상을 방지하는 데 도움이 됩니다.</block>
+  <block id="34d46ee23892b96b30e5db7bf4eb7871" category="paragraph-title">컴퓨팅 적정화</block>
+  <block id="4ea5f06406337856ac6939d3241f93ea" category="paragraph">워크로드 수요에 맞춰 EC2 인스턴스 크기를 조정합니다.</block>
+  <block id="3054d94c8571ba5fe02a5baa9c0f0238" category="paragraph">워크로드 수요에 따라 SQL Server EC2 인스턴스의 크기를 적절하게 조정하십시오. 인스턴스 크기가 부족할 경우 늘리고, 과도하게 많을 경우 줄여 비용과 성능의 균형을 유지하십시오.</block>
+  <block id="826f844c1cfe489216a00374ad7ffcfa" category="paragraph-title">운영 체제 패치</block>
+  <block id="46868a13e02001f08f80086c305d3290" category="paragraph">최신 OS 패치를 적용하십시오.</block>
+  <block id="f352d91096fcc4d14791e6774b46f28f" category="paragraph">보안 및 안정성을 향상시키려면 최신 운영 체제 패치를 적용하십시오.</block>
+  <block id="eabac3a6cb984e4c8283a694dac970bd" category="paragraph-title">네트워크 어댑터 설정</block>
+  <block id="a9573723b19fee57f1cfdf4839a30d2d" category="paragraph">수신측 스케일링(RSS)을 구성합니다.</block>
+  <block id="250a8a619f4d75c094b3ca829aaf8237" category="paragraph">수신측 스케일링(RSS)을 구성하여 네트워크 처리를 CPU에 분산시켜 네트워크 성능을 향상시키십시오. 실제 운영 환경에 배포하기 전에 설정을 검증하십시오.</block>
+  <block id="94c600c47cccc2c5504c4a78652a9b1c" category="paragraph-title">MTU 정렬</block>
+  <block id="1e5e4a55729302c4b7b903922447c1dc" category="paragraph">호스트 및 스토리지 경로 전체에 걸쳐 최대 전송 단위(MTU)를 정렬합니다.</block>
+  <block id="fec54de77fb3838fcfbd089d1ba12851" category="paragraph">단편화를 방지하고 안정적인 처리량을 유지하려면 FSx for ONTAP 경로에 대해 EC2 최대 전송 단위(MTU) 설정을 일치시키십시오.</block>
+  <block id="794df3791a8c800841516007427a2aa3" category="paragraph-title">라이센스</block>
+  <block id="986d440f729677f3208e7605d0553393" category="paragraph">유료 기능에 대한 라이선스 사용량을 검토합니다.</block>
+  <block id="858d6ed360d78ca4829972c8007e4c9b" category="paragraph">호스트 수준에서 SQL Server 라이선스 사용 현황을 검토하십시오. 유료 기능을 사용하지 않는 경우 라이선스가 최적화되지 않아 비용이 증가할 수 있습니다.</block>
+  <block id="1a1cd903f6318a6355509caa78de1faa" category="paragraph-title">Microsoft SQL Server 패치</block>
+  <block id="ac4e66143f8aeac9f82bf332c8e729c4" category="paragraph">최신 SQL Server 패치를 적용하십시오.</block>
+  <block id="a4a0b4e39ec2b5db6f473a0de3736956" category="paragraph">보안 및 시스템 안정성을 향상시키려면 최신 SQL Server 패치를 적용하십시오.</block>
+  <block id="1abedc5f6ab369ab9fcd16d6b7990638" category="paragraph-title">MAXDOP</block>
+  <block id="1193fbb5e90747775b0e24d142eb0d02" category="paragraph">워크로드 테스트를 거친 값을 사용하십시오.</block>
+  <block id="090926c93cbf85baf7fc9ebeda7b568c" category="paragraph-title">애플리케이션 정합성 보장 스냅샷</block>
+  <block id="0b01ca87b42f013664121c6824e598a9" category="paragraph">애플리케이션 정합성 보장 스냅샷을 NetApp SnapCenter와 함께 사용합니다.</block>
+  <block id="93d7629752a3e1bb4b1cb9519e2ebd7a" category="paragraph">애플리케이션 정합성 보장 스냅샷을 NetApp SnapCenter와 함께 사용하여 특정 시점의 볼륨 데이터 스냅샷을 정확하고 안정적으로 생성할 수 있습니다. SnapCenter는 백업을 간소화하고 데이터 복원 속도를 높여 다운타임을 줄이고 중요 워크로드를 보호합니다.</block>
+  <block id="ae2679a66d07f8c7efd50d972a34a112" category="paragraph-title">지역 간 복제</block>
+  <block id="c385b3e4deb1a87960e4b4dc01ac87c7" category="paragraph">지역 장애로부터 보호합니다.</block>
+  <block id="a24f4d9aebe2602012f407e3fdff57d0" category="paragraph">SQL Server 환경에서 데이터 가용성과 재해 복구를 향상시키려면 지역 간 복제(CRR)를 활성화하십시오. CRR은 여러 위치에 데이터를 복제하여 지역 장애로부터 보호하고 비즈니스 연속성을 보장합니다.</block>
+  <block id="a550061a86038966d9bac1bce9c12b7b" category="paragraph-title">백업 구성</block>
+  <block id="d6d0f5a3f08bc3750fdaef02669400e4" category="paragraph">FSx for ONTAP 백업 또는 AWS Backup을 구성합니다.</block>
+  <block id="99f480d7c489c8218cb3c7e344ade5e2" category="paragraph">FSx for ONTAP 백업 또는 AWS Backup을 구성하여 데이터 보존 및 규정 준수 요구 사항을 충족하고 중복 백업 워크플로를 방지하십시오.</block>
+  <block id="6716a97e4d0f5c2b2ba84a9c8a65b74d" category="paragraph-title">클러스터 쿼럼</block>
+  <block id="3349e51783007390a7aa0ebe76cb1c9b" category="paragraph">장애 조치 클러스터 인스턴스에 대한 쿼럼을 구성합니다.</block>
+  <block id="1c0ee6d7592730324673f23436a1cb1f" category="paragraph">SQL Server 장애 조치 클러스터 인스턴스에 대해 쿼럼을 올바르게 구성하여 클러스터가 예상되는 노드 장애를 견딜 수 있도록 하십시오.</block>
+  <block id="2fd93710037364874693d0231e709aea" category="paragraph-title">드라이브 레터</block>
+  <block id="cc552ddb219e28c92b4169787045d8ec" category="paragraph">노드 전체에서 드라이브 문자를 일관되게 유지하십시오.</block>
+  <block id="e16012d9dda9cc9c6ee2bc352a4ae759" category="paragraph">SQL Server 고가용성 설정에서 모든 노드에 동일한 드라이브 문자를 사용하십시오. 이렇게 하면 관리가 쉬워지고 장애 조치가 올바르게 작동합니다.</block>
+  <block id="e6293976a81f8762e8b3c80832b4f7d5" category="paragraph-title">하트비트 설정</block>
+  <block id="884528a1b26c385906fcd05f57e1ad62" category="paragraph">안정적인 페일오버 동작을 위해 하트비트를 조정합니다.</block>
+  <block id="e56dd572af77c70d30157e05e6ce82eb" category="paragraph">불필요한 장애 조치를 방지하면서도 실제 장애를 신속하게 감지할 수 있도록 하트비트 설정을 조정하십시오.</block>
+  <block id="928fe421f0c735b90f3b3ec353741235" category="paragraph-title">공유 스토리지</block>
+  <block id="73a67c7a0024044c6850a532fe8c9d9f" category="paragraph">두 노드 모두 공유 iSCSI LUN에 액세스할 수 있는지 확인하십시오.</block>
+  <block id="9aab42dd8ff5fdf6ae9ac858e113b2bb" category="paragraph">FCI 배포 모델에서 장애 조치가 제대로 작동하려면 모든 공유 디스크(iSCSI LUN)는 두 노드 모두에서 액세스할 수 있어야 합니다.</block>
+  <block id="af5433572271233c7e656fe582076960" category="paragraph-title">SQL Server 서비스</block>
+  <block id="bcc3a6ae2fc2f20ec81542e152329a7e" category="paragraph">서비스 계정 및 시작 종속성을 검증합니다.</block>
+  <block id="323efe827a0b8d392fb1ca53fdf4477f" category="paragraph">안정적인 고가용성 동작을 위해 서비스 계정 권한, 시작 유형 및 종속성을 검증합니다.</block>
+  <block id="217601d383b816e6a2548e57b5006f92" category="section-title">클로닝</block>
+  <block id="61339cb538c00d138c281cf003e6daa0" category="paragraph">오래된 클론은 정기적으로 삭제하십시오.</block>
+  <block id="63da65562cf9a00b9876985cee9f85c8" category="paragraph">저장 비용과 운영상의 혼란을 줄이려면 더 이상 사용하지 않는 클론을 정기적으로 제거하십시오. 오래되고 사용하지 않는 클론은 높은 비용을 초래합니다.</block>
+  <block id="36a6bee8815abfd7b4cc2eff4afd7b69" category="section-title">Oracle 모범 사례</block>
+  <block id="696a4bf0fabb46881f722e0f6b9477a5" category="paragraph">다음 모범 사례 및 권장 사항은 Oracle 워크로드에 적용됩니다.</block>
+  <block id="38be62841af5eb1b3fd9b70e7cab0c13" category="paragraph">자동 크기 조정 기능을 켜고 모드를 <block ref="4d200fce73a8e1cc965cfc2c43343824" prefix=" " category="inline-code"></block>로 설정하여 볼륨이 가득 차서 읽기 전용이 되기 전에 자동으로 증가하도록 합니다.</block>
+  <block id="da35784c3d0985ae5f62d676de22f8a3" category="paragraph">Oracle 데이터베이스에서 사용하는 LUN의 블록 디바이스 공간 설정을 구성하여 쓰기 오류를 방지하고 FSx for ONTAP의 공간 효율성을 향상시킵니다.</block>
+  <block id="45bd6a67c7bf42b606ad0eec042c1dde" category="paragraph-title">스왑 공간</block>
+  <block id="f04d6ae7c13c82ac4f025f6c794c5bf3" category="paragraph">RAM 용량에 따라 스왑 영역을 설정합니다.</block>
+  <block id="e5f1fd3cebcf908444382289a3b320f9" category="paragraph-title">아카이브, 데이터, 제어, 재실행 및 임시 배치</block>
+  <block id="c5712399e507c16911100e7798a70fcc" category="paragraph">Oracle 파일 유형별로 전용 볼륨을 사용하여 I/O 패턴을 격리하고 성능을 향상시키십시오.</block>
+  <block id="ac7c9e1bf60e62d895269f1119ef6903" category="paragraph">아카이브 로그, 데이터 파일, 제어 파일, 리두 로그 및 임시 파일은 I/O 패턴을 격리하고 복원력을 향상시키기 위해 별도의 드라이브에 배치하십시오. 필요한 경우 별도의 볼륨에 중복 복사본을 보관하십시오.</block>
+  <block id="99909d9059d74886fd5c52eb6bd6859b" category="paragraph-title">Oracle 바이너리 배치</block>
+  <block id="1cc12633815798dcf3f3c411875a347c" category="paragraph">전용 볼륨을 사용하십시오.</block>
+  <block id="bac97783eb2663a0753cdde4c1824c5b" category="paragraph">I/O 경합을 줄이려면 Oracle 바이너리를 전용 볼륨에 배치하십시오. 이렇게 분리하면 소프트웨어 업데이트가 간소화되고 실수로 인한 수정이나 손상 위험이 최소화됩니다.</block>
+  <block id="1aaa0ec9581d3a6477d2aae7e94f7138" category="paragraph">로컬 예약 스냅샷을 비활성화합니다.</block>
+  <block id="39374be868860832a209dd66605ab324" category="paragraph">Oracle에서 사용하는 FSx for ONTAP 볼륨의 예약된 스냅샷을 비활성화하여 공간을 절약하고 비용을 절감하십시오. 대신 NetApp SnapCenter 등의 툴을 사용하여 외부에서 스냅샷을 관리하십시오. 이러한 툴은 애플리케이션 정합성 보장 백업을 생성하고 복원 작업 중 데이터 손상을 방지하는 데 도움이 됩니다.</block>
+  <block id="fa0aea5064b5bf5dc0f261f37a637fab" category="paragraph-title">NFS rootonly</block>
+  <block id="4c2f444c20b5fc7382a5cc918b3b93b3" category="paragraph">dNFS를 비활성화합니다.</block>
+  <block id="f414483fe953bd9573db2c3275f75b95" category="paragraph">dNFS에 대한 ONTAP<block ref="77743dec92afc92eca95c255fd9333d7" prefix=" " category="inline-code"></block> 매개변수를 비활성화합니다.<block ref="77743dec92afc92eca95c255fd9333d7" prefix=" " category="inline-code"></block>NFS 연결을 권한 있는 포트(&lt;1024)로 제한합니다. NFSv4 이상에서 dNFS 프로세스는 루트 권한으로 실행되지 않고 더 높은 포트를 사용하기 때문에 이 매개변수를 비활성화하면 필요한 연결이 가능해집니다.</block>
+  <block id="6c348de071434b3bb4f1295a52711603" category="paragraph-title">바이너리 내보내기 정책</block>
+  <block id="a4eb79b95fb4a3fec2083cf140deb305" category="paragraph">Oracle 바이너리에 대한 전용 내보내기 정책에 슈퍼유저 및 setuid 권한을 포함시키십시오.</block>
+  <block id="c8be78bc7a152a3013a32b128e5ee03b" category="paragraph">Oracle 바이너리가 NFS 공유에 있는 경우, 내보내기 정책에 슈퍼유저 및 setuid 권한이 포함되어 있는지 확인하십시오. 슈퍼유저(루트) 액세스 권한을 통해 NFS 클라이언트는 바이너리 실행에 필요한 루트 권한으로 매핑할 수 있습니다.</block>
+  <block id="37ef805076476027b7ee89af1cec0cc2" category="paragraph-title">ASM 설정</block>
+  <block id="be849ab14c8918a65f233bcdeaf09cfc" category="paragraph">FSx for ONTAP에서 실행되는 iSCSI 기반 스토리지에 대해 Oracle ASM(Automatic Storage Management)을 설정합니다.</block>
+  <block id="802ce068e53ceb792da4548471c660d5" category="paragraph">FSx for ONTAP에서 실행되는 iSCSI 기반 스토리지에 Oracle ASM(Automatic Storage Management)을 사용하여 Oracle Database 배포의 성능을 최적화하고 스토리지 관리를 간소화하며 확장성을 향상시키십시오.</block>
+  <block id="f7a768d30472beee2a39f3fc0da1b86e" category="list-title">ASM 전용 구성</block>
+  <block id="f2780427ca033806c8dd715ca7ef2ca8" category="list-text">*ASM 데이터 디스크 그룹, ASM 로그 디스크 그룹, ASM FRA 디스크 그룹 및 ASM 아카이브 디스크 그룹 LUN*</block>
+  <block id="1b9d631e7ab100885da6fc994b421909" category="paragraph">LUN을 자동 스토리지 관리(ASM) 디스크 그룹 리소스에 분산합니다.</block>
+  <block id="1112b6f26197effaa44503985bf6147d" category="list-text">*ASM 외부 이중화*</block>
+  <block id="b0d43bfdbd4c8549d283c290d18f0373" category="paragraph">Oracle ASM 디스크 그룹을 EXTERNAL 이중화로 구성하십시오.</block>
+  <block id="b96572dfbc47d5f38d4bf92438e2a958" category="paragraph">FSx for ONTAP iSCSI LUN에 대해 EXTERNAL 이중화를 사용하여 Oracle ASM 디스크 그룹을 구성하면 FSx for ONTAP의 내장 고가용성을 활용하고 스토리지 효율성을 최적화하며 Oracle 수준의 데이터 미러링을 방지하여 비용을 절감할 수 있습니다.</block>
+  <block id="2f6bbbc420968e67a09f1cc4a6901165" category="list-text">*ASM 필터 드라이버 및 ASMLib 논리 블록 크기 정렬*</block>
+  <block id="bf6586df87afaab6a9f4dd83266830e4" category="paragraph">Oracle ASM Filter Driver(AFD)와 ASMLib이 기본 FSx for ONTAP 스토리지의 논리 블록 크기를 사용하도록 구성합니다.</block>
+  <block id="99cf847a99446d87e0935576a63b9b99" category="paragraph">ASMLib 구성 파일에서 Oracle ASM 필터 드라이버(AFD) 및 ASMLib를 구성하여 기본 FSx for ONTAP 스토리지의 논리 블록 크기를 사용하도록 설정하십시오. 이렇게 하면 AFD 및 ASMLib가 스토리지의 블록 크기에 맞춰 I/O 작업을 수행하여 지연 시간을 최소화하고 불필요한 I/O 오버헤드를 줄여 성능을 최적화할 수 있습니다.</block>
+  <block id="7868dbfdabfbdc991050a9525bbaf81c" category="paragraph-title">TCP 슬롯 테이블</block>
+  <block id="4f038091793d701c74a472affe9e3faa" category="paragraph">NFS 기반 Oracle 워크로드의 경우 128로 설정합니다.</block>
+  <block id="2239fe06179e36f0432df56889009996" category="paragraph">NFS에서 실행되는 Oracle 워크로드의 경우 TCP 슬롯 테이블의 커널 매개변수를 128로 구성하십시오. 이 구성을 통해 더 많은 동시 I/O 작업을 처리할 수 있으므로 Oracle 데이터 파일 액세스 등 고처리량 시나리오에서 지연 시간이 줄어듭니다. 커널 매개변수는 TCP를 통한 최대 NFS 요청 대기 수를 제어하며, 파이버 채널 설정의 큐 깊이와 유사하게 작동합니다. 일반적으로 16으로 설정되는 Linux의 기본값은 최적의 데이터베이스 성능을 지원하지 않습니다.</block>
+  <block id="e3e5ba88ce9dac34df243578b82d21a5" category="paragraph-title">NFS 마운트 옵션 - 데이터베이스 파일</block>
+  <block id="07c9f35036db9318dc67bc8488e924ed" category="paragraph">데이터베이스 파일의 성능을 최적화하는 NFS 마운트 옵션을 사용하십시오.</block>
+  <block id="0e3683440b3c91a8adf8fbc8feab2ac4" category="paragraph">데이터베이스 파일에 최적화된 NFS 마운트 옵션을 사용하십시오. 주요 매개변수에는 <block ref="038c0dc8a958ffea17af047244fb6960" prefix=" " category="inline-code"></block>읽기/쓰기 액세스, <block ref="5523c88dd347d1b7cc617f632b7efdb7" prefix=" " category="inline-code"></block>백그라운드 마운트, <block ref="d64a84456adc959f56de6af685d0dadd" prefix=" " category="inline-code"></block>실패 시 무한 재시도 및 <block ref="d730f7fb328f30a84ee9742562b9295f" prefix=" " category="inline-code"></block>안정적인 전달이 포함됩니다. <block ref="2c8f7e3ea90b72af8582c0f2716bd2b8" prefix=" " category="inline-code"></block> 및 <block ref="374422a639d51557c7fcfc9c97aa4c07" prefix=" " category="inline-code"></block> 값 262144는 대규모 I/O 작업을 개선하여 처리량을 향상시키는 동시에 <block ref="ee11561e2136a5c9308a88da37690b2d" prefix=" " category="inline-code"></block>은(는) 장시간 실행되는 작업을 중단하지 않습니다. 이 구성은 특히 처리량이 높은 환경에서 데이터베이스 성능과 복원력을 향상시킵니다.</block>
+  <block id="25a244403a35913993f825b673e426d2" category="paragraph-title">ADR 홈용 NFS 마운트 옵션</block>
+  <block id="156573ad09e164898f281869695f86fe" category="paragraph">ADR 홈 디렉토리의 성능을 최적화하는 NFS 마운트 옵션을 사용합니다.</block>
+  <block id="d43a2be16ef10e0f68ab8c52d183873a" category="paragraph">자동 진단 저장소(ADR) 홈 또는 루트 디렉터리에 최적화된 NFS 마운트 옵션을 사용하십시오. ADR 홈에는 로그 및 추적 정보가 저장되는데, 이러한 정보는 핵심 데이터베이스 파일과 유사한 안정성 옵션의 이점을 누리지만, 작업이 중단에 덜 민감하므로<block ref="ee11561e2136a5c9308a88da37690b2d" prefix=" " category="inline-code"></block> 마운트 옵션이 필요하지 않습니다.</block>
+  <block id="d69395b39602b93b8de7577bd1d01da3" category="paragraph-title">NFSv4 도메인 이름</block>
+  <block id="be46a35eaff0a0f4998bb76cd05f3526" category="paragraph">호스트와 NFS 서버 간의 NFSv4 도메인 이름을 일치시킵니다.</block>
+  <block id="e77fd06a075f4ac68cd5a4da6e166281" category="paragraph">호스트 <block ref="f606fb2da2ae329157d791c6955a0337" prefix="(" category="inline-code"></block> 또는<block ref="de8eb7e79f8adee89501d0d7a83427ac" prefix=" " category="inline-code"></block>)와 NFS 서버 <block ref="c54a41b01595bd7042188e1a80fd2682" prefix="(" category="inline-code"></block> ONTAP) 간에 NFSv4 도메인 이름을 일치시킵니다.</block>
+  <block id="9cce33269f5443b166a643ec86a07eeb" category="paragraph-title">NFS 캐싱 옵션</block>
+  <block id="dae3d8af9ee67826a33dc041750329e7" category="paragraph">독립 실행형 배포 환경에서는 호스트 캐싱을 비활성화하지 마십시오.</block>
+  <block id="a1fb4bd70dc4087cc2722a4bceb5e76a" category="paragraph">독립형 Oracle 배포 환경에서는 효율성과 안정성을 향상시키기 위해 호스트 캐싱을 비활성화하는 NFS 마운트 옵션(예:<block ref="3504e2b0e7c968444314433be465518d" prefix=" " category="inline-code"></block> 및<block ref="79fea224ffd9e8111e4e87cab732464b" prefix=" " category="inline-code"></block>)을 생략하십시오. 이러한 옵션은 클러스터 환경에서 캐시 일관성을 보장하기 위해 적용되지만, 단일 인스턴스 환경에서는 불필요하게 캐싱을 우회하여 성능을 크게 저하시킬 수 있습니다.</block>
+  <block id="5017259dadba571295ba93287ef883f9" category="paragraph-title">dNFS 활성화</block>
+  <block id="f3ea8f6b6e0f1cc3ff1fa39b2fffd01d" category="paragraph">dNFS를 활성화합니다.</block>
+  <block id="769631bf3f7ef2a761523236336ff53c" category="paragraph">Oracle 환경에서 Direct NFS(dNFS)를 활성화하여 NFS 스토리지 성능과 안정성을 향상시키십시오.</block>
+  <block id="3968d7d3f8cb0f09289a934bc1584128" category="paragraph-title">dNFS 일관된 IP 확인</block>
+  <block id="258af232c30d61bf5f6d7843f786b2ef" category="paragraph">라운드 로빈 방식의 이름 확인을 피하십시오.</block>
+  <block id="67e6488bb67f9c078ed9b0f2696c3140" category="paragraph">DNS, DDNS, NIS 또는 기타 모든 라운드 로빈 이름 확인 방식을 사용하는 경우 Direct NFS(dNFS) 사용을 피하십시오. 여기에는 ONTAP에서 사용 가능한 DNS 로드 밸런싱 기능이 포함됩니다. 일관된 IP 주소 확인은 데이터베이스 안정성을 유지하고 잠재적인 충돌이나 데이터 손상을 방지합니다.</block>
+  <block id="a727ea61b65e8aff8729b4fc3c629094" category="paragraph-title">dNFS 구성 파일</block>
+  <block id="03b447c34fed08ce6d9597fffb98709f" category="paragraph">Validate<block ref="2372935c504c62470d80387029c2d069" prefix=" " category="inline-code"></block> 콘텐츠 유효성을 검사합니다.</block>
+  <block id="88698d771a4d8305b08d15b08d706baf" category="paragraph"><block ref="2372935c504c62470d80387029c2d069" prefix=" " category="inline-code"></block> 파일 내용을 확인하고 업데이트하여 Direct NFS(dNFS)를 올바르게 사용하십시오. 이 <block ref="2372935c504c62470d80387029c2d069" prefix=" " category="inline-code"></block> 파일은 멀티패싱 및 특정 NFS 옵션 등 고급 dNFS 기능을 구성하는 데 필수적입니다. 올바른 구성은 데이터 액세스 및 관리 효율성을 향상시킵니다.</block>
+  <block id="7259678c27bfd15f5edb583d463192b4" category="paragraph-title">dNFS 공유 캐시 없음</block>
+  <block id="f955bf964f282b5a4cf1d966190aaa72" category="paragraph">특정 멀티 마운트 케이스에 <block ref="4740c034d97ca90a96b8050082816605" prefix=" " category="inline-code"></block>을 사용하십시오.</block>
+  <block id="9390fa8e9f932f71646f336e5a80b1ff" category="paragraph">Direct NFS(dNFS)가 활성화되어 있고, 소스 볼륨이 중첩된 NFS 마운트를 통해 단일 서버에 두 번 이상 마운트된 환경에서<block ref="4740c034d97ca90a96b8050082816605" prefix=" " category="inline-code"></block> 마운트 옵션을 구성하십시오. 이 구성은 마운트 간 캐시 공유를 방지하여 데이터 일관성과 최적의 성능을 보장합니다.</block>
+  <block id="d67d25983d4252e6111c706ccde7cdfc" category="paragraph">최신 패치를 적용합니다.</block>
+  <block id="a936acc7c69423ed1ac751a9607788fa" category="paragraph-title">Transparent huge pages</block>
+  <block id="886fc568c19edaf8ae5578270ca36404" category="paragraph">투명 대용량 페이지(THP)를 비활성화합니다.</block>
+  <block id="5e3516309d634b611d3bdddebdd430f9" category="paragraph">잠재적인 성능 저하를 방지하고 메모리 관리를 개선하려면 Oracle 데이터베이스를 실행하는 데이터베이스 호스트에서 THP(Transparent Huge Pages)를 비활성화하십시오.</block>
+  <block id="2361ad388b530c520aedb64fd0ff6e8e" category="paragraph-title">TCP 고급 옵션</block>
+  <block id="a449e30ee76868472a4c42879b1b3be3" category="paragraph">TCP(전송 제어 프로토콜) 고급 옵션을 활성화하십시오.</block>
+  <block id="ff69e71473557a4a76527191db21c9cb" category="paragraph">최상의 네트워크 성능과 안정성을 위해 TCP 타임스탬프, SACK 및 윈도우 스케일링을 활성화하십시오.</block>
+  <block id="575eddb1382086cefb426267e48f70aa" category="paragraph-title">파일 시스템 I/O 옵션</block>
+  <block id="63cb59e2a0a7c927aec7ca1249956fa5" category="paragraph">설정<block ref="6a1623be7d673ed665d6446f22dbb37c" prefix=" " category="inline-code"></block>.</block>
+  <block id="dd626f1fb52d9514e13696aa723b8a9f" category="paragraph">최적의 I/O 성능을 위해 <block ref="6a1623be7d673ed665d6446f22dbb37c" prefix=" " category="inline-code"></block>을 설정하십시오. 버퍼링된 I/O에서 벗어나는 경우 필요에 따라 시스템 전역 영역(SGA) 크기를 조정하십시오.</block>
+  <block id="ef350a6e6ea9d94712da2ef1d329bfe9" category="paragraph-title">멀티블록 읽기 횟수</block>
+  <block id="016a831106cc17785b93a6e6cc19490e" category="paragraph"><block ref="d3cc759510a3aba837fc8efeb2e24b91" prefix=" " category="inline-code"></block> 매개변수를 제거합니다.</block>
+  <block id="f99f871af6af75a896b4a609228f8acf" category="paragraph">Oracle 데이터베이스의 성능 문제를 방지하고 Oracle이 이 설정을 자동으로 관리할 수 있도록 텍스트 기반 FILE<block ref="b6bd7c570605affc5b50bbd3e436f0c0" prefix=" " category="inline-code"></block> 또는 서버 관리형 바이너리 SPFILE <block ref="11515cb7cf24e9929a59b3ce6c560d8f" prefix="(" category="inline-code"></block>)에서 <block ref="d3cc759510a3aba837fc8efeb2e24b91" prefix=" " category="inline-code"></block> 매개변수를 제거합니다.</block>
+  <block id="8548dd4b6475455aa5e42bb42850e02c" category="paragraph-title">Oracle Critical Patch Updates</block>
+  <block id="d8039e71b5c2a89fd072db6355ecb7ef" category="paragraph">최신 CPU 업데이트를 적용합니다.</block>
+  <block id="edeae11e7d0e740c1ce1808a0d8e1007" category="paragraph">Oracle 데이터베이스의 데이터 가용성과 재해 복구 기능을 향상시키려면 지역 간 복제(CRR)를 활성화하십시오. CRR은 여러 위치에 데이터를 복제하여 지역 장애로부터 보호하고 비즈니스 연속성을 보장합니다.</block>
+  <block id="f1d6739b2edd7c40d8bb5296ef99bc14" category="paragraph">Microsoft SQL Server 인스턴스와 Oracle 데이터베이스를 등록하면 NetApp Workload Factory for Databases에서 리소스를 관리하고, 데이터베이스 및 샌드박스 복제본을 생성하고, 오류 로그 분석을 실행하고, 구성을 최적화할 수 있습니다.</block>
+  <block id="66838c4423bf1c8d4c224cf83659c73e" category="inline-link-macro">데이터베이스 생성</block>
+  <block id="1afcb9bffd23494eb7082b6174279b4d" category="inline-link-macro">샌드박스 만들기</block>
+  <block id="192b0c17a5a27f63674a4d9452d69504" category="inline-link-macro">잘 설계된 평가</block>
+  <block id="fa02160083eeafd4641b6b5afb04b76d" category="paragraph">인스턴스(SQL Server) 또는 데이터베이스(Oracle)를 등록하는 과정은 인스턴스 또는 데이터베이스 인증과 준비의 두 단계로 구성됩니다. 인증은 인스턴스 또는 데이터베이스에 대한 자격 증명을 확인하는 과정입니다. 준비 단계에는 Workload Factory for Databases의 기능(예: <block ref="8da16c4c34e559d912e7bb550c09127f" category="inline-link-macro-rx"></block>, <block ref="634e501de898ade0d86425983c3d2aaf" category="inline-link-macro-rx"></block>, <block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 또는 <block ref="669a5b35f31c2d438554bfd3664e70fd" category="inline-link-macro-rx"></block>)에 필요한 최소 요구 사항을 충족하기 위해 인스턴스 또는 데이터베이스에 AWS, NetApp 및 PowerShell 모듈을 설치하는 작업이 포함됩니다.</block>
+  <block id="a2a913b400e09d69af0a98ae84160d0c" category="paragraph">인스턴스 또는 데이터베이스를 등록하기 전에 다음 단계를 반드시 수행해야 합니다.</block>
+  <block id="e2176f2c95e1c5e96b502c5753a9d9fc" category="inline-link-macro">_작업 및 복구_ 권한 부여</block>
+  <block id="6d77b284c5d4fef59e4ee4a93a4df81e" category="list-text">등록하려는 리소스의 호스트가 인벤토리에 표시되는지 확인하십시오. AWS 계정의 <block ref="62d24a992d64a0168253dffbd51a5da4" category="inline-link-macro-rx"></block>.</block>
+  <block id="eb53f00e7f60995176fbd9714071211a" category="inline-link-macro">기존 링크를 연결하는 방법 또는 새 링크를 생성하고 연결하는 방법을 알아보십시오.</block>
+  <block id="afa025dafea9385f0d320d45e580c19d" category="list-text">등록하려는 리소스를 호스팅하는 FSx for ONTAP 파일 시스템과 링크를 연결합니다. <block ref="89d491b5ade88a91deb72b16afa18293" category="inline-link-macro-rx"></block> 링크가 연결되면 이 작업으로 돌아오십시오.</block>
+  <block id="39ad0edf1fcb7cdf08722a87826835d9" category="paragraph">인스턴스 등록은 인스턴스 인증과 준비의 두 단계로 이루어집니다. 단일 인스턴스 또는 여러 인스턴스를 등록할 수 있습니다.</block>
+  <block id="7af860cadb4b06a3271bc297b39bb97f" category="list-text">준비(2단계)에서는 인스턴스가 최소 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="1a1d10440fb1e367272741222fb63f2b" category="paragraph">인스턴스 등록은 데이터베이스 인증과 준비의 두 단계로 이루어집니다. 단일 인스턴스 또는 여러 데이터베이스를 등록할 수 있습니다.</block>
+  <block id="2fd311c2ea2e47a076be77a578b2ee7b" category="list-text">준비 단계(2단계)에서는 데이터베이스가 필수 요구 사항을 충족하는지 확인하십시오. 필요한 모든 모듈이 설치되어 있고 필수 요구 사항이 충족되면 *다음*을 선택하여 데이터베이스를 등록하십시오. 그렇지 않으면 다음 단계를 따르십시오.</block>
+  <block id="ecf2ed7ba31a9f6e31583b9d9052f055" category="inline-link-macro">데이터베이스 구성에 대한 포괄적이고 체계적인 평가를 받아보세요.</block>
+  <block id="75c47d4b747a86f2b6de36d602facc46" category="list-text"><block ref="75c47d4b747a86f2b6de36d602facc46" category="inline-link-macro-rx"></block></block>
+  <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026년 8월 3일</block>
 </blocks>
