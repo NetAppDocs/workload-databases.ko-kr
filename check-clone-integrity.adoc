@@ -4,7 +4,7 @@ permalink: check-clone-integrity.html
 keywords: integrity check, data corruption 
 summary: NetApp Workload Factory for Databases에서 샌드박스 복제 데이터가 손상되었는지 확인하기 위해 무결성 검사를 실행합니다. 
 ---
-= 샌드박스 클론에서 데이터의 무결성을 확인합니다
+= Databases용 NetApp Workload Factory에서 샌드박스 데이터 무결성 확인
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

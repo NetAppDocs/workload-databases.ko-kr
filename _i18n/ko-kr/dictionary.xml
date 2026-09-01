@@ -4,7 +4,6 @@
   <block id="2ea6aca63123969c1931cd33bf4619a0" category="doc">Codebox로 자동화</block>
   <block id="bd282943a337f4287ca0d70f9a836261" category="inline-link-macro">코드박스 자동화</block>
   <block id="7954c9f6b266222ad558a397a97a8531" category="paragraph">및 사용 방법에 대해 자세히 <block ref="d6a91743d83ea88006a3d66c27289981" category="inline-link-macro-rx"></block> 알아보십시오.</block>
-  <block id="7a5c12f2d0d30b237d1a31e54803d0f8" category="doc">샌드박스 클론에서 데이터의 무결성을 확인합니다</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 대해</block>
   <block id="6a2235a7d08e9218e23793c114adf3a3" category="paragraph">소스 데이터베이스가 사용 중일 때 소스 데이터베이스에서 샌드박스 클론을 생성하는 경우 클론의 데이터가 소스 데이터베이스의 최신 스냅샷과 동기화되지 않을 수 있습니다. 이 작업은 샌드박스 클론에 있는 모든 개체의 무결성을 검사하여 샌드박스 클론 데이터가 최신 상태인지 확인합니다.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
@@ -13,7 +12,6 @@
   <block id="655a2ef85749dcbb368e1b8b32300552" category="list-text">무결성 확인 대화 상자에서 * 무결성 확인 * 을 클릭합니다.</block>
   <block id="d2212da19c03bb2b369faeaf9d65f109" category="list-text">Sandbox 또는 작업 모니터링에서 무결성 확인 상태를 확인합니다.</block>
   <block id="8ea37d89915fca644158ae5283f70e68" category="paragraph">무결성 검사에 실패하면 sandbox 클론을 사용하지 말고 새 sandbox 클론을 생성하는 것이 좋습니다.</block>
-  <block id="2af2cf99863645202599afd2708773e2" category="doc">샌드박스 클론을 CI/CD 툴에 연결합니다</block>
   <block id="bc71cf96586c8edb703f886cce218a0c" category="paragraph">데이터베이스 복제본에 새 버전의 소프트웨어를 자동으로 제공하려면 CI/CD 파이프라인에 연결해야 합니다. 이 작업에서 제공한 REST API 코드를 사용하여 연결합니다.</block>
   <block id="452804eac893658bcf658126b3087551" category="list-text">Connect to CI/CD tools * 를 선택합니다.</block>
   <block id="8191f4b1aee7fafe827afe8814de01a6" category="list-text">CI/CD 대화 상자에서 CI/CD 도구에 연결하는 데 필요한 REST API 코드를 복사하거나 다운로드합니다.</block>
@@ -809,7 +807,6 @@
   <block id="75851f48043c7a3877391f5330fb19c1" category="inline-link-macro">Workload Factory 콘솔에서 감지된 스토리지 환경에 대한 절감 효과를 살펴보세요.</block>
   <block id="a0766b901d28d8d972d369d556ae3e10" category="paragraph"><block ref="a0766b901d28d8d972d369d556ae3e10" category="inline-link-macro-rx"></block></block>
   <block id="c6ce33e049285b31d2f12d7b30e16106" category="summary">Workload Factory for Databases 내에서 오류 로그를 분석합니다.</block>
-  <block id="de5aa3916ae7d5763f4d4fe818491a77" category="doc">Workload Factory에서 오류 로그 분석</block>
   <block id="3d573c7428ab9f849be508456eb81821" category="paragraph">오류 로그 분석기를 사용하면 고급 AI 분석의 이점을 누리는 동시에 환경을 완벽하게 제어할 수 있습니다.</block>
   <block id="14f1fce00d2e95227126f5556a73ec6a" category="paragraph">오류 로그 분석기를 사용하려면 Amazon Bedrock을 활성화하고, Workload Factory에서 사용하는 모델을 선택하고, Amazon Bedrock에 연결할 개인 엔드포인트를 만들고, 권한을 추가하고, 엔터프라이즈 라이선스를 만들어야 합니다.</block>
   <block id="bf71ae5aa16f5632361df660e7d643c6" category="section-title">데이터 개인정보 보호 및 보안</block>
@@ -838,7 +835,6 @@
   <block id="6c66105ac3f36d7885800e03e5285fd9" category="paragraph">NetApp Workload Factory for Databases의 자동화를 통해 소프트웨어 배포를 개선하기 위해 REST API 코드를 사용하여 샌드박스 복제본을 CI/CD(지속적 통합 및 지속적 배포) 파이프라인에 연결합니다.</block>
   <block id="db976ff1c57ed4bcfb284135455febc2" category="list-text">샌드박스에서 CI/CD 도구에 연결하려면 샌드박스 복제본의 작업 메뉴를 선택합니다.</block>
   <block id="b95fa4e6e7b8f2168ad9a4d81e4e65cb" category="summary">NetApp Workload Factory for Databases 내에서 새로운 Microsoft SQL Server를 만듭니다.</block>
-  <block id="03f5b1a395b2051aedbbb6bf1bdb40e6" category="doc">Workload Factory에서 데이터베이스용 Microsoft SQL Server 만들기</block>
   <block id="197df9493ba9fcc2016851ab07990409" category="paragraph">Workload Factory for Databases에서 새로운 Microsoft SQL Server 또는 데이터베이스 호스트를 생성하려면 FSx for ONTAP 파일 시스템 배포와 Active Directory 리소스가 필요합니다.</block>
   <block id="a6955f3c1d9afee975ddac409c1488f3" category="paragraph">Workload Factory에서 Microsoft SQL Server를 만들기 전에 데이터베이스 호스트 구성, Microsoft 다중 경로 I/O 구성, Active Directory 배포, 네트워킹 세부 정보 및 이 작업을 완료하는 데 필요한 요구 사항에 대해 알아보세요.</block>
   <block id="bc032bc6a4cd520164072ac886f6e6fe" category="paragraph">Microsoft SQL Server 배포 모델 모두 iSCSI 스토리지 프로토콜을 사용하여 LUN을 생성해야 합니다.  Workload Factory는 FSx for ONTAP 통해 SQL Server에 대한 LUN을 구성하는 일부로 Microsoft 다중 경로 I/O(MPIO)를 구성합니다.  MPIO는 AWS 및 NetApp 모범 사례를 기반으로 구성됩니다.</block>
@@ -870,7 +866,6 @@
   <block id="33802730984f4af59a8f5644e1ba546a" category="list-text">관리되는 SQL Server 인스턴스가 있는 데이터베이스 서버를 선택하여 데이터베이스를 만듭니다.</block>
   <block id="9b54a5b8ea82e880e1fd6cc2a1d063e7" category="list-text">관리형 인스턴스의 작업 메뉴를 클릭한 다음 *사용자 데이터베이스 만들기*를 선택합니다.</block>
   <block id="af3c6f6c1f47dc04d93d4779689c9eca" category="summary">NetApp Workload Factory for Databases 내에서 새로운 PostgreSQL SQL 서버를 만듭니다.</block>
-  <block id="3df8ab93e6ee66742b140a409805477c" category="doc">NetApp Workload Factory에서 PostgreSQL 서버 만들기</block>
   <block id="8b9f915cb2ecd69bdd7dd72955de0196" category="paragraph">NetApp Workload Factory for Databases에서 새로운 PostgreSQL 서버 또는 데이터베이스 호스트를 생성하려면 FSx for ONTAP 파일 시스템 배포와 Active Directory 리소스가 필요합니다.</block>
   <block id="aee2d1bda2fa7a372599f9dc76274403" category="paragraph">Workload Factory에서 PostgreSQL 서버를 생성하기 전에 데이터베이스 호스트 구성에 사용 가능한 스토리지 배포 유형, Workload Factory 운영 모드 및 이 작업을 완료하는 데 필요한 요구 사항에 대해 알아보세요.</block>
   <block id="ff041d4f4cf4ed6c6abc6b5c4266cc8c" category="paragraph">+ FSx for ONTAP 파일 시스템에는 _고가용성(HA)_ 또는 _단일 인스턴스_라는 두 가지 PostgreSQL 서버 배포 모델이 있습니다.  선택한 FSx for ONTAP 배포 모델에 따라 FSx for ONTAP 파일 시스템에 대해 다양한 리소스가 생성됩니다.</block>
@@ -885,11 +880,9 @@
   <block id="c4445bf1142f4fd36aa3139618ee4f3f" category="list-text">*소스 데이터베이스*: 복제본에 사용할 수 있는 소스 데이터베이스가 필요합니다.</block>
   <block id="969e7140d33129e87f01e95c59fed40f" category="list-text">*마운트*: 여러 개의 데이터 및/또는 로그 파일이 있는 SQL 데이터베이스를 복제하는 경우 Workload Factory는 자동으로 할당되거나 정의된 드라이브 문자 아래의 모든 파일을 복제합니다.</block>
   <block id="e84beb556a76fd6484a39d4447262026" category="summary">더 이상 필요하지 않고 스토리지 용량을 확보하려는 경우 NetApp Workload Factory for Databases에서 샌드박스 복제본을 삭제하세요.</block>
-  <block id="b0a116a4eb9216062a5e5afb2cd40a82" category="doc">NetApp Workload Factory for Databases에서 데이터 복제본 삭제</block>
   <block id="e0c0b02aa121e916724ee28f460bc605" category="list-text">샌드박스에서 삭제하려는 샌드박스 복제본의 작업 메뉴를 선택합니다.</block>
   <block id="478b782141e49e75e5d4d0534bf71587" category="list-text">삭제 대화 상자에서 *삭제*를 선택하여 삭제를 확인합니다.</block>
   <block id="54be7afd7595249ed399278de89305fa" category="summary">Workload Factory 콘솔에서 더 이상 리소스를 배포하거나 모니터링하지 않으려면 리소스 등록을 취소합니다.</block>
-  <block id="5a2d38279bf5114017c85d3f5b74a52f" category="doc">NetApp Workload Factory에서 리소스 등록 해제</block>
   <block id="df442bf005a0d53e338d95bb9b23b0c2" category="paragraph">NetApp Workload Factory 콘솔에서 리소스를 더 이상 배포하거나 모니터링하지 않으려면 Microsoft SQL Server 인스턴스나 Oracle 데이터베이스와 같은 리소스의 등록을 취소합니다. 리소스 등록을 취소하면 인스턴스에서 사용되는 FSx for ONTAP 스토리지 용량도 제거됩니다.</block>
   <block id="5e515299dfd2f2c8ff923eaac6bbb1bf" category="list-text">인벤토리에서 엔진 유형을 선택합니다: *Microsoft SQL Server*, *Oracle* 또는 *PostgreSQL*.</block>
   <block id="e91df2086570d35902c167d64feb1a17" category="list-text">등록을 취소하려는 리소스를 찾은 다음 작업 메뉴를 선택하고 *등록 취소*를 선택합니다.</block>
@@ -1002,7 +995,6 @@
   <block id="51bbd388cda4367b34d6dc50a5e134a5" category="list-text">Well-architected 분석 페이지에서 *해제된 구성*을 선택하면 해제된 구성만 표시됩니다.</block>
   <block id="bc4a349f7f95e73490c3e2f8aaabe892" category="list-text">연기되거나 취소된 구성에 대한 구성 분석을 다시 시작하려면 *다시 활성화*를 선택합니다.</block>
   <block id="7c6a7786a083c7d074bada76f0bcd33b" category="summary">Workload Factory for Databases는 Microsoft SQL Server 및 Oracle 구성을 정기적으로 분석하여 문제가 있는지 확인합니다.</block>
-  <block id="8317ffd1a53e5d269aaac07d321b8dd0" category="doc">Workload Factory의 데이터베이스 환경에 대한 구성 분석</block>
   <block id="84ee3cc4e2a4f169585c115121112580" category="paragraph">Workload Factory 콘솔의 NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 애플리케이션 데이터를 보호하세요. 이 통합을 통해 다음과 같은 보호 목표를 달성할 수 있습니다. 로컬 기본 Amazon FSx for NetApp ONTAP (FSx for ONTAP) 스토리지의 로컬 스냅샷으로 워크로드를 백업하고, 워크로드를 보조 FSx for ONTAP 스토리지로 복제합니다.</block>
   <block id="bb1b704677e0a9ac00a2bda88f85fe27" category="paragraph">Workload Factory는 NetApp Backup and Recovery를 사용하여 워크로드를 보호할 준비를 하기 위해 Microsoft SQL Server용 플러그인의 리소스 검색, 필수 구성 요소 검증, 구성 및 설치를 자동화합니다. 이 플러그인은 NetApp 소프트웨어의 호스트 측 구성 요소로, Microsoft SQL Server 워크로드를 보호할 수 있습니다.</block>
   <block id="e9575ae90b7ec054c43a9797544d0103" category="paragraph">NetApp Backup and Recovery는 NetApp SnapMirror 데이터 복제 기술을 활용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.</block>
@@ -1044,7 +1036,6 @@
   <block id="b9b9dcaedb68518f618349de0f962cda" category="list-text">샌드박스에서 되돌리려는 데이터베이스 복제본의 작업 메뉴를 선택합니다.</block>
   <block id="6e9172aaf947b38ec5222c7fb3133fb6" category="list-text">기준선 재설정 대화 상자에서 *기준선 재설정*을 선택합니다.</block>
   <block id="9fb5614e3401e433c6a39f267483e3be" category="summary">소스 데이터베이스에서 데이터베이스 복제본을 분할하여 NetApp Workload Factory for Databases에서 새 데이터베이스를 만듭니다.</block>
-  <block id="e56d0520400755a2305a399e4c431a50" category="doc">소스 데이터베이스에서 데이터베이스 복제본 분할</block>
   <block id="9d708cb240624cc1bb63ba25da0a742b" category="paragraph">NetApp Workload Factory for Databases에서 소스 데이터베이스에서 데이터베이스 복제본을 분리하면 특정 양의 저장 용량을 사용하는 새 데이터베이스가 생성됩니다.  분할이 완료되고 새 데이터베이스가 인벤토리에 나타나면 복제본은 삭제됩니다.</block>
   <block id="98af8bdb2147926a0a4db45c478851f0" category="list-text">샌드박스에서 분할하려는 데이터베이스 복제본의 작업 메뉴를 선택합니다.</block>
   <block id="2c9eebdddd5694f0300c1318fc1f439d" category="list-text">분할 대화 상자에서 *분할*을 선택합니다.</block>
@@ -1061,7 +1052,6 @@
   <block id="40eff8559acd41057187b6cb11fa1919" category="list-text">다음 단계를 완료하여 새 NSS 계정을 NetApp 콘솔 로그인과 연결하세요.<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">NetApp 지원 사이트 계정이 있으면 아래 단계를 완료하여 계정을 NetApp 콘솔 로그인과 연결하세요.<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
   <block id="e4fded9c69219e4b9e3629dcc1d6ec81" category="summary">NetApp Workload Factory for Databases에서 데이터베이스 복제본의 연결 정보를 보고 복사합니다.</block>
-  <block id="b5e7499b294ed4ae4fad36d6e70d1cdf" category="doc">데이터베이스 복제본의 연결 정보 보기</block>
   <block id="cfb19a0ff7e382b29551267d52377e0f" category="list-text">샌드박스에서 샌드박스 복제본의 작업 메뉴를 선택하여 연결 정보를 확인합니다.</block>
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">*닫기*를 선택하세요.</block>
   <block id="0b640c5e49490eb540208568a359492b" category="summary">NetApp Workload Factory for Databases의 새로운 소식을 알아보세요.</block>
@@ -1679,4 +1669,23 @@
   <block id="ecf2ed7ba31a9f6e31583b9d9052f055" category="inline-link-macro">데이터베이스 구성에 대한 포괄적이고 체계적인 평가를 받아보세요.</block>
   <block id="75c47d4b747a86f2b6de36d602facc46" category="list-text"><block ref="75c47d4b747a86f2b6de36d602facc46" category="inline-link-macro-rx"></block></block>
   <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026년 8월 3일</block>
+  <block id="619b54ce9e8c031c19256b4d8d750363" category="doc">절감액 계산기 업데이트</block>
+  <block id="e5dcb68e9a92c735dc0967956647bc80" category="paragraph">FSx for ONTAP 파일 시스템의 데이터베이스 워크로드에 대한 스토리지, 컴퓨팅, SQL 라이선스, 스냅샷 및 클론과 같은 Microsoft SQL Server 워크로드 실행의 다양한 비용 구성 요소를 Elastic Block Store(EBS), FSx for Windows File Server 및 온프레미스 스토리지와 비교하려면 보기, 계획 및 분석 권한만 있으면 됩니다.</block>
+  <block id="fa97573f07318758714d48498eeb8beb" category="inline-link-macro">데이터베이스 워크로드에 대한 비용 절감 효과를 살펴보십시오.</block>
+  <block id="99e479d341973e05fca0c15ab9ffdad2" category="list-text"><block ref="99e479d341973e05fca0c15ab9ffdad2" category="inline-link-macro-rx"></block></block>
+  <block id="a5ca0e96d815aa95d08fcc15e4dee05c" category="inline-link-macro">데이터베이스 워크로드에 대한 권한</block>
+  <block id="6c371a91504dc6f98ab6ece596f7ab2f" category="list-text"><block ref="6c371a91504dc6f98ab6ece596f7ab2f" category="inline-link-macro-rx"></block></block>
+  <block id="82c635e3b100afc233299479fb3eda14" category="doc">NetApp Workload Factory for Databases의 오류 로그 분석</block>
+  <block id="8b5884ee309b1732b4b26db4f1d9391b" category="doc">Databases용 NetApp Workload Factory에서 샌드박스 데이터 무결성 확인</block>
+  <block id="0354b35f78b3b0a2abc4857046c8bb44" category="doc">NetApp Workload Factory for Databases에서 샌드박스 클론을 CI/CD에 연결합니다.</block>
+  <block id="c4e3c9361d524348aecb1ccf6a70b736" category="doc">NetApp Workload Factory for Databases에서 Microsoft SQL Server 생성</block>
+  <block id="1929af40476a50a593dc74fdadb92f44" category="doc">NetApp Workload Factory for Databases에서 PostgreSQL 서버를 생성합니다.</block>
+  <block id="0f1488f1cffdc496b17aa68133f45409" category="doc">NetApp Workload Factory for Databases에서 데이터베이스 클론 삭제</block>
+  <block id="06eec6f6dae375e43105994b315f1664" category="doc">NetApp Workload Factory for Databases에서 리소스 등록을 해제합니다.</block>
+  <block id="5719a8b368e4d1cde735746b2f77b822" category="doc">NetApp Workload Factory에서 잘 설계된 데이터베이스 구성을 구현합니다.</block>
+  <block id="c845f87358189f25588e9dd9d9cf0101" category="doc">NetApp Workload Factory for Databases의 구성 분석에 대해 알아봅니다</block>
+  <block id="b1ac22e25e1bec51612ad9e1ac8a5f03" category="doc">NetApp Workload Factory for Databases를 사용하여 Microsoft SQL Server 워크로드를 보호합니다.</block>
+  <block id="1251c2c3562b89a08c4f6e3d98cee073" category="doc">NetApp Workload Factory for Databases에서 데이터베이스 복제본 분할</block>
+  <block id="95d5b5a9387ddb73c562c266681172d5" category="doc">NetApp Workload Factory for Databases에서 클론 연결 정보 보기</block>
+  <block id="1641126472d40ab162e3acf05ac611ba" category="section-title">2026년 8월 30일</block>
 </blocks>

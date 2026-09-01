@@ -4,7 +4,7 @@ permalink: connect-clone-cicd.html
 keywords: connect ci and cd pipeline, clone 
 summary: 샌드박스 클론을 REST API 코드를 사용하여 CI 및 CD 파이프라인에 연결하면 자동화를 통해 소프트웨어 제공을 개선할 수 있습니다. 
 ---
-= 샌드박스 클론을 CI/CD 툴에 연결합니다
+= NetApp Workload Factory for Databases에서 샌드박스 클론을 CI/CD에 연결합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

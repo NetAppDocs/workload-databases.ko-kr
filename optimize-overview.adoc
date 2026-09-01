@@ -4,7 +4,7 @@ permalink: optimize-overview.html
 keywords: database configuration issues, issues, analyze, scan, optimize, improve, database configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations, storage, compute, application, resiliency, scan, optimization, SQL Server, host, instance 
 summary: Workload Factory for Databases는 Microsoft SQL Server 및 Oracle 구성을 정기적으로 분석하여 문제가 있는지 확인합니다. 
 ---
-= Workload Factory의 데이터베이스 환경에 대한 구성 분석
+= NetApp Workload Factory for Databases의 구성 분석에 대해 알아봅니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

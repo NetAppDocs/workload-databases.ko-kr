@@ -4,7 +4,7 @@ permalink: deregister-instance.html
 keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle database, deregister instance, unregister instance, remove instance 
 summary: Workload Factory 콘솔에서 더 이상 리소스를 배포하거나 모니터링하지 않으려면 리소스 등록을 취소합니다. 
 ---
-= NetApp Workload Factory에서 리소스 등록 해제
+= NetApp Workload Factory for Databases에서 리소스 등록을 해제합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

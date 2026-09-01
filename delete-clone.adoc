@@ -4,7 +4,7 @@ permalink: delete-clone.html
 keywords: delete, clone 
 summary: 더 이상 필요하지 않고 스토리지 용량을 확보하려는 경우 NetApp Workload Factory for Databases에서 샌드박스 복제본을 삭제하세요. 
 ---
-= NetApp Workload Factory for Databases에서 데이터 복제본 삭제
+= NetApp Workload Factory for Databases에서 데이터베이스 클론 삭제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

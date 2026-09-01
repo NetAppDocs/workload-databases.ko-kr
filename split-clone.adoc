@@ -4,7 +4,7 @@ permalink: split-clone.html
 keywords: split, clone, source, new database 
 summary: 소스 데이터베이스에서 데이터베이스 복제본을 분할하여 NetApp Workload Factory for Databases에서 새 데이터베이스를 만듭니다. 
 ---
-= 소스 데이터베이스에서 데이터베이스 복제본 분할
+= NetApp Workload Factory for Databases에서 데이터베이스 복제본 분할
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

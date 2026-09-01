@@ -4,7 +4,7 @@ permalink: optimize-configurations.html
 keywords: optimize, configuration, storage, compute, application, resiliency assessment, scan, optimization, Microsoft SQL Server, host, instance, FSx for ONTAP 
 summary: NetApp Workload Factory for Databases는 Microsoft SQL Server 구성을 스캔하여 운영상의 우수성을 달성하는 데 도움이 되는 통찰력과 권장 사항을 제공합니다. 
 ---
-= Workload Factory에서 잘 설계된 데이터베이스 구성을 구현합니다.
+= NetApp Workload Factory에서 잘 설계된 데이터베이스 구성을 구현합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
