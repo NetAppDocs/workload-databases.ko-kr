@@ -1668,14 +1668,6 @@
   <block id="1251c2c3562b89a08c4f6e3d98cee073" category="doc">NetApp Workload Factory for Databases에서 데이터베이스 복제본 분할</block>
   <block id="1641126472d40ab162e3acf05ac611ba" category="section-title">2026년 8월 30일</block>
   <block id="b5ed82020518e1a667b7f42bf1da1877" category="paragraph"><block ref="b5ed82020518e1a667b7f42bf1da1877" category="inline-link-macro-rx"></block></block>
-  <block id="b3ae445fa637203f0dc17550b5c4a56c" category="doc">잘 설계된 대시보드에 포함된 데이터베이스 구성</block>
-  <block id="a04fc413f106e041524732d895e4258e" category="paragraph">잘 설계된 대시보드에는 이제 데이터베이스 구성에 대한 권장 사항이 포함되어 있어 모범 사례를 기반으로 설정을 평가하고 최적화할 수 있습니다. 첫 번째 구성은 다음과 같습니다.</block>
-  <block id="0ab265b548fdc40b21483e61ffde3aba" category="list-text">콜드 데이터 티어링</block>
-  <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">스냅샷 정책</block>
-  <block id="6f5cf50fa90f8d99bf50f65e676c6cba" category="list-text">SSD 용량 여유 공간</block>
-  <block id="4dcac8e07a1246e665077c1572955236" category="paragraph">Workload Factory 콘솔의 메인 메뉴를 선택한 다음 *Well-architected*를 선택하여 잘 설계된 대시보드를 찾습니다.</block>
-  <block id="2d647234501319107057acb4d3f8dfaf" category="inline-image-macro">Workload Factory 콘솔의 잘 설계된 메뉴 옵션</block>
-  <block id="353cc99df6b21e74c805e74bdab4b8aa" category="paragraph"><block ref="353cc99df6b21e74c805e74bdab4b8aa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform 공급자*: Workload Factory 콘솔에서 생성된 인프라 워크플로를 구축하고 관리하기 위해 Terraform을 사용합니다.</block>
   <block id="8ffaca7bd1131475769b15e5950997fd" category="summary">NetApp Workload Factory for Databases에서 샌드박스 클론을 관리하여 개발 및 테스트 환경을 안정적이고 비용 효율적으로 유지하십시오.</block>
   <block id="b4f39381f48079f073b43be17aadcceb" category="doc">NetApp Workload Factory for Databases에서 데이터베이스 복제본 관리</block>
@@ -1691,4 +1683,6 @@
   <block id="e30e82b6ba088958ce23ba4d6a33b01f" category="sidebar">데이터베이스 워크로드에 Workload Factory 사용</block>
   <block id="573be33921395db38cda47a4830a127e" category="sidebar">데이터베이스 리소스 생성</block>
   <block id="33995eab65a0112a35f0233d5de5a0a6" category="sidebar">데이터베이스 리소스를 보호, 모니터링 및 최적화합니다.</block>
+  <block id="753d621a767f80f69e64e577e1856e54" category="doc">단일 인스턴스당 여러 파일 시스템 지원</block>
+  <block id="6adeb7328ee4497e74b45036bf16ff9d" category="paragraph">Workload Factory for Databases는 단일 Microsoft SQL Server 인스턴스당 여러 파일 시스템을 지원합니다. SQL Server 인스턴스에 여러 파일 시스템을 등록하고, SQL Server 인스턴스의 여러 파일 시스템에 대한 하나의 구성 문제를 동시에 해결할 수 있습니다.</block>
 </blocks>
