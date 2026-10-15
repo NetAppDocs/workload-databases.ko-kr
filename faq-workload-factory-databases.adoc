@@ -1,0 +1,204 @@
+---
+sidebar: sidebar 
+permalink: faq-workload-factory-databases.html 
+keywords: faq, frequently asked questions, frequently asked questions about workload factory for databases, workload factory, databases, sql server, oracle, postgresql, fsx for ontap, savings calculator, well-architected, sandbox clones, codebox, backup and recovery 
+summary: NetApp Workload Factory for Databases에 대한 자주 묻는 질문입니다. 
+---
+= NetApp Workload Factory for Databases 관련 FAQ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Workload Factory for Databases에 대한 일반적인 질문(Amazon FSx for NetApp ONTAP에서 데이터베이스 워크로드를 배포, 등록, 최적화, 복제 및 보호할 때 유용한 개념, 사전 요구 사항 및 동작 등)의 해답을 찾아보십시오.
+
+
+
+[[getting-started-and-permissions]]
+== 시작하기 및 권한
+
+.Workload Factory for Databases란 무엇이며, 어떤 데이터베이스 엔진 및 배포 모델을 지원합니까?
+Workload Factory for Databases는 FSx for ONTAP에서 SQL Server, PostgreSQL 및 Oracle 데이터베이스를 검색, 평가, 프로비저닝 및 관리합니다.
+
+지원되는 모델은 link:learn-databases.html["데이터베이스용 Workload Factory에 대해 알아보세요"]을(를) 참조하십시오.
+
+.Workload Factory for Databases는 어떤 AWS 리전에서 사용할 수 있습니까?
+Workload Factory for Databases는 FSx for ONTAP이 지원되는 모든 상용 지역에서 작동하지만, 중국 지역, Secret Cloud 또는 Top Secret Cloud에서는 작동하지 않습니다.
+
+https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["지원되는 아마존 지역을 봅니다."^]
+
+.Workload Factory for Databases 사용을 시작하려면 AWS 권한을 부여해야 합니까?
+아니요. 권한을 부여하지 않고 기본 모드로 시작하여 Codebox에서 부분적으로 완성된 코드 샘플을 복사할 수 있습니다. 호스트를 검색하고 리소스를 관리하려면 AWS 자격 증명을 추가하고 필요한 권한에 대한 IAM 정책을 생성해야 합니다. link:quick-start-databases.html["빠른 시작"]를 참조하십시오.
+
+.각 작업(검색, 등록, 데이터베이스 생성, 호스트 배포, 구성 수정)에 필요한 권한 수준은 무엇입니까?
+감지된 호스트에 대한 비용 절감 계산기와 오류 로그 분석기를 사용하려면 보기, 계획 및 분석 권한이 필요합니다. 리소스 등록, 데이터베이스 생성, 샌드박스 복제본 생성 및 아키텍처 문제 해결에는 운영 및 조치 권한이 필요합니다. 새 데이터베이스 호스트를 배포하려면 데이터베이스 호스트 생성 권한이 필요합니다.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#permissions-for-database-workloads["데이터베이스 워크로드에 대한 권한"^]
+
+
+
+[[deploy-database-hosts]]
+== 데이터베이스 호스트 배포
+
+.SQL Server 호스트를 배포할 때 빠른 생성과 고급 생성의 차이점은 무엇입니까?
+빠른 생성은 기본값(FCI 배포, Windows Server 2016 및 SQL Server 2019 Standard Edition)을 적용합니다. 고급 생성을 사용하면 배포 모델(FCI 또는 단일 인스턴스), 운영 체제, 에디션, 버전, 인스턴스 유형, 프로비저닝된 IOPS 및 처리량, 암호화 및 모니터링을 사용자 지정할 수 있습니다.
+
+link:create-database-server.html["SQL Server 호스트 생성"].
+
+.새로운 SQL Server FCI 또는 독립 실행형 배포는 어떤 FSx for ONTAP 구성을 생성합니까?
+FCI 배포는 다중 AZ FSx for ONTAP 파일 시스템을 생성하며, FCI는 다중 AZ 구성에서만 지원됩니다. 독립 실행형 배포는 단일 AZ 파일 시스템을 생성합니다. 기존 파일 시스템을 선택하면 SQL Server 워크로드용 새 스토리지 VM이 생성됩니다.
+
+link:create-database-server.html["SQL Server 호스트 생성"].
+
+.호스트를 배포하면 VPC 네트워크 구성이 변경됩니까?
+가능성이 있습니다. 배포 시 필요한 AWS 인터페이스 엔드포인트와 S3 게이트웨이 엔드포인트가 존재하지 않으면 이를 생성합니다. 또한 VPC DNS 속성 `EnableDnsSupport` 및 `EnableDnsHostnames`이 아직 true가 아니면 true로 설정합니다.
+
+link:create-database-server.html["SQL Server 호스트 생성에 대해 자세히 알아보세요"].
+
+.SQL Server 호스트를 배포하는 데 필요한 Active Directory 액세스 권한은 무엇입니까?
+배포를 통해 도메인에 가입하고 컴퓨터 개체를 생성하려면 Active Directory 관리자 권한이 필요합니다. SQL 서비스 계정을 제공하지 않으면 배포 시 자동으로 생성됩니다. 사용자 관리형 Active Directory를 사용하는 경우, EC2 인스턴스에서 디렉터리 서비스로의 트래픽을 허용하는 보안 그룹을 제공해야 합니다.
+
+link:create-database-server.html["SQL Server 호스트 생성에 대해 자세히 알아보세요"].
+
+.CredSSP 때문에 SQL Server 배포가 실패할 수 있는 이유는 무엇인가요?
+배포 중에 Workload Factory는 프로비저닝 스크립트에 대한 자격 증명 위임을 위해 CredSSP를 활성화합니다. 그룹 정책이 모든 도메인 컴퓨터에 대한 CredSSP 위임을 차단하는 경우 배포가 실패합니다. Workload Factory는 배포 후 CredSSP를 비활성화합니다.
+
+link:create-database-server.html["SQL Server 호스트 생성에 대해 자세히 알아보세요"].
+
+.배포 직후 SQL Server에 연결할 수 있습니까?
+당장은 아닙니다. Workload Factory는 배포된 SQL Server에서 원격 연결을 활성화하지 않으므로, 보안 그룹에서 필요한 클라이언트 IP 또는 서브넷을 허용하는 등 직접 구성해야 합니다.
+
+link:create-database-server.html["SQL Server에서 원격 연결을 활성화하는 방법을 알아보세요"].
+
+
+
+[[register-and-manage-resources]]
+== 리소스 등록 및 관리
+
+.Workload Factory에 인스턴스를 등록하면 어떤 이점을 얻을 수 있으며, 등록 전 필수 조건은 무엇인가요?
+등록을 통해 데이터베이스 및 샌드박스 복제본을 생성하고, 오류 로그 분석을 실행하고, 구성을 최적화할 수 있습니다. 리소스는 FSx for ONTAP 스토리지에서 실행되어야 하며 인벤토리에 표시되어야 합니다. 이를 위해서는 AWS 자격 증명이 필요합니다. 또한 FSx for ONTAP 파일 시스템과 링크를 연결하고 SQL Server용 AWS 및 NetApp PowerShell 모듈을 포함한 필수 조건 검사를 완료해야 합니다.
+
+link:register-instance.html["리소스 등록"].
+
+.어떤 데이터베이스를 등록하고 관리할 수 있으며, PostgreSQL은 어떤가요?
+SQL Server 인스턴스(FCI 및 독립 실행형)와 Oracle 데이터베이스만 등록 및 관리할 수 있습니다. PostgreSQL 호스트는 AWS 자격 증명을 기반으로 인벤토리에 표시되지만 등록되지는 않습니다. PostgreSQL은 Amazon Linux에서만, Oracle은 Red Hat Enterprise Linux에서만 감지됩니다.
+
+.인터넷 접속이 불가능한 사설 네트워크에 인스턴스를 등록하려면 무엇이 필요합니까?
+VPC에서 S3, AWS Systems Manager 및 FSx for ONTAP에 대한 VPC 엔드포인트를 사용할 수 있도록 설정하고, 인터페이스 엔드포인트에 대한 보안 그룹에서 포트 443을 허용하십시오. 프록시를 사용하는 경우 필수 Microsoft, PowerShell Gallery(SQL Server) 및 AWS 도메인도 허용해야 합니다.
+
+link:register-instance.html["리소스 등록 방법을 알아보세요"].
+
+.리소스 등록을 해제하면 어떻게 되나요?
+콘솔에서 해당 리소스에 배포하거나 모니터링할 수 없으며, 해당 리소스의 FSx for ONTAP 스토리지 용량은 더 이상 인스턴스에서 사용되는 용량으로 계산되지 않습니다. 나중에 해당 리소스를 다시 등록할 수 있습니다.
+
+link:deregister-instance.html["리소스 등록 해제"].
+
+.데이터베이스를 생성할 때 알아야 할 사항은 무엇인가요?
+데이터베이스를 생성하면 데이터 파일과 로그 파일을 위한 독립적인 LUN이 있는 두 개의 새 볼륨이 추가됩니다. 파일은 씬 프로비저닝 방식으로 저장되며 할당된 크기의 몇 MB만 사용합니다. SMB를 사용하는 SQL Server는 데이터베이스 생성을 지원하지 않습니다.
+
+link:create-database.html["SQL Server 데이터베이스를 생성합니다"].
+
+
+
+[[savings-calculator]]
+== 비용 절감 계산기
+
+.절감액 계산기는 무엇을 비교하며, 온프레미스 SQL Server 호스트는 어떻게 평가됩니까?
+FSx for ONTAP의 스토리지, 컴퓨팅, SQL 라이선스, 스냅샷 및 클론 비용을 Amazon Elastic Block Store, FSx for Windows File Server 및 온프레미스 스토리지와 비교합니다. 온프레미스 호스트의 경우 PowerShell 평가 스크립트를 다운로드하여 호스트에서 실행한 다음 결과를 업로드합니다. 그런 다음 최대 5개의 호스트를 선택하여 분석할 수 있습니다. 온프레미스 볼륨 크기는 비용 및 절감률 계산에 포함되지 않습니다.
+
+link:explore-savings.html["절감액 계산기 사용 방법을 알아보십시오"].
+
+.계산기가 SQL Server Enterprise 버전을 Standard Edition으로 다운그레이드하라고 권장하는 이유는 무엇입니까?
+인스턴스의 vCPU가 48개 이하이고 메모리가 128GB 이하인 경우 다운그레이드를 권장합니다. 또한 인스턴스는 온라인 인덱스 작업, 리소스 거버너, 피어 투 피어 또는 Oracle 복제, R/Python 확장, 메모리 최적화 TempDB 등 엔터프라이즈 기능을 사용해서는 안 됩니다. 배포 모델 역시 엔터프라이즈를 요구하지 않아야 합니다.
+
+.여러 호스트를 선택할 경우, 계산기는 FSx for ONTAP 구성의 크기를 어떻게 계산하나요?
+최대 5개의 감지된 호스트를 선택할 수 있습니다. Workload Factory는 호스트가 단일 파일 시스템의 처리량, 용량 또는 IOPS 제한을 초과하지 않는 한, 이를 하나의 SQL 인스턴스가 포함된 단일 FSx for ONTAP 구성 권장 사항으로 통합합니다. 여러 개의 FSx for ONTAP 파일 시스템을 생성하거나 저장하는 것은 지원되지 않습니다.
+
+link:explore-savings.html["비용 절감 효과를"].
+
+
+
+[[well-architected-configurations]]
+== 잘 설계된 구성
+
+.일회성 및 지속적인 well-architected 평가의 차이점은 무엇입니까?
+일회성 평가는 호스트에서 스크립트를 실행하고 결과를 업로드하므로 자격 증명이 저장되지 않으며 리소스 등록도 필요하지 않습니다. 지속적인 평가는 리소스 등록, 링크 연결 및 권한 부여가 필요합니다. 매일 분석을 수행하며 문제를 자동으로 해결할 수 있습니다.
+
+link:optimize-configurations.html["데이터베이스 구성을 최적화하십시오"].
+
+.잘 설계된 구성 문제를 수정하기 전에 어떤 위험 요소를 고려해야 할까요?
+일부 수정 사항은 다운타임이나 서비스 중단을 초래할 수 있으므로 각 권장 사항을 먼저 검토하십시오. 예를 들어, 프로덕션 환경을 변경하기 전에 RSS 및 MAXDOP 권장 사항의 성능을 테스트하십시오.
+
+link:optimize-configurations.html["구성 권장 사항에 대해 자세히 알아보려면 평가를 실행하세요."].
+
+.내 환경에 적용되지 않는 잘 설계된 권장 사항을 무시해도 될까요?
+예. 구성을 무시하면 해당 구성에 대한 분석이 중지되고 불필요한 알림이 방지되며 전체 최적화 점수에서 제외됩니다. 언제든지 다시 활성화할 수 있으며, 그러면 분석이 매일 재개됩니다.
+
+link:optimize-configurations.html["잘 설계된 평가에서 구성을 제외합니다."].
+
+.모범 사례에서 SQL Server 및 Oracle용 볼륨에 대해 예약된 로컬 스냅샷을 비활성화하도록 권장하는 이유는 무엇입니까?
+예약된 FSx for ONTAP 스냅샷은 애플리케이션 정합성 보장이 되지 않습니다. 애플리케이션 정합성 보장 백업을 얻고 복원 중 손상을 방지하려면 NetApp SnapCenter 등 툴을 사용하여 외부에서 스냅샷을 관리하는 것이 좋습니다. 고급 호스트 생성 배포는 기본적으로 7일 보존 기간의 일일 스냅샷 정책을 활성화합니다.
+
+link:optimize-overview.html["데이터베이스 구성 분석에 대해 자세히 알아보세요"].
+
+
+
+[[sandbox-clones]]
+== 샌드박스 클론
+
+.샌드박스 복제본은 어떻게 생성되며, 어디에 배치할 수 있습니까?
+샌드박스 클론은 소스 데이터베이스의 최신 스냅샷을 기반으로 생성됩니다. 대상 호스트가 소스와 동일한 VPC에 있고 동일한 FSx for ONTAP 파일 시스템을 공유하는 한, 동일한 SQL Server 인스턴스 또는 다른 인스턴스에 생성할 수 있습니다. 샌드박스 클론을 생성하려면 관리형(등록된) SQL Server와 운영 및 복구 권한이 필요합니다.
+
+link:create-sandbox-clone.html["샌드박스 클론을 생성합니다"].
+
+.샌드박스 클론에서 새로 고침, 재기준선 설정, 분할의 차이점은 무엇인가요?
+새로 고침(Refresh)은 클론을 소스 데이터베이스의 현재 상태 또는 이전 스냅샷과 동기화하고 클론에 적용한 모든 변경 사항을 삭제합니다. 기준선 재설정(Re-baseline)은 클론을 생성 당시 상태로 되돌리고 변경 사항을 삭제하며, 새 클론을 생성하는 것보다 저장 공간을 절약합니다. 분할(Split)은 클론을 스토리지 용량을 소비하는 독립적인 데이터베이스로 전환하며, 분할이 완료되면 클론은 삭제됩니다.
+
+* link:manage-clones.html["데이터베이스 복제본 관리"].
+* link:split-clone.html["데이터베이스 복제본 분할"].
+
+
+.샌드박스 복제본의 데이터가 올바른지 어떻게 확인할 수 있으며, 검사에 실패할 경우 어떻게 해야 하나요?
+원본 데이터베이스가 사용 중인 동안 클론을 생성하면 클론이 최신 스냅샷과 동기화되지 않을 수 있습니다. 무결성 검사는 클론의 모든 객체를 검사합니다. 검사에 실패하면 해당 클론을 사용하지 말고 새 클론을 생성하십시오.
+
+link:manage-clones.html["데이터베이스 복제본의 무결성을 확인하십시오"].
+
+.클론을 분할하기 전에 무엇을 확인해야 합니까?
+분할을 수행하면 추가 스토리지 용량을 사용하는 새 데이터베이스가 생성됩니다. 필요한 용량을 계획하고 필요한 경우 사전에 FSx for ONTAP 파일 시스템 용량을 늘리십시오.
+
+link:split-clone.html["데이터베이스 복제본 분할"].
+
+
+
+[[data-protection]]
+== 데이터 보호
+
+.Backup and Recovery는 SQL Server 워크로드에 대해 어떤 보호 기능을 제공합니까?
+이 기능은 기본 FSx for ONTAP 스토리지에 로컬 스냅샷을 사용하여 워크로드를 백업하고 SnapMirror 기술을 사용하여 보조 FSx for ONTAP 스토리지로 복제합니다. Backup and Recovery에서 보호 정책을 생성합니다.
+
+link:protect-sql-server.html["Backup and Recovery를 통해 SQL Server 워크로드 보호"].
+
+.NetApp Backup and Recovery로 SQL Server를 보호하려면 무엇이 필요합니까?
+SQL Server 인스턴스는 Windows 자격 증명으로 등록되어야 합니다. 또한 Backup and Recovery SQL Server 요구 사항, NetApp Console 요구 사항(Console 에이전트 포함) 및 라이선스를 충족해야 합니다. 그런 다음 Workload Factory는 Microsoft SQL Server용 플러그인을 설치하고 보호 정책을 생성할 수 있도록 Backup and Recovery로 리디렉션합니다.
+
+link:protect-sql-server.html["Backup and Recovery를 통해 SQL Server 워크로드 보호"].
+
+
+
+[[automation-and-error-analysis]]
+== 자동화 및 오류 분석
+
+.Codebox란 무엇이며, 생성된 코드를 사용할 때 주의해야 할 사항이 있습니까?
+Codebox는 Workload Factory에서 지원하는 운영을 위한 REST API, AWS CLI, CloudFormation 및 Terraform 코드를 생성하는 infrastructure-as-code co-pilot입니다. Terraform 코드는 fsxadmin 및 vsadmin 암호를 숨기므로 다시 입력해야 합니다. 다운로드하거나 복사한 CloudFormation 템플릿은 7일 동안만 보관됩니다. link:automate-codebox.html["Codebox로 자동화"]을(를) 참조하십시오.
+
+.AI 기반 오류 로그 분석기를 사용하려면 무엇을 설정해야 합니까?
+분석기를 사용하려면 Amazon Bedrock 활성화, 호스트 서브넷과 연결된 Bedrock VPC 엔드포인트, 등록된 리소스 및 필요한 IAM 권한이 필요합니다. Oracle의 경우 V$DIAG_ALERT_EXT에 대한 액세스 권한도 부여해야 합니다. 계정 관리자가 AI 기능을 비활성화한 경우 분석기를 사용할 수 없습니다.
+
+link:analyze-error-logs.html["Workload Factory에서 오류 로그를 분석하는 방법을 알아보세요"].
+
+.오류 로그 분석기를 사용할 때 로그 데이터는 안전한가요?
+로그 데이터와 집계 결과는 AWS 계정에 저장되며, 공용 인터넷에 노출되지 않고 프라이빗 VPC 엔드포인트를 통해 전송됩니다. 고객 데이터는 모델 학습이나 개선에 사용되지 않습니다. Bedrock은 로그를 실시간으로 처리하며, 결과는 사용자 환경에 저장됩니다.

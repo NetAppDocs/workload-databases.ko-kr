@@ -65,6 +65,8 @@ sidebar:
       url: "/monitor-databases.html"
     - title: Microsoft SQL Server 워크로드 보호
       url: "/protect-sql-server.html"
+  - title: FAQ
+    url: "/faq-workload-factory-databases.html"
   - title: 지식 및 지원
     entries:
     - title: 지원을 위해 등록하십시오
